@@ -25,3 +25,11 @@ file per slide with the `active` class set, then screenshot at window size
 
 Photo placeholders ("YOUR PHOTO HERE") are swapped by replacing the
 `.photo` div contents with an `<img>` styled `object-fit:cover`.
+
+## Design assignment
+
+Each post's `content/<date-topic>/brief.md` carries a Design section that names
+the style to build. It defaults to the editorial house style above. To give a
+specific post a different look, edit that section (or drop an inspiration image
+in the post's folder) and ask Claude to design from the brief. New styles get
+their own template file in this directory so they stay reusable.

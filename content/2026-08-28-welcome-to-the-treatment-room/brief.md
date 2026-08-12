@@ -20,5 +20,12 @@ Clean, quiet, and designed for you to feel safe asking anything. Come see it in 
 ## Visual / Asset
 Single image: treatment room photo + hook
 
+## Design
+Style: Editorial (house style)
+Reference: design/botox-myths.html. Cream palette, Playfair Display headlines,
+Pinyon Script accents, Jost labels, LB logo from design/brand/.
+To use a different look for this post, replace this section with a description
+or drop an inspiration image in this folder.
+
 ---
 Drop the final image(s) for this post in the images/ subfolder.

@@ -20,5 +20,12 @@ You asked: will people know I had work done? Honest answer: only if you want the
 ## Visual / Asset
 Single image: Q&A card in brand style
 
+## Design
+Style: Editorial (house style)
+Reference: design/botox-myths.html. Cream palette, Playfair Display headlines,
+Pinyon Script accents, Jost labels, LB logo from design/brand/.
+To use a different look for this post, replace this section with a description
+or drop an inspiration image in this folder.
+
 ---
 Drop the final image(s) for this post in the images/ subfolder.
