@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Service Spotlight — Single Image Template</title>
+<style>
+  @font-face { font-family:'Playfair Display'; src:url('fonts/PlayfairDisplay.ttf'); }
+  @font-face { font-family:'Pinyon Script'; src:url('fonts/PinyonScript-Regular.ttf'); }
+  @font-face { font-family:'Jost'; src:url('fonts/Jost.ttf'); }
+
+  :root{
+    --cream:#F3EEE5;
+    --ink:#2E2A23;
+    --ink-soft:#6E6557;
+    --hair:rgba(46,42,35,.4);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#888;}
+  .slide{
+    width:1080px;height:1350px;position:relative;overflow:hidden;
+    background:var(--cream);color:var(--ink);
+    font-family:'Jost',sans-serif;
+  }
+  .slide:not(.active){display:none !important;}
+
+  .photo{
+    position:absolute;top:0;left:0;right:0;height:62%;
+    overflow:hidden;
+  }
+  .photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%;}
+  /* soft fade into the cream panel */
+  .photo::after{
+    content:'';position:absolute;left:0;right:0;bottom:0;height:140px;
+    background:linear-gradient(180deg, rgba(243,238,229,0) 0%, rgba(243,238,229,.9) 82%, #F3EEE5 100%);
+  }
+  .monogram{position:absolute;top:64px;left:72px;}
+
+  .panel{
+    position:absolute;left:0;right:0;bottom:0;height:41%;
+    padding:36px 88px 72px;
+    display:flex;flex-direction:column;
+  }
+  .label{
+    font-size:24px;letter-spacing:.38em;text-transform:uppercase;
+    color:var(--ink-soft);font-weight:400;
+  }
+  .hook{margin-top:34px;}
+  .hook .serif{
+    font-family:'Playfair Display',serif;font-weight:500;
+    font-size:128px;line-height:1;letter-spacing:.02em;
+  }
+  .hook .script{
+    font-family:'Pinyon Script',cursive;font-size:120px;line-height:.9;
+    margin:6px 0 0 210px;
+  }
+  .support{
+    margin-top:38px;font-size:28px;font-weight:300;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--ink-soft);
+  }
+  .footer{margin-top:auto;}
+  .footer .rule{height:1px;background:var(--hair);margin-bottom:26px;}
+  .footer .row{display:flex;align-items:baseline;justify-content:space-between;gap:40px;}
+  .footer .cta{
+    font-size:25px;letter-spacing:.3em;text-transform:uppercase;
+    font-weight:500;color:var(--ink);white-space:nowrap;
+  }
+  .footer .handle{
+    font-size:21px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--ink-soft);font-weight:300;white-space:nowrap;
+  }
+</style>
+</head>
+<body>
+
+<!-- SPOTLIGHT: Botox (Aug 18) -->
+<div class="slide" id="slide1">
+  <div class="photo"><img src="photos/botox-myths/botox-prep.png" alt=""></div>
+  <img class="monogram" src="brand/logo-monogram.png" width="150" alt="LB">
+  <div class="panel">
+    <div class="label">Service Spotlight &#183; Botox by NP Cleo</div>
+    <div class="hook">
+      <div class="serif">SMOOTH,</div>
+      <div class="script">not frozen.</div>
+    </div>
+    <div class="support">Softened lines. Full expression. Still you.</div>
+    <div class="footer">
+      <div class="rule"></div>
+      <div class="row">
+        <div class="cta">DM &#8220;Botox&#8221; to book</div>
+        <div class="handle">@luxury_beauty_aestheticz</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const n = new URLSearchParams(location.search).get('slide') || '1';
+  document.getElementById('slide' + n).classList.add('active');
+</script>
+</body>
+</html>
