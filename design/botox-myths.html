@@ -84,12 +84,29 @@
   .lie{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;line-height:1.42;}
   .truth-label{margin-top:76px;margin-bottom:34px;}
 
+  /* ---------- LOGO ---------- */
+  .monogram{display:block;}
+  .lockup{display:flex;align-items:center;gap:34px;}
+  .lockup .lb-word{
+    font-family:'Playfair Display',serif;font-size:34px;letter-spacing:.22em;
+    color:var(--ink);font-weight:500;
+  }
+  .lockup .lb-div{
+    display:flex;align-items:center;gap:14px;margin:10px 0 2px;
+    color:#B99753;font-size:20px;
+  }
+  .lockup .lb-div .line{height:1px;flex:1;background:linear-gradient(90deg,#C9A85C,#E2C784);}
+  .lockup .lb-script{
+    font-family:'Pinyon Script',cursive;font-size:44px;color:var(--ink);
+  }
+
   /* ---------- COVER ---------- */
   .s-cover{padding:110px 96px;}
-  .s-cover .headline{margin-top:200px;}
+  .s-cover .monogram{margin-bottom:36px;}
+  .s-cover .headline{margin-top:60px;}
   .s-cover .h-serif{font-size:148px;line-height:1.06;letter-spacing:.02em;}
   .s-cover .h-script{font-size:190px;line-height:.6;margin:20px 0 14px 240px;}
-  .s-cover .sub{margin-top:90px;font-size:29px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-soft);font-weight:300;line-height:2.1;}
+  .s-cover .sub{margin-top:54px;font-size:29px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-soft);font-weight:300;line-height:2.1;}
   .s-cover .footer{position:absolute;left:96px;right:96px;bottom:96px;display:flex;align-items:center;gap:36px;}
   .s-cover .footer .rule{flex:1;}
 
@@ -119,29 +136,68 @@
   /* ---------- CTA ---------- */
   .s-cta{display:flex;}
   .s-cta .left{width:52%;background:var(--cream-2);padding:120px 70px 96px 88px;display:flex;flex-direction:column;}
-  .s-cta .h{font-size:92px;line-height:1.16;margin-top:60px;}
-  .s-cta .h .script{font-size:112px;}
-  .s-cta .vrule{width:1px;height:100px;background:var(--hair);margin:60px 0;}
-  .s-cta .lines{font-size:27px;letter-spacing:.24em;text-transform:uppercase;line-height:2.4;color:var(--ink-soft);font-weight:300;}
+  .s-cta .h{font-size:84px;line-height:1.16;margin-top:44px;}
+  .s-cta .h .script{font-size:102px;}
+  .s-cta .vrule{width:1px;height:80px;background:var(--hair);margin:44px 0;}
+  .s-cta .lines{font-size:27px;letter-spacing:.24em;text-transform:uppercase;line-height:2.3;color:var(--ink-soft);font-weight:300;}
   .s-cta .cta{margin-top:auto;}
   .s-cta .cta .label{font-size:26px;}
   .s-cta .cta .rule{margin-top:20px;width:360px;}
   .s-cta .right{width:48%;}
   .s-cta .right .photo{width:100%;height:100%;}
+
+  /* ---------- FINAL BOOKING CTA ---------- */
+  .s-final{display:flex;align-items:center;justify-content:center;text-align:center;}
+  .s-final .inner{width:100%;padding:0 110px;display:flex;flex-direction:column;align-items:center;}
+  .s-final .lb-word{
+    font-family:'Playfair Display',serif;font-size:52px;letter-spacing:.24em;
+    color:var(--ink);font-weight:500;margin-top:56px;
+  }
+  .s-final .lb-div{
+    display:flex;align-items:center;gap:18px;margin:22px 0 10px;width:460px;
+    color:#B99753;font-size:26px;
+  }
+  .s-final .lb-div .line{height:1px;flex:1;background:linear-gradient(90deg,rgba(201,168,92,.15),#C9A85C);}
+  .s-final .lb-div .line:last-child{background:linear-gradient(90deg,#C9A85C,rgba(201,168,92,.15));}
+  .s-final .lb-script{font-family:'Pinyon Script',cursive;font-size:74px;color:var(--ink);}
+  .s-final .h{font-size:92px;line-height:1.22;margin-top:110px;}
+  .s-final .h .script{font-size:110px;}
+  .s-final .sub{
+    margin-top:56px;font-size:28px;letter-spacing:.26em;text-transform:uppercase;
+    color:var(--ink-soft);font-weight:300;line-height:2.2;
+  }
+  .s-final .handle{position:absolute;bottom:88px;left:0;right:0;text-align:center;}
 </style>
 </head>
 <body>
 
+<!-- LB monogram (recreated from brand logo) -->
+<!-- Reused per slide; duplicate gradient ids are fine, definitions are identical -->
+
 <!-- SLIDE 1 — COVER / HOOK -->
 <div class="slide s-cover" id="slide1">
   <div class="shadowplay"></div>
+  <svg class="monogram" width="168" height="168" viewBox="0 0 400 400">
+    <defs>
+      <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#A98544"/>
+        <stop offset=".5" stop-color="#DCC07E"/>
+        <stop offset="1" stop-color="#AE8B4A"/>
+      </linearGradient>
+    </defs>
+    <circle cx="200" cy="200" r="148" fill="none" stroke="url(#gold)" stroke-width="4"/>
+    <circle cx="202" cy="198" r="156" fill="none" stroke="url(#gold)" stroke-width="1.6"/>
+    <text x="105" y="255" font-family="Playfair Display" font-size="165" fill="url(#gold)">L</text>
+    <text x="185" y="298" font-family="Playfair Display" font-size="165" fill="url(#gold)">B</text>
+    <circle cx="342" cy="262" r="5" fill="url(#gold)"/>
+  </svg>
   <div class="label">Botox, Honestly &#8212; by NP Cleo</div>
   <div class="headline">
     <div class="h-serif serif">5 BOTOX</div>
     <div class="h-script script">lies</div>
     <div class="h-serif serif">YOU STILL<br>BELIEVE.</div>
   </div>
-  <div class="sub">The truth, from a nurse injector.<br>Swipe before your next appointment.</div>
+  <div class="sub">The truth, from a nurse injector.</div>
   <div class="footer">
     <div class="handle">@luxury_beauty_aestheticz</div>
     <div class="rule"></div>
@@ -205,10 +261,29 @@
   <div class="handle">@luxury_beauty_aestheticz</div>
 </div>
 
-<!-- SLIDE 7 — CTA -->
+<!-- SLIDE 7 — ENGAGEMENT -->
 <div class="slide s-cta" id="slide7">
   <div class="left">
-    <div class="label soft">Luxury Beauty by Cleo R</div>
+    <div class="lockup">
+      <svg class="monogram" width="104" height="104" viewBox="0 0 400 400">
+        <defs>
+          <linearGradient id="gold7" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#A98544"/>
+            <stop offset=".5" stop-color="#DCC07E"/>
+            <stop offset="1" stop-color="#AE8B4A"/>
+          </linearGradient>
+        </defs>
+        <circle cx="200" cy="200" r="148" fill="none" stroke="url(#gold7)" stroke-width="5"/>
+        <circle cx="202" cy="198" r="156" fill="none" stroke="url(#gold7)" stroke-width="2"/>
+        <text x="112" y="250" font-family="Playfair Display" font-size="152" fill="url(#gold7)">L</text>
+        <text x="188" y="290" font-family="Playfair Display" font-size="152" fill="url(#gold7)">B</text>
+      </svg>
+      <div>
+        <div class="lb-word">LUXURY BEAUTY</div>
+        <div class="lb-div"><span class="line"></span>&#10022;<span class="line"></span></div>
+        <div class="lb-script">by Cleo R</div>
+      </div>
+    </div>
     <div class="h serif">Heard<br><span class="script">another</span> lie?</div>
     <div class="vrule"></div>
     <div class="lines">Ask NP Cleo.<br>Honest answers.<br>Natural results.</div>
@@ -217,6 +292,40 @@
   <div class="right">
     <div class="photo"><span>your photo<br>here</span></div>
   </div>
+</div>
+
+<!-- SLIDE 8 — FINAL BOOKING CTA -->
+<div class="slide s-final" id="slide8">
+  <div class="shadowplay"></div>
+  <div class="inner">
+    <svg class="monogram" width="210" height="210" viewBox="0 0 400 400">
+      <defs>
+        <linearGradient id="gold8" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#A98544"/>
+          <stop offset=".5" stop-color="#DCC07E"/>
+          <stop offset="1" stop-color="#AE8B4A"/>
+        </linearGradient>
+      </defs>
+      <circle cx="200" cy="200" r="148" fill="none" stroke="url(#gold8)" stroke-width="4"/>
+      <circle cx="202" cy="198" r="156" fill="none" stroke="url(#gold8)" stroke-width="1.6"/>
+      <text x="112" y="250" font-family="Playfair Display" font-size="152" fill="url(#gold8)">L</text>
+      <text x="188" y="290" font-family="Playfair Display" font-size="152" fill="url(#gold8)">B</text>
+      <g fill="url(#gold8)">
+        <path d="M316 262 Q344 250 356 262 Q340 278 316 262" transform="rotate(18 336 262)"/>
+        <path d="M306 292 Q334 280 346 292 Q330 308 306 292" transform="rotate(32 326 292)"/>
+        <path d="M288 318 Q316 306 328 318 Q312 334 288 318" transform="rotate(46 308 318)"/>
+        <path d="M264 340 Q292 328 304 340 Q288 356 264 340" transform="rotate(58 284 340)"/>
+        <circle cx="250" cy="352" r="6"/>
+        <circle cx="352" cy="238" r="5"/>
+      </g>
+    </svg>
+    <div class="lb-word">LUXURY BEAUTY</div>
+    <div class="lb-div"><span class="line"></span>&#10022;<span class="line"></span></div>
+    <div class="lb-script">by Cleo R</div>
+    <div class="h serif">Book <span class="script">your</span><br>consultation.</div>
+    <div class="sub">DM &#8220;Botox&#8221; &nbsp;&#183;&nbsp; Link in bio</div>
+  </div>
+  <div class="handle">@luxury_beauty_aestheticz</div>
 </div>
 
 <script>
