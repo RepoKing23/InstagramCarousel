@@ -8,8 +8,12 @@ Playfair Display serif + Pinyon Script accents + Jost letterspaced labels.
 - `slides.html` — "Still You, Just Refreshed" carousel (6 slides)
 - `fonts/` — Playfair Display, Pinyon Script, Jost (all SIL Open Font License)
 - `brand/` — Luxury Beauty by Cleo R logo (full lockup, tight crop, monogram; transparent PNGs)
-- `photos/<carousel-name>/` — photos used by each carousel (one folder per carousel)
-- `renders/<carousel-name>/` — exported 1080x1350 PNGs, ready to post
+- `photos/<carousel-name>/` — working photos used by each carousel template
+
+Final ready-to-post images live in `/content/<date-topic>/` at the repo root:
+one folder per scheduled post, each with a `brief.md` (hook, caption, hashtags,
+visual notes) generated from `/strategy/ig-content-strategy.xlsx`. The
+spreadsheet's Folder Link column points at each post's folder.
 
 ## Previewing a slide in a browser
 Open the HTML file with `?slide=N` in the URL (e.g. `botox-myths.html?slide=3`).
