@@ -21,4 +21,4 @@ Botox is amazing at what it does. But it cannot do everything, and anyone who sa
 Design in editorial template
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

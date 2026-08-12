@@ -21,4 +21,4 @@ You cannot pour from an empty cup. Book the appointment. Take the hour. You have
 Quote card in brand style
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

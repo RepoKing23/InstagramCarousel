@@ -21,4 +21,4 @@ The most Googled question in aesthetics, answered honestly. Slide 5 explains why
 Design in editorial template
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

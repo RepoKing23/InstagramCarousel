@@ -21,4 +21,4 @@ Filler month is almost over. Drop every remaining question below and I will answ
 Engagement card in brand style
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

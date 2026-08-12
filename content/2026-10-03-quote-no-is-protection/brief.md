@@ -21,4 +21,4 @@ An honest provider will sometimes tell you no. That is protection, not rejection
 Quote card in brand style
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

@@ -10,7 +10,7 @@
 Honest answer, no fluff.
 
 ## Caption
-The honest answer: less than plucking a brow. Tiny needle, seconds per area, numbing if you want it.
+Honestly? Less than plucking a brow. Tiny needle, a few seconds per area, and numbing if you want it. Most people say wait, that was it?
 
 **CTA:** More questions? DM me
 
@@ -21,4 +21,4 @@ The honest answer: less than plucking a brow. Tiny needle, seconds per area, num
 FAQ card in brand style
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

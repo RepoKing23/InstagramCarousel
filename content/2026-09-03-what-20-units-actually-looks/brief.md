@@ -21,4 +21,4 @@ You have seen the price per unit. But what does 20 units actually do? Here is th
 Design in editorial template + dosing diagram
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

@@ -21,4 +21,4 @@ Nothing touches your skin before I map your anatomy, your movement, and your goa
 Single image: assessment photo + hook
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

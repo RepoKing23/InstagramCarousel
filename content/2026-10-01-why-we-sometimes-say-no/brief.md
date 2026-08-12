@@ -21,4 +21,4 @@ I have turned people away, and they thanked me later. Here is why honest candida
 Design in editorial template
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

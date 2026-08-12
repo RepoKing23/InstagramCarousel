@@ -21,4 +21,4 @@ Anyone promising six months is overpromising. Here is the real timeline, what ma
 Design timeline layout in editorial template
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

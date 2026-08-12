@@ -21,4 +21,4 @@ Your face deserves a nurse practitioner who tells the truth about what you need 
 Single image: Cleo portrait + credentials hook
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

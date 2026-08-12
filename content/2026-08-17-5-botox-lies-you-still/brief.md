@@ -21,4 +21,4 @@ Half of what you have heard about Botox came from someone who saw bad work. Let'
 READY: 8 final slides in this post's folder
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

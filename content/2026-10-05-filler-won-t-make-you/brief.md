@@ -21,4 +21,4 @@ Every overdone face you have seen came from heavy hands, not from filler itself.
 Design in editorial template. October filler month opener
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

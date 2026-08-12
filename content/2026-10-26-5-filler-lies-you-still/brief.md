@@ -21,4 +21,4 @@ You loved the Botox edition, so here is the filler truth round. Slide 4 is the o
 Design in editorial template. Sequel to Botox lies
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

@@ -21,4 +21,4 @@ October is filler month. What do you want the truth about first: lips, cheeks, o
 Poll card + matching story poll
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

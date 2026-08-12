@@ -21,4 +21,4 @@ This month you sent amazing questions. Here are the honest answers, including th
 Design Q&A layout from real DM questions
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

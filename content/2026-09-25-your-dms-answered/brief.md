@@ -21,4 +21,4 @@ You asked: will people know I had work done? Honest answer: only if you want the
 Single image: Q&A card in brand style
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

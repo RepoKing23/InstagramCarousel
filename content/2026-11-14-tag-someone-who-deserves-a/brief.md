@@ -21,4 +21,4 @@ Know someone who never treats themselves? Tag them below. We will take care of t
 Engagement card in brand style
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

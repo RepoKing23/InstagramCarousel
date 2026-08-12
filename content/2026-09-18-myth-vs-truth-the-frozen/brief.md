@@ -21,4 +21,4 @@ MYTH: Botox freezes your face. TRUTH: correct dosing softens movement while you 
 Single image: myth vs truth split card
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

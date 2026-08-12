@@ -21,4 +21,4 @@ The friend who never seems to age did not find a miracle cream. She started earl
 Single image: young client or product photo + hook
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

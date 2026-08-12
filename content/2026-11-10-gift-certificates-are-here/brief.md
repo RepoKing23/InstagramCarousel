@@ -21,4 +21,4 @@ In any amount, wrapped and beautiful. Give the people you love something they ac
 Single image: gift certificate photo + hook
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

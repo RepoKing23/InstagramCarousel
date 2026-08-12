@@ -21,4 +21,4 @@ Great aesthetics looks at the whole face: proportions, balance, harmony. Here is
 Design in editorial template
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

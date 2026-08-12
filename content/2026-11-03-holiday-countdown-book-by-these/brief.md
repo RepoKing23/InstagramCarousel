@@ -21,4 +21,4 @@ Botox needs 2 weeks. Filler needs 4. If you want to glow in the December photos,
 Single image: countdown-dates card
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

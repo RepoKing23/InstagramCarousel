@@ -21,4 +21,4 @@ Subtle is the new dramatic. The best work whispers. 💛
 Quote card in brand style
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

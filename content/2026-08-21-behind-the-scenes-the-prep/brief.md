@@ -21,4 +21,4 @@ Sealed products, precise dosing, clean everything. This is the part you never se
 Single image: prep tray photo + hook overlay
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

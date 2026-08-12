@@ -21,4 +21,4 @@ Filler does not vanish overnight and you will not deflate. It softens slowly, on
 Single image: timeline infographic card
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

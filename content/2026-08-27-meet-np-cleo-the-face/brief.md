@@ -21,4 +21,4 @@ Before you trust someone with your face, you should know who they are. Here is m
 Portrait photos of Cleo (reuse cleo.png + new shots)
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

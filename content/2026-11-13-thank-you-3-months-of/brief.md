@@ -21,4 +21,4 @@ Since August you have asked incredible questions and trusted us with the answers
 Single image: team or Cleo photo + thank you overlay
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

@@ -21,4 +21,4 @@ When you picture your results, which one are you actually asking for? Vote below
 Two-panel comparison card in brand style
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

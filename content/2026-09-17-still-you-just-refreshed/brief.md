@@ -21,4 +21,4 @@ The 2026 standard is not transformation. It is restoration. My goal is that peop
 Template exists (design/slides.html), needs photos
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

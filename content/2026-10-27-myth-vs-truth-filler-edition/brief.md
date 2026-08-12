@@ -21,4 +21,4 @@ MYTH: filler stretches your lips forever. TRUTH: treated well, your lips return 
 Single image: myth vs truth split card
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

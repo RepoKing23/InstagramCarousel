@@ -21,4 +21,4 @@ Nobody could tell. They just kept saying I looked happy and rested. That is the 
 Testimonial quote card (with consent)
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

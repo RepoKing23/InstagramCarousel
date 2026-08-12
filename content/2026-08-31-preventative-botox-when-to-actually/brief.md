@@ -10,7 +10,7 @@
 Your friend who never seems to age? This is why.
 
 ## Caption
-Lines are easier to prevent than to erase. Here is how to know if your late 20s or 30s is the right time to start, and when it is genuinely too early.
+Lines are easier to prevent than to erase. Here is how to know if your late 20s or 30s is the right time to start, and when it is honestly still too early. No pressure, just real timing.
 
 **CTA:** DM PREVENT for a consult
 
@@ -21,4 +21,4 @@ Lines are easier to prevent than to erase. Here is how to know if your late 20s 
 Design in editorial template
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

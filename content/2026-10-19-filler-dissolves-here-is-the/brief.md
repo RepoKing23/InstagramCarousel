@@ -10,7 +10,7 @@
 What they do not tell you about longevity.
 
 ## Caption
-Filler is not forever, and that is a feature, not a flaw. Here is how long each area really lasts and what maintenance actually looks like.
+Filler is not forever, and honestly, that is a good thing. Here is how long each area really lasts and what keeping it up actually looks like.
 
 **CTA:** Book your plan. Link in bio
 
@@ -21,4 +21,4 @@ Filler is not forever, and that is a feature, not a flaw. Here is how long each 
 Design timeline layout
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

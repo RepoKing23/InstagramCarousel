@@ -10,7 +10,7 @@
 Honest expectations, always.
 
 ## Caption
-Sagging skin, volume loss, texture. Botox is not the tool for everything, and I will always tell you what is.
+Sagging skin, volume loss, texture. Botox is not the tool for everything, and I would rather tell you that now than take your money and disappoint you.
 
 **CTA:** Save this
 
@@ -21,4 +21,4 @@ Sagging skin, volume loss, texture. Botox is not the tool for everything, and I 
 Single image: myth-vs-reality card
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

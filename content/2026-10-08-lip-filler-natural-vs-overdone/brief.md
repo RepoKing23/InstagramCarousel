@@ -21,4 +21,4 @@ Soft, balanced, still you. Here is what separates natural lip results from the d
 Design in editorial template + consented lip photos
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

@@ -21,4 +21,4 @@ Softened lines, full expression, and nobody can tell why you look so rested. Tha
 Single image: treatment photo + hook overlay in brand style
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

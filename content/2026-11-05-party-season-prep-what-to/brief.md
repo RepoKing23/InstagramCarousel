@@ -21,4 +21,4 @@ Work back from your event date and nothing is rushed, nothing is swollen, and ev
 Design in editorial template
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

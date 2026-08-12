@@ -21,4 +21,4 @@ Day 1 looks different from day 7. Here is the honest day-by-day so you know exac
 Design in editorial template
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

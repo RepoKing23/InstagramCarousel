@@ -21,4 +21,4 @@ I finally got my lips done and nobody said filler. They said I looked prettier a
 Testimonial card (with consent)
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

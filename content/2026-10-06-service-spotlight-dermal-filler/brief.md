@@ -21,4 +21,4 @@ Filler is not about changing your face. It is about restoring what time quietly 
 Single image: filler product or treatment photo + hook
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

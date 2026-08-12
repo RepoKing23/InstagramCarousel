@@ -21,4 +21,4 @@ Botox needs 2 weeks to settle. Filler needs up to 4. If you want to glow in the 
 Design holiday timeline layout
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

@@ -21,4 +21,4 @@ One syringe in the right place beats three in the wrong ones. Balance first, vol
 Single image: face-map diagram card
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

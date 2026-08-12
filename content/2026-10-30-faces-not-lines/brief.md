@@ -21,4 +21,4 @@ Chasing individual lines is old school. Balance and harmony are why my patients 
 Single image: philosophy card + portrait
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

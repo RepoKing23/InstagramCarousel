@@ -21,4 +21,4 @@ The calendar is filling and the season is here. Your December self will thank yo
 Single image: decorated clinic photo + hook
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

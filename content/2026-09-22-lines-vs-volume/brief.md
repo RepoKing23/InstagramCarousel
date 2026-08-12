@@ -21,4 +21,4 @@ Smile in the mirror. Movement lines need Botox. Lost volume needs filler. The an
 Single image: two-column explainer card
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

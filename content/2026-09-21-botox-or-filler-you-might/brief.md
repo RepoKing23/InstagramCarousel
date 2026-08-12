@@ -21,4 +21,4 @@ Half the DMs I get ask for the wrong treatment. Here is the simple way to know w
 Design in editorial template
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

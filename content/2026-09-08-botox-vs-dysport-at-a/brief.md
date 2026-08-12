@@ -21,4 +21,4 @@ Dysport kicks in faster and spreads wider. Botox is precise. The right one depen
 Single image: side-by-side comparison card
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

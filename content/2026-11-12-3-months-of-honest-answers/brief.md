@@ -21,4 +21,4 @@ Since August we have busted myths, answered your questions, and kept every promi
 Compile top slides from past carousels
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

@@ -21,4 +21,4 @@ Less than Instagram makes you think. Most natural results start with one syringe
 FAQ card in brand style
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

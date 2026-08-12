@@ -21,4 +21,4 @@ Day 3 it starts. Week 2 it settles. Month 3 it softens. Save this so you know ex
 Single image: timeline infographic card
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

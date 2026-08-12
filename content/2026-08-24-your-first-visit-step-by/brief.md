@@ -21,4 +21,4 @@ Nervous about your first appointment? Here is exactly what happens.
 Design in editorial template + treatment room photos
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

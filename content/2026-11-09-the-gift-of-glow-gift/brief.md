@@ -21,4 +21,4 @@ Give the people you love something they actually want. Luxury Beauty gift certif
 Design gift certificate reveal layout
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

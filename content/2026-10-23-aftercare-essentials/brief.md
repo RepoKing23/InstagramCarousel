@@ -21,4 +21,4 @@ Ice, no gym for 24 hours, sleep on your back, and message me with anything. That
 Single image: 4-point checklist card
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

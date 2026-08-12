@@ -21,4 +21,4 @@ If your consult is shorter than your coffee order, that is a problem. Save this 
 Single image: 3-point checklist card in brand style
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

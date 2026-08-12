@@ -21,4 +21,4 @@ Cannulas, numbing, and a plan drawn before we start. This is what careful looks 
 Single image: filler prep photo + hook
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

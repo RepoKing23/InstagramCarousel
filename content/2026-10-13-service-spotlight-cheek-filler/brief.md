@@ -21,4 +21,4 @@ Lifted, refreshed, never puffy. Cheek filler is quietly behind the most natural 
 Single image: cheek treatment photo + hook
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

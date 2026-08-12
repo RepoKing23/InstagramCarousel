@@ -21,4 +21,4 @@ Clean, quiet, and designed for you to feel safe asking anything. Come see it in 
 Single image: treatment room photo + hook
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

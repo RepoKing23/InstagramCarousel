@@ -21,4 +21,4 @@ Great work is invisible. Bad work is what gave Botox its reputation. Agree or di
 Quote card in editorial brand style
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

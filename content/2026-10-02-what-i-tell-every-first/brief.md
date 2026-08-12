@@ -21,4 +21,4 @@ You do not need to know the treatment names. You just need to show up honest abo
 Single image: Cleo photo + quote overlay
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

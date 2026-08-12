@@ -10,7 +10,7 @@
 Your face deserves better than a bargain.
 
 ## Caption
-A menu with no consultation, prices too good to be true, and nobody asking about your medical history. If you see these, walk away. Save this checklist before you book anywhere. 💛
+A menu with no consultation, prices too good to be true, and nobody asking about your medical history. If you see these, walk away. I want you safe, even if you never book with me. Save this checklist. 💛
 
 **CTA:** Save this checklist
 
@@ -21,4 +21,4 @@ A menu with no consultation, prices too good to be true, and nobody asking about
 Design in editorial template (sequel to Choosing the Right NP)
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.

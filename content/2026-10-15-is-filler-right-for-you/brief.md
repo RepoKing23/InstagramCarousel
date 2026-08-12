@@ -21,4 +21,4 @@ An honest provider will sometimes tell you not yet. Run through this checklist b
 Design in editorial template
 
 ---
-Drop the final image(s) for this post in this folder.
+Drop the final image(s) for this post in the images/ subfolder.
