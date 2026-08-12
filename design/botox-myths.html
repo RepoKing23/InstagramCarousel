@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Botox Myths — Editorial Carousel</title>
+<style>
+  @font-face { font-family:'Playfair Display'; src:url('fonts/PlayfairDisplay.ttf'); }
+  @font-face { font-family:'Pinyon Script'; src:url('fonts/PinyonScript-Regular.ttf'); }
+  @font-face { font-family:'Jost'; src:url('fonts/Jost.ttf'); }
+
+  :root{
+    --cream:#F3EEE5;
+    --cream-2:#EFE8DB;
+    --beige:#E5DCCA;
+    --taupe:#D3C7B0;
+    --ink:#2E2A23;
+    --ink-soft:#6E6557;
+    --hair:rgba(46,42,35,.4);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#888;}
+  .slide{
+    width:1080px;height:1350px;position:relative;overflow:hidden;
+    background:var(--cream);color:var(--ink);
+    font-family:'Jost',sans-serif;
+  }
+  /* layout classes below set display:flex/grid with equal specificity,
+     so non-active slides must be hidden with !important */
+  .slide:not(.active){display:none !important;}
+
+  /* soft sunlight wash */
+  .slide::after{
+    content:'';position:absolute;inset:0;pointer-events:none;
+    background:
+      linear-gradient(115deg, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 38%),
+      linear-gradient(295deg, rgba(96,84,63,.10) 0%, rgba(96,84,63,0) 45%);
+  }
+  .shadowplay{
+    position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background:
+      linear-gradient(63deg, transparent 62%, rgba(96,84,63,.12) 66%, transparent 74%),
+      linear-gradient(63deg, transparent 76%, rgba(96,84,63,.09) 80%, transparent 90%);
+  }
+
+  .label{font-size:25px;letter-spacing:.38em;text-transform:uppercase;font-weight:400;color:var(--ink);}
+  .label.soft{color:var(--ink-soft);}
+  .serif{font-family:'Playfair Display',serif;font-weight:500;}
+  .script{font-family:'Pinyon Script',cursive;font-weight:400;}
+  .body{font-size:31px;font-weight:300;letter-spacing:.05em;line-height:1.8;color:var(--ink-soft);}
+  .handle{font-size:23px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-soft);font-weight:300;}
+  .rule{height:1px;background:var(--hair);}
+  .arrow-circle{
+    width:76px;height:76px;border:1.5px solid var(--hair);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:34px;color:var(--ink);font-weight:300;
+  }
+
+  .photo{
+    position:relative;background:linear-gradient(160deg, #E2D8C4 0%, #D8CCB4 45%, #CBBDA1 100%);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .photo::before{
+    content:'';position:absolute;inset:0;
+    background:
+      radial-gradient(120% 90% at 18% 8%, rgba(255,255,255,.55) 0%, rgba(255,255,255,0) 55%),
+      linear-gradient(63deg, transparent 55%, rgba(96,84,63,.14) 60%, transparent 70%),
+      linear-gradient(63deg, transparent 72%, rgba(96,84,63,.10) 77%, transparent 88%);
+  }
+  .photo span{
+    position:relative;font-size:20px;letter-spacing:.35em;text-transform:uppercase;
+    color:rgba(90,78,58,.55);font-weight:400;text-align:center;line-height:2;
+  }
+
+  /* watermark number for myth slides */
+  .watermark{
+    position:absolute;top:44px;right:64px;
+    font-family:'Playfair Display',serif;font-size:300px;font-weight:500;
+    color:rgba(46,42,35,.06);line-height:1;pointer-events:none;
+  }
+
+  /* lie / truth blocks */
+  .lie-label{display:flex;align-items:center;gap:28px;}
+  .lie-label .rule{width:90px;}
+  .lie{font-family:'Playfair Display',serif;font-style:italic;font-weight:500;line-height:1.42;}
+  .truth-label{margin-top:76px;margin-bottom:34px;}
+
+  /* ---------- COVER ---------- */
+  .s-cover{padding:110px 96px;}
+  .s-cover .headline{margin-top:200px;}
+  .s-cover .h-serif{font-size:148px;line-height:1.06;letter-spacing:.02em;}
+  .s-cover .h-script{font-size:190px;line-height:.6;margin:20px 0 14px 240px;}
+  .s-cover .sub{margin-top:90px;font-size:29px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-soft);font-weight:300;line-height:2.1;}
+  .s-cover .footer{position:absolute;left:96px;right:96px;bottom:96px;display:flex;align-items:center;gap:36px;}
+  .s-cover .footer .rule{flex:1;}
+
+  /* ---------- MYTH: full editorial (cream) ---------- */
+  .s-mytha{padding:120px 96px;}
+  .s-mytha .lie{font-size:82px;margin-top:70px;max-width:820px;}
+  .s-mytha .truth{max-width:760px;}
+  .s-mytha .handle{position:absolute;bottom:96px;left:96px;}
+
+  /* ---------- MYTH: split with photo ---------- */
+  .s-mythb{display:flex;}
+  .s-mythb .content{width:56%;padding:120px 70px 96px 88px;display:flex;flex-direction:column;background:var(--beige);}
+  .s-mythb .lie{font-size:66px;margin-top:64px;}
+  .s-mythb .handle{margin-top:auto;}
+  .s-mythb .side{width:44%;position:relative;}
+  .s-mythb .side .photo{position:absolute;inset:0;}
+  .s-mythb.flip{flex-direction:row-reverse;}
+
+  /* ---------- MYTH: centered statement ---------- */
+  .s-mythc{display:flex;align-items:center;justify-content:center;text-align:center;}
+  .s-mythc .inner{padding:0 110px;width:100%;}
+  .s-mythc .lie-label{justify-content:center;}
+  .s-mythc .lie{font-size:88px;margin-top:64px;}
+  .s-mythc .truth{max-width:780px;margin:0 auto;}
+  .s-mythc .handle{position:absolute;bottom:88px;left:0;right:0;text-align:center;}
+
+  /* ---------- CTA ---------- */
+  .s-cta{display:flex;}
+  .s-cta .left{width:52%;background:var(--cream-2);padding:120px 70px 96px 88px;display:flex;flex-direction:column;}
+  .s-cta .h{font-size:92px;line-height:1.16;margin-top:60px;}
+  .s-cta .h .script{font-size:112px;}
+  .s-cta .vrule{width:1px;height:100px;background:var(--hair);margin:60px 0;}
+  .s-cta .lines{font-size:27px;letter-spacing:.24em;text-transform:uppercase;line-height:2.4;color:var(--ink-soft);font-weight:300;}
+  .s-cta .cta{margin-top:auto;}
+  .s-cta .cta .label{font-size:26px;}
+  .s-cta .cta .rule{margin-top:20px;width:360px;}
+  .s-cta .right{width:48%;}
+  .s-cta .right .photo{width:100%;height:100%;}
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 — COVER / HOOK -->
+<div class="slide s-cover" id="slide1">
+  <div class="shadowplay"></div>
+  <div class="label">Botox, Honestly &#8212; by NP Cleo</div>
+  <div class="headline">
+    <div class="h-serif serif">5 BOTOX</div>
+    <div class="h-script script">lies</div>
+    <div class="h-serif serif">YOU STILL<br>BELIEVE.</div>
+  </div>
+  <div class="sub">The truth, from a nurse injector.<br>Swipe before your next appointment.</div>
+  <div class="footer">
+    <div class="handle">@luxury_beauty_aestheticz</div>
+    <div class="rule"></div>
+    <div class="arrow-circle">&#8594;</div>
+  </div>
+</div>
+
+<!-- SLIDE 2 — LIE 01 -->
+<div class="slide s-mytha" id="slide2">
+  <div class="watermark">01</div>
+  <div class="lie-label"><div class="label soft">The Lie &#8212; 01</div><div class="rule"></div></div>
+  <div class="lie">&#8220;Botox will freeze my face.&#8221;</div>
+  <div class="truth-label label">The Truth</div>
+  <div class="truth body">Correct dosing softens movement &#8212; it doesn&#8217;t erase it. You&#8217;ll still smile, laugh, and look like you. Frozen faces come from heavy hands, not from Botox itself.</div>
+  <div class="handle">@luxury_beauty_aestheticz</div>
+</div>
+
+<!-- SLIDE 3 — LIE 02 -->
+<div class="slide s-mythb" id="slide3">
+  <div class="content">
+    <div class="lie-label"><div class="label soft">The Lie &#8212; 02</div><div class="rule"></div></div>
+    <div class="lie">&#8220;If I stop, my face will look worse.&#8221;</div>
+    <div class="truth-label label">The Truth</div>
+    <div class="truth body">You simply return to your baseline. Nothing snaps back, nothing ages faster. You just lose the smoothing &#8212; that&#8217;s all.</div>
+    <div class="handle">@luxury_beauty_aestheticz</div>
+  </div>
+  <div class="side"><div class="photo"><span>your photo<br>here</span></div></div>
+</div>
+
+<!-- SLIDE 4 — LIE 03 -->
+<div class="slide s-mythc" id="slide4">
+  <div class="shadowplay"></div>
+  <div class="inner">
+    <div class="lie-label"><div class="label soft">The Lie &#8212; 03</div></div>
+    <div class="lie">&#8220;It&#8217;s too early<br>for me.&#8221;</div>
+    <div class="truth-label label">The Truth</div>
+    <div class="truth body">Lines are easier to prevent than to erase. Preventative treatment in your late 20s and 30s is why some people never seem to age.</div>
+  </div>
+  <div class="handle">@luxury_beauty_aestheticz</div>
+</div>
+
+<!-- SLIDE 5 — LIE 04 -->
+<div class="slide s-mythb flip" id="slide5">
+  <div class="content">
+    <div class="lie-label"><div class="label soft">The Lie &#8212; 04</div><div class="rule"></div></div>
+    <div class="lie">&#8220;Botox always looks fake.&#8221;</div>
+    <div class="truth-label label">The Truth</div>
+    <div class="truth body">Great work is invisible &#8212; you&#8217;ve seen it a hundred times without knowing. Bad work is what gave Botox its reputation.</div>
+    <div class="handle">@luxury_beauty_aestheticz</div>
+  </div>
+  <div class="side"><div class="photo"><span>your photo<br>here</span></div></div>
+</div>
+
+<!-- SLIDE 6 — LIE 05 -->
+<div class="slide s-mytha" id="slide6">
+  <div class="watermark">05</div>
+  <div class="lie-label"><div class="label soft">The Lie &#8212; 05</div><div class="rule"></div></div>
+  <div class="lie">&#8220;Every injector is the same.&#8221;</div>
+  <div class="truth-label label">The Truth</div>
+  <div class="truth body">The product is identical everywhere. The artistry isn&#8217;t. Your results live in your injector&#8217;s hands &#8212; choose the hands carefully.</div>
+  <div class="handle">@luxury_beauty_aestheticz</div>
+</div>
+
+<!-- SLIDE 7 — CTA -->
+<div class="slide s-cta" id="slide7">
+  <div class="left">
+    <div class="label soft">Luxury Beauty by Cleo R</div>
+    <div class="h serif">Heard<br><span class="script">another</span> lie?</div>
+    <div class="vrule"></div>
+    <div class="lines">Ask NP Cleo.<br>Honest answers.<br>Natural results.</div>
+    <div class="cta"><div class="label">Book your consult &#8212; link in bio</div><div class="rule"></div></div>
+  </div>
+  <div class="right">
+    <div class="photo"><span>your photo<br>here</span></div>
+  </div>
+</div>
+
+<script>
+  const n = new URLSearchParams(location.search).get('slide') || '1';
+  document.getElementById('slide' + n).classList.add('active');
+  document.title = 'slide-' + n;
+</script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Luxury Beauty by Cleo R — Editorial Carousel</title>
+<style>
+  @font-face { font-family:'Playfair Display'; src:url('fonts/PlayfairDisplay.ttf'); }
+  @font-face { font-family:'Pinyon Script'; src:url('fonts/PinyonScript-Regular.ttf'); }
+  @font-face { font-family:'Jost'; src:url('fonts/Jost.ttf'); }
+
+  :root{
+    --cream:#F3EEE5;
+    --cream-2:#EFE8DB;
+    --beige:#E5DCCA;
+    --taupe:#D3C7B0;
+    --ink:#2E2A23;
+    --ink-soft:#6E6557;
+    --hair:rgba(46,42,35,.4);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#888;}
+  .slide{
+    width:1080px;height:1350px;position:relative;overflow:hidden;
+    background:var(--cream);color:var(--ink);
+    font-family:'Jost',sans-serif;
+  }
+  /* layout classes below set display:flex/grid with equal specificity,
+     so non-active slides must be hidden with !important */
+  .slide:not(.active){display:none !important;}
+
+  /* soft sunlight/shadow wash, like the reference */
+  .slide::after{
+    content:'';position:absolute;inset:0;pointer-events:none;
+    background:
+      linear-gradient(115deg, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 38%),
+      linear-gradient(295deg, rgba(96,84,63,.10) 0%, rgba(96,84,63,0) 45%);
+  }
+  .shadowplay{
+    position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background:
+      linear-gradient(63deg, transparent 62%, rgba(96,84,63,.12) 66%, transparent 74%),
+      linear-gradient(63deg, transparent 76%, rgba(96,84,63,.09) 80%, transparent 90%);
+  }
+
+  .label{
+    font-size:25px;letter-spacing:.38em;text-transform:uppercase;
+    font-weight:400;color:var(--ink);
+  }
+  .label.soft{color:var(--ink-soft);}
+  .serif{font-family:'Playfair Display',serif;font-weight:500;}
+  .script{font-family:'Pinyon Script',cursive;font-weight:400;}
+  .body{
+    font-size:30px;font-weight:300;letter-spacing:.06em;
+    line-height:1.85;color:var(--ink-soft);
+  }
+  .handle{
+    font-size:23px;letter-spacing:.3em;text-transform:uppercase;
+    color:var(--ink-soft);font-weight:300;
+  }
+  .rule{height:1px;background:var(--hair);}
+  .arrow-circle{
+    width:76px;height:76px;border:1.5px solid var(--hair);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:34px;color:var(--ink);font-weight:300;
+  }
+
+  /* photo placeholder */
+  .photo{
+    position:relative;background:
+      linear-gradient(160deg, #E2D8C4 0%, #D8CCB4 45%, #CBBDA1 100%);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .photo::before{
+    content:'';position:absolute;inset:0;
+    background:
+      radial-gradient(120% 90% at 18% 8%, rgba(255,255,255,.55) 0%, rgba(255,255,255,0) 55%),
+      linear-gradient(63deg, transparent 55%, rgba(96,84,63,.14) 60%, transparent 70%),
+      linear-gradient(63deg, transparent 72%, rgba(96,84,63,.10) 77%, transparent 88%);
+  }
+  .photo span{
+    position:relative;font-size:20px;letter-spacing:.35em;text-transform:uppercase;
+    color:rgba(90,78,58,.55);font-weight:400;text-align:center;line-height:2;
+  }
+
+  /* ---------- SLIDE 1 : COVER ---------- */
+  .s1{padding:110px 96px;}
+  .s1 .headline{margin-top:210px;}
+  .s1 .h-serif{font-size:150px;line-height:1.04;letter-spacing:.02em;}
+  .s1 .h-script{font-size:170px;line-height:.62;color:var(--ink);margin:14px 0 8px 130px;}
+  .s1 .sub{margin-top:96px;}
+  .s1 .footer{position:absolute;left:96px;right:96px;bottom:96px;display:flex;align-items:center;gap:36px;}
+  .s1 .footer .rule{flex:1;}
+
+  /* ---------- SLIDE 2 : QUOTE + PHOTO ---------- */
+  .s2{display:flex;}
+  .s2 .left{width:46%;padding:120px 70px 96px 88px;display:flex;flex-direction:column;}
+  .s2 .qmark{font-family:'Playfair Display',serif;font-size:120px;line-height:.5;margin-bottom:60px;}
+  .s2 .quote{font-family:'Playfair Display',serif;font-size:55px;line-height:1.5;font-weight:500;}
+  .s2 .quote em{font-family:'Pinyon Script',cursive;font-style:normal;font-size:66px;}
+  .s2 .left .handle{margin-top:auto;}
+  .s2 .right{width:54%;}
+  .s2 .right .photo{width:100%;height:100%;}
+
+  /* ---------- SLIDE 3 : NUMBERED STEPS ---------- */
+  .s3{display:flex;}
+  .s3 .left{width:56%;background:var(--beige);padding:110px 70px 96px 88px;display:flex;flex-direction:column;}
+  .s3 .h{font-size:78px;line-height:1.16;margin-top:54px;}
+  .s3 .h .script{font-size:96px;}
+  .s3 .steps{margin-top:88px;display:flex;flex-direction:column;gap:64px;}
+  .s3 .step{display:flex;gap:36px;align-items:baseline;}
+  .s3 .num{font-family:'Playfair Display',serif;font-size:46px;color:var(--ink-soft);min-width:76px;}
+  .s3 .step .t{font-size:27px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:12px;font-weight:400;}
+  .s3 .step .d{font-size:25px;font-weight:300;letter-spacing:.04em;line-height:1.6;color:var(--ink-soft);max-width:400px;}
+  .s3 .left .handle{margin-top:auto;}
+  .s3 .right{width:44%;position:relative;}
+  .s3 .right .photo{position:absolute;top:110px;bottom:110px;left:0;right:88px;}
+
+  /* ---------- SLIDE 4 : CENTER STATEMENT ---------- */
+  .s4{display:flex;align-items:center;justify-content:center;text-align:center;}
+  .s4 .inner{padding:0 120px;width:100%;}
+  .s4 .h{font-size:104px;line-height:1.2;margin:70px 0 26px;}
+  .s4 .h .script{font-size:120px;}
+  .s4 .sub{font-size:29px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-soft);font-weight:300;line-height:2;}
+  .s4 .cta{margin-top:120px;display:inline-block;}
+  .s4 .cta .label{font-size:27px;}
+  .s4 .cta .rule{margin-top:22px;}
+  .s4 .handle{position:absolute;bottom:88px;left:0;right:0;text-align:center;}
+
+  /* ---------- SLIDE 5 : PHOTO GRID ---------- */
+  .s5{padding:96px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:26px;}
+  .s5 .photo.tall{grid-row:1/3;}
+  .s5 .block{background:var(--beige);display:flex;flex-direction:column;justify-content:center;padding:70px 64px;}
+  .s5 .block .h{font-size:64px;line-height:1.22;margin-bottom:44px;}
+  .s5 .block .h .script{font-size:80px;}
+
+  /* ---------- SLIDE 6 : BEHIND THE BRAND / CTA ---------- */
+  .s6{display:flex;}
+  .s6 .left{width:52%;background:var(--cream-2);padding:120px 70px 96px 88px;display:flex;flex-direction:column;}
+  .s6 .h{font-size:86px;line-height:1.15;margin-top:60px;}
+  .s6 .h .script{font-size:102px;}
+  .s6 .vrule{width:1px;height:110px;background:var(--hair);margin:64px 0;}
+  .s6 .lines{font-size:27px;letter-spacing:.26em;text-transform:uppercase;line-height:2.4;color:var(--ink-soft);font-weight:300;}
+  .s6 .cta{margin-top:auto;}
+  .s6 .cta .label{font-size:26px;}
+  .s6 .cta .rule{margin-top:20px;width:340px;}
+  .s6 .right{width:48%;}
+  .s6 .right .photo{width:100%;height:100%;}
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 — COVER -->
+<div class="slide s1" id="slide1">
+  <div class="shadowplay"></div>
+  <div class="label">Med Spa Education</div>
+  <div class="headline">
+    <div class="h-serif serif">STILL</div>
+    <div class="h-script script">you,</div>
+    <div class="h-serif serif">JUST<br>REFRESHED.</div>
+  </div>
+  <div class="sub body">Natural results.<br>Honest education.<br>Quiet luxury.</div>
+  <div class="footer">
+    <div class="handle">@luxury_beauty_aestheticz</div>
+    <div class="rule"></div>
+    <div class="arrow-circle">&#8594;</div>
+  </div>
+</div>
+
+<!-- SLIDE 2 — QUOTE -->
+<div class="slide s2" id="slide2">
+  <div class="left">
+    <div class="qmark">&#8220;</div>
+    <div class="quote">You should still look like <em>you</em> — the well&#8209;rested, glowing version.</div>
+    <div class="handle">NP Cleo</div>
+  </div>
+  <div class="right">
+    <div class="photo"><span>your photo<br>here</span></div>
+  </div>
+</div>
+
+<!-- SLIDE 3 — 3 WAYS -->
+<div class="slide s3" id="slide3">
+  <div class="left">
+    <div class="label soft">The Approach</div>
+    <div class="h serif">3 ways I keep<br>it <span class="script">natural</span></div>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><div><div class="t">Conservative Dosing</div><div class="d">Less is the luxury. We can always add — never overdo.</div></div></div>
+      <div class="step"><div class="num">02</div><div><div class="t">Treat the Cause</div><div class="d">Facial balance over chasing individual lines.</div></div></div>
+      <div class="step"><div class="num">03</div><div><div class="t">Build Slowly</div><div class="d">Subtle refinement over sessions, never in one visit.</div></div></div>
+    </div>
+    <div class="handle">@luxury_beauty_aestheticz</div>
+  </div>
+  <div class="right">
+    <div class="photo"><span>your photo<br>here</span></div>
+  </div>
+</div>
+
+<!-- SLIDE 4 — STATEMENT -->
+<div class="slide s4" id="slide4">
+  <div class="shadowplay"></div>
+  <div class="inner">
+    <div class="label soft">The 2026 Standard</div>
+    <div class="h serif">RESTORATION<br><span class="script">over</span> TRANSFORMATION</div>
+    <div class="sub">You won&#8217;t look done.<br>You&#8217;ll look rested.</div>
+    <div class="cta"><div class="label">Book via link in bio</div><div class="rule"></div></div>
+  </div>
+  <div class="handle">@luxury_beauty_aestheticz</div>
+</div>
+
+<!-- SLIDE 5 — GRID -->
+<div class="slide s5" id="slide5">
+  <div class="photo tall"><span>your photo<br>here</span></div>
+  <div class="photo"><span>your photo<br>here</span></div>
+  <div class="block">
+    <div class="h serif">Glow <span class="script">with</span><br>purpose</div>
+    <div class="handle">@luxury_beauty_aestheticz</div>
+  </div>
+</div>
+
+<!-- SLIDE 6 — BEHIND THE GLOW / CTA -->
+<div class="slide s6" id="slide6">
+  <div class="left">
+    <div class="label soft">Luxury Beauty by Cleo R</div>
+    <div class="h serif">Behind<br><span class="script">the</span> glow</div>
+    <div class="vrule"></div>
+    <div class="lines">Real education.<br>Real results.<br>Real care.</div>
+    <div class="cta"><div class="label">Book your consult &#8212; link in bio</div><div class="rule"></div></div>
+  </div>
+  <div class="right">
+    <div class="photo"><span>your photo<br>here</span></div>
+  </div>
+</div>
+
+<script>
+  const n = new URLSearchParams(location.search).get('slide') || '1';
+  document.getElementById('slide' + n).classList.add('active');
+  document.title = 'slide-' + n;
+</script>
+</body>
+</html>
