@@ -3,22 +3,25 @@
 **Post date:** Saturday, August 29, 2026 (Week 2)
 **Format:** Single Image
 **Platforms:** IG + FB + TikTok photo
-**Pillar:** Trust & Proof
-**Theme:** Botox, Honestly (Launch)
+**Pillar:** Engagement
+**Theme:** Lines, Honestly (Launch)
 
 ## Hook
-Engagement post.
+Which one are you actually asking for?
 
 ## Caption
-When you picture your results, which one are you actually asking for? Vote below. 👇
+When you picture your results, which one is it? Vote below.
 
 **CTA:** Vote in the comments
 
-## Hashtags (Set C: Brand & Trust)
-#npinjector #nursepractitioner #medspalife #luxurybeauty #aestheticnurse #skincareexpert #beautyclinic #selfcare #naturalresults #honestbeauty
+## Hashtags (Set C: Trust & personality)
+#nursepractitioner #npinjector #aestheticnurse #medspalife #honestbeauty #naturalresults #selfcare #beautyclinic #oakvilleaesthetics #oakvillemedspa
 
 ## Visual / Asset
-Two-panel comparison card in brand style
+Two-panel comparison card
+
+## Compliance
+Compliant as written. No prescription brand name paired with a benefit claim.
 
 ## Design
 Style: Editorial (house style)

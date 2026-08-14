@@ -1,24 +1,27 @@
 # Quote: Book the Appointment
 
-**Post date:** Saturday, November 07, 2026 (Week 12)
+**Post date:** Saturday, November 7, 2026 (Week 12)
 **Format:** Single Image
 **Platforms:** IG + FB + TikTok photo
-**Pillar:** Promo & CTA
-**Theme:** Rested by the Holidays
+**Pillar:** Engagement
+**Theme:** Rested for the Season
 
 ## Hook
-Seasonal self-care push.
+Brand quote card.
 
 ## Caption
-You cannot pour from an empty cup. Book the appointment. Take the hour. You have earned it. 💛
+The one you have been thinking about since March.
 
-**CTA:** Link in bio
+**CTA:** Comment below
 
-## Hashtags (Set E: Promo & Seasonal)
-#holidayglow #treatyourself #giftcertificate #bookyourappointment #medspaspecial #glowupseason #selfcaregift #luxuryselfcare #holidayready #giftideas
+## Hashtags (Set D: Seasonal & gifting)
+#holidayglow #partyseasonprep #giftofglow #selfcaregift #aestheticnurse #nurseinjector #naturalresults #oakvilleaesthetics #oakvillemedspa #haltonregion
 
 ## Visual / Asset
-Quote card in brand style
+Quote card
+
+## Compliance
+Compliant as written. No prescription brand name paired with a benefit claim.
 
 ## Design
 Style: Editorial (house style)

@@ -4,21 +4,24 @@
 **Format:** Single Image
 **Platforms:** IG + FB + TikTok photo
 **Pillar:** Education
-**Theme:** Fillers, Naturally
+**Theme:** Filler, Understood
 
 ## Hook
-What happens as it fades.
+Day 1 to month 12.
 
 ## Caption
-Filler does not vanish overnight and you will not deflate. It softens slowly, on a schedule you can plan around.
+Swelling, settling, the two-week check, and how long it genuinely lasts. Bookmark this before you book.
 
-**CTA:** Save this
+**CTA:** Save the timeline
 
-## Hashtags (Set B: Filler)
-#dermalfiller #lipfiller #cheekfiller #naturalfiller #facialbalancing #lipfillernatural #aestheticnurse #medspa #fillerjourney #lipgoals
+## Hashtags (Set B: Filler & facial balancing)
+#dermalfiller #lipfiller #cheekfiller #facialbalancing #nurseinjector #naturallips #subtleenhancement #aestheticnurse #oakvilleaesthetics #oakvillemedspa
 
 ## Visual / Asset
-Single image: timeline infographic card
+Single image: timeline graphic
+
+## Compliance
+Compliant as written. No prescription brand name paired with a benefit claim.
 
 ## Design
 Style: Editorial (house style)

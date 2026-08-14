@@ -4,21 +4,24 @@
 **Format:** Single Image
 **Platforms:** IG + FB + TikTok photo
 **Pillar:** Personality & BTS
-**Theme:** Botox, Honestly (Launch)
+**Theme:** Lines, Honestly (Launch)
 
 ## Hook
 Where calm meets careful.
 
 ## Caption
-Clean, quiet, and designed for you to feel safe asking anything. Come see it in person. 💛
+Clean, quiet, and designed for you to feel safe asking anything. Come see it in person.
 
 **CTA:** Book a visit. Link in bio
 
-## Hashtags (Set C: Brand & Trust)
-#npinjector #nursepractitioner #medspalife #luxurybeauty #aestheticnurse #skincareexpert #beautyclinic #selfcare #naturalresults #honestbeauty
+## Hashtags (Set C: Trust & personality)
+#nursepractitioner #npinjector #aestheticnurse #medspalife #honestbeauty #naturalresults #selfcare #beautyclinic #oakvilleaesthetics #oakvillemedspa
 
 ## Visual / Asset
 Single image: treatment room photo + hook
+
+## Compliance
+Compliant as written. No prescription brand name paired with a benefit claim.
 
 ## Design
 Style: Editorial (house style)

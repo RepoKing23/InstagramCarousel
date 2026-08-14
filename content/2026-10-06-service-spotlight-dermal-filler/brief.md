@@ -1,24 +1,27 @@
 # Service Spotlight: Dermal Filler
 
-**Post date:** Tuesday, October 06, 2026 (Week 8)
+**Post date:** Tuesday, October 6, 2026 (Week 8)
 **Format:** Single Image
 **Platforms:** IG + FB + TikTok photo
 **Pillar:** Education
-**Theme:** Fillers, Naturally
+**Theme:** Filler, Understood
 
 ## Hook
-Volume where you lost it. Nowhere else.
+Support, not stuffing.
 
 ## Caption
-Filler is not about changing your face. It is about restoring what time quietly took. October is filler month. 👀
+Filler replaces structure that has softened. Placed properly it reads as rest, not as work.
 
-**CTA:** DM FILLER to start
+**CTA:** DM FILLER to ask
 
-## Hashtags (Set B: Filler)
-#dermalfiller #lipfiller #cheekfiller #naturalfiller #facialbalancing #lipfillernatural #aestheticnurse #medspa #fillerjourney #lipgoals
+## Hashtags (Set B: Filler & facial balancing)
+#dermalfiller #lipfiller #cheekfiller #facialbalancing #nurseinjector #naturallips #subtleenhancement #aestheticnurse #oakvilleaesthetics #oakvillemedspa
 
 ## Visual / Asset
-Single image: filler product or treatment photo + hook
+Single image: treatment photo + hook
+
+## Compliance
+Compliant as written. No prescription brand name paired with a benefit claim.
 
 ## Design
 Style: Editorial (house style)

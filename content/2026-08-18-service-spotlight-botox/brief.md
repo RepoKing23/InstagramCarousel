@@ -1,24 +1,27 @@
-# Service Spotlight: Botox
+# Service Spotlight: Anti-Wrinkle Injections
 
 **Post date:** Tuesday, August 18, 2026 (Week 1)
 **Format:** Single Image
 **Platforms:** IG + FB + TikTok photo
 **Pillar:** Education
-**Theme:** Botox, Honestly (Launch)
+**Theme:** Lines, Honestly (Launch)
 
 ## Hook
 Smooth, not frozen.
 
 ## Caption
-Softened lines, full expression, and nobody can tell why you look so rested. That is Botox done right. ✨
+Softened lines, full expression, and nobody can tell why you look so rested. That is this treatment done properly.
 
-**CTA:** DM BOTOX to book
+**CTA:** DM SMOOTH to book
 
-## Hashtags (Set A: Botox Education)
-#botox #botoxeducation #botoxmyths #preventativebotox #antiwrinkleinjections #nurseinjector #medspa #naturalbotox #botoxbeforeandafter #aestheticnurse
+## Hashtags (Set A: Anti-wrinkle education)
+#antiwrinkleinjections #wrinklerelaxer #nurseinjector #aestheticnurse #naturalresults #preventativeaesthetics #facialaesthetics #oakvilleaesthetics #oakvillemedspa #haltonregion
 
 ## Visual / Asset
-Single image: treatment photo + hook overlay in brand style
+Single image: treatment photo + hook overlay. ALREADY DESIGNED.
+
+## Compliance
+Copy is compliant, but the finished artwork still carries a prescription brand name. Re-render the slide before this posts.
 
 ## Design
 Style: Editorial (house style)

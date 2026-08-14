@@ -1,24 +1,27 @@
 # Lip Filler: Natural vs Overdone
 
-**Post date:** Thursday, October 08, 2026 (Week 8)
-**Format:** Carousel
-**Platforms:** Instagram feed
-**Pillar:** Education
-**Theme:** Fillers, Naturally
+**Post date:** Thursday, October 8, 2026 (Week 8)
+**Format:** Single Image
+**Platforms:** IG + FB + TikTok photo
+**Pillar:** Trust & Proof
+**Theme:** Filler, Understood
 
 ## Hook
-The difference is the injector.
+The difference is the plan.
 
 ## Caption
-Soft, balanced, still you. Here is what separates natural lip results from the duck lips everyone fears, and the questions to ask before anyone touches your lips.
+Volume without a plan is how lips end up looking done. Here is what changes when there is one.
 
-**CTA:** Save before you book anywhere
+**CTA:** DM LIPS to talk
 
-## Hashtags (Set B: Filler)
-#dermalfiller #lipfiller #cheekfiller #naturalfiller #facialbalancing #lipfillernatural #aestheticnurse #medspa #fillerjourney #lipgoals
+## Hashtags (Set B: Filler & facial balancing)
+#dermalfiller #lipfiller #cheekfiller #facialbalancing #nurseinjector #naturallips #subtleenhancement #aestheticnurse #oakvilleaesthetics #oakvillemedspa
 
 ## Visual / Asset
-Design in editorial template + consented lip photos
+ALREADY DESIGNED — image in this folder
+
+## Compliance
+Compliant as written. No prescription brand name paired with a benefit claim.
 
 ## Design
 Style: Editorial (house style)

@@ -4,21 +4,24 @@
 **Format:** Single Image
 **Platforms:** IG + FB + TikTok photo
 **Pillar:** Education
-**Theme:** Fillers, Naturally
+**Theme:** Filler, Understood
 
 ## Hook
-The lift nobody talks about.
+Structure, not volume.
 
 ## Caption
-Lifted, refreshed, never puffy. Cheek filler is quietly behind the most natural glow-ups you have seen.
+Support where the face has flattened. The result reads as rested rather than fuller.
 
-**CTA:** DM CHEEKS to learn more
+**CTA:** DM CHEEKS to ask
 
-## Hashtags (Set B: Filler)
-#dermalfiller #lipfiller #cheekfiller #naturalfiller #facialbalancing #lipfillernatural #aestheticnurse #medspa #fillerjourney #lipgoals
+## Hashtags (Set B: Filler & facial balancing)
+#dermalfiller #lipfiller #cheekfiller #facialbalancing #nurseinjector #naturallips #subtleenhancement #aestheticnurse #oakvilleaesthetics #oakvillemedspa
 
 ## Visual / Asset
-Single image: cheek treatment photo + hook
+Single image: treatment photo
+
+## Compliance
+Compliant as written. No prescription brand name paired with a benefit claim.
 
 ## Design
 Style: Editorial (house style)

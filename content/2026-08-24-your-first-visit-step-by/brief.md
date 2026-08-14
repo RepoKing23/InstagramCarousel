@@ -1,24 +1,27 @@
 # Your First Visit, Step by Step
 
 **Post date:** Monday, August 24, 2026 (Week 2)
-**Format:** Carousel
-**Platforms:** Instagram feed
+**Format:** Single Image
+**Platforms:** IG + FB + TikTok photo
 **Pillar:** Education
-**Theme:** Botox, Honestly (Launch)
+**Theme:** Lines, Honestly (Launch)
 
 ## Hook
 Nervous about your first appointment? Here is exactly what happens.
 
 ## Caption
-80 percent of first-timers tell me they waited years because they did not know what to expect. Consider this your preview. Send it to the friend who keeps saying one day.
+Most first-timers tell me they waited years because they did not know what to expect. Consider this your preview. Send it to the friend who keeps saying one day.
 
 **CTA:** Book your consult. Link in bio
 
-## Hashtags (Set C: Brand & Trust)
-#npinjector #nursepractitioner #medspalife #luxurybeauty #aestheticnurse #skincareexpert #beautyclinic #selfcare #naturalresults #honestbeauty
+## Hashtags (Set C: Trust & personality)
+#nursepractitioner #npinjector #aestheticnurse #medspalife #honestbeauty #naturalresults #selfcare #beautyclinic #oakvilleaesthetics #oakvillemedspa
 
 ## Visual / Asset
-Design in editorial template + treatment room photos
+Editorial template + treatment room photos
+
+## Compliance
+Compliant as written. No prescription brand name paired with a benefit claim.
 
 ## Design
 Style: Editorial (house style)

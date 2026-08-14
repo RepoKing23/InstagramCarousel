@@ -4,21 +4,24 @@
 **Format:** Single Image
 **Platforms:** IG + FB + TikTok photo
 **Pillar:** Education
-**Theme:** Botox, Honestly (Launch)
+**Theme:** Lines, Honestly (Launch)
 
 ## Hook
 Protect yourself before you book.
 
 ## Caption
-If your consult is shorter than your coffee order, that is a problem. Save this checklist and trust your gut.
+If your consult is shorter than your coffee order, that is a problem. Save this and trust your gut.
 
 **CTA:** Save + share this
 
-## Hashtags (Set A: Botox Education)
-#botox #botoxeducation #botoxmyths #preventativebotox #antiwrinkleinjections #nurseinjector #medspa #naturalbotox #botoxbeforeandafter #aestheticnurse
+## Hashtags (Set C: Trust & personality)
+#nursepractitioner #npinjector #aestheticnurse #medspalife #honestbeauty #naturalresults #selfcare #beautyclinic #oakvilleaesthetics #oakvillemedspa
 
 ## Visual / Asset
-Single image: 3-point checklist card in brand style
+Single image: 3-point checklist card
+
+## Compliance
+Compliant as written. No prescription brand name paired with a benefit claim.
 
 ## Design
 Style: Editorial (house style)

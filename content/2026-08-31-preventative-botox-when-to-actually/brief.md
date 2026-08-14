@@ -1,24 +1,27 @@
-# Preventative Botox: When to Actually Start
+# Preventative Treatment: When to Actually Start
 
 **Post date:** Monday, August 31, 2026 (Week 3)
 **Format:** Carousel
 **Platforms:** Instagram feed
 **Pillar:** Education
-**Theme:** Botox, Honestly (Launch)
+**Theme:** Lines, Honestly (Launch)
 
 ## Hook
 Your friend who never seems to age? This is why.
 
 ## Caption
-Lines are easier to prevent than to erase. Here is how to know if your late 20s or 30s is the right time to start, and when it is honestly still too early. No pressure, just real timing.
+Lines are easier to prevent than to erase. Here is how to know if your late 20s or 30s is the right time, and when it is honestly still too early. No pressure, just real timing.
 
 **CTA:** DM PREVENT for a consult
 
-## Hashtags (Set A: Botox Education)
-#botox #botoxeducation #botoxmyths #preventativebotox #antiwrinkleinjections #nurseinjector #medspa #naturalbotox #botoxbeforeandafter #aestheticnurse
+## Hashtags (Set A: Anti-wrinkle education)
+#antiwrinkleinjections #wrinklerelaxer #nurseinjector #aestheticnurse #naturalresults #preventativeaesthetics #facialaesthetics #oakvilleaesthetics #oakvillemedspa #haltonregion
 
 ## Visual / Asset
-Design in editorial template
+Editorial template
+
+## Compliance
+Compliant as written. No prescription brand name paired with a benefit claim.
 
 ## Design
 Style: Editorial (house style)

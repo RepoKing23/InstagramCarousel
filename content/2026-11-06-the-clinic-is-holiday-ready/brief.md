@@ -1,24 +1,27 @@
 # The Clinic Is Holiday Ready
 
-**Post date:** Friday, November 06, 2026 (Week 12)
+**Post date:** Friday, November 6, 2026 (Week 12)
 **Format:** Single Image
 **Platforms:** IG + FB + TikTok photo
 **Pillar:** Personality & BTS
-**Theme:** Rested by the Holidays
+**Theme:** Rested for the Season
 
 ## Hook
-Glow-up season is officially open.
+Quietly festive.
 
 ## Caption
-The calendar is filling and the season is here. Your December self will thank your November self. ✨
+Same calm room, slightly better candle. Come in from the cold.
 
-**CTA:** Book your spot
+**CTA:** Book a visit. Link in bio
 
-## Hashtags (Set E: Promo & Seasonal)
-#holidayglow #treatyourself #giftcertificate #bookyourappointment #medspaspecial #glowupseason #selfcaregift #luxuryselfcare #holidayready #giftideas
+## Hashtags (Set D: Seasonal & gifting)
+#holidayglow #partyseasonprep #giftofglow #selfcaregift #aestheticnurse #nurseinjector #naturalresults #oakvilleaesthetics #oakvillemedspa #haltonregion
 
 ## Visual / Asset
-Single image: decorated clinic photo + hook
+Treatment room photo, seasonal
+
+## Compliance
+Compliant as written. No prescription brand name paired with a benefit claim.
 
 ## Design
 Style: Editorial (house style)

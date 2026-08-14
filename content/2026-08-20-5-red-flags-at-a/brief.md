@@ -4,21 +4,24 @@
 **Format:** Carousel
 **Platforms:** Instagram feed
 **Pillar:** Trust & Proof
-**Theme:** Botox, Honestly (Launch)
+**Theme:** Lines, Honestly (Launch)
 
 ## Hook
 Your face deserves better than a bargain.
 
 ## Caption
-A menu with no consultation, prices too good to be true, and nobody asking about your medical history. If you see these, walk away. I want you safe, even if you never book with me. Save this checklist. 💛
+A menu with no consultation, prices too good to be true, and nobody asking about your medical history. If you see these, walk away. I want you safe, even if you never book with me. Save this checklist.
 
 **CTA:** Save this checklist
 
-## Hashtags (Set C: Brand & Trust)
-#npinjector #nursepractitioner #medspalife #luxurybeauty #aestheticnurse #skincareexpert #beautyclinic #selfcare #naturalresults #honestbeauty
+## Hashtags (Set C: Trust & personality)
+#nursepractitioner #npinjector #aestheticnurse #medspalife #honestbeauty #naturalresults #selfcare #beautyclinic #oakvilleaesthetics #oakvillemedspa
 
 ## Visual / Asset
-Design in editorial template (sequel to Choosing the Right NP)
+Design in editorial template
+
+## Compliance
+Compliant as written. No prescription brand name paired with a benefit claim.
 
 ## Design
 Style: Editorial (house style)
