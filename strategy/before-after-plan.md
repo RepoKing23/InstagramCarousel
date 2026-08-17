@@ -7,8 +7,9 @@ plus a corrected audit of the 20 client photos in `design/photos/cleo/`.
 
 ## Part 1. Photo audit — what we actually have
 
-I opened all 20 photos and grouped them by client. The result differs from the
-current `design/photos/cleo/README.md` in four places (flagged below).
+I opened all 20 photos and grouped them by client. The result differed from the
+original `design/photos/cleo/README.md` in four places (flagged below), and Cleo
+later corrected a fifth — see the correction log.
 
 ### Distinct clients: 7
 
@@ -19,7 +20,7 @@ current `design/photos/cleo/README.md` in four places (flagged below).
 | C | Blonde, reclined in chair, black tank | `img_1119`, `img_1123` | **Before + after pair** |
 | D | Blonde, pearl earring, mole on chin | `img_1444`, `img_1447` | Pair, but direction unclear |
 | E | Fair skin, black top, lower face only | `img_9908`, `img_9912` | **Before + after pair** |
-| F | Yellow headband, day 0 | `img_9848`, `img_9850`, `whatsapp-…10.14.36-pm` | After only, 2 angles |
+| F | Yellow headband | `img_9848`, `img_9850` (+ `whatsapp-…10.14.36-pm`) | **Before + after pair**, plus Cleo's collage of the after |
 | G | Dark hair, salon corner, beige top | `img_4775`, `4777`, `4778`, `4780`, `4781`, `4782` | After only, 6 angles, healed |
 | H | Dark hair, reclined, black top + chain | `img_7715` | After only, day 0 |
 
@@ -36,16 +37,19 @@ current `design/photos/cleo/README.md` in four places (flagged below).
 3. **"All 20 photos are lower face" is wrong.** The `img_4775`–`4782` set is
    full face, including brows and eyes. (The README contradicts itself two
    paragraphs later.) It matters for consent.
-4. **The WhatsApp composite is not a before/after.** Both halves show the
-   yellow headband and day-0 swelling — it is one client, two angles, after
-   only. Safe as a result card, misleading if labelled Before/After.
+4. **The WhatsApp composite is not a before/after.** Its left panel is
+   `img_9850` with the background removed and its right panel is a photo that is
+   not in the folder — both are afters. Safe as a result card, misleading if
+   labelled Before/After. The real before/after for this client is the
+   `img_9848` / `img_9850` pair (see the correction log below).
 
 ### Answer: how many before/afters can we make
 
-**Four publishable pairs, plus one to confirm with Cleo.**
+**Five publishable pairs, plus one to confirm with Cleo.**
 
 | Pair | Photos | Strength | Gate |
 |---|---|---|---|
+| F | `img_9848` → `img_9850` | ★★★ Best matched. Same camera position, minutes apart. | After has injection marks, so it is a day-zero pair. Label "Right after" |
 | E | `img_9908` → `img_9912` | ★★★ Cleanest. No identifying features. | None. Already rendered for Oct 8 |
 | A | `img_0221` → `img_0233` | ★★★ Biggest visible change, front-on | Neck tattoos identify her — written consent or crop above the collarbone |
 | B | `img_0962` → `img_0998` | ★★ Strong change, lower face only | Colour-match: before is cool, after is warm |
@@ -59,8 +63,8 @@ Every pair is high enough resolution for the template (each frame renders at
 
 - **Client G** (6 angles, healed, full face) — a "one result, every angle"
   carousel or a testimonial card. Needs written consent, full face.
-- **Clients F + H** (day 0, swollen, injection marks visible) — the honest
-  aftercare post where swelling is the teaching point, not a results post.
+- **Client H** `img_7715` plus the WhatsApp composite (day 0, swollen, marks
+  visible) — the honest aftercare post where swelling is the teaching point.
 
 ---
 
@@ -78,8 +82,8 @@ Seven photo-backed posts, four of them carousels, using **all 20 photos**:
 |---|---|---|---|---|
 | Oct 8 (Thu) | Lip Filler: Natural vs Overdone | unchanged topic, result slide added | Carousel | Pair E — `9908`, `9912` |
 | Oct 10 (Sat) | Quote: Subtle Is the New Dramatic | **Subtle Is the New Dramatic** — the quote proved with a real result | **Before/After** | Pair C — `1119`, `1123` |
-| Oct 15 (Thu) | Is Filler Right for You? | **Real Lips. Real Results.** cover + 4 result slides + CTA | Carousel | Pairs E, A, B, C |
-| Oct 22 (Thu) | Lip Filler Aftercare: Your First Week | unchanged topic, day-0 photos added | Carousel | `7715`, `9848`, `9850`, composite |
+| Oct 15 (Thu) | Is Filler Right for You? | **Real Lips. Real Results.** cover + 5 result slides + CTA | Carousel | Pairs E, A, B, C, F |
+| Oct 22 (Thu) | Lip Filler Aftercare: Your First Week | unchanged topic, day-zero card added | Carousel | Pair F + `7715`, composite |
 | Oct 24 (Sat) | Client Words: The Lip Glow-Up | testimonial backed by the result | **Before/After** | Pair B — `0962`, `0998` |
 | Oct 30 (Fri) | Faces, Not Lines | **One Syringe. Balanced Lips.** | **Before/After** | Pair A — `0221`, `0233` |
 | Nov 6 (Fri) | The Clinic Is Holiday Ready | **One Result, Every Angle** | Carousel | Client G — `4775`–`4782` |
@@ -145,6 +149,14 @@ Steps 1 and 3–4 need nothing from Cleo. Step 2 gates only the pair-A and
 client-G posts; pairs B, C and E can be built immediately.
 
 ---
+
+## Correction log
+
+Cleo confirmed `img_9848` is a **before**, which reclassified the whole yellow-
+headband set: `img_9850` is its after from the same appointment, and the
+WhatsApp file is her own collage built from `img_9850` plus a photo not in the
+repo. That took the library from four usable pairs to five. The original photo
+README had `img_9848` filed as a day-0 after.
 
 ## Open question for Cleo
 

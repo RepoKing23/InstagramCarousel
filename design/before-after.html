@@ -132,6 +132,15 @@ const SLIDES = [
     bullets:['Balanced upper and lower lip','Definition through the lip line',
              'Placed where her lip needed it','One syringe, about 30 minutes'],
     cta:'Book a consult &#183; Link in bio' },
+
+  { /* 5 — Oct 22, pair F. Shot minutes apart, so the after still has swelling
+         and pinpoint marks. Tagged "Right after", never "After". */
+    label:'Same Appointment &#183; Minutes Apart',
+    serif:'THIS IS DAY', script:'zero.',
+    before:C+'img_9848.jpg', after:C+'img_9850.jpg', afterTag:'Right after',
+    bullets:['An upper lip that finally has a border','Balanced against her lower lip',
+             'Swelling and pinpoint marks are normal','Settles over 10 to 14 days'],
+    cta:'Save for aftercare' },
 ];
 
 const n = parseInt(new URLSearchParams(location.search).get('slide') || '1', 10);
@@ -155,7 +164,7 @@ document.getElementById('stage').innerHTML = `
   </div>
   <div class="pair">
     <div class="frame"><img src="${s.before}" alt="Before"><div class="tag">Before</div></div>
-    <div class="frame"><img src="${s.after}" alt="After"><div class="tag">After</div></div>
+    <div class="frame"><img src="${s.after}" alt="After"><div class="tag">${s.afterTag || 'After'}</div></div>
   </div>
   <div class="foot">
     ${body}

@@ -18,10 +18,10 @@ Day 1 looks different from day 7. Here is the honest day-by-day so you know exac
 #dermalfiller #lipfiller #cheekfiller #naturalfiller #facialbalancing #lipfillernatural #aestheticnurse #medspa #fillerjourney #lipgoals
 
 ## Visual / Asset
-Carousel: day by day, with real day 0 photos. Crop to treatment area, no faces
+Carousel: day by day. Day zero card built from the img_9848 / img_9850 pair. Crop to treatment area, no faces
 
 ## Photos
-Files: img_7715, img_9848, img_9850, whatsapp composite
+Files: img_9848 (before) + img_9850 (right after); img_7715, whatsapp composite
 Consent: On file
 
 Day 0 photos where the swelling is the teaching point, not

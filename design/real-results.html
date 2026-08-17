@@ -101,7 +101,11 @@ const RESULTS = [
   { before:C+'img_1119.jpg', after:C+'img_1123.jpg',
     serif:'RESULT', script:'four.',
     note:'The subtle one. If you have to look twice to see it, that is the work doing its job.' },
+  { before:C+'img_9848.jpg', after:C+'img_9850.jpg', afterTag:'Right after',
+    serif:'RESULT', script:'five.',
+    note:'Shot minutes apart, swelling and pinpoint marks included. Day zero is honest, not finished.' },
 ];
+const TOTAL = RESULTS.length;
 
 const n = parseInt(new URLSearchParams(location.search).get('slide') || '1', 10);
 const mono = '<img class="monogram" src="brand/logo-monogram.png" width="104" alt="LB">';
@@ -112,7 +116,7 @@ if (n === 1) {
   html = `<div class="slide active cover">
     ${mono}
     <div class="head">
-      <div class="label">Four Clients &#183; One Syringe Each</div>
+      <div class="label">Five Clients &#183; One Syringe Each</div>
       <div style="margin-top:30px">
         <div class="serif">REAL LIPS.</div>
         <div class="script">real results.</div>
@@ -127,7 +131,7 @@ if (n === 1) {
     <div class="swipe">Swipe &#8594;</div>
     ${disc}
   </div>`;
-} else if (n >= 2 && n <= 5) {
+} else if (n >= 2 && n <= TOTAL + 1) {
   const r = RESULTS[n - 2];
   html = `<div class="slide active">
     ${mono}
@@ -140,13 +144,13 @@ if (n === 1) {
     </div>
     <div class="pair">
       <div class="frame"><img src="${r.before}" alt="Before"><div class="tag">Before</div></div>
-      <div class="frame"><img src="${r.after}" alt="After"><div class="tag">After</div></div>
+      <div class="frame"><img src="${r.after}" alt="After"><div class="tag">${r.afterTag || 'After'}</div></div>
     </div>
     <div class="foot">
       <div class="note">${r.note}</div>
       <div class="rule"></div>
       <div class="row">
-        <div class="count">${n - 1} of 4</div>
+        <div class="count">${n - 1} of ${TOTAL}</div>
         <div class="handle">@luxury_beauty_aestheticz</div>
       </div>
     </div>

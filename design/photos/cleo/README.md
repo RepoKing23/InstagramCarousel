@@ -39,6 +39,17 @@ Blonde, reclined in the chair, same session. Real, natural change. The before
 frame includes her eyes, so crop to the lower face. White balance differs
 sharply between the two; correct before publishing.
 
+**Pair F — `img_9848` (before) + `img_9850` (right after)** ★ best matched
+Yellow headband. Shot minutes apart in the same appointment from almost the same
+camera position, which makes this the most technically honest pair in the
+library. The after still has swelling and pinpoint injection marks, so **label
+it "Right after", never "After"** — it is day zero, not a settled result. Best
+used where that is the point, like the aftercare post.
+
+The WhatsApp composite is Cleo's own result collage of this same client: its
+left panel is `img_9850` with the background removed, and its right panel is a
+photo that is not in this folder.
+
 **Pair D — `img_1444` / `img_1447`** — on hold
 Same client, but the change is not legible at post size and the before/after
 direction is unconfirmed. Do not publish until Cleo says which is which.
@@ -51,18 +62,13 @@ One client, six angles, healed and settled. The strongest natural-result
 showcase in the library. Shot full face including brows and eyes, so these need
 tight lower-face crops.
 
-**Client F — `img_9848`, `img_9850`, `whatsapp-image-2026-08-13-at-10.14.36-pm`**
-Yellow headband, day 0. Swollen, glossy, injection marks visible. The WhatsApp
-file is a two-angle composite of this same session with the LB monogram already
-on it — it is an after-only result card, not a before and after, despite
-looking like one.
-
 **Client H — `img_7715`**
-Reclined, day 0, heavily swollen.
+Reclined, day 0, heavily swollen. No before.
 
-Clients F and H are wrong for natural-results messaging — swelling reads as
-overdone to anyone who does not know it settles. They are right for an aftercare
-or what-day-1-looks-like post where the swelling is the teaching point.
+Day-0 photos (`img_9850`, `img_7715`, the composite) are wrong for
+natural-results messaging — swelling reads as overdone to anyone who does not
+know it settles. They are right for an aftercare or what-day-1-looks-like post
+where the swelling is the teaching point.
 
 ## Where these are used
 

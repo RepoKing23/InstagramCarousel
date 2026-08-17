@@ -18,10 +18,10 @@ No filters, no angles, no tricks. Four real clients, one syringe each, photograp
 #dermalfiller #lipfiller #cheekfiller #naturalfiller #facialbalancing #lipfillernatural #aestheticnurse #medspa #fillerjourney #lipgoals
 
 ## Visual / Asset
-Carousel: cover + 4 before and after slides + CTA. Crop to treatment area, no faces
+Carousel: cover + 5 before and after slides + CTA. Crop to treatment area, no faces
 
 ## Photos
-Files: Pairs: 9908/9912, 0221/0233, 0962/0998, 1119/1123
+Files: Pairs: 9908/9912, 0221/0233, 0962/0998, 1119/1123, 9848/9850
 Consent: On file
 
 Four pairs, one per slide. Order them strongest first:

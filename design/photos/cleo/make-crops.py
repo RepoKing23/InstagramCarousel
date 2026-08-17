@@ -18,6 +18,8 @@ CROPS = {
     'img_0998': (0.00, 0.16, 0.78, 0.80),
     'img_1119': (0.18, 0.46, 0.62, 0.78),
     'img_1123': (0.32, 0.14, 0.80, 0.48),
+    'img_9848': (0.26, 0.12, 0.78, 0.68),
+    'img_9850': (0.15, 0.00, 0.90, 1.00),
     'img_9908': (0.22, 0.16, 0.92, 0.72),
     'img_9912': (0.02, 0.14, 0.90, 0.88),
     'img_4775': (0.22, 0.30, 0.82, 0.56),
@@ -30,7 +32,8 @@ CROPS = {
 
 # Pairs shot under different lighting. Both frames get pulled to the midpoint so
 # neither the before nor the after is flattered.
-COLOUR_MATCH = [('img_1119', 'img_1123'), ('img_0962', 'img_0998')]
+COLOUR_MATCH = [('img_1119', 'img_1123'), ('img_0962', 'img_0998'),
+                ('img_9848', 'img_9850')]
 
 ASPECT = 450 / 520  # template frame
 
