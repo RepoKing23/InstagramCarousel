@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>One Result, Every Angle — Carousel</title>
+<style>
+  @font-face { font-family:'Playfair Display'; src:url('fonts/PlayfairDisplay.ttf'); }
+  @font-face { font-family:'Pinyon Script'; src:url('fonts/PinyonScript-Regular.ttf'); }
+  @font-face { font-family:'Jost'; src:url('fonts/Jost.ttf'); }
+
+  :root{ --cream:#F3EEE5; --ink:#2E2A23; --ink-soft:#6E6557; --hair:rgba(46,42,35,.35); --gold:#C9A85C; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#888;}
+  .slide{
+    width:1080px;height:1350px;position:relative;overflow:hidden;
+    background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;
+  }
+  .slide:not(.active){display:none !important;}
+  .monogram{position:absolute;top:64px;left:80px;}
+  .label{font-size:23px;letter-spacing:.38em;text-transform:uppercase;color:var(--ink-soft);}
+  .serif{font-family:'Playfair Display',serif;font-weight:500;font-size:92px;line-height:1;}
+  .script{font-family:'Pinyon Script',cursive;font-size:88px;line-height:.95;}
+  .handle{font-size:20px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);font-weight:300;}
+  .disclaimer{
+    position:absolute;left:0;right:0;bottom:34px;text-align:center;
+    font-size:17px;letter-spacing:.2em;text-transform:uppercase;
+    color:rgba(110,101,87,.75);font-weight:300;
+  }
+  .head{padding:104px 80px 0;text-align:center;}
+  .title{margin-top:26px;}
+
+  /* single photo slides */
+  .shot{
+    position:absolute;top:372px;left:80px;right:80px;height:600px;
+    overflow:hidden;background:#E5DCCA;
+  }
+  .shot img{width:100%;height:100%;object-fit:cover;}
+  .shot .tag{
+    position:absolute;left:0;bottom:0;background:rgba(243,238,229,.94);
+    font-size:21px;letter-spacing:.32em;text-transform:uppercase;padding:14px 26px;font-weight:500;
+  }
+  .foot{position:absolute;left:80px;right:80px;bottom:78px;}
+  .note{font-size:30px;line-height:1.5;letter-spacing:.06em;text-align:center;}
+  .rule{height:1px;background:var(--hair);margin:34px 0 24px;}
+  .row{display:flex;align-items:baseline;justify-content:space-between;gap:36px;}
+  .count{font-size:24px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;}
+
+  /* cover */
+  .cover .head{padding:170px 80px 0;}
+  .cover .serif{font-size:100px;}
+  .cover .script{font-size:94px;margin-top:6px;}
+  .cover .hero{
+    position:absolute;top:640px;left:80px;right:80px;height:400px;
+    overflow:hidden;background:#E5DCCA;
+  }
+  .cover .hero img{width:100%;height:100%;object-fit:cover;}
+  .cover .sub{
+    position:absolute;left:110px;right:110px;bottom:118px;text-align:center;
+    font-size:28px;line-height:1.5;letter-spacing:.08em;color:var(--ink);
+  }
+  .cover .swipe{
+    position:absolute;left:0;right:0;bottom:70px;text-align:center;
+    font-size:21px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);
+  }
+  .cta-line{
+    font-size:24px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;
+  }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+
+<script>
+/* One client, six angles, fully healed. Photos come from photos/cleo/crops/ —
+   cropped to the treatment area, so no face is in the published file. */
+const C = 'photos/cleo/crops/';
+const ANGLES = [
+  { img:'img_4780.jpg', tag:'Straight on',   note:'Straight on. Even fullness left to right, with her cupid&#8217;s bow still hers.' },
+  { img:'img_4775.jpg', tag:'Slight turn',   note:'A quarter turn. The lower lip carries the volume, the way a lip actually sits.' },
+  { img:'img_4777.jpg', tag:'Three quarter', note:'Three quarter. No shelf, no step, no hard edge where filler was placed.' },
+  { img:'img_4781.jpg', tag:'Opposite side', note:'The other side. Symmetry is the part nobody photographs, so here it is.' },
+  { img:'img_4782.jpg', tag:'Profile',       note:'Profile. Projection that stops where her face stops asking for it.' },
+  { img:'img_4778.jpg', tag:'Full profile',  note:'Full profile, the least forgiving angle there is. Still soft, still hers.' },
+];
+
+const n = parseInt(new URLSearchParams(location.search).get('slide') || '1', 10);
+const mono = '<img class="monogram" src="brand/logo-monogram.png" width="104" alt="LB">';
+const disc = '<div class="disclaimer">Shared with client consent. Individual results vary.</div>';
+let html;
+
+if (n === 1) {
+  html = `<div class="slide active cover">
+    ${mono}
+    <div class="head">
+      <div class="label">One Client &#183; Fully Healed</div>
+      <div style="margin-top:30px">
+        <div class="serif">EVERY ANGLE.</div>
+        <div class="script">not just the good one.</div>
+      </div>
+    </div>
+    <div class="hero"><img src="${C}img_4780.jpg" alt=""></div>
+    <div class="sub">Anyone can find one flattering angle. Six is the actual test.</div>
+    <div class="swipe">Swipe &#8594;</div>
+    ${disc}
+  </div>`;
+} else {
+  const a = ANGLES[n - 2];
+  const last = n === 7;
+  html = `<div class="slide active">
+    ${mono}
+    <div class="head">
+      <div class="label">One Client &#183; Fully Healed</div>
+      <div class="title">
+        <div class="serif">ANGLE</div>
+        <div class="script">${['one.','two.','three.','four.','five.','six.'][n - 2]}</div>
+      </div>
+    </div>
+    <div class="shot"><img src="${C}${a.img}" alt=""><div class="tag">${a.tag}</div></div>
+    <div class="foot">
+      <div class="note">${a.note}</div>
+      <div class="rule"></div>
+      <div class="row">
+        <div class="${last ? 'cta-line' : 'count'}">${last ? 'DM &#8220;Lips&#8221; to book' : (n - 1) + ' of 6'}</div>
+        <div class="handle">@luxury_beauty_aestheticz</div>
+      </div>
+    </div>
+    ${disc}
+  </div>`;
+}
+document.getElementById('stage').innerHTML = html;
+</script>
+</body>
+</html>

@@ -1,31 +1,32 @@
-# Client Words: The Lip Glow-Up
+# Subtle Is the New Dramatic
 
-**Post date:** Saturday, October 24, 2026 (Week 10)
+**Post date:** Saturday, October 10, 2026 (Week 8)
 **Format:** Before/After
 **Platforms:** IG + FB + TikTok photo
 **Pillar:** Trust & Proof
 **Theme:** Fillers, Naturally
 
 ## Hook
-Her words, her result.
+The quote, proved.
 
 ## Caption
-I finally got my lips done and nobody said filler. They said I looked prettier and could not say why. Here is the result she is talking about. Individual results vary. Shared with permission. 💛
+Subtle is the new dramatic. The best work whispers. This is one syringe, healed and settled, on a client who did not want anyone to know. Individual results vary. Shared with consent. 💛
 
-**CTA:** Your turn. DM FILLER
+**CTA:** Save this
 
 ## Hashtags (Set C: Brand & Trust)
 #npinjector #nursepractitioner #medspalife #luxurybeauty #aestheticnurse #skincareexpert #beautyclinic #selfcare #naturalresults #honestbeauty
 
 ## Visual / Asset
-Testimonial quote over before and after card. Crop to treatment area, no faces
+Before and after card in editorial template. Crop to treatment area, no faces
 
 ## Photos
-Files: img_0962 (before), img_0998 (after)
+Files: img_1119 (before), img_1123 (after)
 Consent: On file
 
-Pair B. Colour-match the before to the after before rendering,
-the before is noticeably cooler.
+Pair C, same session. Two things to fix before rendering:
+crop the before to the lower face (her eyes are in frame) and correct the white
+balance, the before is cool and the after is warm.
 
 House rule for every client photo: crop to the treatment area. No eyes, no
 brows, no tattoos or jewellery that identifies a client. See

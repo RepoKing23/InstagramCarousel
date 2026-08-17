@@ -1,31 +1,31 @@
-# Lip Filler: Natural vs Overdone
+# One Syringe. Balanced Lips.
 
-**Post date:** Thursday, October 08, 2026 (Week 8)
-**Format:** Carousel
-**Platforms:** Instagram feed
-**Pillar:** Education
+**Post date:** Friday, October 30, 2026 (Week 11)
+**Format:** Before/After
+**Platforms:** IG + FB + TikTok photo
+**Pillar:** Trust & Proof
 **Theme:** Fillers, Naturally
 
 ## Hook
-The difference is the injector.
+Faces, not lines.
 
 ## Caption
-Soft, balanced, still you. Here is what separates natural lip results from the duck lips everyone fears, and the questions to ask before anyone touches your lips.
+Chasing individual lines is old school. Balance is why my clients look rested instead of done. One syringe, placed where her lip actually needed it. Individual results vary. Shared with consent.
 
-**CTA:** Save before you book anywhere
+**CTA:** Book a consult. Link in bio
 
 ## Hashtags (Set B: Filler)
 #dermalfiller #lipfiller #cheekfiller #naturalfiller #facialbalancing #lipfillernatural #aestheticnurse #medspa #fillerjourney #lipgoals
 
 ## Visual / Asset
-READY: before and after result card in this post's folder
+Before and after card in editorial template. Crop to treatment area, no faces
 
 ## Photos
-Files: img_9908 (before), img_9912 (after)
-Consent: Not needed
+Files: img_0221 (before), img_0233 (after)
+Consent: On file
 
-Pair E, the cleanest in the library. Lower face only, nothing
-identifying, no crop work needed beyond the template frame.
+Pair A, the biggest visible change in the library. Crop above the
+collarbone and below the nose, her neck tattoos and nose ring identify her.
 
 House rule for every client photo: crop to the treatment area. No eyes, no
 brows, no tattoos or jewellery that identifies a client. See

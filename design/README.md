@@ -6,9 +6,15 @@ Playfair Display serif + Pinyon Script accents + Jost letterspaced labels.
 ## Files
 - `botox-myths.html` — "5 Botox Lies You Still Believe" carousel (8 slides)
 - `slides.html` — "Still You, Just Refreshed" carousel (6 slides)
+- `before-after.html` — before/after result cards, one per client pair (4 slides)
+- `real-results.html` — "Real Lips. Real Results." carousel (6 slides)
+- `every-angle.html` — "One Result, Every Angle" carousel (7 slides)
 - `fonts/` — Playfair Display, Pinyon Script, Jost (all SIL Open Font License)
 - `brand/` — Luxury Beauty by Cleo R logo (full lockup, tight crop, monogram; transparent PNGs)
 - `photos/<carousel-name>/` — working photos used by each carousel template
+- `photos/cleo/crops/` — client photos cropped to the treatment area. **Result
+  posts use these, never the originals**, so no face ends up in a published
+  file. Regenerate with the crop boxes documented in `photos/cleo/README.md`.
 
 Final ready-to-post images live in `/content/<date-topic>/` at the repo root:
 one folder per scheduled post, each with a `brief.md` (hook, caption, hashtags,

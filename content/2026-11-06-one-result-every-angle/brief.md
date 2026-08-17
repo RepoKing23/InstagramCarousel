@@ -1,32 +1,31 @@
-# Lip Filler Aftercare: Your First Week
+# One Result, Every Angle
 
-**Post date:** Thursday, October 22, 2026 (Week 10)
+**Post date:** Friday, November 06, 2026 (Week 12)
 **Format:** Carousel
 **Platforms:** Instagram feed
-**Pillar:** Education
-**Theme:** Fillers, Naturally
+**Pillar:** Trust & Proof
+**Theme:** Rested by the Holidays
 
 ## Hook
-Swelling is normal. Panic is optional.
+No flattering angle. Every angle.
 
 ## Caption
-Day 1 looks different from day 7. Here is the honest day-by-day so you know exactly what is normal and when to reach out. Save this before your appointment.
+Anyone can find one good angle. This is the same client, same lips, six angles, fully healed. That is the whole test. Individual results vary. Shared with consent.
 
-**CTA:** Save this guide
+**CTA:** DM LIPS to book
 
 ## Hashtags (Set B: Filler)
 #dermalfiller #lipfiller #cheekfiller #naturalfiller #facialbalancing #lipfillernatural #aestheticnurse #medspa #fillerjourney #lipgoals
 
 ## Visual / Asset
-Carousel: day by day, with real day 0 photos. Crop to treatment area, no faces
+Carousel: 6 angles of one healed result. Crop to treatment area, no faces
 
 ## Photos
-Files: img_7715, img_9848, img_9850, whatsapp composite
+Files: img_4775, 4777, 4778, 4780, 4781, 4782
 Consent: On file
 
-Day 0 photos where the swelling is the teaching point, not
-the result. Label them clearly as day 0 so nobody reads them as the finished
-outcome.
+Six angles of one healed result. Shot full face, so every
+slide needs a tight lower-face crop.
 
 House rule for every client photo: crop to the treatment area. No eyes, no
 brows, no tattoos or jewellery that identifies a client. See
