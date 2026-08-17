@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Single Image — Editorial Template</title>
+<style>
+  @font-face { font-family:'Playfair Display'; src:url('fonts/PlayfairDisplay.ttf'); }
+  @font-face { font-family:'Pinyon Script'; src:url('fonts/PinyonScript-Regular.ttf'); }
+  @font-face { font-family:'Jost'; src:url('fonts/Jost.ttf'); }
+
+  :root{ --cream:#F3EEE5; --ink:#2E2A23; --ink-soft:#6E6557; --hair:rgba(46,42,35,.35); --gold:#C9A85C; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#888;}
+  .slide{
+    width:1080px;height:1350px;position:relative;overflow:hidden;
+    background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;
+  }
+  .monogram{position:absolute;top:64px;left:80px;}
+  .label{font-size:23px;letter-spacing:.38em;text-transform:uppercase;color:var(--ink-soft);}
+  .serif{font-family:'Playfair Display',serif;font-weight:500;font-size:88px;line-height:1.04;}
+  .script{font-family:'Pinyon Script',cursive;font-size:86px;line-height:.95;}
+  .handle{font-size:20px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);font-weight:300;}
+  .rule{height:1px;background:var(--hair);margin:34px 0 24px;}
+  .row{display:flex;align-items:baseline;justify-content:space-between;gap:36px;}
+  .cta{font-size:24px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;white-space:nowrap;}
+  .foot{position:absolute;left:80px;right:80px;bottom:78px;}
+  .head{padding:196px 80px 0;text-align:center;}
+
+  /* numbered list body */
+  .items{margin-top:74px;display:flex;flex-direction:column;gap:52px;padding:0 12px;}
+  .item{display:flex;gap:30px;align-items:flex-start;text-align:left;}
+  .item .n{
+    font-family:'Playfair Display',serif;font-size:58px;line-height:.9;
+    color:var(--gold);flex:none;width:74px;
+  }
+  .item h3{font-family:'Playfair Display',serif;font-weight:500;font-size:44px;line-height:1.12;}
+  .item p{margin-top:14px;font-size:28px;line-height:1.55;letter-spacing:.05em;color:var(--ink-soft);}
+
+  /* two column compare */
+  .compare{margin-top:86px;display:flex;gap:0;text-align:left;}
+  .col{flex:1;padding:0 44px;}
+  .col + .col{border-left:1px solid var(--hair);}
+  .col .cap{
+    font-size:22px;letter-spacing:.34em;text-transform:uppercase;color:var(--ink-soft);
+  }
+  .col h3{
+    margin-top:24px;font-family:'Playfair Display',serif;font-weight:500;
+    font-size:62px;line-height:1.06;
+  }
+  .col ul{margin-top:34px;list-style:none;}
+  .col li{
+    font-size:28px;line-height:1.5;letter-spacing:.05em;color:var(--ink-soft);
+    padding-bottom:22px;
+  }
+  .col li b{color:var(--ink);font-weight:500;}
+
+  /* plain statement */
+  .statement{
+    display:flex;flex-direction:column;justify-content:center;height:100%;
+    padding:0 96px;text-align:center;
+  }
+  .statement .serif{font-size:100px;}
+  .statement .script{font-size:94px;margin-top:8px;}
+  .statement .body{
+    margin-top:56px;font-size:32px;line-height:1.62;letter-spacing:.06em;color:var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+
+<script>
+/* Pick with ?post=<key>. Type only, no icon art. */
+const POSTS = {
+
+  /* Aug 21 — Behind the Scenes: The Prep */
+  'the-prep': {
+    kind:'list',
+    label:'Behind The Scenes &#183; Before You Sit Down',
+    serif:'WHAT HAPPENS', script:'before the needle.',
+    items:[
+      {h:'The room is reset, every time',
+       p:'New tray, new gloves, sealed product opened in front of you. You should be able to watch every step.'},
+      {h:'Your face gets mapped',
+       p:'Marked while you move, not while you sit still. Muscles do not sit still, so neither does the plan.'},
+      {h:'Product is drawn in the room',
+       p:'You see the vial, the lot number and the date. Nothing arrives pre loaded from somewhere else.'},
+    ],
+    cta:'Zero shortcuts. Ever.',
+  },
+
+  /* Aug 25 — 3 Signs Your Injector Is Rushing You */
+  'rushing': {
+    kind:'list',
+    label:'Protect Yourself &#183; Before You Book',
+    serif:'3 SIGNS YOU ARE', script:'being rushed.',
+    items:[
+      {h:'No mirror, no map',
+       p:'If nobody handed you a mirror and asked what bothers you, the plan is theirs, not yours.'},
+      {h:'The units were decided before you spoke',
+       p:'A set number for every face means nobody looked at yours. Dosing follows anatomy, not a menu.'},
+      {h:'You are out in under ten minutes',
+       p:'The injecting is quick. The assessment is not. If the whole visit was quick, something got skipped.'},
+    ],
+    cta:'Save this. Use it.',
+  },
+
+  /* Aug 29 — This or That: Rested vs Frozen */
+  'rested-vs-frozen': {
+    kind:'compare',
+    label:'This Or That &#183; Which Are You Booking For',
+    serif:'RESTED', script:'or frozen?',
+    cols:[
+      {cap:'Rested', h:'What we aim for',
+       li:['You still <b>frown, squint and smile</b>','Lines soften, they do not vanish overnight',
+           'People ask if you <b>slept well</b>','Dosed to your muscle, not to a template']},
+      {cap:'Frozen', h:'What people fear',
+       li:['One expression, all day','Brows that will not move at all',
+           'People ask <b>what you had done</b>','Same dose for every face that walks in']},
+    ],
+    cta:'Which one do you want?',
+  },
+
+  /* Aug 28 — Welcome to the Treatment Room. Type led, no photo yet. */
+  'treatment-room': {
+    kind:'statement',
+    label:'Welcome In &#183; The Treatment Room',
+    serif:'WHERE CALM', script:'meets careful.',
+    body:'One client in the room at a time. No rushing the person before you, ' +
+         'and no rushing you. The door stays shut, the questions stay welcome, ' +
+         'and nothing gets injected until we both agree on the plan.<br><br>' +
+         'It is a quiet room on purpose. Decisions about your face deserve one.',
+    cta:'Come see it',
+  },
+};
+
+const P = POSTS[new URLSearchParams(location.search).get('post') || 'the-prep'];
+const mono = '<img class="monogram" src="brand/logo-monogram.png" width="104" alt="LB">';
+
+/* Each kind supplies the body; statement centres its own block, the other two
+   sit under the shared head. */
+const BODY = {
+  list: () => `<div class="items">${P.items.map((it, i) =>
+    `<div class="item"><div class="n">${String(i + 1).padStart(2, '0')}</div>
+     <div><h3>${it.h}</h3><p>${it.p}</p></div></div>`).join('')}</div>`,
+  compare: () => `<div class="compare">${P.cols.map(c =>
+    `<div class="col"><div class="cap">${c.cap}</div><h3>${c.h}</h3>
+     <ul>${c.li.map(l => `<li>${l}</li>`).join('')}</ul></div>`).join('')}</div>`,
+  statement: () => `<div class="body">${P.body}</div>`,
+};
+
+const title = `
+  <div class="label">${P.label}</div>
+  <div style="margin-top:${P.kind === 'statement' ? 30 : 26}px">
+    <div class="serif">${P.serif}</div>
+    <div class="script">${P.script}</div>
+  </div>`;
+
+document.getElementById('stage').innerHTML = `
+<div class="slide">${mono}
+  <div class="${P.kind === 'statement' ? 'statement' : 'head'}">
+    ${title}
+    ${BODY[P.kind]()}
+  </div>
+  <div class="foot">
+    <div class="rule"></div>
+    <div class="row">
+      <div class="cta">${P.cta}</div>
+      <div class="handle">@luxury_beauty_aestheticz</div>
+    </div>
+  </div>
+</div>`;
+</script>
+</body>
+</html>

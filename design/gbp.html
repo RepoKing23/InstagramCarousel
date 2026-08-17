@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Google Business Profile — 1200x900 Template</title>
+<style>
+  @font-face { font-family:'Playfair Display'; src:url('fonts/PlayfairDisplay.ttf'); }
+  @font-face { font-family:'Pinyon Script'; src:url('fonts/PinyonScript-Regular.ttf'); }
+  @font-face { font-family:'Jost'; src:url('fonts/Jost.ttf'); }
+
+  :root{ --cream:#F3EEE5; --ink:#2E2A23; --ink-soft:#6E6557; --hair:rgba(46,42,35,.35); --gold:#C9A85C; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#888;}
+
+  /* GBP serves 1200x900 but crops to a centre square in Maps and the Knowledge
+     Panel, so every piece of content lives inside the middle 900x900. The
+     150px either side is bleed and must stay empty of type. */
+  .slide{
+    width:1200px;height:900px;position:relative;overflow:hidden;
+    background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;
+  }
+  .safe{
+    position:absolute;left:150px;top:0;width:900px;height:900px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:118px 62px 96px;
+  }
+  .monogram{position:absolute;top:46px;left:50%;transform:translateX(-50%);}
+  .label{
+    font-size:19px;letter-spacing:.36em;text-transform:uppercase;color:var(--ink-soft);
+  }
+  .serif{font-family:'Playfair Display',serif;font-weight:500;font-size:70px;line-height:1.04;}
+  .script{font-family:'Pinyon Script',cursive;font-size:66px;line-height:.95;margin-top:4px;}
+  .body{
+    margin-top:34px;font-size:25px;line-height:1.58;letter-spacing:.05em;color:var(--ink-soft);
+  }
+  .button{
+    margin-top:40px;border:1px solid var(--ink);padding:19px 40px;
+    font-size:19px;letter-spacing:.28em;text-transform:uppercase;font-weight:500;
+  }
+  .handle{
+    position:absolute;bottom:40px;left:0;right:0;text-align:center;
+    font-size:17px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--ink-soft);font-weight:300;
+  }
+
+  /* photo variant: pair or single, sits above the type inside the safe box */
+  .pair{display:flex;gap:14px;width:100%;height:258px;margin-bottom:30px;}
+  .frame{flex:1;position:relative;overflow:hidden;background:#E5DCCA;}
+  .frame img{width:100%;height:100%;object-fit:cover;}
+  .frame .tag{
+    position:absolute;left:0;bottom:0;background:rgba(243,238,229,.94);
+    font-size:16px;letter-spacing:.28em;text-transform:uppercase;padding:9px 18px;font-weight:500;
+  }
+  .disclaimer{
+    position:absolute;bottom:70px;left:0;right:0;text-align:center;
+    font-size:14px;letter-spacing:.18em;text-transform:uppercase;
+    color:rgba(110,101,87,.75);font-weight:300;
+  }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+
+<script>
+/* One entry per August post. Same brand, GBP proportions, shorter copy. */
+const C = 'photos/cleo/crops/';
+const POSTS = {
+  'aug-17': { label:'Botox Myths', serif:'5 BOTOX LIES', script:'you still believe.',
+    body:'The truth about freezing, dosing and what actually happens when you stop, from a nurse injector.',
+    button:'Read the post' },
+
+  'aug-18': { label:'Service Spotlight', serif:'BOTOX', script:'smooth, not frozen.',
+    body:'Softens the lines you have, prevents the ones you are working on. Dosed to your muscle, never to a template.',
+    button:'Book a consult' },
+
+  'aug-20': { label:'How To Choose', serif:'5 RED FLAGS', script:'at a med spa.',
+    body:'No consultation, bargain pricing, a provider who never says no. What to walk away from before you book.',
+    button:'Read the post' },
+
+  'aug-21': { label:'Behind The Scenes', serif:'BEFORE', script:'the needle.',
+    body:'New tray, sealed product opened in front of you, your face mapped while it moves. Zero shortcuts, every time.',
+    button:'See the room' },
+
+  'aug-22': { label:'Real Result', serif:'GREAT WORK', script:'is invisible.',
+    photo:'pair', before:C+'img_9908.jpg', after:C+'img_9912.jpg',
+    body:'One syringe. Her own lip shape kept exactly where it was.',
+    button:'Book a consult', disclaimer:true },
+
+  'aug-24': { label:'Your First Visit', serif:'WHAT ACTUALLY', script:'happens.',
+    body:'A real consult, your face mapped in motion, a plan and a price agreed before anything is opened. Then ten minutes.',
+    button:'Book your first visit' },
+
+  'aug-25': { label:'Protect Yourself', serif:'3 SIGNS YOU ARE', script:'being rushed.',
+    body:'No mirror, units decided before you spoke, in and out in under ten minutes. Know them before you book anywhere.',
+    button:'Read the post' },
+
+  'aug-27': { label:'Meet Your Injector', serif:'MEET', script:'NP Cleo.',
+    body:'Nurse practitioner and injector. Every appointment is injected by Cleo, never delegated, never rushed.',
+    button:'Book with Cleo' },
+
+  'aug-28': { label:'The Treatment Room', serif:'WHERE CALM', script:'meets careful.',
+    body:'One client in the room at a time. The door stays shut and the questions stay welcome.',
+    button:'Book a visit' },
+
+  'aug-29': { label:'This Or That', serif:'RESTED', script:'or frozen?',
+    body:'You should still frown, squint and smile. If people ask what you had done instead of whether you slept, the dose was wrong.',
+    button:'Book a consult' },
+
+  'aug-31': { label:'Preventative Botox', serif:'WHEN TO', script:'actually start.',
+    body:'It is not about your age. Make your strongest expression, relax, and see if the line stays. That one is setting in.',
+    button:'Book a consult' },
+};
+
+const P = POSTS[new URLSearchParams(location.search).get('post') || 'aug-20'];
+
+const photo = P.photo === 'pair'
+  ? `<div class="pair">
+       <div class="frame"><img src="${P.before}" alt=""><div class="tag">Before</div></div>
+       <div class="frame"><img src="${P.after}" alt=""><div class="tag">After</div></div>
+     </div>` : '';
+
+document.getElementById('stage').innerHTML = `
+<div class="slide">
+  <img class="monogram" src="brand/logo-monogram.png" width="76" alt="LB">
+  <div class="safe">
+    ${photo}
+    <div class="label">${P.label}</div>
+    <div style="margin-top:18px">
+      <div class="serif">${P.serif}</div>
+      <div class="script">${P.script}</div>
+    </div>
+    <div class="body">${P.body}</div>
+    <div class="button">${P.button}</div>
+  </div>
+  ${P.disclaimer ? '<div class="disclaimer">Shared with client consent. Individual results vary.</div>' : ''}
+  <div class="handle">@luxury_beauty_aestheticz</div>
+</div>`;
+</script>
+</body>
+</html>

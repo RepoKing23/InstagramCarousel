@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Meet NP Cleo — Owner Highlight Carousel</title>
+<style>
+  @font-face { font-family:'Playfair Display'; src:url('fonts/PlayfairDisplay.ttf'); }
+  @font-face { font-family:'Pinyon Script'; src:url('fonts/PinyonScript-Regular.ttf'); }
+  @font-face { font-family:'Jost'; src:url('fonts/Jost.ttf'); }
+
+  :root{ --cream:#F3EEE5; --ink:#2E2A23; --ink-soft:#6E6557; --hair:rgba(46,42,35,.35); --gold:#C9A85C; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#888;}
+  .slide{
+    width:1080px;height:1350px;position:relative;overflow:hidden;
+    background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;
+  }
+  .monogram{position:absolute;top:64px;left:80px;z-index:3;}
+  .label{font-size:23px;letter-spacing:.38em;text-transform:uppercase;color:var(--ink-soft);}
+  .serif{font-family:'Playfair Display',serif;font-weight:500;font-size:92px;line-height:1.02;}
+  .script{font-family:'Pinyon Script',cursive;font-size:88px;line-height:.95;}
+  .handle{font-size:20px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);font-weight:300;}
+  .rule{height:1px;background:var(--hair);margin:34px 0 24px;}
+  .row{display:flex;align-items:baseline;justify-content:space-between;gap:36px;}
+  .count{font-size:24px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;}
+  .foot{position:absolute;left:80px;right:80px;bottom:78px;}
+
+  /* cover: full bleed portrait, type over a bottom scrim */
+  /* The portrait is mid grey behind the top corner, where a gold logo reads as
+     nothing. On the cover the logo sits on the cream scrim with the type. */
+  .cover .logo-on-scrim{display:block;margin:0 auto 26px;}
+  .cover .photo{position:absolute;inset:0;}
+  .cover .photo img{width:100%;height:100%;object-fit:cover;object-position:center 22%;}
+  .cover .scrim{
+    position:absolute;left:0;right:0;bottom:0;height:60%;
+    background:linear-gradient(to bottom, rgba(243,238,229,0), rgba(243,238,229,.93) 46%, var(--cream));
+  }
+  .cover .type{position:absolute;left:80px;right:80px;bottom:152px;text-align:center;}
+  .cover .serif{font-size:98px;}
+  .cover .script{font-size:92px;margin-top:6px;}
+  .cover .sub{
+    margin-top:34px;font-size:29px;line-height:1.5;letter-spacing:.07em;color:var(--ink-soft);
+  }
+  .swipe{
+    position:absolute;left:0;right:0;bottom:74px;text-align:center;
+    font-size:21px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);z-index:2;
+  }
+
+  /* credential slide */
+  .creds{padding:206px 88px 0;text-align:center;}
+  .creds .list{margin-top:78px;display:flex;flex-direction:column;gap:46px;}
+  .creds .c{border-top:1px solid var(--hair);padding-top:32px;}
+  .creds .c .k{
+    font-family:'Playfair Display',serif;font-size:62px;line-height:1;
+  }
+  .creds .c .v{
+    margin-top:14px;font-size:26px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);
+  }
+
+  /* statement slide */
+  .say{padding:210px 92px 0;}
+  .say h2{font-family:'Playfair Display',serif;font-weight:500;font-size:70px;line-height:1.12;}
+  .say .body{margin-top:44px;font-size:33px;line-height:1.62;letter-spacing:.05em;color:var(--ink-soft);}
+
+  /* pull quote */
+  .pull{display:flex;flex-direction:column;justify-content:center;height:100%;padding:0 100px;text-align:center;}
+  .pull .q{font-family:'Playfair Display',serif;font-style:italic;font-size:64px;line-height:1.3;}
+  .pull .who{
+    margin-top:46px;font-size:22px;letter-spacing:.34em;text-transform:uppercase;color:var(--ink-soft);
+  }
+
+  /* cta */
+  .cta-slide{display:flex;flex-direction:column;align-items:center;justify-content:center;
+    height:100%;text-align:center;padding:0 110px;}
+  .cta-slide .body{margin-top:52px;font-size:31px;line-height:1.6;letter-spacing:.06em;color:var(--ink-soft);}
+  .cta-slide .button{
+    margin-top:60px;border:1px solid var(--ink);padding:26px 54px;
+    font-size:24px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;
+  }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+
+<script>
+const mono = '<img class="monogram" src="brand/logo-monogram.png" width="104" alt="LB">';
+const handle = '<div class="handle">@luxury_beauty_aestheticz</div>';
+const n = parseInt(new URLSearchParams(location.search).get('slide') || '1', 10);
+const TOTAL = 4;
+
+function footer(i){
+  return `<div class="foot"><div class="rule"></div>
+    <div class="row"><div class="count">${i} of ${TOTAL}</div>${handle}</div></div>`;
+}
+
+const SLIDES = {
+  1: `<div class="slide cover">
+        <div class="photo"><img src="photos/botox-myths/cleo.png" alt=""></div>
+        <div class="scrim"></div>
+        <div class="type">
+          <img class="logo-on-scrim" src="brand/logo-monogram.png" width="88" alt="LB">
+          <div class="label">The Face Behind The Glow</div>
+          <div style="margin-top:24px">
+            <div class="serif">MEET</div>
+            <div class="script">NP Cleo.</div>
+          </div>
+          <div class="sub">Nurse practitioner, injector, and the person who will tell you no.</div>
+        </div>
+        <div class="swipe">Swipe &#8594;</div>
+      </div>`,
+
+  2: `<div class="slide">${mono}
+        <div class="creds">
+          <div class="label">Who Is Holding The Needle</div>
+          <div class="list">
+            <div class="c"><div class="k">Nurse Practitioner</div>
+              <div class="v">Licensed and board certified</div></div>
+            <div class="c"><div class="k">Advanced injectables</div>
+              <div class="v">Neurotoxin and dermal filler trained</div></div>
+            <div class="c"><div class="k">Every appointment</div>
+              <div class="v">Injected by Cleo, never delegated</div></div>
+          </div>
+        </div>
+        ${footer(2)}
+      </div>`,
+
+  3: `<div class="slide">${mono}
+        <div class="say">
+          <div class="label">Why I Do It This Way</div>
+          <h2>I got tired of fixing work that never should have happened.</h2>
+          <div class="body">
+            Most of the people who sit in my chair are not asking for a new face.
+            They are asking to stop looking tired. Somewhere along the way the
+            industry decided more was the goal, and a lot of good faces got
+            overfilled by people who were selling instead of assessing.
+            <br><br>
+            So I go slow. I dose conservatively, I build over sessions, and I say
+            not yet more often than most people expect.
+          </div>
+        </div>
+        ${footer(3)}
+      </div>`,
+
+  4: `<div class="slide">${mono}
+        <div class="pull">
+          <div class="q">&#8220;Your face funds my reputation. I protect both.&#8221;</div>
+          <div class="who">NP Cleo, Luxury Beauty by Cleo R</div>
+        </div>
+        ${footer(4)}
+      </div>`,
+
+  5: `<div class="slide">${mono}
+        <div class="cta-slide">
+          <div class="serif">COME SIT</div>
+          <div class="script">in the chair.</div>
+          <div class="body">
+            Consults are a conversation, not a sales pitch. Bring your questions
+            and the photo you saved that made you nervous.
+          </div>
+          <div class="button">DM the word CONSULT</div>
+          <div class="handle" style="margin-top:44px">@luxury_beauty_aestheticz</div>
+        </div>
+      </div>`,
+};
+document.getElementById('stage').innerHTML = SLIDES[n] || SLIDES[1];
+</script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Informational Carousel — Editorial Template</title>
+<style>
+  @font-face { font-family:'Playfair Display'; src:url('fonts/PlayfairDisplay.ttf'); }
+  @font-face { font-family:'Pinyon Script'; src:url('fonts/PinyonScript-Regular.ttf'); }
+  @font-face { font-family:'Jost'; src:url('fonts/Jost.ttf'); }
+
+  :root{ --cream:#F3EEE5; --ink:#2E2A23; --ink-soft:#6E6557; --hair:rgba(46,42,35,.35); --gold:#C9A85C; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#888;}
+  .slide{
+    width:1080px;height:1350px;position:relative;overflow:hidden;
+    background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;
+  }
+  .monogram{position:absolute;top:64px;left:80px;}
+  .label{font-size:23px;letter-spacing:.38em;text-transform:uppercase;color:var(--ink-soft);}
+  .serif{font-family:'Playfair Display',serif;font-weight:500;font-size:92px;line-height:1.02;}
+  .script{font-family:'Pinyon Script',cursive;font-size:88px;line-height:.95;}
+  .handle{font-size:20px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);font-weight:300;}
+  .rule{height:1px;background:var(--hair);margin:34px 0 24px;}
+  .row{display:flex;align-items:baseline;justify-content:space-between;gap:36px;}
+  .count{font-size:24px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;}
+  .foot{position:absolute;left:80px;right:80px;bottom:78px;}
+
+  /* cover */
+  .cover{display:flex;flex-direction:column;justify-content:center;height:100%;padding:0 88px;text-align:center;}
+  .cover .serif{font-size:104px;}
+  .cover .script{font-size:96px;margin-top:8px;}
+  .cover .sub{
+    margin-top:56px;font-size:30px;line-height:1.55;letter-spacing:.06em;color:var(--ink-soft);
+  }
+  .swipe{
+    position:absolute;left:0;right:0;bottom:78px;text-align:center;
+    font-size:21px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);
+  }
+
+  /* Point slide. Pinned between the logo and the footer and centred in that
+     space, otherwise short points leave a dead half-slide of empty cream. */
+  .point{
+    position:absolute;left:88px;right:88px;top:186px;bottom:212px;
+    display:flex;flex-direction:column;justify-content:center;
+  }
+  .num{
+    font-family:'Playfair Display',serif;font-size:150px;line-height:1;
+    color:var(--gold);
+  }
+  .point h2{
+    margin-top:22px;font-family:'Playfair Display',serif;font-weight:500;
+    font-size:76px;line-height:1.08;letter-spacing:.01em;
+  }
+  .point .body{
+    margin-top:40px;font-size:33px;line-height:1.62;letter-spacing:.05em;color:var(--ink-soft);
+  }
+
+  /* cta */
+  .cta-slide{display:flex;flex-direction:column;align-items:center;justify-content:center;
+    height:100%;text-align:center;padding:0 110px;}
+  .cta-slide .serif{font-size:96px;}
+  .cta-slide .script{font-size:92px;margin-top:4px;}
+  .cta-slide .body{margin-top:52px;font-size:31px;line-height:1.6;letter-spacing:.06em;color:var(--ink-soft);}
+  .cta-slide .button{
+    margin-top:60px;border:1px solid var(--ink);padding:26px 54px;
+    font-size:24px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;
+  }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+
+<script>
+/* One entry per scheduled carousel. Pick with ?post=<key>&slide=<n>.
+   No icon art anywhere: type, a rule and a numeral carry the whole design. */
+const POSTS = {
+
+  /* Aug 20 — Trust & Proof */
+  'red-flags': {
+    label:'How To Choose &#183; Part One',
+    coverSerif:'5 RED FLAGS', coverScript:'at a med spa.',
+    coverSub:'Your face is not the place to find out you picked wrong. Here is what to walk away from.',
+    points:[
+      {h:'No consultation, straight to the needle',
+       b:'If nobody asked what you want, looked at your face at rest and in movement, or talked you through the risks, you are not being treated. You are being processed.'},
+      {h:'The price is the whole pitch',
+       b:'Groupon pricing on injectables usually means diluted product, an inexperienced hand, or both. You are not buying a haircut. It grows out. This does not.'},
+      {h:'They say yes to everything',
+       b:'A provider who never turns anyone away is selling, not assessing. Sometimes the honest answer is not yet, or not this, or not you.'},
+      {h:'You cannot find out who is injecting you',
+       b:'Ask for the injector name and credentials before you book. If the answer is vague, that is the answer.'},
+      {h:'No plan for if something goes wrong',
+       b:'Complications are rare and they are not zero. Ask what happens if you have a vascular event. A real clinic answers instantly and keeps dissolver on site.'},
+    ],
+    ctaSerif:'ASK THE', ctaScript:'hard questions.',
+    ctaBody:'Any provider worth your money will be glad you did. Bring this list to your next consult.',
+    button:'Save this before you book',
+  },
+
+  /* Aug 24 — Education */
+  'first-visit': {
+    label:'Your First Visit &#183; Step By Step',
+    coverSerif:'WHAT ACTUALLY', coverScript:'happens.',
+    coverSub:'Nervous about your first appointment? Nothing here is a surprise. That is the point.',
+    points:[
+      {h:'We talk before anything else',
+       b:'Fifteen to twenty minutes. What bothers you, what you have had done before, your health history, and what you actually want to look like. No product is opened yet.'},
+      {h:'I watch your face move',
+       b:'Raise your brows, squint, smile, frown. Muscles behave differently on everybody, and where your lines fall decides where the units go.'},
+      {h:'We agree on a plan and a number',
+       b:'You know the areas, the units and the price before I pick anything up. If the plan changes mid appointment, we stop and talk about it.'},
+      {h:'The treatment is the short part',
+       b:'Ten to fifteen minutes for most Botox appointments. Numbing cream first if you want it. Most people say it is less than they expected.'},
+      {h:'Aftercare, in writing',
+       b:'Upright for four hours, no workout today, no rubbing the area. You leave with it written down and my number for questions.'},
+      {h:'We check in at two weeks',
+       b:'That is when it has fully settled. If something needs adjusting, that visit is included. Nobody gets sent away with almost right.'},
+    ],
+    ctaSerif:'STILL', ctaScript:'nervous?',
+    ctaBody:'That is normal and it is welcome. Send me the question you are embarrassed to ask. I have heard it before.',
+    button:'DM to book a consult',
+  },
+
+  /* Aug 31 — Education */
+  'preventative': {
+    label:'Preventative Botox &#183; The Honest Version',
+    coverSerif:'WHEN TO', coverScript:'actually start.',
+    coverSub:'Your friend who never seems to age is not lucky. She started before you could see anything.',
+    points:[
+      {h:'It is not about your age',
+       b:'There is no magic birthday. Twenty two with a deep frown line needs it more than thirty five with none. Your face decides, not your ID.'},
+      {h:'Look for lines that stay',
+       b:'Make your strongest expression, then relax completely. If a line is still sitting there after your face goes still, that one is setting in.'},
+      {h:'Static lines are the real signal',
+       b:'A line that only shows when you move is dynamic and easy. Once it is visible at rest it has creased the skin, and softening it takes longer.'},
+      {h:'Starting early means using less',
+       b:'Prevention keeps the muscle from carving the line in the first place. Correction has to relax the muscle and wait for skin to recover.'},
+      {h:'It is not a life sentence',
+       b:'Stop whenever you like. Nothing collapses and nothing gets worse. You return to the baseline you would have had anyway.'},
+    ],
+    ctaSerif:'NOT SURE IF', ctaScript:'it is time?',
+    ctaBody:'Bring your face to a consult and we will look together. If you do not need it yet, I will tell you that.',
+    button:'DM the word START',
+  },
+};
+
+const q = new URLSearchParams(location.search);
+const P = POSTS[q.get('post') || 'red-flags'];
+const n = parseInt(q.get('slide') || '1', 10);
+const total = P.points.length;
+
+const mono = '<img class="monogram" src="brand/logo-monogram.png" width="104" alt="LB">';
+const handle = '<div class="handle">@luxury_beauty_aestheticz</div>';
+let html;
+
+if (n === 1) {
+  html = `<div class="slide">${mono}
+    <div class="cover">
+      <div class="label">${P.label}</div>
+      <div style="margin-top:34px">
+        <div class="serif">${P.coverSerif}</div>
+        <div class="script">${P.coverScript}</div>
+      </div>
+      <div class="sub">${P.coverSub}</div>
+    </div>
+    <div class="swipe">Swipe &#8594;</div>
+  </div>`;
+} else if (n <= total + 1) {
+  const p = P.points[n - 2];
+  html = `<div class="slide">${mono}
+    <div class="point">
+      <div class="num">${String(n - 1).padStart(2, '0')}</div>
+      <h2>${p.h}</h2>
+      <div class="body">${p.b}</div>
+    </div>
+    <div class="foot">
+      <div class="rule"></div>
+      <div class="row"><div class="count">${n - 1} of ${total}</div>${handle}</div>
+    </div>
+  </div>`;
+} else {
+  html = `<div class="slide">${mono}
+    <div class="cta-slide">
+      <div class="serif">${P.ctaSerif}</div>
+      <div class="script">${P.ctaScript}</div>
+      <div class="body">${P.ctaBody}</div>
+      <div class="button">${P.button}</div>
+      <div class="handle" style="margin-top:44px">@luxury_beauty_aestheticz</div>
+    </div>
+  </div>`;
+}
+document.getElementById('stage').innerHTML = html;
+</script>
+</body>
+</html>
