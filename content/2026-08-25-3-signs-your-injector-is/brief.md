@@ -2,30 +2,48 @@
 
 **Post date:** Tuesday, August 25, 2026 (Week 2)
 **Format:** Single Image
-**Platforms:** IG + FB + TikTok photo
+**Platforms:** IG + FB + TikTok photo + GBP
 **Pillar:** Education
 **Theme:** Botox, Honestly (Launch)
+**Status:** Ready
 
 ## Hook
 Protect yourself before you book.
 
-## Caption
-If your consult is shorter than your coffee order, that is a problem. Save this checklist and trust your gut.
+## Instagram caption
+Ten minutes in and out is not efficient. It is skipped steps.
 
-**CTA:** Save + share this
+The injecting really is quick. The looking, the mapping and the conversation
+are not, and those are the parts that decide whether you like your face in two
+weeks.
 
-## Hashtags (Set A: Botox Education)
-#botox #botoxeducation #botoxmyths #preventativebotox #antiwrinkleinjections #nurseinjector #medspa #naturalbotox #botoxbeforeandafter #aestheticnurse
+Three signs you are being processed instead of treated. Screenshot them and
+take them to your next appointment, wherever that is.
 
-## Visual / Asset
-Single image: 3-point checklist card in brand style
+**CTA:** Save this. Use it.
 
-## Design
-Style: Editorial (house style)
-Reference: design/botox-myths.html. Cream palette, Playfair Display headlines,
-Pinyon Script accents, Jost labels, LB logo from design/brand/.
-To use a different look for this post, replace this section with a description
-or drop an inspiration image in this folder.
+### Hashtags (Set C: Trust & Proof)
+#oakvillemedspa #burlingtonmedspa #miltonontario #mississaugabeauty #haltonregion #honestinjector #naturalresults #aestheticnurse #nursepractitioner #medspacanada #luxurybeautybycleor #npcleo
+
+## Google Business Profile
+Three signs your injector is rushing you: no mirror and no map, units decided before you spoke, and the whole visit over in under ten minutes. Worth knowing before you book anywhere. Serving Oakville, Burlington, Milton and Mississauga.
+
+**Button:** Learn more > Instagram
+**Image:** `images/gbp.png` (1200x900, content inside the centre 900x900)
+
+No hashtags on GBP, they do not function there. Only the first 80 or so
+characters show before the fold, so the offer leads.
+
+## Assets in this folder
+- `images/post.png`
+- `images/gbp.png`
+
+## Photos
+No client photos in this post.
+
+
+Client photos are cropped to the treatment area before use. No eyes, brows,
+tattoos or jewellery. See design/photos/cleo/README.md.
 
 ---
-Drop the final image(s) for this post in the images/ subfolder.
+Regenerate artwork with `python3 design/render.py august`.

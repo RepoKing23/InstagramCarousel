@@ -2,30 +2,55 @@
 
 **Post date:** Thursday, August 27, 2026 (Week 2)
 **Format:** Carousel
-**Platforms:** Instagram feed
+**Platforms:** Instagram feed + GBP
 **Pillar:** Personality & BTS
 **Theme:** Botox, Honestly (Launch)
+**Status:** Ready
 
 ## Hook
 Real education. Real results. Real care.
 
-## Caption
-Before you trust someone with your face, you should know who they are. Here is my story, my training, and why I will always tell you the truth about what you need. 💛
+## Instagram caption
+I got tired of fixing work that never should have happened.
 
-**CTA:** Say hi in the comments
+That is the honest reason this clinic exists. Most people who sit in my chair
+are not asking for a different face. They want to stop looking tired, and
+somewhere along the way the industry decided more was always the answer.
 
-## Hashtags (Set C: Brand & Trust)
-#npinjector #nursepractitioner #medspalife #luxurybeauty #aestheticnurse #skincareexpert #beautyclinic #selfcare #naturalresults #honestbeauty
+So I go slow. I dose conservatively, I build over sessions, and I say not yet
+more often than people expect. I have never once regretted that.
 
-## Visual / Asset
-Portrait photos of Cleo (reuse cleo.png + new shots)
+Nurse practitioner. Every appointment injected by me, never handed off to
+somebody you have not met.
 
-## Design
-Style: Editorial (house style)
-Reference: design/botox-myths.html. Cream palette, Playfair Display headlines,
-Pinyon Script accents, Jost labels, LB logo from design/brand/.
-To use a different look for this post, replace this section with a description
-or drop an inspiration image in this folder.
+**CTA:** DM the word CONSULT
+
+### Hashtags (Set D: Personality & BTS)
+#oakville #oakvillebusiness #burlingtonontario #miltonontario #mississauga #haltonregion #womeninbusiness #nursepractitioner #aestheticnurse #medspalife #luxurybeautybycleor #npcleo
+
+## Google Business Profile
+Meet NP Cleo. Nurse practitioner and injector, and the person who will tell you no when the honest answer is not yet. Every appointment is injected by Cleo, never delegated. Serving Oakville, Burlington, Milton and Mississauga.
+
+**Button:** Learn more > Instagram
+**Image:** `images/gbp.png` (1200x900, content inside the centre 900x900)
+
+No hashtags on GBP, they do not function there. Only the first 80 or so
+characters show before the fold, so the offer leads.
+
+## Assets in this folder
+- `images/slide-1.png`
+- `images/slide-2.png`
+- `images/slide-3.png`
+- `images/slide-4.png`
+- `images/slide-5.png`
+- `images/gbp.png`
+
+## Photos
+No client photos in this post.
+
+
+Client photos are cropped to the treatment area before use. No eyes, brows,
+tattoos or jewellery. See design/photos/cleo/README.md.
 
 ---
-Drop the final image(s) for this post in the images/ subfolder.
+Regenerate artwork with `python3 design/render.py august`.

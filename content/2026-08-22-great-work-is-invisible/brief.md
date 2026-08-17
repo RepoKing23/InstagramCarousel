@@ -1,31 +1,51 @@
-# Quote: Great Work Is Invisible
+# Great Work Is Invisible
 
 **Post date:** Saturday, August 22, 2026 (Week 1)
-**Format:** Single Image
-**Platforms:** IG + FB + TikTok photo
+**Format:** Before/After
+**Platforms:** IG + FB + TikTok photo + GBP
 **Pillar:** Trust & Proof
 **Theme:** Botox, Honestly (Launch)
+**Status:** Ready
 
 ## Hook
-Brand quote card.
+You were not supposed to notice.
 
-## Caption
-Great work is invisible. Bad work is what gave Botox its reputation. Agree or disagree? 👇
+## Instagram caption
+She booked because her top lip disappeared when she smiled.
 
-**CTA:** Comment below
+Not because she wanted bigger lips. She was very clear about that. One syringe,
+placed along a lip line that was already there, and the shape she was born with
+stayed exactly where it was.
 
-## Hashtags (Set C: Brand & Trust)
-#npinjector #nursepractitioner #medspalife #luxurybeauty #aestheticnurse #skincareexpert #beautyclinic #selfcare #naturalresults #honestbeauty
+If you scrolled past this without stopping, that is the result doing its job.
+Good work does not announce itself.
 
-## Visual / Asset
-Quote card in editorial brand style
+Shared with her permission. Individual results vary.
 
-## Design
-Style: Editorial (house style)
-Reference: design/botox-myths.html. Cream palette, Playfair Display headlines,
-Pinyon Script accents, Jost labels, LB logo from design/brand/.
-To use a different look for this post, replace this section with a description
-or drop an inspiration image in this folder.
+**CTA:** Message to book
+
+### Hashtags (Set B: Filler)
+#lipfilleroakville #fillersoakville #oakvillemedspa #burlingtonfiller #miltonlipfiller #mississaugamedspa #dermalfillers #naturallips #facialbalancing #aestheticnurse #luxurybeautybycleor #npcleo
+
+## Google Business Profile
+One syringe of lip filler, with her own lip shape kept exactly where it was. Natural results are the whole point of how we practise. Shared with client consent, individual results vary. Serving Oakville, Burlington, Milton and Mississauga.
+
+**Button:** Learn more > Instagram
+**Image:** `images/gbp.png` (1200x900, content inside the centre 900x900)
+
+No hashtags on GBP, they do not function there. Only the first 80 or so
+characters show before the fold, so the offer leads.
+
+## Assets in this folder
+- `images/before-after-result.png`
+- `images/gbp.png`
+
+## Photos
+Files: img_9908 (before), img_9912 (after)
+Consent: Not needed
+
+Client photos are cropped to the treatment area before use. No eyes, brows,
+tattoos or jewellery. See design/photos/cleo/README.md.
 
 ---
-Drop the final image(s) for this post in the images/ subfolder.
+Regenerate artwork with `python3 design/render.py august`.

@@ -2,30 +2,56 @@
 
 **Post date:** Thursday, August 20, 2026 (Week 1)
 **Format:** Carousel
-**Platforms:** Instagram feed
+**Platforms:** Instagram feed + GBP
 **Pillar:** Trust & Proof
 **Theme:** Botox, Honestly (Launch)
+**Status:** Ready
 
 ## Hook
 Your face deserves better than a bargain.
 
-## Caption
-A menu with no consultation, prices too good to be true, and nobody asking about your medical history. If you see these, walk away. I want you safe, even if you never book with me. Save this checklist. 💛
+## Instagram caption
+If nobody asked you a single question before picking up a needle, leave.
 
-**CTA:** Save this checklist
+I have fixed enough work from other clinics to know the pattern. The problem is
+almost never the product. It starts with an appointment that skipped the part
+where somebody actually looked at your face.
 
-## Hashtags (Set C: Brand & Trust)
-#npinjector #nursepractitioner #medspalife #luxurybeauty #aestheticnurse #skincareexpert #beautyclinic #selfcare #naturalresults #honestbeauty
+Five things worth walking away from. The last one is the one people forget to
+ask about, and it is the one that matters most if something ever goes wrong.
 
-## Visual / Asset
-Design in editorial template (sequel to Choosing the Right NP)
+Save this and take it to your next consult, wherever you book.
 
-## Design
-Style: Editorial (house style)
-Reference: design/botox-myths.html. Cream palette, Playfair Display headlines,
-Pinyon Script accents, Jost labels, LB logo from design/brand/.
-To use a different look for this post, replace this section with a description
-or drop an inspiration image in this folder.
+**CTA:** Save this before you book
+
+### Hashtags (Set C: Trust & Proof)
+#oakvillemedspa #burlingtonmedspa #miltonontario #mississaugabeauty #haltonregion #honestinjector #naturalresults #aestheticnurse #nursepractitioner #medspacanada #luxurybeautybycleor #npcleo
+
+## Google Business Profile
+Five things to walk away from at a med spa: no consultation, bargain pricing, a provider who never says no, no named injector, and no plan for complications. Know them before you book anywhere. Serving Oakville, Burlington, Milton and Mississauga.
+
+**Button:** Learn more > Instagram
+**Image:** `images/gbp.png` (1200x900, content inside the centre 900x900)
+
+No hashtags on GBP, they do not function there. Only the first 80 or so
+characters show before the fold, so the offer leads.
+
+## Assets in this folder
+- `images/slide-1.png`
+- `images/slide-2.png`
+- `images/slide-3.png`
+- `images/slide-4.png`
+- `images/slide-5.png`
+- `images/slide-6.png`
+- `images/slide-7.png`
+- `images/gbp.png`
+
+## Photos
+No client photos in this post.
+
+
+Client photos are cropped to the treatment area before use. No eyes, brows,
+tattoos or jewellery. See design/photos/cleo/README.md.
 
 ---
-Drop the final image(s) for this post in the images/ subfolder.
+Regenerate artwork with `python3 design/render.py august`.

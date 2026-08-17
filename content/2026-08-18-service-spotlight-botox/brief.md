@@ -2,30 +2,41 @@
 
 **Post date:** Tuesday, August 18, 2026 (Week 1)
 **Format:** Single Image
-**Platforms:** IG + FB + TikTok photo
+**Platforms:** IG + FB + TikTok photo + GBP
 **Pillar:** Education
 **Theme:** Botox, Honestly (Launch)
+**Status:** Ready
 
 ## Hook
 Smooth, not frozen.
 
-## Caption
-Softened lines, full expression, and nobody can tell why you look so rested. That is Botox done right. ✨
+## Instagram caption
+Softened lines, full expression, and nobody can tell why you look so rested. That is Botox done right.
 
 **CTA:** DM BOTOX to book
 
-## Hashtags (Set A: Botox Education)
+### Hashtags (Set A: Botox / Neuromodulator)
 #botox #botoxeducation #botoxmyths #preventativebotox #antiwrinkleinjections #nurseinjector #medspa #naturalbotox #botoxbeforeandafter #aestheticnurse
 
-## Visual / Asset
-Single image: treatment photo + hook overlay in brand style
+## Google Business Profile
+Not written yet.
 
-## Design
-Style: Editorial (house style)
-Reference: design/botox-myths.html. Cream palette, Playfair Display headlines,
-Pinyon Script accents, Jost labels, LB logo from design/brand/.
-To use a different look for this post, replace this section with a description
-or drop an inspiration image in this folder.
+**Button:** Learn more > Instagram
+**Image:** `images/gbp.png` (1200x900, content inside the centre 900x900)
+
+No hashtags on GBP, they do not function there. Only the first 80 or so
+characters show before the fold, so the offer leads.
+
+## Assets in this folder
+- `images/post.png`
+- `images/gbp.png`
+
+## Photos
+No client photos in this post.
+
+
+Client photos are cropped to the treatment area before use. No eyes, brows,
+tattoos or jewellery. See design/photos/cleo/README.md.
 
 ---
-Drop the final image(s) for this post in the images/ subfolder.
+Regenerate artwork with `python3 design/render.py august`.

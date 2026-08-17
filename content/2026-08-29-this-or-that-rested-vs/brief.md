@@ -2,30 +2,47 @@
 
 **Post date:** Saturday, August 29, 2026 (Week 2)
 **Format:** Single Image
-**Platforms:** IG + FB + TikTok photo
+**Platforms:** IG + FB + TikTok photo + GBP
 **Pillar:** Trust & Proof
 **Theme:** Botox, Honestly (Launch)
+**Status:** Ready
 
 ## Hook
-Engagement post.
+If people ask what you had done, the dose was wrong.
 
-## Caption
-When you picture your results, which one are you actually asking for? Vote below. 👇
+## Instagram caption
+If people ask what you had done, the dose was wrong.
 
-**CTA:** Vote in the comments
+The goal was never to erase your expressions. You should still frown at your
+inbox and squint in the sun. Softer, not stiller.
 
-## Hashtags (Set C: Brand & Trust)
-#npinjector #nursepractitioner #medspalife #luxurybeauty #aestheticnurse #skincareexpert #beautyclinic #selfcare #naturalresults #honestbeauty
+Rested or frozen. Which were you actually hoping for? Tell me in the comments,
+I read all of them.
 
-## Visual / Asset
-Two-panel comparison card in brand style
+**CTA:** Which one do you want?
 
-## Design
-Style: Editorial (house style)
-Reference: design/botox-myths.html. Cream palette, Playfair Display headlines,
-Pinyon Script accents, Jost labels, LB logo from design/brand/.
-To use a different look for this post, replace this section with a description
-or drop an inspiration image in this folder.
+### Hashtags (Set C: Trust & Proof)
+#oakvillemedspa #burlingtonmedspa #miltonontario #mississaugabeauty #haltonregion #honestinjector #naturalresults #aestheticnurse #nursepractitioner #medspacanada #luxurybeautybycleor #npcleo
+
+## Google Business Profile
+Rested, not frozen. You should still frown, squint and smile. If people ask what you had done instead of whether you slept well, the dose was wrong. Serving Oakville, Burlington, Milton and Mississauga.
+
+**Button:** Learn more > Instagram
+**Image:** `images/gbp.png` (1200x900, content inside the centre 900x900)
+
+No hashtags on GBP, they do not function there. Only the first 80 or so
+characters show before the fold, so the offer leads.
+
+## Assets in this folder
+- `images/post.png`
+- `images/gbp.png`
+
+## Photos
+No client photos in this post.
+
+
+Client photos are cropped to the treatment area before use. No eyes, brows,
+tattoos or jewellery. See design/photos/cleo/README.md.
 
 ---
-Drop the final image(s) for this post in the images/ subfolder.
+Regenerate artwork with `python3 design/render.py august`.
