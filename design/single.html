@@ -15,7 +15,24 @@
     width:1080px;height:1350px;position:relative;overflow:hidden;
     background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;
   }
-  .monogram{position:absolute;top:64px;left:80px;}
+
+  /* Dark variant. Same palette inverted, so a run of cream posts gets a break
+     without introducing a second brand. Used on a few posts for grid rhythm. */
+  .slide.dark{background:var(--ink);color:var(--cream);}
+  .slide.dark .label,
+  .slide.dark .item p,
+  .slide.dark .col .cap,
+  .slide.dark .col li,
+  .slide.dark .statement .body,
+  .slide.dark .handle{color:rgba(243,238,229,.72);}
+  .slide.dark .item .n{color:var(--gold);}
+  .slide.dark .rule,
+  .slide.dark .col + .col{background:rgba(243,238,229,.28);border-color:rgba(243,238,229,.28);}
+  .slide.dark .col li b,
+  .slide.dark .cta{color:var(--cream);}
+  .slide.dark .monogram{filter:brightness(0) invert(1) opacity(.86);}
+
+  .monogram{position:absolute;top:64px;left:80px;z-index:3;}
   .label{font-size:23px;letter-spacing:.38em;text-transform:uppercase;color:var(--ink-soft);}
   .serif{font-family:'Playfair Display',serif;font-weight:500;font-size:88px;line-height:1.04;}
   .script{font-family:'Pinyon Script',cursive;font-size:86px;line-height:.95;}
@@ -23,10 +40,27 @@
   .rule{height:1px;background:var(--hair);margin:34px 0 24px;}
   .row{display:flex;align-items:baseline;justify-content:space-between;gap:36px;}
   .cta{font-size:24px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;white-space:nowrap;}
-  .foot{position:absolute;left:80px;right:80px;bottom:78px;}
+  .foot{position:absolute;left:80px;right:80px;bottom:78px;z-index:3;}
   .head{padding:196px 80px 0;text-align:center;}
 
-  /* numbered list body */
+  /* photo-led: full bleed image with a scrim so the type sits on the quiet half */
+  .photo{position:absolute;inset:0;}
+  .photo img{width:100%;height:100%;object-fit:cover;}
+  .scrim{
+    position:absolute;left:0;right:0;bottom:0;height:66%;
+    background:linear-gradient(to bottom, rgba(243,238,229,0), rgba(243,238,229,.94) 42%, var(--cream));
+  }
+  .dark .scrim{
+    background:linear-gradient(to bottom, rgba(46,42,35,0), rgba(46,42,35,.94) 42%, var(--ink));
+  }
+  .lower{position:absolute;left:80px;right:80px;bottom:186px;text-align:center;z-index:2;}
+  .lower .label{margin-bottom:24px;}
+  .lower .body{
+    margin-top:32px;font-size:30px;line-height:1.55;letter-spacing:.05em;color:var(--ink-soft);
+  }
+  .dark .lower .body{color:rgba(243,238,229,.72);}
+
+  /* numbered list */
   .items{margin-top:74px;display:flex;flex-direction:column;gap:52px;padding:0 12px;}
   .item{display:flex;gap:30px;align-items:flex-start;text-align:left;}
   .item .n{
@@ -40,42 +74,31 @@
   .compare{margin-top:86px;display:flex;gap:0;text-align:left;}
   .col{flex:1;padding:0 44px;}
   .col + .col{border-left:1px solid var(--hair);}
-  .col .cap{
-    font-size:22px;letter-spacing:.34em;text-transform:uppercase;color:var(--ink-soft);
-  }
-  .col h3{
-    margin-top:24px;font-family:'Playfair Display',serif;font-weight:500;
-    font-size:62px;line-height:1.06;
-  }
+  .col .cap{font-size:22px;letter-spacing:.34em;text-transform:uppercase;color:var(--ink-soft);}
+  .col h3{margin-top:24px;font-family:'Playfair Display',serif;font-weight:500;font-size:56px;line-height:1.06;}
   .col ul{margin-top:34px;list-style:none;}
-  .col li{
-    font-size:28px;line-height:1.5;letter-spacing:.05em;color:var(--ink-soft);
-    padding-bottom:22px;
-  }
+  .col li{font-size:28px;line-height:1.5;letter-spacing:.05em;color:var(--ink-soft);padding-bottom:22px;}
   .col li b{color:var(--ink);font-weight:500;}
 
   /* plain statement */
-  .statement{
-    display:flex;flex-direction:column;justify-content:center;height:100%;
-    padding:0 96px;text-align:center;
-  }
+  .statement{display:flex;flex-direction:column;justify-content:center;height:100%;padding:0 96px;text-align:center;}
   .statement .serif{font-size:100px;}
   .statement .script{font-size:94px;margin-top:8px;}
-  .statement .body{
-    margin-top:56px;font-size:32px;line-height:1.62;letter-spacing:.06em;color:var(--ink-soft);
-  }
+  .statement .body{margin-top:56px;font-size:32px;line-height:1.62;letter-spacing:.06em;color:var(--ink-soft);}
 </style>
 </head>
 <body>
 <div id="stage"></div>
 
 <script>
-/* Pick with ?post=<key>. Type only, no icon art. */
+/* Pick with ?post=<key>. Type only, no icon art. `theme:'dark'` inverts the
+   palette; `photo` makes it photo-led with the type on a scrim. */
 const POSTS = {
 
-  /* Aug 21 — Behind the Scenes: The Prep */
+  /* Aug 21 — Behind the Scenes: The Prep. Dark, because clinical rigour reads
+     better on ink than on cream, and it breaks up a very beige grid. */
   'the-prep': {
-    kind:'list',
+    kind:'list', theme:'dark',
     label:'Behind The Scenes &#183; Before You Sit Down',
     serif:'WHAT HAPPENS', script:'before the needle.',
     items:[
@@ -89,56 +112,62 @@ const POSTS = {
     cta:'Zero shortcuts. Ever.',
   },
 
-  /* Aug 25 — 3 Signs Your Injector Is Rushing You */
-  'rushing': {
-    kind:'list',
-    label:'Protect Yourself &#183; Before You Book',
-    serif:'3 SIGNS YOU ARE', script:'being rushed.',
+  /* Aug 25 — replaces "3 Signs Your Injector Is Rushing You", which was the same
+     argument as the Aug 20 red flags carousel five days earlier. This answers the
+     question people actually search before booking. Dark for grid rhythm. */
+  'what-it-costs': {
+    kind:'list', theme:'dark',
+    label:'The Question Everyone Asks &#183; Answered',
+    serif:'WHY I DO NOT', script:'post prices.',
     items:[
-      {h:'No mirror, no map',
-       p:'If nobody handed you a mirror and asked what bothers you, the plan is theirs, not yours.'},
-      {h:'The units were decided before you spoke',
-       p:'A set number for every face means nobody looked at yours. Dosing follows anatomy, not a menu.'},
-      {h:'You are out in under ten minutes',
-       p:'The injecting is quick. The assessment is not. If the whole visit was quick, something got skipped.'},
+      {h:'Because units are not a menu item',
+       p:'Two people wanting the same result can need very different doses. A flat price either overcharges one of you or under treats the other.'},
+      {h:'Because cheap injectables cost more',
+       p:'Correcting overfilled or badly placed work takes more time and more product than doing it properly the first time.'},
+      {h:'You still get a number before we start',
+       p:'At your consult, in writing, after I have actually looked at your face. Nothing is opened until you have agreed to it.'},
     ],
-    cta:'Save this. Use it.',
+    cta:'DM the word PRICE',
   },
 
-  /* Aug 29 — This or That: Rested vs Frozen */
+  /* Aug 28 — Welcome to the Treatment Room. Photo led. botox-prep.png carries
+     real room context in its background, which a type-only card could not. */
+  'treatment-room': {
+    kind:'photo', theme:'dark',
+    // Framed on the room rather than the hands. This also pushes the branded
+    // vial low and partly under the scrim, which keeps a legible prescription
+    // drug label out of a promotional post. See the Health Canada note.
+    photo:'photos/botox-myths/botox-prep.png', focal:'center 6%',
+    label:'Welcome In &#183; The Treatment Room',
+    serif:'WHERE CALM', script:'meets careful.',
+    body:'One client in the room at a time. The door stays shut, the questions stay ' +
+         'welcome, and nothing gets injected until we both agree on the plan.',
+    cta:'Come see it',
+  },
+
+  /* Aug 29 — This or That. Photo led on cream, using the unused portrait. The
+     whole argument is "you should look rested", so showing a real relaxed face
+     does more work than two columns of type alone. */
   'rested-vs-frozen': {
     kind:'compare',
     label:'This Or That &#183; Which Are You Booking For',
     serif:'RESTED', script:'or frozen?',
     cols:[
-      {cap:'Rested', h:'What we aim for',
+      {cap:'Rested', h:'The goal',
        li:['You still <b>frown, squint and smile</b>','Lines soften, they do not vanish overnight',
            'People ask if you <b>slept well</b>','Dosed to your muscle, not to a template']},
-      {cap:'Frozen', h:'What people fear',
+      {cap:'Frozen', h:'The fear',
        li:['One expression, all day','Brows that will not move at all',
            'People ask <b>what you had done</b>','Same dose for every face that walks in']},
     ],
     cta:'Which one do you want?',
   },
-
-  /* Aug 28 — Welcome to the Treatment Room. Type led, no photo yet. */
-  'treatment-room': {
-    kind:'statement',
-    label:'Welcome In &#183; The Treatment Room',
-    serif:'WHERE CALM', script:'meets careful.',
-    body:'One client in the room at a time. No rushing the person before you, ' +
-         'and no rushing you. The door stays shut, the questions stay welcome, ' +
-         'and nothing gets injected until we both agree on the plan.<br><br>' +
-         'It is a quiet room on purpose. Decisions about your face deserve one.',
-    cta:'Come see it',
-  },
 };
 
 const P = POSTS[new URLSearchParams(location.search).get('post') || 'the-prep'];
 const mono = '<img class="monogram" src="brand/logo-monogram.png" width="104" alt="LB">';
+const cls = `slide${P.theme === 'dark' ? ' dark' : ''}`;
 
-/* Each kind supplies the body; statement centres its own block, the other two
-   sit under the shared head. */
 const BODY = {
   list: () => `<div class="items">${P.items.map((it, i) =>
     `<div class="item"><div class="n">${String(i + 1).padStart(2, '0')}</div>
@@ -149,27 +178,40 @@ const BODY = {
   statement: () => `<div class="body">${P.body}</div>`,
 };
 
-const title = `
+const title = (extra = '') => `
   <div class="label">${P.label}</div>
-  <div style="margin-top:${P.kind === 'statement' ? 30 : 26}px">
+  <div style="margin-top:${extra || 26}px">
     <div class="serif">${P.serif}</div>
     <div class="script">${P.script}</div>
   </div>`;
 
-document.getElementById('stage').innerHTML = `
-<div class="slide">${mono}
-  <div class="${P.kind === 'statement' ? 'statement' : 'head'}">
-    ${title}
-    ${BODY[P.kind]()}
-  </div>
+const foot = `
   <div class="foot">
     <div class="rule"></div>
     <div class="row">
       <div class="cta">${P.cta}</div>
       <div class="handle">@luxury_beauty_aestheticz</div>
     </div>
-  </div>
-</div>`;
+  </div>`;
+
+document.getElementById('stage').innerHTML = P.kind === 'photo'
+  ? `<div class="${cls}">
+       <div class="photo"><img src="${P.photo}" style="object-position:${P.focal}" alt=""></div>
+       <div class="scrim"></div>
+       ${mono}
+       <div class="lower">
+         ${title(20)}
+         <div class="body">${P.body}</div>
+       </div>
+       ${foot}
+     </div>`
+  : `<div class="${cls}">${mono}
+       <div class="${P.kind === 'statement' ? 'statement' : 'head'}">
+         ${title()}
+         ${BODY[P.kind]()}
+       </div>
+       ${foot}
+     </div>`;
 </script>
 </body>
 </html>

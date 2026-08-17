@@ -55,9 +55,9 @@ AUGUST += carousel('carousel.html', 'post=first-visit',
                    '2026-08-24-your-first-visit-step-by', 8)
 AUGUST += [gbp('aug-24', '2026-08-24-your-first-visit-step-by')]
 
-AUGUST += [ig('single.html?post=rushing',
-              'content/2026-08-25-3-signs-your-injector-is/images/post.png'),
-           gbp('aug-25', '2026-08-25-3-signs-your-injector-is')]
+AUGUST += [ig('single.html?post=what-it-costs',
+              'content/2026-08-25-why-i-do-not-post/images/post.png'),
+           gbp('aug-25', '2026-08-25-why-i-do-not-post')]
 
 AUGUST += carousel('owner.html', '', '2026-08-27-meet-np-cleo-the-face', 5)
 AUGUST += [gbp('aug-27', '2026-08-27-meet-np-cleo-the-face')]

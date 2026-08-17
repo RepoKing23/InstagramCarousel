@@ -25,6 +25,20 @@
   .count{font-size:24px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;}
   .foot{position:absolute;left:80px;right:80px;bottom:78px;}
 
+  /* Optional cover photograph, full bleed with a scrim so the type sits on the
+     quiet half. A warm face on the cover does more to stop a scroll than type. */
+  .cover .photo{position:absolute;inset:0;}
+  .cover .photo img{width:100%;height:100%;object-fit:cover;}
+  .cover .scrim{
+    position:absolute;left:0;right:0;bottom:0;height:64%;
+    background:linear-gradient(to bottom, rgba(243,238,229,0), rgba(243,238,229,.94) 40%, var(--cream));
+  }
+  .cover.has-photo{display:block;padding:0;}
+  .cover.has-photo .inner{
+    position:absolute;left:88px;right:88px;bottom:176px;text-align:center;z-index:2;
+  }
+  .cover.has-photo .sub{margin-top:38px;}
+
   /* cover */
   .cover{display:flex;flex-direction:column;justify-content:center;height:100%;padding:0 88px;text-align:center;}
   .cover .serif{font-size:104px;}
@@ -123,6 +137,7 @@ const POSTS = {
 
   /* Aug 31 — Education */
   'preventative': {
+    coverPhoto:'photos/botox-myths/smile-portrait.png', coverFocal:'center 22%',
     label:'Preventative Botox &#183; The Honest Version',
     coverSerif:'WHEN TO', coverScript:'actually start.',
     coverSub:'Your friend who never seems to age is not lucky. She started before you could see anything.',
@@ -154,17 +169,27 @@ const handle = '<div class="handle">@luxury_beauty_aestheticz</div>';
 let html;
 
 if (n === 1) {
-  html = `<div class="slide">${mono}
-    <div class="cover">
+  const type = `
       <div class="label">${P.label}</div>
       <div style="margin-top:34px">
         <div class="serif">${P.coverSerif}</div>
         <div class="script">${P.coverScript}</div>
       </div>
-      <div class="sub">${P.coverSub}</div>
-    </div>
-    <div class="swipe">Swipe &#8594;</div>
-  </div>`;
+      <div class="sub">${P.coverSub}</div>`;
+  html = P.coverPhoto
+    ? `<div class="slide">
+         <div class="cover has-photo">
+           <div class="photo"><img src="${P.coverPhoto}" style="object-position:${P.coverFocal}" alt=""></div>
+           <div class="scrim"></div>
+           ${mono}
+           <div class="inner">${type}</div>
+         </div>
+         <div class="swipe">Swipe &#8594;</div>
+       </div>`
+    : `<div class="slide">${mono}
+         <div class="cover">${type}</div>
+         <div class="swipe">Swipe &#8594;</div>
+       </div>`;
 } else if (n <= total + 1) {
   const p = P.points[n - 2];
   html = `<div class="slide">${mono}
