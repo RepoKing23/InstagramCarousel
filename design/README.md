@@ -39,3 +39,20 @@ the style to build. It defaults to the editorial house style above. To give a
 specific post a different look, edit that section (or drop an inspiration image
 in the post's folder) and ask Claude to design from the brief. New styles get
 their own template file in this directory so they stay reusable.
+
+## Grid tone rhythm (light / dark)
+
+The profile grid shows three tiles per row, newest first. House rule: **exactly
+one Dark or dark-photo tile per row of three, and never two Dark tiles side by
+side.** Cream is the base; the dark tiles are what stop the grid reading as one
+beige block.
+
+- `single.html` and `carousel.html` posts flip with `theme:'dark'` in their
+  POSTS entry — one line and a re-render, not a redesign.
+- The Tone column in the planner (Light / Dark / Photo) tracks this per post.
+  Check it when moving dates: swapping two posts can put two Dark tiles
+  together.
+- August is balanced (dark tiles: Aug 21, 25, 28). September onward is all
+  Light until designed — assign roughly one Dark per week.
+- If the black and gold before/after style is used for Aug 22, flip Aug 21 back
+  to light or the row becomes dark-dark-cream.
