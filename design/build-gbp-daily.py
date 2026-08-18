@@ -231,9 +231,9 @@ document.getElementById('photo').addEventListener('error', () => {{
 
 # --- planner tab -----------------------------------------------------------
 
-HEADERS = ['Date', 'Day', 'Source', 'Pillar', 'Post Text (first 80 chars show)',
-           'Chars', 'CTA Button', 'CTA Link', 'Image File', 'Open Image', 'Preview',
-           'Photo Credit', 'Status', 'Notes']
+HEADERS = ['Date', 'Day', 'Source', 'Pillar', 'Post Text (short)', 'Chars',
+           'Description (long, SEO)', 'Desc Chars', 'CTA Button', 'CTA Link',
+           'Image File', 'Open Image', 'Preview', 'Photo Credit', 'Status', 'Notes']
 
 
 def build_sheet(data):
@@ -281,6 +281,7 @@ def build_sheet(data):
         ws.append([
             datetime.datetime.strptime(p['date'], '%Y-%m-%d'),
             p['day'], p['source'], p['pillar'], p['text'], len(p['text']),
+            p['description'], len(p['description']),
             meta['cta_button'], meta['instagram_url'], img.split('/')[-1],
             'Open image', f'=IMAGE("{raw}{img}")',
             f"{photo['by']} / Unsplash", status or 'Ready', notes or '',
@@ -298,7 +299,7 @@ def build_sheet(data):
         cr = ws.cell(r, HEADERS.index('Photo Credit') + 1)
         cr.hyperlink = f"https://unsplash.com/photos/{photo['id']}"
         cr.style = 'Hyperlink'
-        for col in ('Post Text (first 80 chars show)', 'Notes'):
+        for col in ('Post Text (short)', 'Description (long, SEO)', 'Notes'):
             ws.cell(r, HEADERS.index(col) + 1).alignment = Alignment(wrap_text=True, vertical='top')
         # Sunday and Wednesday have no Instagram post behind them
         if p['source'] == 'GBP only':
@@ -308,12 +309,12 @@ def build_sheet(data):
             if not c.font.bold:
                 c.font = ink
 
-    widths = {'A': 12, 'B': 6, 'C': 34, 'D': 18, 'E': 78, 'F': 7, 'G': 12,
-              'H': 26, 'I': 34, 'J': 13, 'K': 14, 'L': 24, 'M': 10, 'N': 30}
+    widths = {'A': 12, 'B': 6, 'C': 32, 'D': 17, 'E': 54, 'F': 7, 'G': 96, 'H': 8,
+              'I': 12, 'J': 26, 'K': 32, 'L': 13, 'M': 14, 'N': 24, 'O': 10, 'P': 28}
     for col, w in widths.items():
         ws.column_dimensions[col].width = w
     for r in range(2, ws.max_row + 1):
-        ws.row_dimensions[r].height = 58
+        ws.row_dimensions[r].height = 132
 
     wb.save(SHEET)
     return ws.max_row - 1

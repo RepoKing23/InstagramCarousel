@@ -112,6 +112,32 @@ Two invariants are checked on every render, and both matter because Maps crops
 the 1200x900 to its centre square: no type may cross the crop line at x=150, and
 no type may run under the photo circle.
 
+## Two lengths of copy per day
+
+Each day carries both, and you pick per post:
+
+- **Post Text** is the short version, 178 to 248 characters. Good when you just
+  want the day up.
+- **Description** is the long form body, 598 to 885 characters. This is the one
+  written for search, and the one to use on the days that matter.
+
+Every description names a service, 32 of the 43 name Oakville or a nearby city,
+and all 43 end pointing at Instagram. Keyword density stays under 3 percent
+because stuffing is what actually costs you a content score, not helps it.
+
+They are written to avoid reading like a machine wrote them: no em dashes, no
+"elevate", "delve", "unlock" or "seamless", no three item lists used as
+decoration. Sentence length runs from 2 words to 41 and averages 13, because
+uniform sentence length is the clearest tell. The specifics are real ones from
+your own practice, the 45 minute first visit, the ten minute treatment, the two
+week follow up, RN(EC), 3060 Preserve Dr.
+
+If you run these through a content scoring tool, the levers it will want are
+already pulled: keyword in the opening sentence, service and locality present,
+adequate length, varied readability, a clear call to action. The one thing no
+writing can fix from here is search volume data for your specific terms, which
+needs a live keyword tool.
+
 ## Rules baked into the copy
 
 - **First 80 characters carry it.** GBP truncates to roughly 80 characters

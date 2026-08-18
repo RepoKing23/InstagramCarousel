@@ -15,7 +15,8 @@
       "Every button is Learn more pointed at the Instagram profile. Swap the URL once a booking page exists.",
       "Images are 1200x900 with all content inside the centre 900x900, because Maps crops to a square.",
       "Voice: plain, direct, first person. No em dashes, no sparkle emoji.",
-      "Rows marked source GBP only are Wednesday and Sunday, the two days with no Instagram post. They are evergreen and can be reordered or reused freely."
+      "Rows marked source GBP only are Wednesday and Sunday, the two days with no Instagram post. They are evergreen and can be reordered or reused freely.",
+      "Post Text is the short version. Description is the long form body, roughly 630 to 780 characters, written for search: the service and the city appear naturally, the hook is in the first 80 characters because that is all GBP shows before Read more, and the specifics are real. Use whichever suits the day."
     ]
   },
   "posts": [
@@ -31,7 +32,8 @@
       "body": "A private room in Oakville, no waiting area full of strangers, and nobody rushing the person before you.",
       "button": "See the room",
       "text": "One client in the room at a time, in a private Oakville studio. No busy waiting room, no rushing the person ahead of you, no rushing you. Injections are done by a nurse practitioner and never delegated. See the room and the work on Instagram.",
-      "photo": "SlpmIhUd860"
+      "photo": "SlpmIhUd860",
+      "description": "One client in the room at a time, in a private Oakville studio. That is a scheduling choice, not a luxury one. When two people are booked over each other, someone gets rushed, and the person being rushed is usually the one asking the most questions.\n\nYour appointment is injected by a nurse practitioner, never handed to whoever is free. You get the same face across visits, which matters more than people expect. Dose is built on what your muscles did last time, so the second appointment is always better informed than the first.\n\nThe studio is on Preserve Dr with free parking at the door, and people drive in from Burlington, Milton and Mississauga for Botox and filler. Come see the room and the work on Instagram."
     },
     {
       "date": "2026-08-20",
@@ -45,7 +47,8 @@
       "body": "No consultation, bargain pricing, a provider who never says no. What to walk away from before you book.",
       "button": "Read the post",
       "text": "Five things to walk away from at a med spa: no consultation, bargain pricing, a provider who never says no, no named injector, and pressure to decide today. Your face is not the place to find out you picked wrong. The full list is on Instagram.",
-      "photo": "HtXyytr9304"
+      "photo": "HtXyytr9304",
+      "description": "Five things to walk away from at a med spa: no consultation, bargain pricing, a provider who never says no, no named injector, and pressure to decide today.\n\nThe consultation is the one people skip. If nobody watched your face move before picking a dose, the dose is a guess. Bargain pricing is the second. Neuromodulator has a real per unit cost, so a price well under the going rate in Oakville usually means the product is overdiluted or the units are short.\n\nThe hardest one to spot is a provider who agrees with everything. Some faces should not get what they came in asking for, and you want the person holding the needle to say so.\n\nAsk who is injecting you, what their credentials are, and what happens if you are unhappy. The full list is on Instagram."
     },
     {
       "date": "2026-08-21",
@@ -59,7 +62,8 @@
       "body": "New tray, sealed product opened in front of you, your face mapped while it moves. Zero shortcuts, every time.",
       "button": "See the room",
       "text": "Every appointment starts the same way. A new tray, product opened sealed in front of you, and your face mapped while it moves, not while it sits still. The prep is the part nobody photographs. We photographed it, on Instagram.",
-      "photo": "7JYsKzpduoI"
+      "photo": "7JYsKzpduoI",
+      "description": "Every appointment here starts the same way. A new tray, product opened sealed in front of you, and your face mapped while it moves.\n\nMapping in motion is the part that changes the result. A forehead at rest tells you almost nothing. I need to see you frown, lift, squint and smile, because that is where the muscle is actually pulling and where the product needs to sit. Two people with identical lines often get very different plans.\n\nPrep is the unglamorous part nobody photographs, and it is most of what separates good Botox from the kind people notice. We photographed it anyway. On Instagram."
     },
     {
       "date": "2026-08-22",
@@ -73,7 +77,8 @@
       "body": "One syringe of lip filler, with her own lip shape kept exactly where it was.",
       "button": "See the result",
       "text": "One syringe of lip filler, with her own lip shape kept exactly where it was. If it reads as good skin and a good night of sleep rather than work, that was the goal. Shared with client consent, individual results vary. More on Instagram.",
-      "photo": "-FT1IVUnUd8"
+      "photo": "-FT1IVUnUd8",
+      "description": "One syringe of lip filler, with her own lip shape kept exactly where it was.\n\nThis is the standard I work to. Filler should follow the border you already have rather than invent a new one. That means respecting the ratio between top and bottom lip, keeping the cupid's bow, and stopping while it still looks like a good day rather than a decision.\n\nOne syringe goes further than most people think when it is placed well. The difference between natural and obvious is rarely the volume. It is where it sits and whether the injector was willing to stop.\n\nShared with client consent. Individual results vary, and lips in particular differ with anatomy and swelling. More natural lip filler work from our Oakville studio on Instagram."
     },
     {
       "date": "2026-08-23",
@@ -87,7 +92,8 @@
       "body": "Forty five minutes for a first visit, most of it talking. The injecting itself is about ten.",
       "button": "Ask a question",
       "text": "A first visit runs about 45 minutes and most of that is talking. Consultation, mapping your face in motion, and agreeing a plan and a price before anything is opened. The injecting itself takes roughly ten minutes. Questions welcome on Instagram.",
-      "photo": "16mHHrY3PUk"
+      "photo": "16mHHrY3PUk",
+      "description": "A first visit runs about 45 minutes, and most of that is talking.\n\nHere is the breakdown. Fifteen to twenty minutes on what is actually bothering you and what you want your face to do. Then mapping, where I watch your expressions and mark where the muscle pulls. Then a plan and a price, agreed and written down before anything is opened.\n\nThe injecting itself is closer to ten minutes. People are usually surprised by how short that part is, and how long the rest takes. That ratio is deliberate.\n\nYou can book a Botox consultation in Oakville and leave without treatment. Plenty do, and it is a completely normal outcome. Ask anything on Instagram."
     },
     {
       "date": "2026-08-24",
@@ -101,7 +107,8 @@
       "body": "A real consult, your face mapped in motion, a plan and a price agreed before anything is opened. Then ten minutes.",
       "button": "Book your first visit",
       "text": "Nervous about a first appointment? Here is the whole thing. A real consultation, your face mapped in motion, a written plan and price agreed before anything is opened, then about ten minutes of treatment. Step by step on Instagram.",
-      "photo": "PqyzuzFiQfY"
+      "photo": "PqyzuzFiQfY",
+      "description": "Nervous about a first appointment? Here is the whole thing, start to finish.\n\nYou arrive and we talk before anything else. I want to know what you notice in photos, what you have been told elsewhere, and what you are worried about. Then I map your face in motion. Then you get a written plan and a written price, and nothing is opened until you have agreed to both.\n\nTreatment takes about ten minutes. You go straight back to your day, with the aftercare rules on a card: stay upright four hours, skip the gym, leave the area alone.\n\nAt two weeks you come back so we can look properly and adjust if anything needs it. That visit is included in the price of your Botox. Step by step on Instagram."
     },
     {
       "date": "2026-08-25",
@@ -115,7 +122,8 @@
       "body": "Doses differ from face to face, so one flat price either overcharges you or under treats you. You get a written number at your consult.",
       "button": "Message to ask",
       "text": "Why there is no price list. Doses differ from face to face, so a single flat price either overcharges you or under treats you. You get a written number at your consultation, before anything is opened. The honest version is on Instagram.",
-      "photo": "wuZ5ZZEhp_A"
+      "photo": "wuZ5ZZEhp_A",
+      "description": "Why there is no price list on this page. Doses differ from face to face, so one flat price either overcharges you or under treats you.\n\nA strong forehead muscle needs more units than a light one. Someone treating a line for the first time needs a different amount than someone maintaining. Publishing a single number for an area means one of those people is paying for units they do not need and the other is being quietly short dosed to keep the number attractive.\n\nWhat you get instead is a written number at your consultation, based on your face and the units it actually takes. No moving target once you are in the chair.\n\nIf you want a ballpark before booking, message me on Instagram and describe what is bothering you. I will give you an honest range for Botox or filler at our Oakville studio."
     },
     {
       "date": "2026-08-26",
@@ -129,7 +137,8 @@
       "body": "A nurse practitioner, RN(EC), registered with the College of Nurses of Ontario. Never delegated, never rushed.",
       "button": "Meet Cleo",
       "text": "Ask any clinic who is actually holding the needle. Here it is a nurse practitioner, RN(EC), registered with the College of Nurses of Ontario. Every appointment is injected by Cleo, never delegated to someone you have not met. Meet her on Instagram.",
-      "photo": "6Cz6R3El3p0"
+      "photo": "6Cz6R3El3p0",
+      "description": "Ask any clinic who is actually holding the needle. It is a fair question and a good clinic will not flinch at it.\n\nHere it is a nurse practitioner, RN(EC), registered with the College of Nurses of Ontario. Every appointment is injected by Cleo. Nothing is delegated to someone you have not met, and nothing is handed off partway through.\n\nThat continuity is not just about credentials. Seeing the same face each visit means the plan builds. I know how your muscles responded last time, how long it lasted for you, and where we went lighter on purpose.\n\nCredentials are public and worth checking, here or anywhere else you are considering for Botox in Oakville. Meet her on Instagram."
     },
     {
       "date": "2026-08-27",
@@ -143,7 +152,8 @@
       "body": "Nurse practitioner and injector. Every appointment is injected by Cleo, never delegated, never rushed.",
       "button": "Book with Cleo",
       "text": "Meet NP Cleo. Nurse practitioner and injector, and the person who will tell you no when the honest answer is no. Every appointment is injected by her, never delegated. The full introduction is on Instagram.",
-      "photo": "TQSPgNqeCo8"
+      "photo": "TQSPgNqeCo8",
+      "description": "Meet NP Cleo. Nurse practitioner, injector, and the person who will tell you no when the honest answer is no.\n\nThat last part costs money and keeps the work good. Some requests do not suit the face in front of me. Sometimes the line someone wants softened is a volume issue and a neuromodulator will not touch it. Saying so loses the booking and saves the result.\n\nEvery appointment at this Oakville studio is injected by Cleo, never delegated. Clients come from Burlington, Milton and Mississauga, mostly on referral from someone whose work nobody could identify.\n\nThe full introduction, and the reasoning behind how she doses, is on Instagram."
     },
     {
       "date": "2026-08-28",
@@ -157,7 +167,8 @@
       "body": "One client in the room at a time. The door stays shut and the questions stay welcome.",
       "button": "Book a visit",
       "text": "One client in the treatment room at a time. Nobody rushes the person before you, so nobody rushes you. The door stays shut and the questions stay welcome, however small they feel. Come see the room on Instagram.",
-      "photo": "MGKzomg0Dts"
+      "photo": "MGKzomg0Dts",
+      "description": "One client in the treatment room at a time. Nobody rushes the person before you, so nobody rushes you.\n\nA private room changes what people are willing to ask. The questions that matter most are usually the ones people feel silly saying out loud in a waiting area, about cost, about looking overdone, about whether they will still look like themselves at a family event.\n\nThe door stays shut and those questions stay welcome, however small they feel. There is no upsell script here and no add on being pushed while you are already in the chair.\n\nThere is no upsell script here and no add on being pushed while you are already in the chair. Come see the Oakville treatment room on Instagram, and message if you want to know anything before you book Botox or filler."
     },
     {
       "date": "2026-08-29",
@@ -171,7 +182,8 @@
       "body": "You should still frown, squint and smile. If people ask what you had done instead of whether you slept, the dose was wrong.",
       "button": "Book a consult",
       "text": "Rested, not frozen. You should still frown, squint and smile afterwards. If people ask what you had done instead of whether you slept well, the dose was wrong. See the difference side by side on Instagram.",
-      "photo": "n5RNynnttF8"
+      "photo": "n5RNynnttF8",
+      "description": "Rested, not frozen. You should still frown, squint and smile after treatment.\n\nMovement is not a side effect you tolerate, it is the goal. A face that cannot move reads as work done. A face that moves with softer lines reads as sleep, water and a good few weeks. The second one is what people are actually paying for.\n\nGetting there is a dosing decision, not a product one. It means treating the muscle that is pulling hardest and leaving the ones doing useful work alone. It often means using fewer units than someone expects and asking them back at two weeks rather than chasing it all in one sitting.\n\nIf people ask what you had done instead of whether you slept well, the Botox dose was wrong. See the difference side by side on Instagram."
     },
     {
       "date": "2026-08-30",
@@ -185,7 +197,8 @@
       "body": "Your goals, your face in motion, what will work, what will not, and a written price. No obligation to book.",
       "button": "Book a consult",
       "text": "A consultation is not a sales appointment. We go through your goals, map your face in motion, and talk about what will work, what will not, and what it costs, in writing. You can leave without booking anything. More on Instagram.",
-      "photo": "VnPsDA8wRL4"
+      "photo": "VnPsDA8wRL4",
+      "description": "A consultation is not a sales appointment. You can leave without booking anything and that is a completely normal outcome.\n\nWhat it actually includes: your goals in your own words, your face mapped while it moves, and a straight answer about what will work and what will not. If the thing bothering you is not a neuromodulator problem, I will tell you that rather than sell you the closest thing I offer.\n\nYou leave with a written plan and a written price. No deposit to hear it, no pressure to decide in the room, and no follow up chasing you.\n\nBooking a consultation at our Oakville studio is a message on Instagram. Tell me what you are considering and we will start there."
     },
     {
       "date": "2026-08-31",
@@ -199,7 +212,8 @@
       "body": "It is not about your age. Make your strongest expression, relax, and see if the line stays. That one is setting in.",
       "button": "Book a consult",
       "text": "When should you actually start preventative Botox? It is not about your age. Make your strongest expression, relax your face, and see if the line stays behind. That is the one setting in. The full explanation is on Instagram.",
-      "photo": "w4Dj3MshHQ0"
+      "photo": "w4Dj3MshHQ0",
+      "description": "When should you actually start preventative Botox? It is not about your age, and the birthday number people quote is meaningless.\n\nHere is the test. Make your strongest expression, hold it, then relax your face completely. If a line stays behind after everything has released, that one is setting into the skin. That is the line worth treating early, whether you are 26 or 41.\n\nStarting before a line is etched means smaller doses, spaced further apart, and a softer result than chasing it later. Waiting until it is permanent does not make treatment impossible, it makes it slower and more expensive.\n\nIf you are not sure what you are looking at, take a photo mid expression and one relaxed and send both. Preventative Botox in Oakville, explained properly on Instagram."
     },
     {
       "date": "2026-09-01",
@@ -213,7 +227,8 @@
       "body": "Small doses, started early, to stop a line becoming permanent. Prevention is easier than erasing.",
       "button": "Book a consult",
       "text": "Preventative Botox, explained plainly. Small doses started before a line sets in, so it never becomes permanent. It is easier to stop a line than to erase one. Dosed to your muscle, never to a template. More on Instagram.",
-      "photo": "GG8i22DQTHw"
+      "photo": "GG8i22DQTHw",
+      "description": "Preventative Botox, explained plainly. Small doses started before a line sets in, so it never becomes permanent.\n\nThe muscle folds the skin the same way thousands of times. Early on the skin springs back. Over years it stops, and the crease stays after the expression has gone. Treating before that point keeps the fold from becoming a fixture.\n\nIt is dosed lighter than corrective work. The aim is to soften how hard the muscle pulls while leaving you full expression, not to shut movement down. Most people start with fewer units than they expect and come back at two weeks.\n\nNot every face needs it yet, and I will say so. Book a consultation at our Oakville studio, or ask on Instagram first."
     },
     {
       "date": "2026-09-02",
@@ -227,7 +242,8 @@
       "body": "Health Canada approved product, sealed and opened in front of you, injected by a nurse practitioner.",
       "button": "Ask a question",
       "text": "The question people are too polite to ask. Product is Health Canada approved, opened sealed in front of you, and injected by a nurse practitioner registered with the College of Nurses of Ontario. Ask me anything on Instagram.",
-      "photo": "5ma8wEjDTl0"
+      "photo": "5ma8wEjDTl0",
+      "description": "The question people are too polite to ask out loud. Is it safe.\n\nProduct is Health Canada approved and opened sealed in front of you, so you can see what is going in. It is injected by a nurse practitioner registered with the College of Nurses of Ontario, in a private room with single use needles and a new tray for every appointment.\n\nSide effects are usually small and short: a pinprick mark, occasional bruising, sometimes a mild headache the first day. The rarer issues, like a heavy lid, almost always come from product placed where it should not have been. That is a technique problem, which is exactly why who injects you matters more than which brand is on the vial.\n\nWho injects you matters more than which brand is on the vial. Ask me anything about Botox safety on Instagram. No question is too basic."
     },
     {
       "date": "2026-09-03",
@@ -241,7 +257,8 @@
       "body": "Units measure dose, not strength. The number you need depends on your muscle, not on a menu.",
       "button": "Read the post",
       "text": "Unit math, finally explained. Units measure dose, not strength, and the number you need depends on how strong your muscle is, not on a price menu. That is why a flat per-area price rarely tells the truth. Breakdown on Instagram.",
-      "photo": "zkf9upN0DbM"
+      "photo": "zkf9upN0DbM",
+      "description": "Unit math, finally explained. Units measure dose, not strength, and the number you need depends on how hard your muscle pulls.\n\nTwenty units in a strong frown muscle and twenty in a light one give completely different results. This is why a flat per area price rarely tells the truth. Two people book the same treatment, one gets enough product and the other quietly gets short dosed to keep the price attractive.\n\nIt is also why comparing your number to a friend's is a dead end. Hers might be right for her face and wrong for yours in either direction.\n\nWhat you should get is a unit count in writing before anything is opened, and an explanation of why that number. That is how Botox is priced here in Oakville. The full breakdown is on Instagram."
     },
     {
       "date": "2026-09-04",
@@ -255,7 +272,8 @@
       "body": "Nurse practitioner, College of Nurses of Ontario. The person who will talk you out of it if it is wrong for you.",
       "button": "Meet Cleo",
       "text": "Your injector is a nurse practitioner, RN(EC), registered with the College of Nurses of Ontario. Also the person who will talk you out of a treatment when it is not right for your face. Get to know her on Instagram.",
-      "photo": "q2csrSPGM_k"
+      "photo": "q2csrSPGM_k",
+      "description": "Your injector is a nurse practitioner, RN(EC), registered with the College of Nurses of Ontario.\n\nAn NP scope means assessing you properly, not just administering. That covers your medical history, what medications you are on, previous work someone else did, and whether treatment is right for you at all. It also means being able to say no with a reason attached.\n\nThe honest part is what people remember. If your concern is skin quality or lost volume, a neuromodulator is not the answer and you will hear that instead of a booking. It is the least profitable sentence in this business and the one that keeps clients for years.\n\nLook mine up, and look up anyone else you are considering for Botox in Oakville. It takes two minutes and it is the single most useful thing you can do before booking. Get to know her on Instagram."
     },
     {
       "date": "2026-09-05",
@@ -269,7 +287,8 @@
       "body": "Ask your friend who started early. Softening a line before it sets is easier than chasing it later.",
       "button": "Book a consult",
       "text": "Prevention beats erasing. Ask the friend who never seems to age. Softening a line before it sets into the skin takes less product, less money and less time than chasing it years later. More on Instagram.",
-      "photo": "0YT1p3lEPTg"
+      "photo": "0YT1p3lEPTg",
+      "description": "Prevention beats erasing. Ask the friend who never seems to age and started early.\n\nA line has two stages. First it appears only when you move. Later it stays when your face is still, because the skin has been folded the same way for years and stopped springing back. Treating in the first stage takes less product, less often, and holds better.\n\nBy the second stage a neuromodulator still helps, but it is softening something already set rather than stopping it forming. That usually means pairing it with something else and a longer timeline.\n\nThis is not an argument for treating everyone early. It is an argument for looking at your own face honestly and knowing which stage you are in. More on preventative treatment in Oakville, on Instagram."
     },
     {
       "date": "2026-09-06",
@@ -283,7 +302,8 @@
       "body": "Most people booking their first appointment have questions they think sound silly. Bring all of them.",
       "button": "Ask a question",
       "text": "Never had injectables before? Most first appointments start with a question the person thinks sounds silly. Bring all of them. You can book a consultation, ask everything, and leave without treatment. No pressure, ever. DM on Instagram.",
-      "photo": "g-m8EDc4X6Q"
+      "photo": "g-m8EDc4X6Q",
+      "description": "Never had injectables before? Most first appointments open with a question the person thinks sounds silly.\n\nThey are not. The ones I hear most: will I look done, will people notice, what happens if I hate it, and can I still raise my eyebrows at my kids. All reasonable, all worth asking before anything is opened.\n\nYou can book a consultation, ask every one of them, and leave with treatment nothing more than an option. No deposit to have the conversation. No follow up chasing you afterwards.\n\nIf booking a room still feels like too much, message first. I answer my own DMs on Instagram and you will get a straight answer rather than a booking link. First timers welcome, in Oakville and from Burlington, Milton and Mississauga."
     },
     {
       "date": "2026-09-07",
@@ -297,7 +317,8 @@
       "body": "Same family, different personalities. One spreads a little more, one kicks in a little faster.",
       "button": "Read the post",
       "text": "Botox or Dysport? Same family, different personalities. One spreads slightly more, one tends to kick in faster. Which suits you depends on the area and your muscle, not on which name you have heard of. Full comparison on Instagram.",
-      "photo": "634jzvuySY4"
+      "photo": "634jzvuySY4",
+      "description": "Botox or Dysport? Same family, different personalities, and the choice matters less than most comparison articles suggest.\n\nDysport tends to spread a little more from the injection point and often kicks in a day or two sooner. Botox tends to stay put more precisely, which is useful in small areas where you want a tight boundary. Both relax the muscle the same way.\n\nWhich suits you depends on the area being treated and how your muscle behaves, not on which name you recognise. A broad forehead and a small crow's foot are not the same problem.\n\nIf you have had one and it wore off faster than expected, mention it at your consultation. Sometimes the answer is the other product, more often it is the dose. Full comparison, from an Oakville injector, on Instagram."
     },
     {
       "date": "2026-09-08",
@@ -311,7 +332,8 @@
       "body": "Onset, spread and longevity side by side, so you can ask a better question at your consult.",
       "button": "See the comparison",
       "text": "Onset, spread and how long each one lasts, side by side. Not so you can pick for yourself, but so you can ask a sharper question at your consultation. The comparison card is on Instagram.",
-      "photo": "xTLqJqtq8R4"
+      "photo": "xTLqJqtq8R4",
+      "description": "Onset, spread and duration side by side, so you can ask a sharper question at your consultation.\n\nOnset: Dysport often shows in two to three days, Botox around three to five. Both fully settle at two weeks, which is when we judge the result, not before. Spread: Dysport diffuses a little wider from each point, Botox stays tighter. Duration: three to four months for most people with either one.\n\nThat is the honest extent of the difference. Anyone telling you one is dramatically better than the other is selling something.\n\nThe more useful conversation is about your muscle, your area and your dose. Bring the comparison to a consultation in Oakville and we will work from there. The card is on Instagram."
     },
     {
       "date": "2026-09-09",
@@ -325,7 +347,8 @@
       "body": "Stay upright, skip the gym, leave the area alone. Three rules, and they matter more than the rest.",
       "button": "Read aftercare",
       "text": "Aftercare, the short version. Stay upright for four hours, skip the gym for the rest of the day, and leave the treated area alone. Three rules that matter more than everything else you will read online. Full guide on Instagram.",
-      "photo": "3huGl_ayr_8"
+      "photo": "3huGl_ayr_8",
+      "description": "Aftercare, the short version. Stay upright for four hours, skip the gym for the rest of the day, and leave the treated area alone.\n\nThe reasoning is the same for all three. Product needs to stay where it was placed while it binds. Lying flat, raising your heart rate hard, or rubbing the area can move it a few millimetres, and a few millimetres is the difference between a good result and a heavy brow.\n\nThings that are fine: normal walking, work, makeup after a few hours, a glass of wine. Things worth avoiding for 24 hours: hot yoga, saunas, facials and face down massage.\n\nA small raised bump at each point is normal and settles within an hour. The full Botox aftercare guide is on Instagram, worth saving before your appointment rather than after."
     },
     {
       "date": "2026-09-10",
@@ -339,7 +362,8 @@
       "body": "What to do, what to skip, and what is completely normal. You got treated, now what?",
       "button": "Read the post",
       "text": "You got Botox. Now what? What to do, what to skip, and which small things are completely normal in the first 48 hours. Save it before your appointment, not after. The full guide is on Instagram.",
-      "photo": "aOh-bKGjvFI"
+      "photo": "aOh-bKGjvFI",
+      "description": "You got Botox. Now what? Here is what the first 48 hours actually look like.\n\nFirst four hours: stay upright and leave the area alone. First day: no gym, no sauna, no face down massage. Small raised bumps at each injection point settle within the hour, and a pinprick mark or light bruise is common and covers with makeup after a few hours.\n\nDay two to three is when most people notice movement starting to ease. It is gradual, and it is uneven at first, which is normal and not a sign something went wrong.\n\nDo not judge anything until two weeks. That is when Botox has fully settled and when we look properly at your follow up, included with every appointment in Oakville. Save the full guide from Instagram."
     },
     {
       "date": "2026-09-11",
@@ -353,7 +377,8 @@
       "body": "Your face is mapped while it moves, because a muscle at rest tells you almost nothing.",
       "button": "See the map",
       "text": "Every face gets its own map. Yours is drawn while it moves, because a muscle sitting still tells you almost nothing about where the product should go. That map is why two people never get the same dose. On Instagram.",
-      "photo": "4mCQh80Jzyo"
+      "photo": "4mCQh80Jzyo",
+      "description": "Every face gets its own map, and yours is drawn while it moves.\n\nA muscle sitting still tells you almost nothing. I need to see the frown, the lift, the squint and the smile, because that is where the pull actually is. People are rarely symmetrical. One brow usually works harder, and treating both sides identically is how you end up with a lift on one side and not the other.\n\nThe map is why two people with the same concern get different unit counts and different placements. It is also why I keep yours between visits. The second appointment starts from what your face did with the first one, rather than from scratch.\n\nThat is the difference between a plan and a menu, and it is why no two Botox appointments here use the same numbers. See how the mapping works on Instagram."
     },
     {
       "date": "2026-09-12",
@@ -367,7 +392,8 @@
       "body": "A quick pinch, a few seconds an area. Most people say it is easier than they had built up.",
       "button": "Ask a question",
       "text": "Does it hurt? Honest answer, a quick pinch and a few seconds per area. The needle is very fine and most people say it was easier than the version they had built up in their head. No fluff, on Instagram.",
-      "photo": "hX9V80PDxrQ"
+      "photo": "hX9V80PDxrQ",
+      "description": "Does it hurt? Honest answer: a quick pinch, a few seconds per area.\n\nThe needle is very fine, finer than the one used for bloodwork, and each injection point takes about a second. A forehead is usually four to six points. Most people describe it as a sharp scratch that is over before they have finished bracing for it.\n\nSome spots are more sensitive than others. Between the brows is the one people feel most. The area around the eyes is usually the easiest. No numbing cream is needed for a neuromodulator, though it is an option for filler.\n\nMost people say it was easier than the version they had built up in their head, and the second appointment is always easier than the first. Ask me anything about Botox in Oakville on Instagram."
     },
     {
       "date": "2026-09-13",
@@ -381,7 +407,8 @@
       "body": "The goal is never a new face. It is the same face, on a better week, and nobody able to say why.",
       "button": "See the work",
       "text": "The goal is never a new face. It is your face on a better week, with nobody able to say quite why. If the result announces itself, something went wrong. See what that looks like on Instagram.",
-      "photo": "H9YAbOsqDt8"
+      "photo": "H9YAbOsqDt8",
+      "description": "The goal is never a new face. It is your face on a better week, with nobody able to say quite why.\n\nThat sounds modest until you see the alternative. Overdone work announces itself: a forehead that will not move, brows sitting in a place they have never sat, lips that arrive in a room first. Once a face crosses that line, everyone reads it as work, including people who cannot name what changed.\n\nStaying on the right side of it is mostly about restraint. Fewer units than the maximum. Stopping while it still looks understated. Being willing to leave asymmetry that is actually just your face.\n\nIf a result announces itself, something went wrong. That standard is why people drive to this Oakville studio from Burlington and Milton for Botox. See the alternative on Instagram."
     },
     {
       "date": "2026-09-14",
@@ -395,7 +422,8 @@
       "body": "It softens movement lines. It will not lift heavy skin, fill volume, or fix sun damage.",
       "button": "Read the post",
       "text": "Five things Botox cannot do. It softens lines made by movement. It will not lift heavy skin, replace lost volume, or undo sun damage. Knowing the limits is how you avoid paying for the wrong treatment. Full list on Instagram.",
-      "photo": "W7wBNLlryPM"
+      "photo": "W7wBNLlryPM",
+      "description": "Five things Botox cannot do, so you do not pay for the wrong treatment.\n\nIt will not lift heavy skin. That is a laxity issue and needs energy based treatment or surgery. It will not replace lost volume, which is what filler is for. It will not undo sun damage or fix pigment and texture, which is a skin health question. It will not shrink pores. And it will not remove a line that is fully etched at rest, though it will soften it and stop it deepening.\n\nWhat it does do, well, is relax the muscle making a movement line so the skin above it stops folding.\n\nIf your concern is on this list, say so at your consultation and we will talk about what actually addresses it, whether that is filler, a skin plan, or nothing at all. Full list on Instagram."
     },
     {
       "date": "2026-09-15",
@@ -409,7 +437,8 @@
       "body": "If the line is there when your face is completely still, it needs something other than a neuromodulator.",
       "button": "Book a consult",
       "text": "If a line is still there when your face is completely still, Botox is not the answer for it. That is a volume or a skin quality question, and it needs a different plan. Honest expectations, always. More on Instagram.",
-      "photo": "9L5ZCmmpxvY"
+      "photo": "9L5ZCmmpxvY",
+      "description": "If a line is still there when your face is completely still, a neuromodulator is not the answer for it.\n\nThat is the simplest test I can give you. Relax everything, look straight ahead, and see what remains. A line that only shows when you move is a muscle problem, which is what Botox treats. A line sitting there at rest is either volume loss or skin quality, and both need a different plan.\n\nPlenty of faces have both at once. The nasolabial folds are the usual example, where people book a neuromodulator and are disappointed because the fold was never about movement.\n\nHonest expectations save money, and they are the reason people keep coming back to this Oakville studio. Send a relaxed photo and a moving one if you want a straight answer before booking. More on Instagram."
     },
     {
       "date": "2026-09-16",
@@ -423,7 +452,8 @@
       "body": "Message on Instagram and you get an answer from Cleo, not an auto reply or a call centre.",
       "button": "Send a message",
       "text": "Booking is a message, not a phone tree. Send a DM on Instagram and it is answered by Cleo herself, usually the same day. Tell me what is bothering you and I will tell you honestly whether I can help. We are at 3060 Preserve Dr, Oakville.",
-      "photo": "HTHnMES5byk"
+      "photo": "HTHnMES5byk",
+      "description": "Booking is a message, not a phone tree. Send a DM on Instagram and it is answered by Cleo, usually the same day.\n\nTell me what is bothering you, in whatever words you have. You do not need to know the treatment name or the area. Plenty of people open with a photo and a sentence about hating one particular line, and that is enough to start.\n\nI will tell you honestly whether I can help, roughly what it would take, and what it costs. If the answer is that you do not need anything yet, you will get that too.\n\nWe are at 3060 Preserve Dr in Oakville, with free parking at the door, seeing Botox and filler clients from Burlington, Milton and Mississauga. One appointment in the room at a time."
     },
     {
       "date": "2026-09-17",
@@ -437,7 +467,8 @@
       "body": "You will not look done. You will look like you had a very good week of sleep.",
       "button": "See the work",
       "text": "You will not look done. You will look like you slept properly for a week. That is the whole standard here, and it is why the dose is built around your face instead of a template. See it on Instagram.",
-      "photo": "k6vhjQF720E"
+      "photo": "k6vhjQF720E",
+      "description": "You will not look done. You will look like you slept properly for a week.\n\nThat is the whole standard, and it drives every dosing decision here. The dose is built around your face rather than a template, which usually means fewer units than a chart would suggest and a follow up at two weeks to fine tune rather than one heavy session.\n\nIt also means leaving movement alone where movement is doing useful work. A completely still forehead is easy to achieve and almost always reads as work. Softer lines with full expression takes more judgement and is what people actually want when they describe looking refreshed.\n\nStill you, just less tired. That is what good Botox looks like in Oakville, and you can see it on Instagram."
     },
     {
       "date": "2026-09-18",
@@ -451,7 +482,8 @@
       "body": "Frozen is a dosing mistake, not an inevitable result. Movement is meant to stay.",
       "button": "Read the post",
       "text": "The frozen face is a dosing mistake, not what the treatment does. Done properly you keep your expressions and lose the deep etched lines. The classic fear, debunked on Instagram.",
-      "photo": "N6N-DcYcDZ8"
+      "photo": "N6N-DcYcDZ8",
+      "description": "The frozen face is a dosing mistake, not what the treatment does.\n\nIt happens when too much product goes into too many muscles at once, usually because someone treated a whole area by default rather than the specific muscle that was pulling. The result is a face that cannot express, which is the outcome everyone is afraid of and the reason plenty of people never book.\n\nDone properly you keep your expressions and lose the deep etched lines. You should still be able to frown, lift your brows and squint. The difference shows in photos, where you look like yourself rather than smoothed over.\n\nIf frozen is what has put you off Botox, say that at your consultation. It changes how I dose. The classic fear, debunked on Instagram."
     },
     {
       "date": "2026-09-19",
@@ -465,7 +497,8 @@
       "body": "That was the point. The best compliment is being asked whether you changed your skincare.",
       "button": "See the work",
       "text": "Nobody guessed. That was the point. The compliment we are aiming for is whether you changed your skincare or got back from holiday, never what you had done. Client words on Instagram.",
-      "photo": "w6zVwAYoqWM"
+      "photo": "w6zVwAYoqWM",
+      "description": "Nobody guessed. That was the point.\n\nThe compliments worth aiming for are the vague ones. Did you change your skincare. Have you been away. You look well rested. Nobody in that list is identifying a treatment, which means the work sat inside the range where it reads as you on a good week.\n\nGetting there is unglamorous. It is conservative dosing, a two week follow up rather than one heavy session, and being willing to leave a small asymmetry that is just how your face is built.\n\nThe clients who come to this Oakville studio from Burlington, Milton and Mississauga mostly arrive on referral from someone whose Botox nobody could place. That is the referral I want. Client words on Instagram."
     },
     {
       "date": "2026-09-20",
@@ -479,7 +512,8 @@
       "body": "3060 Preserve Dr, with clients travelling in from Burlington, Milton and Mississauga.",
       "button": "Get directions",
       "text": "Based at 3060 Preserve Dr in Oakville, with clients coming from Burlington, Milton and Mississauga. Private studio, free parking at the door, one appointment in the room at a time. Say hello on Instagram.",
-      "photo": "XGv1wuuNvYU"
+      "photo": "XGv1wuuNvYU",
+      "description": "Based at 3060 Preserve Dr in Oakville, seeing clients from Burlington, Milton and Mississauga.\n\nIt is a private studio rather than a clinic floor, with free parking at the door and one appointment in the room at a time. Most people are in and out inside an hour for a first visit, closer to twenty minutes once they are established.\n\nPeople travel here for a specific reason and it is usually not location. It is that the same nurse practitioner injects every appointment, the dose is explained before anything is opened, and the answer is sometimes no.\n\nIf you are anywhere in Halton or west Mississauga and weighing up where to go for Botox or filler, message me on Instagram and ask whatever you need to before booking."
     },
     {
       "date": "2026-09-21",
@@ -493,7 +527,8 @@
       "body": "Lines from movement need one. Lost volume needs the other. Most people ask for the wrong one.",
       "button": "Read the post",
       "text": "Botox or filler? You might be asking for the wrong one. Lines made by movement need a neuromodulator. Hollowness and lost volume need filler. Booking the wrong one is the most common and most expensive mistake. Explained on Instagram.",
-      "photo": "-FT1IVUnUd8"
+      "photo": "-FT1IVUnUd8",
+      "description": "Botox or filler? You might be asking for the wrong one, and it is the most expensive mistake in this business.\n\nLines made by movement need a neuromodulator, which relaxes the muscle doing the folding. Hollowness, flatness and lost volume need filler, which replaces structure that is no longer there. They solve different problems and neither substitutes for the other.\n\nThe confusion is understandable because the complaint sounds the same. Someone points at their lower face and says it looks tired. That can be volume, skin quality, movement, or all three at once.\n\nThis is exactly what a consultation is for. Bring the concern, not the treatment name, and we will work out whether it is Botox or filler you actually need. Explained on Instagram, or book in Oakville."
     },
     {
       "date": "2026-09-22",
@@ -507,7 +542,8 @@
       "body": "Pull the skin gently taut. If the line disappears it is movement. If it stays it is volume.",
       "button": "Book a consult",
       "text": "Here is the test. Gently pull the skin taut. If the line disappears it is a movement line. If it stays put, it is a volume question. Which one is your actual concern? More on Instagram.",
-      "photo": "Pe9IXUuC6QU"
+      "photo": "Pe9IXUuC6QU",
+      "description": "Here is the test you can do at home. Gently pull the skin taut beside the line.\n\nIf it disappears, it is a movement line and a neuromodulator is the right tool. If it stays put, you are looking at volume loss or skin quality, and filler or a skin plan is the conversation instead.\n\nDo it in decent light with your face completely relaxed. The result surprises people fairly often, usually because the line they have been trying to treat for years was never a muscle problem.\n\nThis is not a substitute for an assessment, and plenty of faces show both at once. But it will get you asking a much better question when you book Botox or filler in Oakville. More on Instagram."
     },
     {
       "date": "2026-09-23",
@@ -521,7 +557,8 @@
       "body": "Who injects me, what are your credentials, what product, what dose, and what happens if I am unhappy.",
       "button": "Ask a question",
       "text": "Five questions worth asking any clinic, including this one. Who is injecting me, what are your credentials, which product, what dose, and what happens if I am not happy. A good clinic answers all five without flinching. More on Instagram.",
-      "photo": "qJ1mYraktLg"
+      "photo": "qJ1mYraktLg",
+      "description": "Five questions worth asking any clinic, including this one.\n\nWho is injecting me, and will it be the same person next time. What are your credentials, and where can I verify them. Which product are you using and is it Health Canada approved. How many units, and why that number for my face. What happens if I am not happy at two weeks.\n\nA good clinic answers all five without hesitating or getting defensive. Vague answers on any of them are worth walking out over, particularly the first two.\n\nAsk them here too. Any injector worth booking, in Oakville or anywhere else, will answer all five about your Botox without hesitating. Answers on Instagram."
     },
     {
       "date": "2026-09-24",
@@ -535,7 +572,8 @@
       "body": "The questions that come in every week, answered without the marketing gloss.",
       "button": "Ask a question",
       "text": "You asked, so here are the honest answers. The questions that land in my DMs every week, answered without the marketing gloss, including the ones clinics usually dodge. Read them on Instagram.",
-      "photo": "TQSPgNqeCo8"
+      "photo": "TQSPgNqeCo8",
+      "description": "You asked, so here are the honest answers, including the ones clinics usually dodge.\n\nThe questions that land in my DMs most weeks: what does it actually cost, will I need it forever, what if I stop, does it get worse when it wears off, and can you tell when someone has had it done.\n\nShort version on the two that worry people most. Nothing gets worse when you stop. The muscle simply returns to what it was doing before, and any line that had softened goes back to where it would have been. And no, you cannot tell when it is dosed properly, which is the entire point.\n\nNo marketing gloss on any of them. Read the full set on Instagram, and send me the Botox question nobody has answered for you properly."
     },
     {
       "date": "2026-09-25",
@@ -549,7 +587,8 @@
       "body": "Asked privately every week, so here it is in public with a straight answer.",
       "button": "Send a message",
       "text": "The question people ask quietly, in private, almost every week. Here it is in public with a straight answer and nothing dressed up. Your questions are always welcome on Instagram.",
-      "photo": "MGKzomg0Dts"
+      "photo": "MGKzomg0Dts",
+      "description": "The question people ask quietly, in private, almost every week.\n\nIt is usually some version of: am I too young for this, or am I too late. Both come with a bit of embarrassment attached, which is why they arrive as a DM at eleven at night rather than out loud in a room.\n\nThe answer to both is that age is not the measure. What matters is whether a line stays behind when your face is fully relaxed. That is a question about your skin and your muscle, not your birthday, and it is why two people the same age often need completely different plans.\n\nNothing you ask here is silly and nothing gets repeated. Whether it is Botox, filler or neither, your questions are always welcome on Instagram."
     },
     {
       "date": "2026-09-26",
@@ -563,7 +602,8 @@
       "body": "You pick the next topic. Whatever gets the most votes gets made.",
       "button": "Cast your vote",
       "text": "You pick what I cover next. The topic with the most votes becomes the next post, whether that is pricing, a treatment breakdown, or something nobody wants to explain properly. Vote on Instagram.",
-      "photo": "VnPsDA8wRL4"
+      "photo": "VnPsDA8wRL4",
+      "description": "You pick what I cover next. The topic with the most votes becomes the next post.\n\nOn the list so far: what treatments actually cost and why, how to tell a good injector from a confident one, what happens to your face if you stop, and a full breakdown of what filler can and cannot fix.\n\nI would rather answer the thing people are actually wondering about than publish whatever is trending. The most useful posts here have all come from a question someone sent privately and assumed was too basic to ask.\n\nVote on Instagram, or send a topic that is not on the list. If enough people in Oakville are wondering the same thing about Botox or filler, it gets made."
     },
     {
       "date": "2026-09-27",
@@ -577,7 +617,8 @@
       "body": "A follow up check at two weeks is part of the treatment, not an upsell. Small adjustments are free.",
       "button": "Book a consult",
       "text": "Your two week follow up is part of the treatment, not an extra. Botox takes about fourteen days to settle, so that is when we look properly and make small adjustments if anything needs it. No charge for that visit. More on Instagram.",
-      "photo": "16mHHrY3PUk"
+      "photo": "16mHHrY3PUk",
+      "description": "Your two week follow up is part of the treatment, not an extra.\n\nA neuromodulator takes about fourteen days to fully settle. Judging the result before that is how people end up chasing a dose, because at day five it looks uneven and at day fourteen it usually does not. So we look properly at two weeks, when what you see is what you have.\n\nIf something needs adjusting, a small top up in one spot, a touch more on the side that pulls harder, that happens at the follow up and there is no charge for it.\n\nThis is also why I dose conservatively the first time. It is easy to add a little at two weeks. There is nothing to be done about too much except wait it out. Book at our Oakville studio, or ask on Instagram."
     },
     {
       "date": "2026-09-28",
@@ -591,7 +632,8 @@
       "body": "Three to four months for most people. Metabolism, dose and muscle strength all move that number.",
       "button": "Read the post",
       "text": "Three to four months for most people, and the honest reasons it varies. Your metabolism, the dose, how strong the muscle is, and how long you have been treating it. The month by month timeline is on Instagram.",
-      "photo": "zkf9upN0DbM"
+      "photo": "zkf9upN0DbM",
+      "description": "Three to four months for most people, and here are the honest reasons it varies.\n\nMetabolism plays a part, and people who train hard often find it wears off sooner. Dose matters, since a light preventative dose fades before a fuller corrective one. Muscle strength matters, because a strong frown works through product faster than a light one. And history matters, as people who have treated consistently for years often stretch further between appointments.\n\nWhat is not true is that it stops working. If yours seems to be fading faster than it used to, the usual answer is that the dose is no longer right rather than any resistance to the product.\n\nWhat is not true is that it stops working. If your Botox seems to be fading faster than it used to, the usual answer is that the dose is no longer right rather than any resistance to the product. Month by month timeline on Instagram."
     },
     {
       "date": "2026-09-29",
@@ -605,7 +647,8 @@
       "body": "Day three it starts. Two weeks it settles. Month three it softens. Month four you are due.",
       "button": "See the timeline",
       "text": "Week by week, what to expect. Movement starts easing around day three, it fully settles at two weeks, softens through month three, and by month four you are due. Knowing the curve stops the day five panic. On Instagram.",
-      "photo": "634jzvuySY4"
+      "photo": "634jzvuySY4",
+      "description": "Week by week, what to expect after treatment.\n\nDay three is when most people first notice movement easing. It is gradual and it is uneven at the start, which is normal. Two weeks is when it has fully settled, and the only fair point to judge the result or adjust it. Month one to two is the plateau, where it looks its best and you stop thinking about it.\n\nMonth three is when movement starts creeping back, usually in the strongest muscle first. By month four most people are due, though plenty stretch further, particularly after a few consistent rounds.\n\nKnowing the curve stops the day five panic, which is far and away the most common message I get after Botox. Save the timeline from Instagram, or book a follow up in Oakville."
     },
     {
       "date": "2026-09-30",
@@ -619,7 +662,8 @@
       "body": "A month on filler: what one syringe really does, natural versus overdone, and real results.",
       "button": "Follow along",
       "text": "October is a month about lips. What one syringe actually does, the difference between natural and overdone, aftercare that matters, and real results shared with consent. Follow along on Instagram so you do not miss the start.",
-      "photo": "Bsg_9a2PDX0"
+      "photo": "Bsg_9a2PDX0",
+      "description": "October is a month about lips, and it starts next week.\n\nWhat is coming: what one syringe of filler actually does and how far it goes, the real difference between natural and overdone, aftercare that matters in the first 48 hours, and real results shared with client consent.\n\nLip filler in Oakville attracts more bad information than almost anything else I treat. Most of it comes from people who saw one obvious result and assumed that is what the treatment does. The work worth showing is the kind nobody identifies.\n\nIf lips are something you have thought about and talked yourself out of, this is the month to ask. Follow along on Instagram so you do not miss the start."
     }
   ]
 }
