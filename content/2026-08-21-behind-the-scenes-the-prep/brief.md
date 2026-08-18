@@ -31,14 +31,14 @@ Ask to watch next time. Anyone doing it properly will say yes.
 Every appointment starts the same way. New tray, sealed product opened in front of you, and your face mapped while it moves so the plan fits how you actually move. Ask to watch. Serving Oakville, Burlington, Milton and Mississauga.
 
 **Button:** Learn more > Instagram
-**Image:** `images/gbp.png` (1200x900, content inside the centre 900x900)
+**Image:** `images/gbp.jpg` (1200x900, content inside the centre 900x900)
 
 No hashtags on GBP, they do not function there. Only the first 80 or so
 characters show before the fold, so the offer leads.
 
 ## Assets in this folder
-- `images/post.png`
-- `images/gbp.png`
+- `images/post.jpg`
+- `images/gbp.jpg`
 
 ## Photos
 No client photos in this post.

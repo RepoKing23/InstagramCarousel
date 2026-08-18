@@ -16,7 +16,8 @@ Playfair Display serif + Pinyon Script accents + Jost letterspaced labels.
   posts use these, never the originals**, so no face ends up in a published
   file. Regenerate with the crop boxes documented in `photos/cleo/README.md`.
 
-Final ready-to-post images live in `/content/<date-topic>/` at the repo root:
+Final ready-to-post images (`.jpg`) live in `/content/<date-topic>/` at the
+repo root:
 one folder per scheduled post, each with a `brief.md` (hook, caption, hashtags,
 visual notes) generated from `/strategy/ig-content-strategy.xlsx`. The
 spreadsheet's Folder Link column points at each post's folder.
@@ -24,10 +25,15 @@ spreadsheet's Folder Link column points at each post's folder.
 ## Previewing a slide in a browser
 Open the HTML file with `?slide=N` in the URL (e.g. `botox-myths.html?slide=3`).
 
-## Re-rendering PNGs (headless Chromium)
-The `.slide.active` class controls which slide is shown. Generate one HTML
-file per slide with the `active` class set, then screenshot at window size
-1080x1437 (headless window chrome eats 87px) and crop to 1080x1350.
+## Re-rendering (headless Chromium)
+`python3 design/render.py` screenshots every post's `.slide` element straight
+to its final size — `august` for August only, no argument for everything.
+
+Output is **JPEG at quality 90, and nothing in `/content` is PNG**. The slides
+are flat artwork with no transparency, so PNG bought nothing and cost 1-1.3MB
+a frame against 150-200KB as JPEG; the jpgs are what gets posted and what the
+planner links to. Source art in `brand/` and `photos/` stays PNG — those need
+the alpha channel.
 
 Photo placeholders ("YOUR PHOTO HERE") are swapped by replacing the
 `.photo` div contents with an `<img>` styled `object-fit:cover`.

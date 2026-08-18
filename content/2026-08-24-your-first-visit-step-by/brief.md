@@ -32,21 +32,21 @@ are embarrassed to ask. I have heard it before.
 Nervous about your first appointment? A real consultation, your face mapped in motion, then the areas and the price agreed before anything is opened. The treatment itself takes about ten minutes. Serving Oakville, Burlington, Milton and Mississauga.
 
 **Button:** Learn more > Instagram
-**Image:** `images/gbp.png` (1200x900, content inside the centre 900x900)
+**Image:** `images/gbp.jpg` (1200x900, content inside the centre 900x900)
 
 No hashtags on GBP, they do not function there. Only the first 80 or so
 characters show before the fold, so the offer leads.
 
 ## Assets in this folder
-- `images/slide-1.png`
-- `images/slide-2.png`
-- `images/slide-3.png`
-- `images/slide-4.png`
-- `images/slide-5.png`
-- `images/slide-6.png`
-- `images/slide-7.png`
-- `images/slide-8.png`
-- `images/gbp.png`
+- `images/slide-1.jpg`
+- `images/slide-2.jpg`
+- `images/slide-3.jpg`
+- `images/slide-4.jpg`
+- `images/slide-5.jpg`
+- `images/slide-6.jpg`
+- `images/slide-7.jpg`
+- `images/slide-8.jpg`
+- `images/gbp.jpg`
 
 ## Photos
 No client photos in this post.

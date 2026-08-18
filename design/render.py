@@ -1,8 +1,12 @@
-"""Render post artwork to PNG with headless Chromium.
+"""Render post artwork to JPEG with headless Chromium.
 
 Two sizes per post: 1080x1350 for Instagram, 1200x900 for Google Business
 Profile. GBP crops to a centre square in Maps, so its layout keeps everything
 inside the middle 900x900 rather than being a crop of the Instagram file.
+
+Output is JPEG, not PNG. The slides are flat cream/dark artwork with no
+transparency, and the PNGs ran 1-1.3MB each against 150-200KB for the same
+frame as JPEG, which is what actually gets posted.
 
     python3 design/render.py            # everything
     python3 design/render.py august     # August only
@@ -16,6 +20,7 @@ DESIGN = os.path.abspath(os.path.dirname(__file__))
 
 IG = (1080, 1350)
 GBP = (1200, 900)
+QUALITY = 90
 
 
 def ig(url, out):
@@ -23,13 +28,13 @@ def ig(url, out):
 
 
 def gbp(key, folder):
-    return (f'gbp.html?post={key}', GBP, f'content/{folder}/images/gbp.png')
+    return (f'gbp.html?post={key}', GBP, f'content/{folder}/images/gbp.jpg')
 
 
 def carousel(tpl, query, folder, slides, prefix='slide'):
     q = f'{query}&' if query else ''
     return [ig(f'{tpl}?{q}slide={i}',
-               f'content/{folder}/images/{prefix}-{i}.png')
+               f'content/{folder}/images/{prefix}-{i}.jpg')
             for i in range(1, slides + 1)]
 
 
@@ -44,11 +49,11 @@ AUGUST += carousel('carousel.html', 'post=red-flags',
 AUGUST += [gbp('aug-20', '2026-08-20-5-red-flags-at-a')]
 
 AUGUST += [ig('single.html?post=the-prep',
-              'content/2026-08-21-behind-the-scenes-the-prep/images/post.png'),
+              'content/2026-08-21-behind-the-scenes-the-prep/images/post.jpg'),
            gbp('aug-21', '2026-08-21-behind-the-scenes-the-prep')]
 
 AUGUST += [ig('before-after.html?slide=6',
-              'content/2026-08-22-great-work-is-invisible/images/before-after-result.png'),
+              'content/2026-08-22-great-work-is-invisible/images/before-after-result.jpg'),
            gbp('aug-22', '2026-08-22-great-work-is-invisible')]
 
 AUGUST += carousel('carousel.html', 'post=first-visit',
@@ -56,18 +61,18 @@ AUGUST += carousel('carousel.html', 'post=first-visit',
 AUGUST += [gbp('aug-24', '2026-08-24-your-first-visit-step-by')]
 
 AUGUST += [ig('single.html?post=what-it-costs',
-              'content/2026-08-25-why-i-do-not-post/images/post.png'),
+              'content/2026-08-25-why-i-do-not-post/images/post.jpg'),
            gbp('aug-25', '2026-08-25-why-i-do-not-post')]
 
 AUGUST += carousel('owner.html', '', '2026-08-27-meet-np-cleo-the-face', 5)
 AUGUST += [gbp('aug-27', '2026-08-27-meet-np-cleo-the-face')]
 
 AUGUST += [ig('single.html?post=treatment-room',
-              'content/2026-08-28-welcome-to-the-treatment-room/images/post.png'),
+              'content/2026-08-28-welcome-to-the-treatment-room/images/post.jpg'),
            gbp('aug-28', '2026-08-28-welcome-to-the-treatment-room')]
 
 AUGUST += [ig('single.html?post=rested-vs-frozen',
-              'content/2026-08-29-this-or-that-rested-vs/images/post.png'),
+              'content/2026-08-29-this-or-that-rested-vs/images/post.jpg'),
            gbp('aug-29', '2026-08-29-this-or-that-rested-vs')]
 
 AUGUST += carousel('carousel.html', 'post=preventative',
@@ -76,15 +81,15 @@ AUGUST += [gbp('aug-31', '2026-08-31-preventative-botox-when-to-actually')]
 
 LATER = [
     ig('before-after.html?slide=1',
-       'content/2026-10-08-lip-filler-natural-vs-overdone/images/before-after-result.png'),
+       'content/2026-10-08-lip-filler-natural-vs-overdone/images/before-after-result.jpg'),
     ig('before-after.html?slide=2',
-       'content/2026-10-10-subtle-is-the-new-dramatic/images/before-after-result.png'),
+       'content/2026-10-10-subtle-is-the-new-dramatic/images/before-after-result.jpg'),
     ig('before-after.html?slide=3',
-       'content/2026-10-24-client-words-the-lip-glow/images/before-after-result.png'),
+       'content/2026-10-24-client-words-the-lip-glow/images/before-after-result.jpg'),
     ig('before-after.html?slide=4',
-       'content/2026-10-30-one-syringe-balanced-lips/images/before-after-result.png'),
+       'content/2026-10-30-one-syringe-balanced-lips/images/before-after-result.jpg'),
     ig('before-after.html?slide=5',
-       'content/2026-10-22-lip-filler-aftercare-your-first/images/day-zero-before-after.png'),
+       'content/2026-10-22-lip-filler-aftercare-your-first/images/day-zero-before-after.jpg'),
 ]
 LATER += carousel('real-results.html', '', '2026-10-15-real-lips-real-results', 7)
 LATER += carousel('every-angle.html', '', '2026-11-06-one-result-every-angle', 7)
@@ -106,7 +111,7 @@ def main(which='all'):
             if el is None:
                 print('MISSING .slide:', url)
                 continue
-            el.screenshot(path=out)
+            el.screenshot(path=out, type='jpeg', quality=QUALITY)
             print(f'{w}x{h}  {out}')
         browser.close()
     print(f'\n{len(jobs)} rendered')

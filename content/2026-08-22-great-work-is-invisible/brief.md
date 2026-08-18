@@ -31,14 +31,14 @@ Shared with her permission. Individual results vary.
 One syringe of lip filler, with her own lip shape kept exactly where it was. Natural results are the whole point of how we practise. Shared with client consent, individual results vary. Serving Oakville, Burlington, Milton and Mississauga.
 
 **Button:** Learn more > Instagram
-**Image:** `images/gbp.png` (1200x900, content inside the centre 900x900)
+**Image:** `images/gbp.jpg` (1200x900, content inside the centre 900x900)
 
 No hashtags on GBP, they do not function there. Only the first 80 or so
 characters show before the fold, so the offer leads.
 
 ## Assets in this folder
-- `images/before-after-result.png`
-- `images/gbp.png`
+- `images/before-after-result.jpg`
+- `images/gbp.jpg`
 
 ## Photos
 Files: img_9908 (before), img_9912 (after)
