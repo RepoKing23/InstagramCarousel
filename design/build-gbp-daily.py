@@ -44,7 +44,7 @@ def photo_src(photo):
     design/fetch-gbp-photos.py pulls the photos local, which is what you want:
     renders stay identical offline and do not depend on a CDN. Until then the
     card points at Unsplash directly, and if that will not load either the
-    template drops back to the cream layout rather than rendering a hole.
+    layout drops the circle and widens the text rather than leaving a hole.
     """
     local = os.path.join(ROOT, 'design', PHOTO_DIR, f"{photo['id']}.jpg")
     if os.path.exists(local):
@@ -52,73 +52,121 @@ def photo_src(photo):
     return UNSPLASH.format(file=photo['file'])
 
 
-CSS = """
-  @font-face { font-family:'Playfair Display'; src:url('fonts/PlayfairDisplay.ttf'); }
-  @font-face { font-family:'Pinyon Script'; src:url('fonts/PinyonScript-Regular.ttf'); }
-  @font-face { font-family:'Jost'; src:url('fonts/Jost.ttf'); }
+def markup(text):
+    """*asterisks* become the gold emphasis span."""
+    out, gold = [], False
+    for chunk in text.split('*'):
+        out.append(f'<span class="hi">{chunk}</span>' if gold and chunk else chunk)
+        gold = not gold
+    return ''.join(out)
 
-  :root{ --cream:#F3EEE5; --ink:#2E2A23; --ink-soft:#6E6557; --gold:#C9A85C; }
+
+# Headline and script start at these sizes and are shrunk to fit by the
+# template itself. Estimating widths from character counts was never accurate
+# enough for Playfair at 800 or for Pinyon's swashes, so the browser measures.
+HEADLINE_SIZE = 80
+SCRIPT_SIZE = 64
+
+
+CSS = """
+  @font-face { font-family:'Playfair Display'; src:url('fonts/PlayfairDisplay.ttf');
+               font-weight:400 900; }
+  @font-face { font-family:'Pinyon Script'; src:url('fonts/PinyonScript-Regular.ttf'); }
+  @font-face { font-family:'Jost'; src:url('fonts/Jost.ttf'); font-weight:100 900; }
+
+  :root{
+    --cream:#F3EEE5; --ink:#2E2A23; --gold:#C9A85C;
+    --deep:#1F1C17;                 /* card ground, a shade under brand ink so
+                                       cream type and the photo both lift off it */
+    --muted:rgba(243,238,229,.72);
+  }
   *{margin:0;padding:0;box-sizing:border-box;}
   body{background:#888;}
 
-  /* GBP serves 1200x900 but crops to a centre square in Maps and the Knowledge
-     Panel, so every piece of type lives inside the middle 900x900. The photo is
-     allowed to bleed the full width, only the words are constrained. */
+  /* Maps crops the 1200x900 to the centre 900x900, so every piece of type sits
+     inside .safe. Only the photo is allowed into the 150px bleed either side. */
   .slide{
     width:1200px;height:900px;position:relative;overflow:hidden;
-    background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;
+    background:var(--deep);color:var(--cream);font-family:'Jost',sans-serif;
   }
-  .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none;}
-  .scrim{position:absolute;inset:0;display:none;}
-  /* .has-photo is dropped by the onerror handler if the image will not load,
-     which returns the card to the plain cream layout instead of a blank frame */
-  .has-photo .photo{display:block;}
-  .has-photo .scrim{
-    display:block;
-    background:
-      radial-gradient(120% 85% at 50% 50%, rgba(24,21,17,.78) 0%, rgba(24,21,17,.62) 45%, rgba(24,21,17,.72) 100%),
-      linear-gradient(180deg, rgba(24,21,17,.55) 0%, rgba(24,21,17,.25) 35%, rgba(24,21,17,.65) 100%);
-  }
-  .has-photo{color:var(--cream);}
-  .has-photo .label,.has-photo .body,.has-photo .handle{color:rgba(243,238,229,.86);}
-  .has-photo .button{border-color:rgba(243,238,229,.85);color:var(--cream);}
-  .has-photo .monogram{filter:brightness(0) invert(1);opacity:.92;}
-  .has-photo .rule{background:var(--gold);}
+  .safe{position:absolute;left:150px;top:0;width:900px;height:900px;}
 
-  .safe{
-    position:absolute;left:150px;top:0;width:900px;height:900px;
-    display:flex;flex-direction:column;align-items:center;justify-content:center;
-    text-align:center;padding:118px 62px 96px;
+  /* photo: a circle on the right, only 30px past the safe edge so it still
+     reads as a circle after the square crop instead of a cut off blob */
+  .orb{
+    position:absolute;left:480px;top:225px;width:450px;height:450px;
+    border-radius:50%;overflow:hidden;display:none;
+    box-shadow:0 0 0 1px rgba(201,168,92,.35);
   }
-  .monogram{position:absolute;top:46px;left:50%;transform:translateX(-50%);z-index:3;}
-  .label{font-size:19px;letter-spacing:.36em;text-transform:uppercase;color:var(--ink-soft);}
-  .rule{width:54px;height:1px;background:var(--gold);margin:22px auto 0;opacity:.9;}
-  .serif{font-family:'Playfair Display',serif;font-weight:500;font-size:70px;line-height:1.04;}
-  .script{font-family:'Pinyon Script',cursive;font-size:66px;line-height:.95;margin-top:4px;}
-  .body{margin-top:30px;font-size:25px;line-height:1.58;letter-spacing:.05em;color:var(--ink-soft);}
-  .button{
-    margin-top:38px;border:1px solid var(--ink);padding:19px 40px;
-    font-size:19px;letter-spacing:.28em;text-transform:uppercase;font-weight:500;
+  .orb img{width:100%;height:100%;object-fit:cover;}
+  .orb::after{content:'';position:absolute;inset:0;border-radius:50%;
+              background:linear-gradient(180deg,rgba(31,28,23,0) 40%,rgba(31,28,23,.45) 100%);}
+  .has-photo .orb{display:block;}
+
+  .col{
+    position:absolute;left:14px;top:0;width:446px;height:900px;
+    display:flex;flex-direction:column;justify-content:center;
+    padding:132px 0 118px;
   }
-  .handle{
-    position:absolute;bottom:40px;left:0;right:0;text-align:center;z-index:3;
-    font-size:17px;letter-spacing:.22em;text-transform:uppercase;
-    color:var(--ink-soft);font-weight:300;
+  /* no photo: the column takes the whole safe square back, but the body keeps a
+     readable measure so the block does not collapse to one long line */
+  .slide:not(.has-photo) .col{width:900px;padding-right:60px;}
+  .slide:not(.has-photo) .body{max-width:620px;}
+
+  .monogram{position:absolute;top:72px;left:14px;}
+  .service{
+    font-size:21px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--gold);line-height:1.4;
+  }
+  .rule{width:46px;height:2px;background:var(--gold);margin:20px 0 24px;}
+  .headline{
+    font-family:'Playfair Display',serif;font-weight:800;
+    text-transform:uppercase;line-height:1.0;letter-spacing:.005em;
+    font-size:80px;
+  }
+  .headline .hi{color:var(--gold);}
+  .script{
+    /* Pinyon's p, g and j hang well left of their origin. The indent lets the
+       swash fall where the headline's left axis is, optically aligned, without
+       crossing the Maps crop line at x=150. */
+    font-family:'Pinyon Script',cursive;font-size:64px;line-height:.95;
+    color:var(--gold);margin-top:6px;padding-left:22px;white-space:nowrap;
+  }
+  .body{
+    margin-top:28px;font-size:22px;font-weight:300;line-height:1.58;
+    letter-spacing:.02em;color:var(--muted);
+  }
+  .cta{
+    margin-top:34px;display:inline-block;align-self:flex-start;
+    border:1px solid rgba(243,238,229,.8);padding:16px 30px;text-align:center;
+  }
+  .cta .go{font-size:17px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;}
+  .cta .at{
+    margin-top:7px;font-size:13px;font-weight:300;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--muted);
   }
 """
 
 
 def build_html(data):
-    """One 1200x900 card per date, photo led, same brand as the rest."""
+    """One 1200x900 card per date. Hard left column, photo right, dark ground."""
     by_id = {p['id']: p for p in json.load(
         open(os.path.join(ROOT, 'strategy', 'gbp-photos.json'), encoding='utf-8'))['photos']}
     posts = {}
     for p in data['posts']:
         photo = by_id[p['photo']]
-        posts[p['date']] = {k: p[k] for k in ('label', 'serif', 'script', 'body', 'button')}
-        posts[p['date']]['src'] = photo_src(photo)
-        posts[p['date']]['alt'] = photo['alt']
+        posts[p['date']] = {
+            'service': p.get('service', data['_meta']['service_line']),
+            'headline': markup(p['headline']),
+
+            'script': p['script'],
+            'body': p['body'],
+            'cta': p['button'],
+            'src': photo_src(photo),
+            'alt': photo['alt'],
+        }
     first = data['posts'][0]['date']
+    handle = data['_meta']['instagram']
     return f"""<!DOCTYPE html>
 <html>
 <head>
@@ -132,29 +180,46 @@ def build_html(data):
 <div id="stage"></div>
 
 <script>
+const HEADLINE_SIZE = {HEADLINE_SIZE}, SCRIPT_SIZE = {SCRIPT_SIZE};
 const POSTS = {json.dumps(posts, indent=2, ensure_ascii=False)};
 
 const P = POSTS[new URLSearchParams(location.search).get('date') || '{first}'];
 
 document.getElementById('stage').innerHTML = `
 <div class="slide has-photo" id="slide">
-  <img class="photo" id="photo" src="${{P.src}}" alt="${{P.alt}}">
-  <div class="scrim"></div>
-  <img class="monogram" src="brand/logo-monogram.png" width="76" alt="LB">
   <div class="safe">
-    <div class="label">${{P.label}}</div>
-    <div class="rule"></div>
-    <div style="margin-top:22px">
-      <div class="serif">${{P.serif}}</div>
+    <div class="orb"><img id="photo" src="${{P.src}}" alt="${{P.alt}}"></div>
+    <img class="monogram" src="brand/logo-monogram.png" width="68" alt="LB"
+         style="filter:brightness(0) invert(1);opacity:.9">
+    <div class="col">
+      <div class="service">${{P.service}}</div>
+      <div class="rule"></div>
+      <div class="headline">${{P.headline}}</div>
       <div class="script">${{P.script}}</div>
+      <div class="body">${{P.body}}</div>
+      <div class="cta">
+        <div class="go">${{P.cta}}</div>
+        <div class="at">{handle}</div>
+      </div>
     </div>
-    <div class="body">${{P.body}}</div>
-    <div class="button">${{P.button}}</div>
   </div>
-  <div class="handle">@luxury_beauty_aestheticz</div>
 </div>`;
 
-// no photo available: fall back to the cream card rather than a blank frame
+// Shrink to fit. A long unbreakable word, or one of Pinyon's trailing swashes,
+// overflows the column and would run under the photo circle. Measure and step
+// down until it fits, which the estimate from character counts could not do.
+function fit(sel, start, floor) {{
+  const el = document.querySelector(sel);
+  if (!el) return;
+  for (let size = start; size > floor; size -= 2) {{
+    el.style.fontSize = size + 'px';
+    if (el.scrollWidth <= el.clientWidth) return;
+  }}
+}}
+fit('.headline', HEADLINE_SIZE, 40);
+fit('.script', SCRIPT_SIZE, 34);
+
+// no photo available: drop the circle, the column takes the full safe square
 document.getElementById('photo').addEventListener('error', () => {{
   document.getElementById('slide').classList.remove('has-photo');
 }});

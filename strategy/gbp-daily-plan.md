@@ -84,6 +84,34 @@ Thirty six photos cover forty three days, so seven repeat. The closest repeat is
    profile.
 6. Mark the row Posted.
 
+## The card design
+
+Dark ground, hard left column, circular photo on the right, in the brand's own
+fonts. Each card carries, top to bottom:
+
+- **Service line** in gold, the SEO line. `BOTOX & DERMAL FILLER · OAKVILLE` by
+  default, from `_meta.service_line`, overridden per day only where the topic is
+  plainly another service (lip filler, preventative). Naming the service and the
+  city on every card is the part search actually rewards.
+- **Headline** in Playfair Display at weight 800, uppercase. The first word is
+  gold and the rest cream, which is where the two tone comes from. Mark emphasis
+  in the json with `*asterisks*` if you want it somewhere else.
+- **Script line** in Pinyon, gold.
+- **Body**, two lines.
+- **CTA block**, outlined, with the day's action over the Instagram handle. The
+  image itself is not clickable; the real link is still the GBP Learn more
+  button, already pointed at the profile. The handle is there so someone can
+  find you without pressing anything.
+
+Headline and script **shrink to fit**. A long word cannot wrap and Pinyon's
+swashes run long, so the template measures each one in the browser and steps the
+size down until it clears the photo. Nothing to tune by hand when you rewrite a
+headline.
+
+Two invariants are checked on every render, and both matter because Maps crops
+the 1200x900 to its centre square: no type may cross the crop line at x=150, and
+no type may run under the photo circle.
+
 ## Rules baked into the copy
 
 - **First 80 characters carry it.** GBP truncates to roughly 80 characters
