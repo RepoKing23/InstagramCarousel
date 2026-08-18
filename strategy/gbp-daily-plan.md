@@ -27,16 +27,57 @@ fills all seven days.
 | The calendar you post from | `GBP Daily` tab in `strategy/ig-content-strategy.xlsx` |
 | The 43 images | `content/gbp/`, named `YYYY-MM-DD-slug.jpg` |
 | The copy, as source | `strategy/gbp-daily-content.json` |
+| The photo picked for each day | `strategy/gbp-photos.json` |
 | The artwork template | `design/gbp-daily.html` |
 
 The folder is flat and date-named on purpose. Sort by name and it reads in
 posting order, so the morning routine is: open `content/gbp`, take today's
 date, done.
 
+## The photos, and the one step left to run
+
+Each day is matched to a specific Unsplash photo, hand picked for that day's
+subject. The card is the photo full bleed, dimmed under a warm scrim, with the
+brand type over it.
+
+**The photos are not in the repo yet.** The session that built this could not
+reach `images.unsplash.com`, so the artwork currently in `content/gbp/` is the
+cream fallback rather than the photo version. One command fixes it on any
+machine with normal internet:
+
+    python3 design/fetch-gbp-photos.py     # pulls the 36 photos
+    python3 design/build-gbp-daily.py      # switch the cards to local files
+    python3 design/render.py gbp-daily     # re-render all 43
+
+If the fetch is blocked for you too, the Photo Credit column in the planner
+links to each photo. Download them by hand, save each as
+`design/photos/gbp/<photo id>.jpg`, then run the last two commands.
+
+The template checks for a local file first and only falls back to the Unsplash
+CDN, so once the photos are on disk the renders are reproducible offline. If a
+photo will not load at all, the card falls back to the cream layout rather than
+rendering a blank frame, which is why nothing is broken right now.
+
+### About the photos
+
+They are Unsplash License: free for commercial use, no permission needed, no
+attribution required. The photographer and a link are recorded anyway, in
+`strategy/gbp-photos.json` and in the Photo Credit column.
+
+**These are stock models, not clients of the clinic.** Keep it that way in the
+captions. None of this copy claims a photo is a result, and none of it should:
+that is the line between an illustrated post and an implied before and after.
+Real client work stays in `design/photos/cleo/crops/` under the consent rules
+in the design README.
+
+Thirty six photos cover forty three days, so seven repeat. The closest repeat is
+22 days apart, which is far enough that it does not read as a repeat in the feed.
+
 ## Posting a day, start to finish
 
 1. Open the `GBP Daily` tab and find today's row.
-2. Download the image from the Image link, or grab it from `content/gbp/`.
+2. Click Open Image, which opens that day's jpg ready to save. Or take it
+   straight from `content/gbp/`.
 3. In Google Business Profile choose **Add update**.
 4. Paste the Post Text column. Do not add hashtags, they do nothing on GBP.
 5. Set the button to **Learn more** and paste the CTA link, the Instagram
@@ -59,7 +100,9 @@ date, done.
 
 ## Changing something
 
-Edit `strategy/gbp-daily-content.json`, never the generated files, then:
+Edit `strategy/gbp-daily-content.json` for copy, or the `photo` key on a day to
+swap its image for another id in `strategy/gbp-photos.json`. Never edit the
+generated files. Then:
 
     python3 design/build-gbp-daily.py    # rebuilds the template and the tab
     python3 design/render.py gbp-daily   # re-renders the 43 images

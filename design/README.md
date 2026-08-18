@@ -15,6 +15,10 @@ Playfair Display serif + Pinyon Script accents + Jost letterspaced labels.
   not this file
 - `build-gbp-daily.py` — rebuilds `gbp-daily.html` and the GBP Daily planner
   tab from that json, keeping any Status and Notes already typed in
+- `fetch-gbp-photos.py` — downloads the Unsplash photos the daily cards use
+  into `photos/gbp/`. Run it once, then rebuild and re-render
+- `photos/gbp/` — those downloads. Picks and credits are in
+  `strategy/gbp-photos.json`. Stock models, never presented as clients
 - `fonts/` — Playfair Display, Pinyon Script, Jost (all SIL Open Font License)
 - `brand/` — Luxury Beauty by Cleo R logo (full lockup, tight crop, monogram; transparent PNGs)
 - `photos/<carousel-name>/` — working photos used by each carousel template
