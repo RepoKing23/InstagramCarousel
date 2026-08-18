@@ -8,9 +8,11 @@ Output is JPEG, not PNG. The slides are flat cream/dark artwork with no
 transparency, and the PNGs ran 1-1.3MB each against 150-200KB for the same
 frame as JPEG, which is what actually gets posted.
 
-    python3 design/render.py            # everything
-    python3 design/render.py august     # August only
+    python3 design/render.py             # everything
+    python3 design/render.py august      # August only
+    python3 design/render.py gbp-daily   # the daily Google Business cards
 """
+import json
 import os
 import sys
 from playwright.sync_api import sync_playwright
@@ -94,7 +96,21 @@ LATER = [
 LATER += carousel('real-results.html', '', '2026-10-15-real-lips-real-results', 7)
 LATER += carousel('every-angle.html', '', '2026-11-06-one-result-every-angle', 7)
 
-JOBS = {'august': AUGUST, 'later': LATER, 'all': AUGUST + LATER}
+def gbp_daily():
+    """One 1200x900 card per day, flat and date named so the folder reads in
+    posting order. Content comes from the same json the planner tab is built
+    from, so the sheet and the artwork can never drift apart."""
+    path = os.path.join(os.path.dirname(DESIGN), 'strategy', 'gbp-daily-content.json')
+    with open(path, encoding='utf-8') as f:
+        posts = json.load(f)['posts']
+    return [(f"gbp-daily.html?date={p['date']}", GBP,
+             f"content/gbp/{p['date']}-{p['slug']}.jpg") for p in posts]
+
+
+GBP_DAILY = gbp_daily()
+
+JOBS = {'august': AUGUST, 'later': LATER, 'gbp-daily': GBP_DAILY,
+        'all': AUGUST + LATER + GBP_DAILY}
 
 
 def main(which='all'):
