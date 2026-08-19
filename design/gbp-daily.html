@@ -49,15 +49,20 @@
           background:linear-gradient(180deg,rgba(201,168,92,0),rgba(201,168,92,.65) 22%,
                                             rgba(201,168,92,.65) 78%,rgba(201,168,92,0));}
 
+  /* Deterministic top, not centred. The lockup is absolutely positioned and
+     ends at y=191; centring left the gap to whatever each card's content height
+     happened to leave over, so shorter cards rode up into the logo. Starting at
+     a fixed 248 clears it on every card regardless of content, and lines the
+     masthead and text entry up across the whole month. */
   .col{
     position:absolute;left:14px;top:0;width:406px;height:900px;
-    display:flex;flex-direction:column;justify-content:center;
-    padding:150px 0 190px;
+    display:flex;flex-direction:column;justify-content:flex-start;
+    padding:232px 0 140px;
   }
   /* No photo file: the panel stays as a tonal block so the spread keeps its
      asymmetry, rather than collapsing the layout. */
   .foot{
-    position:absolute;left:14px;bottom:74px;width:406px;
+    position:absolute;left:14px;bottom:62px;width:406px;
   }
   .foot .line{height:1px;background:rgba(243,238,229,.22);margin-bottom:16px;}
   .foot .meta{
@@ -89,11 +94,11 @@
     color:var(--gold);margin-top:6px;padding-left:22px;white-space:nowrap;
   }
   .body{
-    margin-top:28px;font-size:22px;font-weight:300;line-height:1.58;
+    margin-top:24px;font-size:22px;font-weight:300;line-height:1.52;
     letter-spacing:.02em;color:var(--muted);
   }
   .cta{
-    margin-top:34px;display:inline-block;align-self:flex-start;
+    margin-top:30px;display:inline-block;align-self:flex-start;
     border:1px solid rgba(243,238,229,.8);padding:16px 30px;text-align:center;
   }
   .cta .go{font-size:17px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;}
@@ -505,7 +510,7 @@ document.getElementById('stage').innerHTML = `
   <div class="safe">
     <div class="orb"><img id="photo" src="${P.src}" alt="${P.alt}"></div>
     <div class="gutter"></div>
-    <img class="lockup" src="brand/logo-original.png" width="210"
+    <img class="lockup" src="brand/logo-original.png" width="190"
          alt="Luxury Beauty by Cleo R"
          style="filter:brightness(0) invert(1);opacity:.92">
     <div class="col">
@@ -539,6 +544,26 @@ function fit(sel, start, floor) {
 }
 fit('.headline', HEADLINE_SIZE, 40);
 fit('.script', SCRIPT_SIZE, 34);
+
+// The column now starts at a fixed y so it can never touch the logo, which means
+// a long card grows downward into the footer instead. Same remedy as the
+// headline: measure the real boxes and step the body down until it clears.
+(function fitBlock() {
+  const cta = document.querySelector('.cta');
+  const foot = document.querySelector('.foot');
+  const body = document.querySelector('.body');
+  if (!cta || !foot || !body) return;
+  const clears = () => foot.getBoundingClientRect().top
+                     - cta.getBoundingClientRect().bottom >= 14;
+  for (let size = 22; size >= 16.5 && !clears(); size -= 0.5) {
+    body.style.fontSize = size + 'px';
+  }
+  // still tight on the very longest copy: give the script back some room too
+  for (let size = parseFloat(getComputedStyle(document.querySelector('.script')).fontSize);
+       size >= 34 && !clears(); size -= 2) {
+    document.querySelector('.script').style.fontSize = size + 'px';
+  }
+})();
 
 // no photo available: drop the circle, the column takes the full safe square
 document.getElementById('photo').addEventListener('error', () => {
