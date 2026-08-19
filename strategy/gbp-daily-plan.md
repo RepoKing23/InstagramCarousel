@@ -40,23 +40,17 @@ Each day is matched to a specific Unsplash photo, hand picked for that day's
 subject. The card is the photo full bleed, dimmed under a warm scrim, with the
 brand type over it.
 
-**The photos are not in the repo yet.** The session that built this could not
-reach `images.unsplash.com`, so the artwork currently in `content/gbp/` is the
-cream fallback rather than the photo version. One command fixes it on any
-machine with normal internet:
+**The photos are in.** They were downloaded by hand and committed to
+`design/photos/gbp images/` as AVIF, then imported with
 
-    python3 design/fetch-gbp-photos.py     # pulls the 36 photos
-    python3 design/build-gbp-daily.py      # switch the cards to local files
-    python3 design/render.py gbp-daily     # re-render all 43
+    python3 design/import-gbp-photos.py    # AVIF in, design/photos/gbp/<id>.jpg out
 
-If the fetch is blocked for you too, the Photo Credit column in the planner
-links to each photo. Download them by hand, save each as
-`design/photos/gbp/<photo id>.jpg`, then run the last two commands.
+which maps each file to its photo by the Unsplash slug in the filename, so no
+manual table is needed. All 43 cards now render with real photography.
 
-The template checks for a local file first and only falls back to the Unsplash
-CDN, so once the photos are on disk the renders are reproducible offline. If a
-photo will not load at all, the card falls back to the cream layout rather than
-rendering a blank frame, which is why nothing is broken right now.
+`design/fetch-gbp-photos.py` remains for anyone re-pulling from Unsplash
+directly. The template still prefers a local file and falls back to the CDN, and
+if neither loads the photo panel renders as a tonal block rather than a hole.
 
 ### About the photos
 
@@ -70,8 +64,15 @@ that is the line between an illustrated post and an implied before and after.
 Real client work stays in `design/photos/cleo/crops/` under the consent rules
 in the design README.
 
-Thirty six photos cover forty three days, so seven repeat. The closest repeat is
-22 days apart, which is far enough that it does not read as a repeat in the feed.
+**No product packaging, ever.** Thirteen of the original picks were retired for
+this reason: nine product still lifes, plus two shots where branded packaging is
+legible in frame, and two more that were simply wrong for a clinic, a shocked
+open-mouth expression and a bare-shouldered portrait. Anything showing a branded
+tube, bottle or box does not go on these cards.
+
+Twenty three photos cover forty three days, so sixteen repeat. The closest
+repeat is six days apart. If that feels tight, adding a handful more non-product
+photos to `design/photos/gbp images/` and re-running the importer widens it.
 
 ## Posting a day, start to finish
 

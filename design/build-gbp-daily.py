@@ -91,27 +91,42 @@ CSS = """
   }
   .safe{position:absolute;left:150px;top:0;width:900px;height:900px;}
 
-  /* photo: a circle on the right, only 30px past the safe edge so it still
-     reads as a circle after the square crop instead of a cut off blob */
+  /* A magazine spread rather than a decorative circle. The panel runs the full
+     height from x=620 (inside .safe, so 470px in) and bleeds off the right edge.
+     Maps keeps 620-1050, which is 430px of photograph: enough to read as a
+     spread instead of a cropped shape. */
   .orb{
-    position:absolute;left:480px;top:225px;width:450px;height:450px;
-    border-radius:50%;overflow:hidden;display:none;
-    box-shadow:0 0 0 1px rgba(201,168,92,.35);
+    position:absolute;left:470px;top:0;width:730px;height:900px;overflow:hidden;
+    background:#26221C;
   }
-  .orb img{width:100%;height:100%;object-fit:cover;}
-  .orb::after{content:'';position:absolute;inset:0;border-radius:50%;
-              background:linear-gradient(180deg,rgba(31,28,23,0) 40%,rgba(31,28,23,.45) 100%);}
-  .has-photo .orb{display:block;}
+  .orb img{width:100%;height:100%;object-fit:cover;display:none;}
+  .has-photo .orb img{display:block;}
+  /* the photo must never fight the type sitting to its left */
+  .orb::after{
+    content:'';position:absolute;inset:0;
+    background:linear-gradient(90deg,rgba(31,28,23,.92) 0%,rgba(31,28,23,.34) 16%,
+                                     rgba(31,28,23,.06) 42%,rgba(31,28,23,.28) 100%);
+  }
+  /* the spread's gutter */
+  .gutter{position:absolute;left:445px;top:96px;bottom:96px;width:1px;
+          background:linear-gradient(180deg,rgba(201,168,92,0),rgba(201,168,92,.65) 22%,
+                                            rgba(201,168,92,.65) 78%,rgba(201,168,92,0));}
 
   .col{
-    position:absolute;left:14px;top:0;width:446px;height:900px;
+    position:absolute;left:14px;top:0;width:406px;height:900px;
     display:flex;flex-direction:column;justify-content:center;
-    padding:132px 0 118px;
+    padding:150px 0 190px;
   }
-  /* no photo: the column takes the whole safe square back, but the body keeps a
-     readable measure so the block does not collapse to one long line */
-  .slide:not(.has-photo) .col{width:900px;padding-right:60px;}
-  .slide:not(.has-photo) .body{max-width:620px;}
+  /* No photo file: the panel stays as a tonal block so the spread keeps its
+     asymmetry, rather than collapsing the layout. */
+  .foot{
+    position:absolute;left:14px;bottom:74px;width:406px;
+  }
+  .foot .line{height:1px;background:rgba(243,238,229,.22);margin-bottom:16px;}
+  .foot .meta{
+    display:flex;justify-content:space-between;font-size:13px;font-weight:300;
+    letter-spacing:.18em;text-transform:uppercase;color:rgba(243,238,229,.55);
+  }
 
   /* The full Cleo R lockup, not the bare LB mark. logo-original.png is flat
      #3E3E3E with alpha-only anti-aliasing, so brightness(0) invert(1) gives
@@ -193,6 +208,7 @@ document.getElementById('stage').innerHTML = `
 <div class="slide has-photo" id="slide">
   <div class="safe">
     <div class="orb"><img id="photo" src="${{P.src}}" alt="${{P.alt}}"></div>
+    <div class="gutter"></div>
     <img class="lockup" src="brand/logo-original.png" width="210"
          alt="Luxury Beauty by Cleo R"
          style="filter:brightness(0) invert(1);opacity:.92">
@@ -206,6 +222,10 @@ document.getElementById('stage').innerHTML = `
         <div class="go">${{P.cta}}</div>
         <div class="at">{handle}</div>
       </div>
+    </div>
+    <div class="foot">
+      <div class="line"></div>
+      <div class="meta"><span>Oakville &middot; Ontario</span><span>{handle}</span></div>
     </div>
   </div>
 </div>`;

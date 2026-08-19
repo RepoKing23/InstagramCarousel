@@ -28,27 +28,42 @@
   }
   .safe{position:absolute;left:150px;top:0;width:900px;height:900px;}
 
-  /* photo: a circle on the right, only 30px past the safe edge so it still
-     reads as a circle after the square crop instead of a cut off blob */
+  /* A magazine spread rather than a decorative circle. The panel runs the full
+     height from x=620 (inside .safe, so 470px in) and bleeds off the right edge.
+     Maps keeps 620-1050, which is 430px of photograph: enough to read as a
+     spread instead of a cropped shape. */
   .orb{
-    position:absolute;left:480px;top:225px;width:450px;height:450px;
-    border-radius:50%;overflow:hidden;display:none;
-    box-shadow:0 0 0 1px rgba(201,168,92,.35);
+    position:absolute;left:470px;top:0;width:730px;height:900px;overflow:hidden;
+    background:#26221C;
   }
-  .orb img{width:100%;height:100%;object-fit:cover;}
-  .orb::after{content:'';position:absolute;inset:0;border-radius:50%;
-              background:linear-gradient(180deg,rgba(31,28,23,0) 40%,rgba(31,28,23,.45) 100%);}
-  .has-photo .orb{display:block;}
+  .orb img{width:100%;height:100%;object-fit:cover;display:none;}
+  .has-photo .orb img{display:block;}
+  /* the photo must never fight the type sitting to its left */
+  .orb::after{
+    content:'';position:absolute;inset:0;
+    background:linear-gradient(90deg,rgba(31,28,23,.92) 0%,rgba(31,28,23,.34) 16%,
+                                     rgba(31,28,23,.06) 42%,rgba(31,28,23,.28) 100%);
+  }
+  /* the spread's gutter */
+  .gutter{position:absolute;left:445px;top:96px;bottom:96px;width:1px;
+          background:linear-gradient(180deg,rgba(201,168,92,0),rgba(201,168,92,.65) 22%,
+                                            rgba(201,168,92,.65) 78%,rgba(201,168,92,0));}
 
   .col{
-    position:absolute;left:14px;top:0;width:446px;height:900px;
+    position:absolute;left:14px;top:0;width:406px;height:900px;
     display:flex;flex-direction:column;justify-content:center;
-    padding:132px 0 118px;
+    padding:150px 0 190px;
   }
-  /* no photo: the column takes the whole safe square back, but the body keeps a
-     readable measure so the block does not collapse to one long line */
-  .slide:not(.has-photo) .col{width:900px;padding-right:60px;}
-  .slide:not(.has-photo) .body{max-width:620px;}
+  /* No photo file: the panel stays as a tonal block so the spread keeps its
+     asymmetry, rather than collapsing the layout. */
+  .foot{
+    position:absolute;left:14px;bottom:74px;width:406px;
+  }
+  .foot .line{height:1px;background:rgba(243,238,229,.22);margin-bottom:16px;}
+  .foot .meta{
+    display:flex;justify-content:space-between;font-size:13px;font-weight:300;
+    letter-spacing:.18em;text-transform:uppercase;color:rgba(243,238,229,.55);
+  }
 
   /* The full Cleo R lockup, not the bare LB mark. logo-original.png is flat
      #3E3E3E with alpha-only anti-aliasing, so brightness(0) invert(1) gives
@@ -100,7 +115,7 @@ const POSTS = {
     "script": "at a time.",
     "body": "A private room in Oakville, no waiting area full of strangers, and nobody rushing the person before you.",
     "cta": "See the room",
-    "src": "https://images.unsplash.com/photo-1759214630580-7b2e97e2c29b?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/SlpmIhUd860.jpg",
     "alt": "woman wrapped in towels in a spa room"
   },
   "2026-08-20": {
@@ -109,7 +124,7 @@ const POSTS = {
     "script": "at a med spa.",
     "body": "No consultation, bargain pricing, a provider who never says no. What to walk away from before you book.",
     "cta": "Read the post",
-    "src": "https://images.unsplash.com/photo-1713085085470-fba013d67e65?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/HtXyytr9304.jpg",
     "alt": "a woman receiving a facial treatment from a practitioner"
   },
   "2026-08-21": {
@@ -118,8 +133,8 @@ const POSTS = {
     "script": "the needle.",
     "body": "New tray, sealed product opened in front of you, your face mapped while it moves. Zero shortcuts, every time.",
     "cta": "See the room",
-    "src": "https://images.unsplash.com/photo-1612369278543-c4da62b819a6?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
-    "alt": "clean white and black labelled tubes"
+    "src": "photos/gbp/q2csrSPGM_k.jpg",
+    "alt": "a close up of a person during a facial treatment"
   },
   "2026-08-22": {
     "service": "LIP FILLER · OAKVILLE",
@@ -127,7 +142,7 @@ const POSTS = {
     "script": "is invisible.",
     "body": "One syringe of lip filler, with her own lip shape kept exactly where it was.",
     "cta": "See the result",
-    "src": "https://images.unsplash.com/photo-1767884139060-458f00bb75b1?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/-FT1IVUnUd8.jpg",
     "alt": "close up of a young woman's face in warm light"
   },
   "2026-08-23": {
@@ -136,7 +151,7 @@ const POSTS = {
     "script": "does it take?",
     "body": "Forty five minutes for a first visit, most of it talking. The injecting itself is about ten.",
     "cta": "Ask a question",
-    "src": "https://images.unsplash.com/photo-1741934023052-26baf5535088?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/16mHHrY3PUk.jpg",
     "alt": "woman enjoying a facial massage with her eyes closed"
   },
   "2026-08-24": {
@@ -145,7 +160,7 @@ const POSTS = {
     "script": "happens.",
     "body": "A real consult, your face mapped in motion, a plan and a price agreed before anything is opened. Then ten minutes.",
     "cta": "Book your first visit",
-    "src": "https://images.unsplash.com/photo-1552693673-1bf958298935?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/PqyzuzFiQfY.jpg",
     "alt": "woman receiving a facial skincare treatment"
   },
   "2026-08-25": {
@@ -154,8 +169,8 @@ const POSTS = {
     "script": "post prices.",
     "body": "Doses differ from face to face, so one flat price either overcharges you or under treats you. You get a written number at your consult.",
     "cta": "Message to ask",
-    "src": "https://images.unsplash.com/photo-1584230786360-140e645af859?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
-    "alt": "a card resting on white textile"
+    "src": "photos/gbp/w6zVwAYoqWM.jpg",
+    "alt": "young woman with reddish brown hair"
   },
   "2026-08-26": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -163,7 +178,7 @@ const POSTS = {
     "script": "holding the needle?",
     "body": "A nurse practitioner, RN(EC), registered with the College of Nurses of Ontario. Never delegated, never rushed.",
     "cta": "Meet Cleo",
-    "src": "https://images.unsplash.com/photo-1664549761426-6a1cb1032854?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/6Cz6R3El3p0.jpg",
     "alt": "close up of hands during a face massage"
   },
   "2026-08-27": {
@@ -172,7 +187,7 @@ const POSTS = {
     "script": "NP Cleo.",
     "body": "Nurse practitioner and injector. Every appointment is injected by Cleo, never delegated, never rushed.",
     "cta": "Book with Cleo",
-    "src": "https://images.unsplash.com/photo-1728727267814-792db55ce678?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/TQSPgNqeCo8.jpg",
     "alt": "a woman smiles while she holds her hand to her face"
   },
   "2026-08-28": {
@@ -181,7 +196,7 @@ const POSTS = {
     "script": "meets careful.",
     "body": "One client in the room at a time. The door stays shut and the questions stay welcome.",
     "cta": "Book a visit",
-    "src": "https://images.unsplash.com/photo-1683408640631-2c99fff964d7?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/MGKzomg0Dts.jpg",
     "alt": "a woman lying down with her eyes closed"
   },
   "2026-08-29": {
@@ -190,7 +205,7 @@ const POSTS = {
     "script": "or frozen?",
     "body": "You should still frown, squint and smile. If people ask what you had done instead of whether you slept, the dose was wrong.",
     "cta": "Book a consult",
-    "src": "https://images.unsplash.com/photo-1611008556446-a706919f4ad1?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/n5RNynnttF8.jpg",
     "alt": "portrait of a woman"
   },
   "2026-08-30": {
@@ -199,8 +214,8 @@ const POSTS = {
     "script": "actually includes.",
     "body": "Your goals, your face in motion, what will work, what will not, and a written price. No obligation to book.",
     "cta": "Book a consult",
-    "src": "https://images.unsplash.com/photo-1664794497171-23df61c419f3?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
-    "alt": "soft flowers beside a handwritten note"
+    "src": "photos/gbp/XGv1wuuNvYU.jpg",
+    "alt": "a young woman with long dark hair sitting outdoors"
   },
   "2026-08-31": {
     "service": "PREVENTATIVE BOTOX · OAKVILLE",
@@ -208,7 +223,7 @@ const POSTS = {
     "script": "actually start.",
     "body": "It is not about your age. Make your strongest expression, relax, and see if the line stays. That one is setting in.",
     "cta": "Book a consult",
-    "src": "https://images.unsplash.com/photo-1581182800629-7d90925ad072?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/w4Dj3MshHQ0.jpg",
     "alt": "woman in a white tank top"
   },
   "2026-09-01": {
@@ -217,7 +232,7 @@ const POSTS = {
     "script": "botox.",
     "body": "Small doses, started early, to stop a line becoming permanent. Prevention is easier than erasing.",
     "cta": "Book a consult",
-    "src": "https://images.unsplash.com/photo-1581182830442-e8bc7babbf15?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/GG8i22DQTHw.jpg",
     "alt": "woman in a white tank top looking away"
   },
   "2026-09-02": {
@@ -226,8 +241,8 @@ const POSTS = {
     "script": "safe?",
     "body": "Health Canada approved product, sealed and opened in front of you, injected by a nurse practitioner.",
     "cta": "Ask a question",
-    "src": "https://images.unsplash.com/photo-1612705166160-97d3b2e8e212?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
-    "alt": "a clean white tube bottle"
+    "src": "photos/gbp/HtXyytr9304.jpg",
+    "alt": "a woman receiving a facial treatment from a practitioner"
   },
   "2026-09-03": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -235,8 +250,8 @@ const POSTS = {
     "script": "actually looks like.",
     "body": "Units measure dose, not strength. The number you need depends on your muscle, not on a menu.",
     "cta": "Read the post",
-    "src": "https://images.unsplash.com/photo-1566958277100-f3171d48a24c?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
-    "alt": "white bottles on marble hexagon tiles"
+    "src": "photos/gbp/qJ1mYraktLg.jpg",
+    "alt": "a woman having a facial mask applied"
   },
   "2026-09-04": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -244,7 +259,7 @@ const POSTS = {
     "script": "Brutally honest.",
     "body": "Nurse practitioner, College of Nurses of Ontario. The person who will talk you out of it if it is wrong for you.",
     "cta": "Meet Cleo",
-    "src": "https://images.unsplash.com/photo-1683579808784-6faf6af67a40?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/q2csrSPGM_k.jpg",
     "alt": "a close up of a person during a facial treatment"
   },
   "2026-09-05": {
@@ -253,7 +268,7 @@ const POSTS = {
     "script": "beats erasing.",
     "body": "Ask your friend who started early. Softening a line before it sets is easier than chasing it later.",
     "cta": "Book a consult",
-    "src": "https://images.unsplash.com/photo-1758207574550-537f84ab025f?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/0YT1p3lEPTg.jpg",
     "alt": "young woman with long dark hair outdoors"
   },
   "2026-09-06": {
@@ -262,8 +277,8 @@ const POSTS = {
     "script": "this before?",
     "body": "Most people booking their first appointment have questions they think sound silly. Bring all of them.",
     "cta": "Ask a question",
-    "src": "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
-    "alt": "woman lying on a towel with cream on her face"
+    "src": "photos/gbp/16mHHrY3PUk.jpg",
+    "alt": "woman enjoying a facial massage with her eyes closed"
   },
   "2026-09-07": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -271,8 +286,8 @@ const POSTS = {
     "script": "or Dysport?",
     "body": "Same family, different personalities. One spreads a little more, one kicks in a little faster.",
     "cta": "Read the post",
-    "src": "https://images.unsplash.com/photo-1604447500169-1fa61b2b1cda?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
-    "alt": "skincare packaging on a marble table"
+    "src": "photos/gbp/N6N-DcYcDZ8.jpg",
+    "alt": "woman with red hair and natural freckles"
   },
   "2026-09-08": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -280,8 +295,8 @@ const POSTS = {
     "script": "different personalities.",
     "body": "Onset, spread and longevity side by side, so you can ask a better question at your consult.",
     "cta": "See the comparison",
-    "src": "https://images.unsplash.com/photo-1531646317777-0619c7c5d1d3?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
-    "alt": "neutral toned pressed powder compact"
+    "src": "photos/gbp/w6zVwAYoqWM.jpg",
+    "alt": "young woman with reddish brown hair"
   },
   "2026-09-09": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -289,8 +304,8 @@ const POSTS = {
     "script": "four hours.",
     "body": "Stay upright, skip the gym, leave the area alone. Three rules, and they matter more than the rest.",
     "cta": "Read aftercare",
-    "src": "https://images.unsplash.com/photo-1530863138121-03aea5f46fd4?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
-    "alt": "a soft tube beside a makeup brush"
+    "src": "photos/gbp/qJ1mYraktLg.jpg",
+    "alt": "a woman having a facial mask applied"
   },
   "2026-09-10": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -298,8 +313,8 @@ const POSTS = {
     "script": "48 hours.",
     "body": "What to do, what to skip, and what is completely normal. You got treated, now what?",
     "cta": "Read the post",
-    "src": "https://images.unsplash.com/photo-1575257922566-5d0a4a2da788?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
-    "alt": "minimal white box in shallow focus"
+    "src": "photos/gbp/MGKzomg0Dts.jpg",
+    "alt": "a woman lying down with her eyes closed"
   },
   "2026-09-11": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -307,7 +322,7 @@ const POSTS = {
     "script": "gets a plan.",
     "body": "Your face is mapped while it moves, because a muscle at rest tells you almost nothing.",
     "cta": "See the map",
-    "src": "https://images.unsplash.com/photo-1770392170801-0e512654f078?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/4mCQh80Jzyo.jpg",
     "alt": "close up of a person's hair and eyes"
   },
   "2026-09-12": {
@@ -316,7 +331,7 @@ const POSTS = {
     "script": "hurt?",
     "body": "A quick pinch, a few seconds an area. Most people say it is easier than they had built up.",
     "cta": "Ask a question",
-    "src": "https://images.unsplash.com/photo-1728949202477-bad2935775cb?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/hX9V80PDxrQ.jpg",
     "alt": "a man having a facial mask applied"
   },
   "2026-09-13": {
@@ -325,7 +340,7 @@ const POSTS = {
     "script": "still look like you.",
     "body": "The goal is never a new face. It is the same face, on a better week, and nobody able to say why.",
     "cta": "See the work",
-    "src": "https://images.unsplash.com/photo-1780153957057-a3a74f5ec9f2?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/H9YAbOsqDt8.jpg",
     "alt": "a woman with red hair looking away"
   },
   "2026-09-14": {
@@ -334,8 +349,8 @@ const POSTS = {
     "script": "it cannot do.",
     "body": "It softens movement lines. It will not lift heavy skin, fill volume, or fix sun damage.",
     "cta": "Read the post",
-    "src": "https://images.unsplash.com/photo-1639986168426-0616506bbae1?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
-    "alt": "portrait of a woman with a surprised expression"
+    "src": "photos/gbp/w4Dj3MshHQ0.jpg",
+    "alt": "woman in a white tank top"
   },
   "2026-09-15": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -343,8 +358,8 @@ const POSTS = {
     "script": "cannot fix.",
     "body": "If the line is there when your face is completely still, it needs something other than a neuromodulator.",
     "cta": "Book a consult",
-    "src": "https://images.unsplash.com/photo-1639986162505-c9bcccfc9712?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
-    "alt": "portrait of a woman"
+    "src": "photos/gbp/GG8i22DQTHw.jpg",
+    "alt": "woman in a white tank top looking away"
   },
   "2026-09-16": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -352,8 +367,8 @@ const POSTS = {
     "script": "reach us.",
     "body": "Message on Instagram and you get an answer from Cleo, not an auto reply or a call centre.",
     "cta": "Send a message",
-    "src": "https://images.unsplash.com/photo-1570723968319-d8db6a35dbeb?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
-    "alt": "minimal white packaging still life"
+    "src": "photos/gbp/SlpmIhUd860.jpg",
+    "alt": "woman wrapped in towels in a spa room"
   },
   "2026-09-17": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -361,7 +376,7 @@ const POSTS = {
     "script": "just refreshed.",
     "body": "You will not look done. You will look like you had a very good week of sleep.",
     "cta": "See the work",
-    "src": "https://images.unsplash.com/photo-1783703890513-f833b8f08f62?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/k6vhjQF720E.jpg",
     "alt": "young woman with flowing hair outdoors"
   },
   "2026-09-18": {
@@ -370,7 +385,7 @@ const POSTS = {
     "script": "face.",
     "body": "Frozen is a dosing mistake, not an inevitable result. Movement is meant to stay.",
     "cta": "Read the post",
-    "src": "https://images.unsplash.com/photo-1755034074327-9dcbdaf36981?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/N6N-DcYcDZ8.jpg",
     "alt": "woman with red hair and natural freckles"
   },
   "2026-09-19": {
@@ -379,7 +394,7 @@ const POSTS = {
     "script": "guessed.",
     "body": "That was the point. The best compliment is being asked whether you changed your skincare.",
     "cta": "See the work",
-    "src": "https://images.unsplash.com/photo-1759607092868-004c71191316?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/w6zVwAYoqWM.jpg",
     "alt": "young woman with reddish brown hair"
   },
   "2026-09-20": {
@@ -388,7 +403,7 @@ const POSTS = {
     "script": "and nearby.",
     "body": "3060 Preserve Dr, with clients travelling in from Burlington, Milton and Mississauga.",
     "cta": "Get directions",
-    "src": "https://images.unsplash.com/photo-1758207573919-2fee3ec528d0?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/XGv1wuuNvYU.jpg",
     "alt": "a young woman with long dark hair sitting outdoors"
   },
   "2026-09-21": {
@@ -397,7 +412,7 @@ const POSTS = {
     "script": "or filler?",
     "body": "Lines from movement need one. Lost volume needs the other. Most people ask for the wrong one.",
     "cta": "Read the post",
-    "src": "https://images.unsplash.com/photo-1767884139060-458f00bb75b1?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/-FT1IVUnUd8.jpg",
     "alt": "close up of a young woman's face in warm light"
   },
   "2026-09-22": {
@@ -406,7 +421,7 @@ const POSTS = {
     "script": "or volume?",
     "body": "Pull the skin gently taut. If the line disappears it is movement. If it stays it is volume.",
     "cta": "Book a consult",
-    "src": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/Pe9IXUuC6QU.jpg",
     "alt": "woman receiving a facial mask treatment at a spa"
   },
   "2026-09-23": {
@@ -415,7 +430,7 @@ const POSTS = {
     "script": "anywhere.",
     "body": "Who injects me, what are your credentials, what product, what dose, and what happens if I am unhappy.",
     "cta": "Ask a question",
-    "src": "https://images.unsplash.com/photo-1647004692483-c5d942fe1137?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/qJ1mYraktLg.jpg",
     "alt": "a woman having a facial mask applied"
   },
   "2026-09-24": {
@@ -424,7 +439,7 @@ const POSTS = {
     "script": "Honestly answered.",
     "body": "The questions that come in every week, answered without the marketing gloss.",
     "cta": "Ask a question",
-    "src": "https://images.unsplash.com/photo-1728727267814-792db55ce678?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/TQSPgNqeCo8.jpg",
     "alt": "a woman smiles while she holds her hand to her face"
   },
   "2026-09-25": {
@@ -433,7 +448,7 @@ const POSTS = {
     "script": "everyone asks quietly.",
     "body": "Asked privately every week, so here it is in public with a straight answer.",
     "cta": "Send a message",
-    "src": "https://images.unsplash.com/photo-1683408640631-2c99fff964d7?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/MGKzomg0Dts.jpg",
     "alt": "a woman lying down with her eyes closed"
   },
   "2026-09-26": {
@@ -442,8 +457,8 @@ const POSTS = {
     "script": "I cover next?",
     "body": "You pick the next topic. Whatever gets the most votes gets made.",
     "cta": "Cast your vote",
-    "src": "https://images.unsplash.com/photo-1664794497171-23df61c419f3?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
-    "alt": "soft flowers beside a handwritten note"
+    "src": "photos/gbp/0YT1p3lEPTg.jpg",
+    "alt": "young woman with long dark hair outdoors"
   },
   "2026-09-27": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -451,7 +466,7 @@ const POSTS = {
     "script": "later.",
     "body": "A follow up check at two weeks is part of the treatment, not an upsell. Small adjustments are free.",
     "cta": "Book a consult",
-    "src": "https://images.unsplash.com/photo-1741934023052-26baf5535088?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/16mHHrY3PUk.jpg",
     "alt": "woman enjoying a facial massage with her eyes closed"
   },
   "2026-09-28": {
@@ -460,8 +475,8 @@ const POSTS = {
     "script": "does it last?",
     "body": "Three to four months for most people. Metabolism, dose and muscle strength all move that number.",
     "cta": "Read the post",
-    "src": "https://images.unsplash.com/photo-1566958277100-f3171d48a24c?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
-    "alt": "white bottles on marble hexagon tiles"
+    "src": "photos/gbp/H9YAbOsqDt8.jpg",
+    "alt": "a woman with red hair looking away"
   },
   "2026-09-29": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -469,8 +484,8 @@ const POSTS = {
     "script": "months.",
     "body": "Day three it starts. Two weeks it settles. Month three it softens. Month four you are due.",
     "cta": "See the timeline",
-    "src": "https://images.unsplash.com/photo-1604447500169-1fa61b2b1cda?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
-    "alt": "skincare packaging on a marble table"
+    "src": "photos/gbp/k6vhjQF720E.jpg",
+    "alt": "young woman with flowing hair outdoors"
   },
   "2026-09-30": {
     "service": "LIP FILLER · OAKVILLE",
@@ -478,7 +493,7 @@ const POSTS = {
     "script": "we talk lips.",
     "body": "A month on filler: what one syringe really does, natural versus overdone, and real results.",
     "cta": "Follow along",
-    "src": "https://images.unsplash.com/photo-1501812467184-ed92ff087e10?fm=jpg&q=82&w=1600&h=1200&fit=crop&crop=entropy&cs=tinysrgb",
+    "src": "photos/gbp/Bsg_9a2PDX0.jpg",
     "alt": "soft close up portrait in warm light"
   }
 };
@@ -489,6 +504,7 @@ document.getElementById('stage').innerHTML = `
 <div class="slide has-photo" id="slide">
   <div class="safe">
     <div class="orb"><img id="photo" src="${P.src}" alt="${P.alt}"></div>
+    <div class="gutter"></div>
     <img class="lockup" src="brand/logo-original.png" width="210"
          alt="Luxury Beauty by Cleo R"
          style="filter:brightness(0) invert(1);opacity:.92">
@@ -502,6 +518,10 @@ document.getElementById('stage').innerHTML = `
         <div class="go">${P.cta}</div>
         <div class="at">@luxury_beauty_aestheticz</div>
       </div>
+    </div>
+    <div class="foot">
+      <div class="line"></div>
+      <div class="meta"><span>Oakville &middot; Ontario</span><span>@luxury_beauty_aestheticz</span></div>
     </div>
   </div>
 </div>`;
