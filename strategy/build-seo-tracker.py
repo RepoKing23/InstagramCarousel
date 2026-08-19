@@ -84,6 +84,7 @@ TASKS = [
     (1, "Google profile", "Upload real photos to GBP: treatment room, you, the space", "Both", "One-off", "High"),
     (1, "Citations", "Decide on one email address and one phone number to use everywhere", "Cleo", "One-off", "High"),
     (1, "Citations", "Audit every listing that mentions the practice and record the wrong NAP on the Citations tab", "Agency", "One-off", "High"),
+    (1, "Citations", "Fill in THE RECORD on the Local Citations tab: one name, one address, one phone, one email", "Both", "One-off", "High"),
     (1, "Daily routine", "Start the daily routine: GBP post, Instagram, on-page, review ask, citation", "Cleo", "Daily", "High"),
     (1, "Daily routine", "Agree who does which daily slot and put it in the calendar", "Both", "One-off", "High"),
     (1, "Measurement", "Record the baseline: 12 reviews, 5.0 average, GBP calls, views and direction requests", "Agency", "One-off", "High"),
@@ -96,6 +97,7 @@ TASKS = [
     (2, "Citations", "Correct postal code to L6M 0T9 on Fresha", "Agency", "One-off", "High"),
     (2, "Citations", "Correct postal code to L6M 0T9 on Yelp.ca", "Agency", "One-off", "Medium"),
     (2, "Citations", "Correct postal code to L6M 0T9 on Yellow Pages", "Agency", "One-off", "Medium"),
+    (2, "Citations", "Check which directories on the Local Citations build list are still live and still free", "Agency", "One-off", "Medium"),
     (2, "Website", "PLANNING WEEK: agree the sitemap and the full page inventory", "Both", "One-off", "High"),
     (2, "Website", "Build the keyword-to-page map so every page has one job", "Agency", "One-off", "High"),
     (2, "Website", "Wireframe the home page, the contact page and the treatment page template", "Agency", "One-off", "High"),
@@ -119,6 +121,7 @@ TASKS = [
     (3, "Citations", "Correct postal code to L6M 0T9 on Apple Maps", "Agency", "One-off", "Medium"),
     (3, "Citations", "Correct postal code to L6M 0T9 on Bing Places", "Agency", "One-off", "Medium"),
     (3, "Citations", "Correct postal code to L6M 0T9 on RateMDs", "Agency", "One-off", "Low"),
+    (3, "Citations", "Build the Oakville and Halton local citations from the build list", "Agency", "One-off", "High"),
     (3, "Google profile", "Fill out the GBP services list with a plain description of each treatment", "Agency", "One-off", "Medium"),
     (3, "Google profile", "Add a working booking link to GBP", "Agency", "One-off", "High"),
     (3, "Reviews", "Start sending the review ask within 24 hours of every appointment", "Cleo", "Daily", "High"),
@@ -131,6 +134,8 @@ TASKS = [
     (4, "Citations", "Correct postal code to L6M 0T9 on the Canadian chamber directories", "Agency", "One-off", "Low"),
     (4, "Citations", "Claim any listing about the practice that is not under your control", "Agency", "One-off", "Medium"),
     (4, "Citations", "Verify every corrected listing now shows identical name, address and phone", "Agency", "One-off", "High"),
+    (4, "Citations", "Build the healthcare and aesthetics citations, the NPAO listing included", "Agency", "One-off", "Medium"),
+    (4, "Citations", "Check the College of Nurses public register entry is correct as it stands", "Agency", "One-off", "Medium"),
     (4, "Google profile", "Seed the GBP questions section with real questions and answers", "Both", "One-off", "Medium"),
     (4, "Google profile", "Post to GBP every weekday from the content calendar", "Cleo", "Daily", "High"),
     (4, "Compliance", "Compliance pass on the 21 briefs naming Botox or Dysport in client-facing copy", "Agency", "One-off", "High"),
@@ -143,6 +148,7 @@ TASKS = [
     (5, "Website", "Build the treatment pages: lip filler, dermal filler and facial balancing", "Agency", "One-off", "High"),
     (5, "Website", "Write the copy for those pages and confirm every claim is one you can stand behind", "Both", "One-off", "High"),
     (5, "Website", "Title tag, meta description and H1 on every treatment page built", "Agency", "One-off", "High"),
+    (5, "Citations", "Build the Canadian directory, maps and social profile citations", "Agency", "One-off", "Low"),
     (5, "Reviews", "Design and print the QR review card for the treatment room", "Agency", "One-off", "Medium"),
     (5, "Reviews", "Reply to every new review within two days", "Cleo", "Ongoing", "Medium"),
     (5, "Instagram", "Switch to locally weighted hashtag sets, clear of prescription brand names", "Agency", "One-off", "Medium"),
@@ -171,6 +177,7 @@ TASKS = [
     (8, "Website", "LAUNCH: site live, Search Console verified, sitemap submitted, analytics running", "Agency", "One-off", "High"),
     (8, "Website", "Repoint the GBP website field at the live site", "Agency", "One-off", "High"),
     (8, "Citations", "Update every directory listing to the new website URL", "Agency", "One-off", "Medium"),
+    (8, "Citations", "Update every citation built before launch from the booking link to the live site URL", "Agency", "One-off", "High"),
     (8, "Instagram", "Update the link in bio to the live site", "Agency", "One-off", "High"),
     (8, "Measurement", "Confirm Search Console and analytics are both recording on the live domain", "Agency", "One-off", "High"),
     (8, "Ads", "Fortnightly ad review: kill anything below average cost per DM, reallocate", "Agency", "Fortnightly", "High"),
@@ -235,7 +242,7 @@ TASKS = [
     # ---- W18 (Dec 14-20)
     (18, "Ads", "Holiday campaign: reallocate budget to the gift-card creative", "Agency", "Fortnightly", "High"),
     (18, "Content", "Write the seventh article", "Agency", "One-off", "Medium"),
-    (18, "Citations", "Quarterly citation audit: confirm the NAP is still identical everywhere", "Agency", "One-off", "Medium"),
+    (18, "Citations", "Quarterly citation audit across both the Citations and Local Citations tabs", "Agency", "One-off", "Medium"),
 
     # ---- W19 (Dec 21-27)
     (19, "Instagram", "Reduced holiday cadence: stories only, one reel, but keep GBP posting daily", "Cleo", "One-off", "Medium"),
@@ -311,9 +318,11 @@ DAILY = [
      "Cleo", "Reviews tab"),
     ("6", "Citations",
      "Daily to week 4, then weekly",
-     "One directory a day claimed or corrected until the list is clean, then one a week to "
-     "keep it clean. Name, address and phone identical everywhere, no exceptions.",
-     "Agency", "Citations tab"),
+     "One directory a day. The Citations tab first — the listings that exist and are wrong — "
+     "then the Local Citations build list, where there is no listing at all. Once both are "
+     "clean, one a week to keep them that way. Name, address and phone identical everywhere, "
+     "no exceptions.",
+     "Agency", "Citations + Local Citations"),
 ]
 
 WEEKLY = [
@@ -352,6 +361,83 @@ MONTHLY = [
      "Monthly",
      "The posts that drove profile visits and the pages that drove sessions. More of those next month.",
      "Both", "Metrics tab"),
+]
+
+# ------------------------------------------------- the local citation build
+# THE RECORD: the canonical details pasted into every directory form. Filled in
+# where the answer is already known, deliberately blank where it is not. Every
+# blank here has a matching row on the Waiting On Cleo tab.
+RECORD = [
+    ("Business name (exact)", "Luxury Beauty by Cleo R.", "Use this spelling everywhere. No 'Med Spa', no 'Inc', no variations"),
+    ("Practitioner", "Cleo Rukovo, NP", "Nurse practitioner. Some healthcare directories list the person, not the practice"),
+    ("Address line 1", "3060 Preserve Drive", "Confirmed"),
+    ("Suite / unit", "", "Waiting on the Allure conversation. This is what separates you from their listing"),
+    ("City", "Oakville", "Confirmed"),
+    ("Province", "Ontario", "Write 'Ontario' in full, or 'ON' — pick one and never mix them"),
+    ("Postal code", "L6M 0T9", "NOT L6M 4L9. That is the error on most listings today"),
+    ("Country", "Canada", "Confirmed"),
+    ("Phone", "", "One number, everywhere. A local 905 or 289 line beats the 416 mobile if you can get one"),
+    ("Email", "", "One address. Currently split between crukovo@ and luxury.beautyaestheticz@"),
+    ("Website", "https://luxurybeautybycleo.ca", "Use the booking link until the site is live in October, then switch every listing"),
+    ("Booking URL", "", "Needed before any directory that offers a booking button"),
+    ("Primary category", "", "Set on the Google profile first, then match it everywhere else"),
+    ("Secondary categories", "", "Chosen to avoid colliding with Allure's listing"),
+    ("Short description (under 250 characters)", "", "Names the town and the treatments. No prescription drug names, no benefit claims"),
+    ("Long description", "", "Same rules. Write once, reuse everywhere"),
+    ("Hours — Monday", "", "All seven days. 'Closed' is an answer; blank is not"),
+    ("Hours — Tuesday", "", ""),
+    ("Hours — Wednesday", "", ""),
+    ("Hours — Thursday", "", ""),
+    ("Hours — Friday", "", ""),
+    ("Hours — Saturday", "", ""),
+    ("Hours — Sunday", "", "The only hours on record anywhere today are Sunday 12 to 5"),
+    ("Year established", "", ""),
+    ("Service area", "Oakville, Burlington, Milton, Mississauga, Glen Abbey, Joshua Creek, Bronte",
+     "Used where a directory asks for a service radius"),
+    ("Logo file", "", "From design/brand"),
+    ("Cover photo", "", "The treatment room or the space, not a stock image"),
+]
+
+CITATION_TYPES = ["Local", "Healthcare", "Canadian", "Maps", "Social"]
+
+# (directory, type, priority, where to start)
+# Domains are a starting point, not gospel — Canadian directories churn, and the
+# first pass on every row is confirming it still exists and still takes a free
+# listing. Blank where we would rather you search than trust a stale URL.
+LOCAL_CITATIONS = [
+    # -- Oakville and Halton. The ones that actually say "of this town".
+    ("Town of Oakville business directory", "Local", "High", "oakville.ca"),
+    ("Oakville.com business listing", "Local", "High", "oakville.com"),
+    ("Oakville News business listing", "Local", "Medium", "oakvillenews.org"),
+    ("Visit Oakville / tourism listing", "Local", "Medium", ""),
+    ("Halton Region business directory", "Local", "High", "halton.ca"),
+    ("Burlington Chamber of Commerce", "Local", "Low", ""),
+    ("Nextdoor business page, Oakville", "Local", "Medium", "business.nextdoor.com"),
+    # -- Healthcare and aesthetics. Fewer listings, but far better matched traffic.
+    ("Nurse Practitioners' Association of Ontario", "Healthcare", "High", "npao.org"),
+    ("College of Nurses of Ontario public register", "Healthcare", "High", "cno.org"),
+    ("Opencare", "Healthcare", "Medium", "opencare.com"),
+    ("Doctify Canada", "Healthcare", "Medium", "doctify.com"),
+    ("Vitals / Healthgrades Canada", "Healthcare", "Low", ""),
+    ("Booksy", "Healthcare", "Medium", "booksy.com"),
+    ("Vagaro", "Healthcare", "Medium", "vagaro.com"),
+    ("Spas of America", "Healthcare", "Low", "spasofamerica.com"),
+    # -- Canadian general directories. Low individually, useful as a consistent set.
+    ("Canpages", "Canadian", "Medium", "canpages.ca"),
+    ("ProfileCanada", "Canadian", "Medium", "profilecanada.com"),
+    ("n49", "Canadian", "Medium", "n49.com"),
+    ("Hotfrog Canada", "Canadian", "Low", "hotfrog.ca"),
+    ("Canadian Business Directory", "Canadian", "Low", ""),
+    ("Where To Canada", "Canadian", "Low", ""),
+    ("Yably Canada", "Canadian", "Low", "yably.ca"),
+    ("Data Axle Canada", "Canadian", "Medium", ""),
+    # -- Maps and voice.
+    ("Waze business listing", "Maps", "Medium", "waze.com"),
+    ("Here WeGo", "Maps", "Low", "here.com"),
+    # -- Social profiles that function as citations.
+    ("LinkedIn company page", "Social", "Medium", "linkedin.com"),
+    ("Pinterest business profile", "Social", "Low", "pinterest.com"),
+    ("TikTok business profile", "Social", "Medium", "tiktok.com"),
 ]
 
 # ------------------------------------------------------------------- styling
@@ -424,6 +510,7 @@ rows = [
     ("Every day", "Open the Daily Log. Six slots, five of them daily, the reel on Wednesday. Mark each one."),
     ("The routine", "The Daily Routine tab says what each slot actually means. Read it once, then work off the log."),
     ("The projects", "The Tasks tab holds the one-off work. Filter Status to 'In progress' and 'Not started'."),
+    ("Two citation tabs", "Citations fixes the listings that exist and are wrong. Local Citations builds the ones that do not exist yet."),
     ("You edit", "Status, Date done, and Notes. Leave the rest unless the plan genuinely changes."),
     ("Blocked?", "Set Status to Blocked and write what you are waiting on in Notes. Blocked rows turn red."),
     ("Weekly", "Monday: profile insights. Wednesday: batch the content and film the reel. Friday: log the week."),
@@ -732,6 +819,99 @@ dv(ws, STATUSES, f"H5:H{CIT_LAST}")
 status_colours(ws, f"A5:J{CIT_LAST}", "H", 5)
 ws.freeze_panes = "A5"
 ws.auto_filter.ref = f"A4:J{CIT_LAST}"
+
+# ========================================================= Local Citations tab
+ws = wb.create_sheet("Local Citations")
+title_block(ws, "Local citations — the build list",
+            "The Citations tab fixes listings that already exist. This one builds listings "
+            "where there are none. Decide the record once, then paste it, unchanged, into "
+            "every form below.")
+
+band(ws, 4, 11, "THE RECORD — paste this, exactly, every time")
+for col, h in enumerate(["Field", "Value", "Where it gets decided"], start=1):
+    c = ws.cell(row=5, column=(1 if col == 1 else (2 if col == 2 else 5)), value=h)
+    c.font = Font(name="Calibri", size=10, bold=True, color=INK)
+    c.fill = PatternFill("solid", fgColor=CREAM)
+    c.border = Border(bottom=Side("thin", color=GOLD))
+
+r = 6
+rec_first = r
+for field, value, note in RECORD:
+    ws.merge_cells(start_row=r, start_column=2, end_row=r, end_column=4)
+    ws.merge_cells(start_row=r, start_column=5, end_row=r, end_column=11)
+    a = ws.cell(row=r, column=1, value=field)
+    a.font = Font(name="Calibri", size=10, bold=True, color=INK)
+    a.alignment = Alignment(vertical="center", wrap_text=True)
+    b = ws.cell(row=r, column=2, value=(value or None))
+    b.font = Font(name="Calibri", size=10, color=INK)
+    b.alignment = Alignment(vertical="center", wrap_text=True)
+    n = ws.cell(row=r, column=5, value=(note or None))
+    n.font = Font(name="Calibri", size=9, italic=True, color=GREY)
+    n.alignment = Alignment(vertical="center", wrap_text=True)
+    r += 1
+rec_last = r - 1
+
+# Anything still undecided glows amber until someone fills it in.
+ws.conditional_formatting.add(f"B{rec_first}:B{rec_last}", FormulaRule(
+    formula=[f'$B{rec_first}=""'], fill=PatternFill("solid", fgColor=AMBER), stopIfTrue=False))
+c = ws.cell(row=r, column=1, value="Amber means still undecided. Every amber row above has a matching "
+                                   "row on the Waiting On Cleo tab. Do not submit to anything below "
+                                   "until they are all filled in — a wrong detail submitted 28 times "
+                                   "is 28 corrections later.")
+c.font = Font(name="Calibri", size=9, italic=True, color=GREY)
+c.alignment = Alignment(wrap_text=True, vertical="top")
+ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=11)
+ws.row_dimensions[r].height = 26
+r += 2
+
+band(ws, r, 11, "SUBMISSION QUEUE — one a day in the citation slot, once the record is settled")
+r += 1
+hdr(ws, r, ["Directory", "Type", "Priority", "Where to start", "Account needed",
+            "Verified live", "Status", "Date submitted", "Live listing URL",
+            "NAP checked", "Notes"],
+    [32, 13, 10, 24, 15, 13, 14, 14, 32, 13, 34])
+q_hdr = r
+r += 1
+q_first = r
+for directory, ctype, prio, where in LOCAL_CITATIONS:
+    for col, v in enumerate([directory, ctype, prio, (where or None), None, None,
+                             "Not started", None, None, None, None], start=1):
+        c = ws.cell(row=r, column=col, value=v)
+        c.font = Font(name="Calibri", size=10, bold=(col == 1), color=INK)
+        c.alignment = Alignment(vertical="top", wrap_text=(col in (1, 4, 9, 11)))
+    ws.cell(row=r, column=8).number_format = "yyyy-mm-dd"
+    r += 1
+q_last = r - 1
+
+dv(ws, CITATION_TYPES, f"B{q_first}:B{q_last}")
+dv(ws, PRIORITIES, f"C{q_first}:C{q_last}")
+for col in "EFJ":
+    dv(ws, ["Yes", "No", "N/A"], f"{col}{q_first}:{col}{q_last}")
+dv(ws, STATUSES, f"G{q_first}:G{q_last}")
+status_colours(ws, f"A{q_first}:K{q_last}", "G", q_first)
+ws.auto_filter.ref = f"A{q_hdr}:K{q_last}"
+
+for col, lbl, formula in [(6, "Submitted", f'=COUNTIF(G{q_first}:G{q_last},"Done")'),
+                          (8, "Still to do", f'=COUNTIF(G{q_first}:G{q_last},"Not started")')]:
+    ws.cell(row=2, column=col, value=lbl).font = Font(name="Calibri", size=10, bold=True, color=INK)
+    ws.cell(row=2, column=col + 1, value=formula).font = Font(name="Calibri", size=10, bold=True, color=INK)
+
+r = q_last + 2
+for line in [
+    "Domains in 'Where to start' are a starting point, not gospel. Canadian directories close and change hands. "
+    "The first pass on every row is confirming it still exists and still takes a free listing — if it does not, "
+    "set Status to Not applicable and say so in Notes rather than leaving it silent.",
+    "Google, Yelp.ca, Facebook, Fresha, Yellow Pages, Apple Maps, Bing Places, RateMDs, 411.ca, Cylex, Foursquare "
+    "and the chamber listings are not repeated here — they already exist and live on the Citations tab.",
+    "Every listing built before the site launches carries the booking link. In launch week, week of 5 October, "
+    "every one of them gets updated to the live site URL. That is a task on the Tasks tab, not a thing to remember.",
+]:
+    c = ws.cell(row=r, column=1, value=line)
+    c.font = Font(name="Calibri", size=9, italic=True, color=GREY)
+    c.alignment = Alignment(wrap_text=True, vertical="top")
+    ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=11)
+    ws.row_dimensions[r].height = 26
+    r += 1
 
 # =============================================================== GBP Posts tab
 ws = wb.create_sheet("GBP Posts")

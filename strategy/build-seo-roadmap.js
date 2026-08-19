@@ -327,6 +327,7 @@ body.push(bullet('Audit every listing that mentions the practice first, so we kn
 body.push(bullet('Correct L6M 4L9 to L6M 0T9 on Birdeye, Facebook, Fresha, Yelp.ca, Yellow Pages, Apple Maps, Bing Places, RateMDs and the Canadian chamber directories.'));
 body.push(bullet('Claim any listing that exists about you but is not yours to control.'));
 body.push(bullet('Then verify. A correction you did not check is a correction that did not happen.'));
+body.push(bullet('Then build the listings that do not exist yet: Oakville and Halton local directories, the Ontario nurse practitioner and healthcare listings, and a focused set of Canadian directories. Roughly twenty-eight of them, one a day in the citation slot, all pasted from a single record of your details so no two listings disagree. That record is the first thing we settle in week one, and it is why the phone number and the email have to be decided before anything gets submitted anywhere.'));
 
 body.push(h3('Website planning and design — week of 24 August'));
 body.push(bullet('Sitemap and the full page inventory, agreed with you rather than presented to you.'));
