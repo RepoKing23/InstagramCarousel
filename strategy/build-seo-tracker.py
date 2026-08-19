@@ -440,6 +440,46 @@ LOCAL_CITATIONS = [
     ("TikTok business profile", "Social", "Medium", "tiktok.com"),
 ]
 
+# ------------------------------------------------------- the 90-day overview
+# Ninety days from 17 August lands on 15 November, which is the end of week 13.
+# So the quarter view uses the same week numbering as everything else.
+CHECKPOINTS = [
+    ("Day 30", dt.date(2026, 9, 15),
+     "Google profile claimed, verified, complete and posting daily. All 17 existing listings "
+     "corrected AND verified at L6M 0T9. Design signed off, build two weeks in. Review asks "
+     "going out every day."),
+    ("Day 60", dt.date(2026, 10, 15),
+     "Site live. Every treatment page published, Search Console verified, sitemap submitted. "
+     "Every citation repointed at the live URL. Ads running on three audiences."),
+    ("Day 90", dt.date(2026, 11, 15),
+     "Eight to ten new reviews. Visible in the map pack for 'nurse injector oakville'. First "
+     "two or three articles live and indexed. Local link building started."),
+]
+
+# (week, phase, the one thing that matters)
+QUARTER_WEEKS = [
+    (1, "Foundation", "Claim and verify the Google profile. Nothing else can start until it is settled"),
+    (2, "Foundation", "Design sign-off Friday 28 August, and the citation corrections begin"),
+    (3, "Build", "Design signed off Monday. BUILD STARTS 1 SEPTEMBER"),
+    (4, "Build", "Home and contact complete in staging. Citations verified, not just corrected"),
+    (5, "Build", "First four treatment pages. The review ask is now a daily habit"),
+    (6, "Build", "Second pair of treatment pages. Ad audiences built"),
+    (7, "Build", "Last treatment pages and the area page. Mobile speed pass"),
+    (8, "Launch", "LAUNCH WEEK. Search Console verified, sitemap in, every listing repointed"),
+    (9, "Index and optimise", "Confirm every page is indexed. First local link submissions"),
+    (10, "Index and optimise", "On-page pass on the four highest-intent pages. First article"),
+    (11, "Index and optimise", "Fix whatever Search Console flags. Second article"),
+    (12, "Index and optimise", "Month three review and a rank check against the baseline"),
+    (13, "Review", "DAY 90. Full read against the week-one baseline"),
+]
+
+HARD_DATES = [
+    (dt.date(2026, 8, 31), "Design sign-off", "The build gate. Everything after it moves one-for-one"),
+    (dt.date(2026, 9, 1), "Build starts", "Hosting, DNS, platform, page scaffolding"),
+    (dt.date(2026, 10, 5), "Launch week begins", "Site live by Sunday 11 October"),
+    (dt.date(2026, 11, 15), "Day 90 review", "Every number against the week-one baseline"),
+]
+
 # ------------------------------------------------------------------- styling
 
 def hdr(ws, row, headers, widths):
@@ -510,6 +550,7 @@ rows = [
     ("Every day", "Open the Daily Log. Six slots, five of them daily, the reel on Wednesday. Mark each one."),
     ("The routine", "The Daily Routine tab says what each slot actually means. Read it once, then work off the log."),
     ("The projects", "The Tasks tab holds the one-off work. Filter Status to 'In progress' and 'Not started'."),
+    ("Progress", "The 90-Day Overview is where you look at progress. The Tasks tab is where you change it."),
     ("Two citation tabs", "Citations fixes the listings that exist and are wrong. Local Citations builds the ones that do not exist yet."),
     ("You edit", "Status, Date done, and Notes. Leave the rest unless the plan genuinely changes."),
     ("Blocked?", "Set Status to Blocked and write what you are waiting on in Notes. Blocked rows turn red."),
@@ -684,6 +725,127 @@ counts = [
 for lcol, lbl, vcol, formula in counts:
     ws.cell(row=3, column=lcol, value=lbl).font = Font(name="Calibri", size=9, bold=True, color=GREY)
     ws.cell(row=3, column=vcol, value=formula).font = Font(name="Calibri", size=9, color=GREY)
+
+# ========================================================= 90-Day Overview tab
+ws = wb.create_sheet("90-Day Overview")
+title_block(ws, "The first 90 days",
+            "17 August to 15 November 2026. Week 13 closes day 90. Counts pull live from the "
+            "Tasks tab — this is where you look at progress, that is where you change it.")
+
+OV_COLS = 9
+band(ws, 4, OV_COLS, "THE THREE CHECKPOINTS — what has to be true, and by when")
+hdr(ws, 5, ["Checkpoint", "Date", "What must be true by then", "", "", "",
+            "On track", "Notes", ""],
+    [13, 12, 30, 14, 14, 12, 13, 30, 20])
+r = 6
+cp_first = r
+for name, when, must in CHECKPOINTS:
+    ws.merge_cells(start_row=r, start_column=3, end_row=r, end_column=6)
+    for col, v in enumerate([name, when, must, None, None, None, None, None, None], start=1):
+        c = ws.cell(row=r, column=col, value=v)
+        c.font = Font(name="Calibri", size=10, bold=(col == 1), color=INK)
+        c.alignment = Alignment(vertical="top", wrap_text=(col in (3, 8)))
+    ws.cell(row=r, column=2).number_format = "yyyy-mm-dd"
+    ws.row_dimensions[r].height = 46
+    r += 1
+cp_last = r - 1
+dv(ws, ["Yes", "At risk", "No"], f"G{cp_first}:G{cp_last}")
+status_colours(ws, f"A{cp_first}:I{cp_last}", "G", cp_first,
+               done="Yes", blocked="No", progress="At risk")
+
+r += 1
+band(ws, r, OV_COLS, "WEEK BY WEEK — the first 90 days")
+r += 1
+hdr(ws, r, ["Week", "Dates", "Phase", "The one thing that matters",
+            "Tasks due", "Done", "Progress", "Status", "Notes"],
+    [7, 20, 20, 62, 11, 8, 10, 14, 30])
+r += 1
+wk_first = r
+for week, phase, matters in QUARTER_WEEKS:
+    start = START + dt.timedelta(weeks=week - 1)
+    end = WEEK_DUE[week]
+    dates = f"{start:%d %b} – {end:%d %b}"
+    vals = [f"W{week}", dates, phase, matters,
+            f'=COUNTIF(Tasks!$C:$C,"W{week}")',
+            f'=COUNTIFS(Tasks!$C:$C,"W{week}",Tasks!$J:$J,"Done")',
+            f"=IFERROR(F{r}/E{r},0)", "Not started", None]
+    for col, v in enumerate(vals, start=1):
+        c = ws.cell(row=r, column=col, value=v)
+        c.font = Font(name="Calibri", size=10, bold=(col == 1), color=INK)
+        c.alignment = Alignment(vertical="top",
+                                horizontal=("center" if col in (1, 5, 6, 7) else "left"),
+                                wrap_text=(col in (4, 9)))
+    ws.cell(row=r, column=7).number_format = "0%"
+    ws.row_dimensions[r].height = 28
+    r += 1
+wk_last = r - 1
+
+dv(ws, STATUSES, f"H{wk_first}:H{wk_last}")
+wk_rng = f"A{wk_first}:I{wk_last}"
+# Green once every task for the week is done; amber part-way; red only once the
+# week has actually ended with nothing closed out.
+ws.conditional_formatting.add(wk_rng, FormulaRule(
+    formula=[f'AND($E{wk_first}>0,$F{wk_first}=$E{wk_first})'],
+    fill=PatternFill("solid", fgColor=GREEN), stopIfTrue=True))
+ws.conditional_formatting.add(wk_rng, FormulaRule(
+    formula=[f'$F{wk_first}>0'],
+    fill=PatternFill("solid", fgColor=AMBER), stopIfTrue=True))
+# A week only goes red once it has actually ended with nothing closed out, so
+# one rule per row carrying that row's own end date.
+for i, (week, _, _) in enumerate(QUARTER_WEEKS):
+    row = wk_first + i
+    due = WEEK_DUE[week]
+    ws.conditional_formatting.add(f"A{row}:I{row}", FormulaRule(
+        formula=[f'AND($E{row}>0,$F{row}=0,TODAY()>DATE({due.year},{due.month},{due.day}))'],
+        fill=PatternFill("solid", fgColor=RED), stopIfTrue=True))
+
+r += 1
+band(ws, r, OV_COLS, "AFTER DAY 90 — the second half")
+r += 1
+hdr(ws, r, ["Month", "Dates", "Theme", "", "", "", "", "", ""],
+    [7, 20, 62, 11, 8, 10, 14, 30, 20])
+r += 1
+for m, dates, theme in [
+    ("Month 4", "9 Nov – 6 Dec", "Depth on the pages that earn. Thin pages expanded, gallery, articles four to six"),
+    ("Month 5", "7 Dec – 10 Jan", "Hold the cadence through the holidays. Reduced posting, never stopped posting"),
+    ("Month 6", "11 Jan – 14 Feb", "Compound it. Near-miss queries, technical audit, the six-month report"),
+]:
+    ws.merge_cells(start_row=r, start_column=3, end_row=r, end_column=8)
+    for col, v in enumerate([m, dates, theme], start=1):
+        c = ws.cell(row=r, column=col, value=v)
+        c.font = Font(name="Calibri", size=10, bold=(col == 1), color=INK)
+        c.alignment = Alignment(vertical="top", wrap_text=(col == 3))
+    ws.row_dimensions[r].height = 26
+    r += 1
+
+c = ws.cell(row=r, column=1, value="Week 13 is both the day-90 review and the first week of month four. "
+                                   "It appears in two places on purpose.")
+c.font = Font(name="Calibri", size=9, italic=True, color=GREY)
+ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=OV_COLS)
+r += 2
+
+band(ws, r, OV_COLS, "THE DATES THAT DO NOT MOVE")
+r += 1
+hdr(ws, r, ["Date", "What", "Why it matters", "", "", "", "Status", "Notes", ""],
+    [12, 22, 58, 11, 8, 10, 14, 30, 20])
+r += 1
+hd_first = r
+for when, what, why in HARD_DATES:
+    ws.merge_cells(start_row=r, start_column=3, end_row=r, end_column=6)
+    for col, v in enumerate([when, what, why, None, None, None, "Not started", None, None], start=1):
+        c = ws.cell(row=r, column=col, value=v)
+        c.font = Font(name="Calibri", size=10, bold=(col == 2), color=INK)
+        c.alignment = Alignment(vertical="top", wrap_text=(col in (3, 8)))
+    ws.cell(row=r, column=1).number_format = "yyyy-mm-dd"
+    r += 1
+hd_last = r - 1
+dv(ws, STATUSES, f"G{hd_first}:G{hd_last}")
+status_colours(ws, f"A{hd_first}:I{hd_last}", "G", hd_first)
+ws.conditional_formatting.add(f"A{hd_first}:I{hd_last}", FormulaRule(
+    formula=[f'AND($A{hd_first}<TODAY(),$G{hd_first}<>"Done")'],
+    font=Font(color="B03A2E", bold=True), stopIfTrue=False))
+
+ws.freeze_panes = "A4"
 
 # =================================================================== Tasks tab
 ws = wb.create_sheet("Tasks")
