@@ -41,9 +41,12 @@ def carousel(tpl, query, folder, slides, prefix='slide'):
 
 
 AUGUST = []
-# Aug 17 and Aug 18 already have artwork from earlier work; only their GBP
-# versions are new.
+# Aug 17 and Aug 18 predate this script. Their slides are here so the artwork
+# stays regenerable, which is what let the retired gold logo survive on them.
+AUGUST += carousel('botox-myths.html', '', '2026-08-17-5-botox-lies-you-still', 8)
 AUGUST += [gbp('aug-17', '2026-08-17-5-botox-lies-you-still')]
+AUGUST += [ig('spotlight.html?slide=1',
+              'content/2026-08-18-service-spotlight-botox/images/post.jpg')]
 AUGUST += [gbp('aug-18', '2026-08-18-service-spotlight-botox')]
 
 AUGUST += carousel('carousel.html', 'post=red-flags',
@@ -123,7 +126,10 @@ def main(which='all'):
             os.makedirs(os.path.dirname(out), exist_ok=True)
             page.goto(f'file://{DESIGN}/{url}')
             page.wait_for_timeout(350)
-            el = page.query_selector('.slide')
+            # botox-myths and spotlight keep every slide in the DOM and reveal
+            # one with .active, so the first .slide is a hidden one. The other
+            # templates build a single .slide, where both selectors agree.
+            el = page.query_selector('.slide.active') or page.query_selector('.slide')
             if el is None:
                 print('MISSING .slide:', url)
                 continue

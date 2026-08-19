@@ -20,7 +20,19 @@ Playfair Display serif + Pinyon Script accents + Jost letterspaced labels.
 - `photos/gbp/` — those downloads. Picks and credits are in
   `strategy/gbp-photos.json`. Stock models, never presented as clients
 - `fonts/` — Playfair Display, Pinyon Script, Jost (all SIL Open Font License)
-- `brand/` — Luxury Beauty by Cleo R logo (full lockup, tight crop, monogram; transparent PNGs)
+- `brand/` — Luxury Beauty by Cleo R logo. Two roles, and only two files are
+  in use: `logo-original.png` is the full lockup (circle, LUXURY BEAUTY, the
+  "by Cleo R" script) and goes where the brand signs off, on closing slides and
+  the GBP card. `logo-monogram.png` is the LB mark cut from that same lockup and
+  carries corner marks on content slides.
+  **The gold artwork is retired.** `logo-tight.png` and `logo-monogram-gold.png`
+  are a different lineage, with a gold gradient ring and a laurel the real logo
+  does not have, and both carry a full-canvas alpha 1-31 haze that lights up as
+  a pale rectangle the moment they are inverted onto a dark ground. Nothing
+  references them. `logo-full.png` and `logo-source.png` are the untouched
+  originals, kept as source.
+  The charcoal files invert cleanly (one flat #3E3E3E with alpha-only
+  anti-aliasing), which is what makes cream-on-dark work.
 - `photos/<carousel-name>/` — working photos used by each carousel template
 - `photos/cleo/crops/` — client photos cropped to the treatment area. **Result
   posts use these, never the originals**, so no face ends up in a published

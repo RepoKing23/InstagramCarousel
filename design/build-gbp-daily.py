@@ -113,7 +113,11 @@ CSS = """
   .slide:not(.has-photo) .col{width:900px;padding-right:60px;}
   .slide:not(.has-photo) .body{max-width:620px;}
 
-  .monogram{position:absolute;top:72px;left:14px;}
+  /* The full Cleo R lockup, not the bare LB mark. logo-original.png is flat
+     #3E3E3E with alpha-only anti-aliasing, so brightness(0) invert(1) gives
+     clean cream with no halo. The gold files cannot do this: they carry a
+     full-canvas alpha 1-31 haze that lights up as a pale rectangle. */
+  .lockup{position:absolute;top:64px;left:14px;}
   .service{
     font-size:21px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
     color:var(--gold);line-height:1.4;
@@ -189,8 +193,9 @@ document.getElementById('stage').innerHTML = `
 <div class="slide has-photo" id="slide">
   <div class="safe">
     <div class="orb"><img id="photo" src="${{P.src}}" alt="${{P.alt}}"></div>
-    <img class="monogram" src="brand/logo-monogram.png" width="68" alt="LB"
-         style="filter:brightness(0) invert(1);opacity:.9">
+    <img class="lockup" src="brand/logo-original.png" width="210"
+         alt="Luxury Beauty by Cleo R"
+         style="filter:brightness(0) invert(1);opacity:.92">
     <div class="col">
       <div class="service">${{P.service}}</div>
       <div class="rule"></div>
@@ -233,7 +238,8 @@ document.getElementById('photo').addEventListener('error', () => {{
 
 HEADERS = ['Date', 'Day', 'Source', 'Pillar', 'Post Text (short)', 'Chars',
            'Description (long, SEO)', 'Desc Chars', 'CTA Button', 'CTA Link',
-           'Image File', 'Open Image', 'Preview', 'Photo Credit', 'Status', 'Notes']
+           'Image File', 'Open Folder', 'Open Image', 'Preview', 'Photo Credit',
+           'Status', 'Notes']
 
 
 def build_sheet(data):
@@ -271,6 +277,9 @@ def build_sheet(data):
     ws.freeze_panes = 'C2'
 
     raw = f"https://raw.githubusercontent.com/RepoKing23/InstagramCarousel/{meta['branch']}/"
+    # every daily image lives in one flat folder, so this link is the same per row
+    folder = (f"https://github.com/RepoKing23/InstagramCarousel/tree/"
+              f"{meta['branch']}/{IMG_DIR}")
     by_id = {q['id']: q for q in json.load(
         open(os.path.join(ROOT, 'strategy', 'gbp-photos.json'), encoding='utf-8'))['photos']}
 
@@ -283,7 +292,7 @@ def build_sheet(data):
             p['day'], p['source'], p['pillar'], p['text'], len(p['text']),
             p['description'], len(p['description']),
             meta['cta_button'], meta['instagram_url'], img.split('/')[-1],
-            'Open image', f'=IMAGE("{raw}{img}")',
+            'Open folder', 'Open image', f'=IMAGE("{raw}{img}")',
             f"{photo['by']} / Unsplash", status or 'Ready', notes or '',
         ])
         r = ws.max_row
@@ -292,6 +301,9 @@ def build_sheet(data):
         link.hyperlink = meta['instagram_url']
         link.value = meta['instagram']
         link.style = 'Hyperlink'
+        fo = ws.cell(r, HEADERS.index('Open Folder') + 1)
+        fo.hyperlink = folder
+        fo.style = 'Hyperlink'
         # links straight at the jpg, so it opens ready to save and post
         im = ws.cell(r, HEADERS.index('Open Image') + 1)
         im.hyperlink = f'{raw}{img}'
@@ -310,7 +322,8 @@ def build_sheet(data):
                 c.font = ink
 
     widths = {'A': 12, 'B': 6, 'C': 32, 'D': 17, 'E': 54, 'F': 7, 'G': 96, 'H': 8,
-              'I': 12, 'J': 26, 'K': 32, 'L': 13, 'M': 14, 'N': 24, 'O': 10, 'P': 28}
+              'I': 12, 'J': 26, 'K': 32, 'L': 13, 'M': 13, 'N': 14, 'O': 24,
+              'P': 10, 'Q': 28}
     for col, w in widths.items():
         ws.column_dimensions[col].width = w
     for r in range(2, ws.max_row + 1):
