@@ -17,14 +17,16 @@ REEL = "IG Reels + Facebook Reels + TikTok"
 FEED = "IG feed + Facebook + GBP"
 THEME = "Botox, Honestly (Launch)"
 
-CAP_AUG17 = (
+CAP_LIP = (   # ran Aug 18
+
     "Lip enhancement, thoughtfully done.\n\n"
     "Every treatment is customized to complement your natural features, adding beautiful volume "
     "and definition while keeping your results looking natural.\n\n"
     "Because the goal is to enhance your features, not change who you are.\n\n"
     "#LuxuryBeautyByCleo #LipFiller #AestheticResults #LipEnhancement #LuxuryAesthetics"
 )
-CAP_AUG18 = (
+CAP_MYTHS = ( # ran Aug 17
+
     "Half of what you have heard about Botox came from someone who saw bad work. Let's set the "
     "record straight. Which myth did you believe? Drop it below and share this with a friend.\n\n"
     "#botox #botoxeducation #botoxmyths #preventativebotox #antiwrinkleinjections nurseinjector "
@@ -62,17 +64,17 @@ CAP_AUG27 = (
 
 # week, date, day, slot, format, platforms, pillar, topic, hook, caption, cta, hashtags, notes, filmed
 ROWS = [
-    (1, "Aug 17, 2026", "Mon", "Posted - Image", "Before/After image", FEED, "Trust & Proof",
-     "Lip Enhancement, Thoughtfully Done",
-     "Lip enhancement, thoughtfully done.",
-     CAP_AUG17, "DM to book a consultation", "Custom: lip filler tags",
-     "Actually posted. Not on Posting Schedule, which had the 5 Botox Lies carousel planned for this date.",
-     ""),
-    (1, "Aug 18, 2026", "Tue", "Posted - Carousel", "Carousel", FEED, "Education",
+    (1, "Aug 17, 2026", "Mon", "Posted - Carousel", "Carousel", FEED, "Education",
      "5 Botox Lies You Still Believe",
      "Half of what you have heard about Botox came from someone who saw bad work.",
-     CAP_AUG18, "Drop your myth below and share this", "Set A, plus five tags posted without the # symbol",
-     "Actually posted. This is the carousel Posting Schedule has planned for Aug 17; it ran on Aug 18.",
+     CAP_MYTHS, "Drop your myth below and share this", "Set A, plus five tags posted without the # symbol",
+     "Actually posted, on plan. Matches the Aug 17 carousel on Posting Schedule.",
+     ""),
+    (1, "Aug 18, 2026", "Tue", "Posted - Image", "Before/After image", FEED, "Trust & Proof",
+     "Lip Enhancement, Thoughtfully Done",
+     "Lip enhancement, thoughtfully done.",
+     CAP_LIP, "DM to book a consultation", "Custom: lip filler tags",
+     "Actually posted. Ran in place of the Service Spotlight: Botox single image that Posting Schedule had planned for this date. Same format, different subject.",
      ""),
     (1, "Aug 20, 2026", "Thu", "Posted - Reel", "Reel (video)", REEL, "Personality & BTS",
      "NPs at the Research Table: Novo Nordisk Summit",

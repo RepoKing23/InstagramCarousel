@@ -57,24 +57,25 @@ BACKFILL = [
               "has not set into the skin takes less to soften.\n\n"
               "Cheap units are the same product. The vial might be. The person holding it, the dose and the plan are not.\n\n"
               "Serving Oakville, Burlington, Milton and Mississauga. Injections are done by a nurse practitioner and never delegated."),
-        folder="2026-08-17-5-botox-lies-you-still",
     ),
     dict(
         date=datetime.datetime(2026, 8, 18), day="Tue",
-        source="IG: Service Spotlight, Botox", pillar="Education",
-        short=("Botox, explained plainly. Small doses placed in the muscles that fold your skin, so lines soften "
-               "while the expression stays yours. Softened lines, full expression, and nobody can tell why you "
-               "look so rested. Consultations are free."),
-        long=("Botox, explained plainly, by a nurse practitioner in Oakville.\n\n"
-              "Small doses are placed into the muscles that fold your skin. The muscle relaxes, the fold softens, and "
-              "the line has less to press into. Done well you keep your expression. You should still frown, squint and "
-              "smile afterwards.\n\n"
-              "The dose is decided after watching your face move, not read off a price list, because muscle strength "
-              "differs from one person to the next.\n\n"
-              "Most people see the change from day three, with the full effect around day fourteen. It lasts roughly "
-              "three to four months, and the first round often fades a little sooner than the ones after it.\n\n"
+        # The lip before/after ran this day, not the Service Spotlight the
+        # Posting Schedule had planned, so the GBP copy follows the real post.
+        source="IG: Lip Enhancement, Thoughtfully Done", pillar="Trust & Proof",
+        short=("Lip enhancement, thoughtfully done. Every treatment is customised to complement the features you "
+               "already have, adding volume and definition while the result still reads as yours. Serving Oakville, "
+               "Burlington, Milton and Mississauga."),
+        long=("Lip enhancement, thoughtfully done, by a nurse practitioner in Oakville.\n\n"
+              "Every treatment is built around the lip you already have. Shape first, volume second. Product placed "
+              "against your existing border and proportions is what reads as done; product placed with them reads as "
+              "you, rested.\n\n"
+              "The goal is to enhance your features, not change who you are. If the plan would not suit your face, "
+              "you will hear that out loud before anything is opened.\n\n"
+              "Hyaluronic acid filler is not permanent. It breaks down over six to twelve months, and it can be "
+              "dissolved if you are unhappy with it.\n\n"
+              "Judge nothing before two weeks. Day-two swelling is not your result.\n\n"
               "Serving Oakville, Burlington, Milton and Mississauga. Consultations are free."),
-        folder="2026-08-18-service-spotlight-botox",
     ),
 ]
 NOTE = ("Posted. Added retroactively: this tab was started on Aug 19, so the first two days were never "

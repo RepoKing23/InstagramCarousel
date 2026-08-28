@@ -31,9 +31,10 @@ create) are blank, because these are finished posts rather than briefs.
 
 They already run at three a week: Aug 17, 18, 20, then Aug 24, 27, 28.
 
-Two of them drifted from Posting Schedule and the Notes column says so. The `5 Botox Lies`
-carousel was planned for Aug 17 but ran on Aug 18, and Aug 17 instead carried a lip-enhancement
-before/after that is not on the schedule at all.
+One drifted from Posting Schedule and the Notes column says so. Aug 17 ran the `5 Botox Lies`
+carousel on plan; Aug 18 ran a lip-enhancement before/after in place of the planned
+`Service Spotlight: Botox` single image. Same format, different subject. The GBP Daily row for
+Aug 18 follows the post that actually ran.
 
 ## What each row carries
 
