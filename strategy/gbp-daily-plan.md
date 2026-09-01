@@ -1,7 +1,10 @@
 # Google Business Profile — Daily Posting Plan
 
-Aug 19 to Sep 30, 2026. One post every day, 43 in total, each with its own
+Aug 19 to Oct 31, 2026. One post every day, 74 in total, each with its own
 1200x900 image and a Learn more button pointed at Instagram.
+
+August and September run on Botox. October runs on filler, following the same
+month theme as the Instagram grid.
 
 ## Why daily
 
@@ -12,10 +15,10 @@ they look up the clinic before booking, and a profile that posts every day
 reads as open and active to both the visitor and the ranking. So this calendar
 fills all seven days.
 
-- **30 days** carry the same message as that day's Instagram post, rewritten
+- **53 days** carry the same message as that day's Instagram post, rewritten
   for a Google audience. Someone who finds the clinic on Maps has never seen
   the grid, so the copy stands alone and does not say "swipe" or "link in bio".
-- **13 days** are Wednesdays and Sundays, which have no Instagram post behind
+- **21 days** are Wednesdays and Sundays, which have no Instagram post behind
   them. These are evergreen: location, credentials, what a consult includes,
   aftercare, safety, what to ask before booking anywhere. They are shaded in
   the planner tab. Reorder or reuse them freely, nothing dates them.
@@ -25,7 +28,7 @@ fills all seven days.
 | What | Where |
 | --- | --- |
 | The calendar you post from | `GBP Daily` tab in `strategy/ig-content-strategy.xlsx` |
-| The 43 images | `content/gbp/`, named `YYYY-MM-DD-slug.jpg` |
+| The 74 images | `content/gbp/`, named `YYYY-MM-DD-slug.jpg` |
 | The copy, as source | `strategy/gbp-daily-content.json` |
 | The photo picked for each day | `strategy/gbp-photos.json` |
 | The artwork template | `design/gbp-daily.html` |
@@ -46,7 +49,7 @@ brand type over it.
     python3 design/import-gbp-photos.py    # AVIF in, design/photos/gbp/<id>.jpg out
 
 which maps each file to its photo by the Unsplash slug in the filename, so no
-manual table is needed. All 43 cards now render with real photography.
+manual table is needed. All 74 cards now render with real photography.
 
 `design/fetch-gbp-photos.py` remains for anyone re-pulling from Unsplash
 directly. The template still prefers a local file and falls back to the CDN, and
@@ -70,9 +73,10 @@ legible in frame, and two more that were simply wrong for a clinic, a shocked
 open-mouth expression and a bare-shouldered portrait. Anything showing a branded
 tube, bottle or box does not go on these cards.
 
-Twenty three photos cover forty three days, so sixteen repeat. The closest
-repeat is six days apart. If that feels tight, adding a handful more non-product
-photos to `design/photos/gbp images/` and re-running the importer widens it.
+Twenty three photos cover seventy four days, so every one of them repeats, most
+of them three times. The closest repeat is six days apart, in September. If that
+feels tight, adding a handful more non-product photos to
+`design/photos/gbp images/` and re-running the importer widens it.
 
 ## Posting a day, start to finish
 
@@ -117,18 +121,18 @@ no type may run under the photo circle.
 
 Each day carries both, and you pick per post:
 
-- **Post Text** is the short version, 178 to 248 characters. Good when you just
+- **Post Text** is the short version, 178 to 253 characters. Good when you just
   want the day up.
-- **Description** is the long form body, 598 to 885 characters. This is the one
+- **Description** is the long form body, 598 to 828 characters. This is the one
   written for search, and the one to use on the days that matter.
 
-Every description names a service, 32 of the 43 name Oakville or a nearby city,
-and all 43 end pointing at Instagram. Keyword density stays under 3 percent
-because stuffing is what actually costs you a content score, not helps it.
+Every description names a service, 62 of the 74 name Oakville or a nearby city,
+and 68 point at Instagram. Keyword density stays under 3 percent because
+stuffing is what actually costs you a content score, not helps it.
 
 They are written to avoid reading like a machine wrote them: no em dashes, no
 "elevate", "delve", "unlock" or "seamless", no three item lists used as
-decoration. Sentence length runs from 2 words to 41 and averages 13, because
+decoration. Sentence length runs from 2 words to 41 and averages 14, because
 uniform sentence length is the clearest tell. The specifics are real ones from
 your own practice, the 45 minute first visit, the ten minute treatment, the two
 week follow up, RN(EC), 3060 Preserve Dr.
@@ -143,7 +147,7 @@ needs a live keyword tool.
 
 - **First 80 characters carry it.** GBP truncates to roughly 80 characters
   behind a Read more, so every post front-loads the point. The Chars column
-  shows total length. All 43 sit between 178 and 248, well under the 1500 limit
+  shows total length. All 74 sit between 178 and 253, well under the 1500 limit
   and long enough to say something.
 - **No hashtags.** They are inert on GBP.
 - **Nothing in the bleed.** Maps crops the 1200x900 to a centre square, so all
@@ -160,7 +164,7 @@ swap its image for another id in `strategy/gbp-photos.json`. Never edit the
 generated files. Then:
 
     python3 design/build-gbp-daily.py    # rebuilds the template and the tab
-    python3 design/render.py gbp-daily   # re-renders the 43 images
+    python3 design/render.py gbp-daily   # re-renders the 74 images
 
 The rebuild keeps whatever you have typed into the Status and Notes columns,
 matched by date, so tracking survives a copy change.
