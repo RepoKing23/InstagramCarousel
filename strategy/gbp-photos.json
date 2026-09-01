@@ -2,7 +2,8 @@
   "_meta": {
     "source": "Unsplash",
     "license": "Unsplash License. Free for commercial use, no permission needed. Attribution is not required but is good manners, so the photographer and a link to each photo are recorded here and in the planner tab.",
-    "note": "These are stock photos, not clients of the clinic. Never caption one so it reads as a before and after or a result from this practice. Product and packaging still lifes are deliberately excluded: the cards never show branded product."
+    "note": "These are stock photos, not clients of the clinic. Never caption one so it reads as a before and after or a result from this practice. Product and packaging still lifes are deliberately excluded: the cards never show branded product.",
+    "pending": "Entries marked pending have no file in design/photos/gbp yet. They are inert: no day points at one, so nothing renders from them. Save each photo into design/photos/'gbp images' named after its file slug, run design/import-gbp-photos.py, then drop the pending flag and reassign days."
   },
   "photos": [
     {
@@ -165,6 +166,62 @@
       "user": "christinhumephoto",
       "alt": "soft close up portrait in warm light",
       "file": "photo-1501812467184-ed92ff087e10"
+    },
+    {
+      "id": "oTHJHz47Ht4",
+      "by": "Look Studio",
+      "user": "lookphoto",
+      "alt": "a woman in a white dress with a hand to her face",
+      "file": "photo-1728727242233-0924178c1fb1",
+      "pending": true
+    },
+    {
+      "id": "GIc6_A5ISBg",
+      "by": "Look Studio",
+      "user": "lookphoto",
+      "alt": "a woman in a white dress touching her cheek",
+      "file": "photo-1728727291832-8df8102e14b3",
+      "pending": true
+    },
+    {
+      "id": "FJuO9YRnYcQ",
+      "by": "Look Studio",
+      "user": "lookphoto",
+      "alt": "a woman in a white shirt with a hand to her face",
+      "file": "photo-1728727217834-b190862837a3",
+      "pending": true
+    },
+    {
+      "id": "9B8TE2ln6HY",
+      "by": "Fleur Kaan",
+      "user": "fleuraimeekaan",
+      "alt": "woman in a black tank top",
+      "file": "photo-1581182653084-cfa6b0946a1e",
+      "pending": true
+    },
+    {
+      "id": "pq2rbxu0Kpk",
+      "by": "Fleur Kaan",
+      "user": "fleuraimeekaan",
+      "alt": "woman in a black tank top, turned from the camera",
+      "file": "photo-1581182682182-8d3d805268ba",
+      "pending": true
+    },
+    {
+      "id": "IOfKsnlBiMw",
+      "by": "engin akyurt",
+      "user": "enginakyurt",
+      "alt": "portrait of a young woman in a black crew neck",
+      "file": "photo-1612361210970-f978159c3be6",
+      "pending": true
+    },
+    {
+      "id": "HXsYayB33a8",
+      "by": "Masum Rahimi",
+      "user": "masumrh",
+      "alt": "a woman resting with a towel wrapped around her hair",
+      "file": "photo-1684014286330-ddbeb4a40c92",
+      "pending": true
     }
   ]
 }

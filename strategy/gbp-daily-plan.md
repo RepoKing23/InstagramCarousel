@@ -74,9 +74,33 @@ open-mouth expression and a bare-shouldered portrait. Anything showing a branded
 tube, bottle or box does not go on these cards.
 
 Twenty three photos cover seventy four days, so every one of them repeats, most
-of them three times. The closest repeat is six days apart, in September. If that
-feels tight, adding a handful more non-product photos to
-`design/photos/gbp images/` and re-running the importer widens it.
+of them three times. The closest repeat is six days apart, in September.
+
+Seven more have been picked and are waiting on their files. They sit in
+`strategy/gbp-photos.json` marked `"pending": true`, which means the entry
+exists but nothing in `design/photos/gbp/` backs it yet. Nothing renders from
+them, because no day points at one, so the calendar is unaffected until the
+files land.
+
+To finish them off:
+
+1. Open `https://unsplash.com/photos/<id>` for each pending entry.
+2. Right click the photo and Save image as, into `design/photos/gbp images/`.
+   That save is already named after the entry's `file` slug. If your browser
+   names it something else, rename it to `<file>.<ext>` and the importer will
+   find it.
+3. `python3 design/import-gbp-photos.py`
+4. Drop the `pending` flag, spread the `photo` keys across the 74 days, then
+   rebuild and re-render.
+
+The downloads have to happen outside a Claude session: this environment's
+network policy blocks `images.unsplash.com`, which is why
+`design/fetch-gbp-photos.py` cannot fetch them and why the first twenty three
+were saved by hand too. The Unsplash connector can search and return metadata,
+which is where these seven came from, but it does not hand back image data.
+
+At thirty photos no day repeats more than three times and the spacing roughly
+doubles.
 
 ## Posting a day, start to finish
 
