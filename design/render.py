@@ -107,7 +107,8 @@ def gbp_daily():
     with open(path, encoding='utf-8') as f:
         posts = json.load(f)['posts']
     return [(f"gbp-daily.html?date={p['date']}", GBP,
-             f"content/gbp/{p['date']}-{p['slug']}.jpg") for p in posts]
+             f"content/gbp/{p['date']}-{p['slug']}.jpg")
+            for p in posts if not p.get('no_card')]
 
 
 GBP_DAILY = gbp_daily()

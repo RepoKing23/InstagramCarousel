@@ -1,6 +1,6 @@
 # Google Business Profile — the copy, all of it
 
-Luxury Beauty by Cleo R. 2026-08-19 to 2026-10-31, 74 posts, one a day.
+Luxury Beauty by Cleo R. 2026-08-17 to 2026-10-31, 76 posts, one a day.
 
 Generated from `strategy/gbp-daily-content.json` by
 `design/build-blog-copy.py`. Edit the json, not this file.
@@ -12,6 +12,52 @@ button is always Learn more, pointed at
 
 
 ## August 2026
+
+### Mon 17 Aug — IG: 5 Botox Lies You Still Believe
+
+No card · BOTOX & DERMAL FILLER · OAKVILLE · Education
+
+*Posted. Added retroactively: this tab was started on Aug 19, so the first two days were never logged. No image link on purpose. Copy reconstructed from that day's Instagram post, so replace it if what you published to GBP differed.*
+
+**Short (243 chars)**
+
+Five things about Botox that are not true: it freezes your face, it is addictive, you should wait until you have wrinkles, and cheap units are the same product. The honest version, from a nurse practitioner in Oakville. Full list on Instagram.
+
+**Long (673 chars)**
+
+Five things about Botox that are not true, from a nurse practitioner who injects in Oakville every week.
+
+It freezes your face. That is dosing, not the product. Placed properly you still frown, squint and smile.
+
+It is addictive. What people get used to is looking rested, not the appointment.
+
+Wait until you have wrinkles. The earlier conversation is usually the cheaper one, because a line that has not set into the skin takes less to soften.
+
+Cheap units are the same product. The vial might be. The person holding it, the dose and the plan are not.
+
+Serving Oakville, Burlington, Milton and Mississauga. Injections are done by a nurse practitioner and never delegated.
+
+### Tue 18 Aug — IG: Service Spotlight, Botox
+
+No card · BOTOX & DERMAL FILLER · OAKVILLE · Education
+
+*Posted. Added retroactively: this tab was started on Aug 19, so the first two days were never logged. No image link on purpose. Copy reconstructed from that day's Instagram post, so replace it if what you published to GBP differed.*
+
+**Short (231 chars)**
+
+Botox, explained plainly. Small doses placed in the muscles that fold your skin, so lines soften while the expression stays yours. Softened lines, full expression, and nobody can tell why you look so rested. Consultations are free.
+
+**Long (704 chars)**
+
+Botox, explained plainly, by a nurse practitioner in Oakville.
+
+Small doses are placed into the muscles that fold your skin. The muscle relaxes, the fold softens, and the line has less to press into. Done well you keep your expression. You should still frown, squint and smile afterwards.
+
+The dose is decided after watching your face move, not read off a price list, because muscle strength differs from one person to the next.
+
+Most people see the change from day three, with the full effect around day fourteen. It lasts roughly three to four months, and the first round often fades a little sooner than the ones after it.
+
+Serving Oakville, Burlington, Milton and Mississauga. Consultations are free.
 
 ### Wed 19 Aug — ONE CLIENT at a time.
 

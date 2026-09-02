@@ -27,7 +27,14 @@ def load():
 
 
 def image_path(post):
-    """Flat, date-named so the folder reads in posting order."""
+    """Flat, date-named so the folder reads in posting order.
+
+    A no_card day has no artwork on purpose, so it has no path either. Those
+    are days logged after the fact, where the post went out before this
+    calendar existed: the copy is worth keeping, the image never existed.
+    """
+    if post.get('no_card'):
+        return ''
     return f"{IMG_DIR}/{post['date']}-{post['slug']}.jpg"
 
 
@@ -178,6 +185,8 @@ def build_html(data):
         open(os.path.join(ROOT, 'strategy', 'gbp-photos.json'), encoding='utf-8'))['photos']}
     posts = {}
     for p in data['posts']:
+        if p.get('no_card'):          # logged after the fact, never had artwork
+            continue
         photo = by_id[p['photo']]
         posts[p['date']] = {
             'service': p.get('service', data['_meta']['service_line']),
@@ -330,15 +339,22 @@ def build_sheet(data):
 
     for p in data['posts']:
         img = image_path(p)
-        photo = by_id[p['photo']]
+        photo = by_id[p['photo']] if not p.get('no_card') else None
         status, notes = kept.get(p['date'], (None, None))
+        # Every image cell stays empty on a no_card day. Writing the row and
+        # then splicing extra rows in above it is what silently slid the links
+        # out of step with the copy once: openpyxl moves cell values on an
+        # insert but leaves hyperlinks pinned to their old address.
         ws.append([
             datetime.datetime.strptime(p['date'], '%Y-%m-%d'),
             p['day'], p['source'], p['pillar'], p['text'], len(p['text']),
             p['description'], len(p['description']),
-            meta['cta_button'], meta['instagram_url'], img.split('/')[-1],
-            'Open folder', 'Open image', f'=IMAGE("{raw}{img}")',
-            f"{photo['by']} / Unsplash", status or 'Ready', notes or '',
+            meta['cta_button'], meta['instagram_url'],
+            img.split('/')[-1] if img else '',
+            'Open folder' if img else '', 'Open image' if img else '',
+            f'=IMAGE("{raw}{img}")' if img else '',
+            f"{photo['by']} / Unsplash" if photo else '',
+            status or 'Ready', notes or '',
         ])
         r = ws.max_row
         ws.cell(r, 1).number_format = 'yyyy-mm-dd'
@@ -346,16 +362,17 @@ def build_sheet(data):
         link.hyperlink = meta['instagram_url']
         link.value = meta['instagram']
         link.style = 'Hyperlink'
-        fo = ws.cell(r, HEADERS.index('Open Folder') + 1)
-        fo.hyperlink = folder
-        fo.style = 'Hyperlink'
-        # links straight at the jpg, so it opens ready to save and post
-        im = ws.cell(r, HEADERS.index('Open Image') + 1)
-        im.hyperlink = f'{raw}{img}'
-        im.style = 'Hyperlink'
-        cr = ws.cell(r, HEADERS.index('Photo Credit') + 1)
-        cr.hyperlink = f"https://unsplash.com/photos/{photo['id']}"
-        cr.style = 'Hyperlink'
+        if img:
+            fo = ws.cell(r, HEADERS.index('Open Folder') + 1)
+            fo.hyperlink = folder
+            fo.style = 'Hyperlink'
+            # links straight at the jpg, so it opens ready to save and post
+            im = ws.cell(r, HEADERS.index('Open Image') + 1)
+            im.hyperlink = f'{raw}{img}'
+            im.style = 'Hyperlink'
+            cr = ws.cell(r, HEADERS.index('Photo Credit') + 1)
+            cr.hyperlink = f"https://unsplash.com/photos/{photo['id']}"
+            cr.style = 'Hyperlink'
         for col in ('Post Text (short)', 'Description (long, SEO)', 'Notes'):
             ws.cell(r, HEADERS.index(col) + 1).alignment = Alignment(wrap_text=True, vertical='top')
         # Sunday and Wednesday have no Instagram post behind them
@@ -382,7 +399,8 @@ def main():
     data = load()
     with open(TEMPLATE, 'w', encoding='utf-8') as f:
         f.write(build_html(data))
-    print(f'wrote {os.path.relpath(TEMPLATE, ROOT)}  ({len(data["posts"])} days)')
+    cards = [p for p in data['posts'] if not p.get('no_card')]
+    print(f'wrote {os.path.relpath(TEMPLATE, ROOT)}  ({len(cards)} cards)')
     n = build_sheet(data)
     print(f'wrote "{TAB}" tab in {os.path.relpath(SHEET, ROOT)}  ({n} rows)')
 

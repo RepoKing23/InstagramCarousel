@@ -44,15 +44,28 @@ def main():
             out += ['', f'## {month}', '']
         src = ('evergreen, no Instagram post this day'
                if p['source'] == 'GBP only' else p['source'])
+        if p.get('no_card'):
+            # logged after the fact: real copy, no artwork, nothing to show
+            out += [
+                f"### {d.strftime('%a %d %b')} — {p['source']}",
+                '',
+                f"No card · {p['service']} · {p['pillar']}",
+                '',
+                f"*{p['note']}*",
+                '',
+            ]
+        else:
+            out += [
+                f"### {d.strftime('%a %d %b')} — {p['headline'].replace('*', '')} "
+                f"{p['script']}",
+                '',
+                f"`{p['date']}-{p['slug']}.jpg` · {p['service']} · {p['pillar']} · "
+                f"{src}",
+                '',
+                f"**On the card:** {p['body']} → *{p['button']}*",
+                '',
+            ]
         out += [
-            f"### {d.strftime('%a %d %b')} — {p['headline'].replace('*', '')} "
-            f"{p['script']}",
-            '',
-            f"`{p['date']}-{p['slug']}.jpg` · {p['service']} · {p['pillar']} · "
-            f"{src}",
-            '',
-            f"**On the card:** {p['body']} → *{p['button']}*",
-            '',
             f"**Short ({len(p['text'])} chars)**",
             '',
             p['text'],
