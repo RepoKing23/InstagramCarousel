@@ -27,6 +27,7 @@ PROSE = {'How to Use'}
 LAYOUT = {
     'How to Use':       (None,  False, INK),
     'Posting Schedule': ('C2',  True,  'C9A85C'),
+    'Reels & Video Routine': ('D2', True, 'C9A85C'),
     'GBP Daily':        ('C2',  True,  'C9A85C'),
     'Monthly Themes':   ('A2',  True,  '8A8578'),
     'Content Pillars':  ('A2',  True,  '8A8578'),
@@ -39,6 +40,8 @@ LAYOUT = {
 INPUTS = {
     'Posting Schedule': ['Status', 'Posted Link', 'Reach', 'Saves', 'Comments',
                          'DMs', 'Bookings'],
+    'Reels & Video Routine': ['Filmed', 'Edited', 'Status', 'Posted Link',
+                             'Views', 'Saves', 'Shares', 'DMs', 'Bookings'],
     'GBP Daily':        ['Status', 'Notes'],
     'Photo Library':    ['Consent', 'Client Notes'],
     'Ideas Backlog':    ['Notes'],
