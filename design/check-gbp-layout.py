@@ -30,7 +30,7 @@ with sync_playwright() as p:
     br=p.chromium.launch(executable_path=render.CHROME)
     pg=br.new_page(device_scale_factor=1)
     pg.set_viewport_size({'width':1200,'height':900})
-    for post in posts:
+    for post in [q for q in posts if not q.get('no_card')]:
         pg.goto(f"file://{render.DESIGN}/gbp-daily.html?date={post['date']}")
         pg.wait_for_timeout(220)
         m=pg.evaluate(JS)

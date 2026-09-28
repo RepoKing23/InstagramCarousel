@@ -1,5 +1,13 @@
 # Google Business Profile — Daily Posting Plan
 
+> **From Oct 1: Monday to Thursday only.** Friday to Sunday are days off, so
+> GBP posts on the same four days as Instagram, and every card from Oct 1
+> matches that day's Instagram post. The Oct and Nov copy is generated from
+> `strategy/plan-2026-10.json` and `plan-2026-11.json` by
+> `design/build-octnov.py`, not hand edited in `gbp-daily-content.json`.
+> Each post names the Search Console query it targets (`keyword`).
+> The daily cadence below describes August and September.
+
 Aug 19 to Oct 31, 2026. One post every day, 74 in total, each with its own
 1200x900 image and a Learn more button pointed at Instagram.
 

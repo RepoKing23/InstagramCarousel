@@ -83,6 +83,8 @@
 </head>
 <body>
 <div id="stage"></div>
+<!-- Oct and Nov posts, generated from strategy/plan-*.json by design/build-octnov.py -->
+<script src="octnov-data.js"></script>
 
 <script>
 /* One entry per scheduled carousel. Pick with ?post=<key>&slide=<n>.
@@ -158,6 +160,8 @@ const POSTS = {
     button:'DM the word START',
   },
 };
+
+Object.assign(POSTS, (window.OCTNOV || {}).carousels || {});
 
 const q = new URLSearchParams(location.search);
 const P = POSTS[q.get('post') || 'red-flags'];

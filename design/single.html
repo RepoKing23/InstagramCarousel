@@ -89,6 +89,8 @@
 </head>
 <body>
 <div id="stage"></div>
+<!-- Oct and Nov posts, generated from strategy/plan-*.json by design/build-octnov.py -->
+<script src="octnov-data.js"></script>
 
 <script>
 /* Pick with ?post=<key>. Type only, no icon art. `theme:'dark'` inverts the
@@ -163,6 +165,8 @@ const POSTS = {
     cta:'Which one do you want?',
   },
 };
+
+Object.assign(POSTS, (window.OCTNOV || {}).singles || {});
 
 const P = POSTS[new URLSearchParams(location.search).get('post') || 'the-prep'];
 const mono = '<img class="monogram" src="brand/logo-monogram.png" width="104" alt="LB">';

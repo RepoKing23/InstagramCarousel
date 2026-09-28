@@ -44,6 +44,34 @@ one folder per scheduled post, each with a `brief.md` (hook, caption, hashtags,
 visual notes) generated from `/strategy/ig-content-strategy.xlsx`. The
 spreadsheet's Folder Link column points at each post's folder.
 
+## October and November (Mon to Thu only)
+
+From Oct 1 nothing posts Friday, Saturday or Sunday. The 34 posts from Oct 1 to
+Nov 30 come from one source per month, `strategy/plan-2026-10.json` and
+`strategy/plan-2026-11.json`. Each entry holds the Instagram copy, the GBP card
+copy, the Search Console query it is written for, the alt text, and the
+Unsplash search phrases for its photos.
+
+    python3 design/fetch-octnov-photos.py   # needs unsplash.com reachable
+    python3 design/build-octnov.py          # briefs, slide data, GBP json, workbook
+    python3 design/render.py octnov         # IG artwork + GBP cards
+
+- `build-octnov.py` writes `octnov-data.js`, which `carousel.html` and
+  `single.html` merge into their POSTS, so those templates stay hand-editable
+  for the older posts.
+- `fetch-octnov-photos.py` gives every post its own photo, one for the
+  Instagram cover and a different one for the GBP card, and refuses anything
+  already in `strategy/gbp-photos.json` or picked for another day. Picks and
+  credits land in `strategy/octnov-photos.json`, with a contact sheet at
+  `photos/octnov/contact-sheet.html`. `--redo <slot>` swaps one.
+- Until a photo is on disk, a post renders as the type-only version of the
+  same layout and its planner row reads Design. Nothing else changes when the
+  photo arrives: re-run build and render.
+- The two posts that speak as Cleo (Oct 7, Nov 11) never get a stock face.
+  They wait for a new photo of Cleo at `photos/octnov/<date>-ig.jpg`.
+- The six real client results planned for Oct and early Nov kept their
+  artwork. Those on a Friday or Saturday moved to the nearest workday.
+
 ## Previewing a slide in a browser
 Open the HTML file with `?slide=N` in the URL (e.g. `botox-myths.html?slide=3`).
 

@@ -1,41 +1,50 @@
-# Lip Filler: Natural vs Overdone
+# Lip Filler in Oakville: Natural vs Overdone
 
 **Post date:** Thursday, October 08, 2026 (Week 8)
-**Format:** Carousel
-**Platforms:** Instagram feed
-**Pillar:** Education
-**Theme:** Fillers, Naturally
+**Format:** Before/After
+**Platforms:** IG + FB + GBP
+**Pillar:** Trust & Proof
+**Theme:** Botox & Filler in Oakville
+**SEO keyword (Search Console):** dermal fillers
 
 ## Hook
 The difference is the injector.
 
 ## Caption
-Soft, balanced, still you. Here is what separates natural lip results from the duck lips everyone fears, and the questions to ask before anyone touches your lips.
+Lip filler in Oakville, done so it still looks like your mouth. Same client, same light, one syringe. Natural versus overdone comes down to ratio and restraint, not the product. Shared with written consent, individual results vary.
 
-**CTA:** Save before you book anywhere
+**CTA:** DM the word LIPS
 
 ## Hashtags (Set B: Filler)
-#dermalfiller #lipfiller #cheekfiller #naturalfiller #facialbalancing #lipfillernatural #aestheticnurse #medspa #fillerjourney #lipgoals
+#lipfilleroakville #fillersoakville #oakvillemedspa #burlingtonfiller #miltonlipfiller #mississaugamedspa #dermalfillers #naturallips #facialbalancing #aestheticnurse #luxurybeautybycleor #npcleo
+
+## Alt text
+Paste into Instagram > Advanced settings > Write alt text. Instagram reads it
+for search, so it carries the keyword.
+
+Lip filler before and after at an Oakville studio, one syringe, natural result, shared with client consent
 
 ## Visual / Asset
-READY: before and after result card in this post's folder
+Real client result, already designed. Crops to the treatment area, no faces.
 
-## Photos
-Files: img_9908 (before), img_9912 (after)
-Consent: Not needed
+Files in images/: before-after-result.jpg
 
-Pair E, the cleanest in the library. Lower face only, nothing
-identifying, no crop work needed beyond the template frame.
+## Photo
+Client photos from design/photos/cleo/crops/, shared with written consent.
 
-House rule for every client photo: crop to the treatment area. No eyes, no
-brows, no tattoos or jewellery that identifies a client. See
-design/photos/cleo/README.md.
+## Google Business Profile
+Card: content/gbp/2026-10-08-lip-filler-natural-vs-overdone.jpg
+Photo: PENDING. Search: "woman soft smile portrait natural lips"
+
+**Short:** Natural versus overdone lips, side by side. The difference is ratio and shape, not the brand of filler. Respect the border, keep the lower fuller than the upper, and stop before it is obvious. Shared with client consent on Instagram.
+
+**Long:** in the GBP Daily tab and strategy/gbp-blog-copy.md.
 
 ## Design
-Style: Editorial before and after card
-Reference: design/before-after.html. Side by side frames with BEFORE / AFTER
-tags, four checkmark benefit lines, consent disclaimer footer. Same cream
-palette and type stack as the house style.
+Style: Editorial (house style)
+Template: already designed, see design/render.py LATER
+Copy lives in strategy/plan-2026-10.json. Edit it there, then run
+design/build-octnov.py and design/render.py octnov.
 
 ---
-Drop the final image(s) for this post in the images/ subfolder.
+Final image(s) for this post are in the images/ subfolder.

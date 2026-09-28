@@ -2,40 +2,49 @@
 
 **Post date:** Thursday, October 15, 2026 (Week 9)
 **Format:** Carousel
-**Platforms:** Instagram feed
+**Platforms:** IG + FB + GBP
 **Pillar:** Trust & Proof
-**Theme:** Fillers, Naturally
+**Theme:** Botox & Filler in Oakville
+**SEO keyword (Search Console):** dermal fillers
 
 ## Hook
 Four clients. One syringe each.
 
 ## Caption
-No filters, no angles, no tricks. Four real clients, one syringe each, photographed in the same light on the same day. Swipe to see what natural actually looks like. Individual results vary. All shared with consent.
+Real lip filler results from our Oakville studio. Same light, same angle, no filter. Some are half a syringe. This is what natural dermal filler work actually looks like. Shared with written consent, individual results vary.
 
-**CTA:** DM LIPS to book yours
+**CTA:** DM the word LIPS
 
 ## Hashtags (Set B: Filler)
-#dermalfiller #lipfiller #cheekfiller #naturalfiller #facialbalancing #lipfillernatural #aestheticnurse #medspa #fillerjourney #lipgoals
+#lipfilleroakville #fillersoakville #oakvillemedspa #burlingtonfiller #miltonlipfiller #mississaugamedspa #dermalfillers #naturallips #facialbalancing #aestheticnurse #luxurybeautybycleor #npcleo
+
+## Alt text
+Paste into Instagram > Advanced settings > Write alt text. Instagram reads it
+for search, so it carries the keyword.
+
+Real lip filler results from an Oakville studio, four clients, no filter, shared with written consent
 
 ## Visual / Asset
-Carousel: cover + 5 before and after slides + CTA. Crop to treatment area, no faces
+Real client result, already designed. Crops to the treatment area, no faces.
 
-## Photos
-Files: Pairs: 9908/9912, 0221/0233, 0962/0998, 1119/1123, 9848/9850
-Consent: On file
+Files in images/: slide-1.jpg, slide-2.jpg, slide-3.jpg, slide-4.jpg, slide-5.jpg, slide-6.jpg, slide-7.jpg
 
-Four pairs, one per slide. Order them strongest first:
-E, A, B, C. Every frame crops to the treatment area.
+## Photo
+Client photos from design/photos/cleo/crops/, shared with written consent.
 
-House rule for every client photo: crop to the treatment area. No eyes, no
-brows, no tattoos or jewellery that identifies a client. See
-design/photos/cleo/README.md.
+## Google Business Profile
+Card: content/gbp/2026-10-15-real-lips-real-results.jpg
+Photo: PENDING. Search: "woman laughing natural portrait outdoors"
+
+**Short:** Real lip filler results from the Oakville studio, shared with written client consent. Same lighting, same angle, no filter, no smoothing. Some are half a syringe. This is what the work actually looks like. On Instagram.
+
+**Long:** in the GBP Daily tab and strategy/gbp-blog-copy.md.
 
 ## Design
-Style: Editorial before and after carousel
-Reference: design/before-after.html, extended to multiple slides the way
-design/botox-myths.html handles ?slide=N. Cover slide, one result slide per
-client, closing CTA slide.
+Style: Editorial (house style)
+Template: already designed, see design/render.py LATER
+Copy lives in strategy/plan-2026-10.json. Edit it there, then run
+design/build-octnov.py and design/render.py octnov.
 
 ---
-Drop the final image(s) for this post in the images/ subfolder.
+Final image(s) for this post are in the images/ subfolder.

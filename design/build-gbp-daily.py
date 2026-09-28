@@ -187,7 +187,8 @@ def build_html(data):
     for p in data['posts']:
         if p.get('no_card'):          # logged after the fact, never had artwork
             continue
-        photo = by_id[p['photo']]
+        # a day whose photo has not been fetched yet renders without the panel
+        photo = by_id.get(p['photo'])
         posts[p['date']] = {
             'service': p.get('service', data['_meta']['service_line']),
             'headline': markup(p['headline']),
@@ -195,8 +196,8 @@ def build_html(data):
             'script': p['script'],
             'body': p['body'],
             'cta': p['button'],
-            'src': photo_src(photo),
-            'alt': photo['alt'],
+            'src': photo_src(photo) if photo else '',
+            'alt': photo['alt'] if photo else '',
         }
     first = data['posts'][0]['date']
     handle = data['_meta']['instagram']
@@ -219,7 +220,7 @@ const POSTS = {json.dumps(posts, indent=2, ensure_ascii=False)};
 const P = POSTS[new URLSearchParams(location.search).get('date') || '{first}'];
 
 document.getElementById('stage').innerHTML = `
-<div class="slide has-photo" id="slide">
+<div class="slide${{P.src ? ' has-photo' : ''}}" id="slide">
   <div class="safe">
     <div class="orb"><img id="photo" src="${{P.src}}" alt="${{P.alt}}"></div>
     <div class="gutter"></div>
@@ -306,6 +307,9 @@ def build_sheet(data):
 
     # keep anything already typed into Status / Notes before the tab is replaced
     kept = {}
+    # rebuild the tab where it already sits, so the tab order never changes
+    index = (wb.sheetnames.index(TAB) if TAB in wb.sheetnames
+             else wb.sheetnames.index('Posting Schedule') + 1)
     if TAB in wb.sheetnames:
         old = wb[TAB]
         head = [c.value for c in old[1]]
@@ -320,7 +324,7 @@ def build_sheet(data):
                              row[ni] if ni is not None else None)
         del wb[TAB]
 
-    ws = wb.create_sheet(TAB, wb.sheetnames.index('Posting Schedule') + 1)
+    ws = wb.create_sheet(TAB, index)
 
     ink = Font(name='Calibri', size=11)
     ws.append(HEADERS)
@@ -339,7 +343,7 @@ def build_sheet(data):
 
     for p in data['posts']:
         img = image_path(p)
-        photo = by_id[p['photo']] if not p.get('no_card') else None
+        photo = by_id.get(p['photo']) if not p.get('no_card') else None
         status, notes = kept.get(p['date'], (None, None))
         # Every image cell stays empty on a no_card day. Writing the row and
         # then splicing extra rows in above it is what silently slid the links
@@ -353,7 +357,8 @@ def build_sheet(data):
             img.split('/')[-1] if img else '',
             'Open folder' if img else '', 'Open image' if img else '',
             f'=IMAGE("{raw}{img}")' if img else '',
-            f"{photo['by']} / Unsplash" if photo else '',
+            f"{photo['by']} / Unsplash" if photo else
+            ('' if p.get('no_card') else 'Photo pending, run design/fetch-octnov-photos.py'),
             status or 'Ready', notes or '',
         ])
         r = ws.max_row
@@ -370,12 +375,13 @@ def build_sheet(data):
             im = ws.cell(r, HEADERS.index('Open Image') + 1)
             im.hyperlink = f'{raw}{img}'
             im.style = 'Hyperlink'
-            cr = ws.cell(r, HEADERS.index('Photo Credit') + 1)
-            cr.hyperlink = f"https://unsplash.com/photos/{photo['id']}"
-            cr.style = 'Hyperlink'
+            if photo:
+                cr = ws.cell(r, HEADERS.index('Photo Credit') + 1)
+                cr.hyperlink = f"https://unsplash.com/photos/{photo['id']}"
+                cr.style = 'Hyperlink'
         for col in ('Post Text (short)', 'Description (long, SEO)', 'Notes'):
             ws.cell(r, HEADERS.index(col) + 1).alignment = Alignment(wrap_text=True, vertical='top')
-        # Sunday and Wednesday have no Instagram post behind them
+        # Sunday and Wednesday had no Instagram post behind them through September
         if p['source'] == 'GBP only':
             for c in ws[r]:
                 c.fill = PatternFill('solid', fgColor='F3EEE5')

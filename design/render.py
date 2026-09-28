@@ -11,6 +11,7 @@ frame as JPEG, which is what actually gets posted.
     python3 design/render.py             # everything
     python3 design/render.py august      # August only
     python3 design/render.py gbp-daily   # the daily Google Business cards
+    python3 design/render.py octnov      # Oct 1 onward: IG posts and GBP cards
 """
 import json
 import os
@@ -84,20 +85,47 @@ AUGUST += carousel('carousel.html', 'post=preventative',
                    '2026-08-31-preventative-botox-when-to-actually', 7)
 AUGUST += [gbp('aug-31', '2026-08-31-preventative-botox-when-to-actually')]
 
+# Real client results. Designed for Oct and early Nov, and moved onto
+# workdays when Friday to Sunday stopped being posting days.
 LATER = [
     ig('before-after.html?slide=1',
        'content/2026-10-08-lip-filler-natural-vs-overdone/images/before-after-result.jpg'),
     ig('before-after.html?slide=2',
-       'content/2026-10-10-subtle-is-the-new-dramatic/images/before-after-result.jpg'),
+       'content/2026-10-14-subtle-is-the-new-dramatic/images/before-after-result.jpg'),
     ig('before-after.html?slide=3',
-       'content/2026-10-24-client-words-the-lip-glow/images/before-after-result.jpg'),
+       'content/2026-10-28-client-words-the-lip-glow-up/images/before-after-result.jpg'),
     ig('before-after.html?slide=4',
-       'content/2026-10-30-one-syringe-balanced-lips/images/before-after-result.jpg'),
+       'content/2026-11-04-one-syringe-balanced-lips/images/before-after-result.jpg'),
+    # slide 1 of the Oct 22 aftercare carousel; its other slides are in OCTNOV
     ig('before-after.html?slide=5',
-       'content/2026-10-22-lip-filler-aftercare-your-first/images/day-zero-before-after.jpg'),
+       'content/2026-10-22-lip-filler-aftercare-your-first-week/images/slide-1.jpg'),
 ]
 LATER += carousel('real-results.html', '', '2026-10-15-real-lips-real-results', 7)
-LATER += carousel('every-angle.html', '', '2026-11-06-one-result-every-angle', 7)
+LATER += carousel('every-angle.html', '', '2026-11-12-one-result-every-angle', 7)
+
+
+def octnov():
+    """Oct 1 onward, from strategy/plan-*.json: the Instagram artwork for every
+    post that is not an already designed result, then its GBP card. Load the
+    copy with design/build-octnov.py first."""
+    import glob
+    root = os.path.dirname(DESIGN)
+    posts = []
+    for f in sorted(glob.glob(os.path.join(root, 'strategy', 'plan-*.json'))):
+        with open(f, encoding='utf-8') as fh:
+            posts += json.load(fh)['posts']
+    jobs = []
+    for p in posts:
+        folder = f"{p['date']}-{p['slug']}"
+        if p['kind'] == 'carousel':
+            first = 2 if p.get('cover_file') else 1
+            jobs += carousel('carousel.html', f"post={p['slug']}", folder,
+                             len(p['ig']['points']) + 2)[first - 1:]
+        elif p['kind'] == 'single':
+            jobs.append(ig(f"single.html?post={p['slug']}",
+                           f'content/{folder}/images/post.jpg'))
+    return jobs + [j for j in gbp_daily() if j[0].split('=')[-1] >= '2026-10-01']
+
 
 def gbp_daily():
     """One 1200x900 card per day, flat and date named so the folder reads in
@@ -114,7 +142,9 @@ def gbp_daily():
 GBP_DAILY = gbp_daily()
 
 JOBS = {'august': AUGUST, 'later': LATER, 'gbp-daily': GBP_DAILY,
-        'all': AUGUST + LATER + GBP_DAILY}
+        'octnov': octnov(),
+        'all': AUGUST + LATER + GBP_DAILY +
+               [j for j in octnov() if not j[0].startswith('gbp-daily')]}
 
 
 def main(which='all'):
