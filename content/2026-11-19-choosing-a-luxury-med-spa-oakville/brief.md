@@ -5,7 +5,7 @@
 **Platforms:** Instagram feed + GBP
 **Pillar:** Trust & Proof
 **Theme:** Gift Season
-**SEO keyword (Search Console):** luxury spa oakville
+**SEO keyword (Search Console):** luxury spa oakville (GSC: 1 impr, pos 25)
 
 ## Hook
 Five questions to ask before you book.
@@ -30,11 +30,11 @@ How to choose a luxury med spa in Oakville: five questions to ask before booking
 Files in images/: slide-1.jpg, slide-2.jpg, slide-3.jpg, slide-4.jpg, slide-5.jpg, slide-6.jpg, slide-7.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "luxury minimal interior soft light" and never repeats a photo already used.
+Caroline Badran / Unsplash: https://unsplash.com/photos/G-AC9y-FsBc (modern armchair and side table in a bright room)
 
 ## Google Business Profile
 Card: content/gbp/2026-11-19-choosing-a-luxury-med-spa-oakville.jpg
-Photo: PENDING. Search: "elegant clinic interior neutral"
+Photo: Alina Bondar / Unsplash: https://unsplash.com/photos/7mmmEkyk0aQ
 
 **Short:** Choosing a luxury med spa in Oakville? Ask who injects you, how long your appointment is, whether they ever say no, what happens if you are unhappy, and whether the room is private. The full list is on Instagram.
 

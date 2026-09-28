@@ -5,7 +5,7 @@
 **Platforms:** Instagram feed + GBP
 **Pillar:** Trust & Proof
 **Theme:** Botox & Filler in Oakville
-**SEO keyword (Search Console):** dermal fillers
+**SEO keyword (Search Console):** dermal fillers (GSC: 1 impr, pos 41)
 
 ## Hook
 Chasing lines is old school.
@@ -30,11 +30,11 @@ Facial balancing with dermal fillers in Oakville: treating proportion across chi
 Files in images/: slide-1.jpg, slide-2.jpg, slide-3.jpg, slide-4.jpg, slide-5.jpg, slide-6.jpg, slide-7.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman side profile portrait neutral" and never repeats a photo already used.
+Dev Asangbam / Unsplash: https://unsplash.com/photos/LOBVOQtto3Y (close up of a woman's face)
 
 ## Google Business Profile
 Card: content/gbp/2026-10-29-facial-balancing-dermal-fillers.jpg
-Photo: PENDING. Search: "woman face profile jawline elegant"
+Photo: Christopher John / Unsplash: https://unsplash.com/photos/rI66xRC2PSM
 
 **Short:** Facial balancing with dermal fillers treats the whole face, not one line at a time. Supporting the chin or cheeks often changes how the lips and mouth read. Less product, placed in the right two or three places. On Instagram.
 

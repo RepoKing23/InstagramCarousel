@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + GBP
 **Pillar:** Trust & Proof
 **Theme:** Botox & Filler in Oakville
-**SEO keyword (Search Console):** dermal fillers
+**SEO keyword (Search Console):** dermal fillers (GSC: 1 impr, pos 41)
 
 ## Hook
 Her words, her result.
@@ -34,7 +34,7 @@ Client photos from design/photos/cleo/crops/, shared with written consent.
 
 ## Google Business Profile
 Card: content/gbp/2026-10-28-client-words-the-lip-glow-up.jpg
-Photo: PENDING. Search: "woman smiling candid portrait natural"
+Photo: Slav Romanov / Unsplash: https://unsplash.com/photos/BrEAp01_m5w
 
 **Short:** In her words, shared with consent: she wanted lips that looked like hers on a good day, and nobody at work has asked what she had done. That is the brief, met. Her result is on Instagram beside it.
 

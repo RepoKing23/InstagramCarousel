@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + TikTok photo + GBP
 **Pillar:** Education
 **Theme:** Gift Season
-**SEO keyword (Search Console):** botox therapy treatment oakville
+**SEO keyword (Search Console):** botox therapy treatment oakville (GSC: 13 impr, pos 54.85)
 
 ## Hook
 Three areas, three different plans.
@@ -30,11 +30,11 @@ Single image, photo led
 Files in images/: post.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman laughing eyes crinkle portrait" and never repeats a photo already used.
+Kate Kozyrka / Unsplash: https://unsplash.com/photos/B41fY4dhX18 (smiling woman)
 
 ## Google Business Profile
 Card: content/gbp/2026-11-17-frown-lines-forehead-crows-feet.jpg
-Photo: PENDING. Search: "smiling woman closeup warm light"
+Photo: Egor Vikhrev / Unsplash: https://unsplash.com/photos/Z-5i0RVukdU
 
 **Short:** The three classic Botox areas, explained: frown lines are usually first, forehead lines are treated lightly so brows still lift, and crow's feet are softened so your smile still reaches your eyes. Botox in Oakville, on Instagram.
 

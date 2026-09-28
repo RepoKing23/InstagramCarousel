@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + TikTok photo + GBP
 **Pillar:** Education
 **Theme:** Botox & Filler in Oakville
-**SEO keyword (Search Console):** electrolysis oakville
+**SEO keyword (Search Console):** electrolysis oakville (GSC: 2 impr, pos 4.5)
 
 ## Hook
 The honest answer is a range, not a number.
@@ -30,11 +30,11 @@ Single image, photo led
 Files in images/: post.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman calendar planning calm" and never repeats a photo already used.
+Apostolos Vamvouras / Unsplash: https://unsplash.com/photos/vwF2QtVK8po (woman looking down)
 
 ## Google Business Profile
 Card: content/gbp/2026-10-27-how-many-electrolysis-sessions.jpg
-Photo: PENDING. Search: "woman relaxed portrait morning light"
+Photo: Aiony Haust / Unsplash: https://unsplash.com/photos/f2ar0ltTvaI
 
 **Short:** How many electrolysis sessions will you need? It is a course, not one visit, because hair grows in cycles and not every follicle is active at once. Area, density and hormones change the number. Ask about your area on Instagram.
 

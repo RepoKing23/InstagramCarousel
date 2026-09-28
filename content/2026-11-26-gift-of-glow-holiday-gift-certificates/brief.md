@@ -5,7 +5,7 @@
 **Platforms:** Instagram feed + GBP
 **Pillar:** Promo & CTA
 **Theme:** Gift Season
-**SEO keyword (Search Console):** luxury spa oakville
+**SEO keyword (Search Console):** luxury spa oakville (GSC: 1 impr, pos 25)
 
 ## Hook
 The present nobody returns.
@@ -30,11 +30,11 @@ Holiday gift certificates for a luxury med spa in Oakville: how they work and ho
 Files in images/: slide-1.jpg, slide-2.jpg, slide-3.jpg, slide-4.jpg, slide-5.jpg, slide-6.jpg, slide-7.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "holiday gift neutral tones elegant" and never repeats a photo already used.
+Mia Golic / Unsplash: https://unsplash.com/photos/6JtuGvLzh20 (a gift wrapped in white and brown floral paper)
 
 ## Google Business Profile
 Card: content/gbp/2026-11-26-gift-of-glow-holiday-gift-certificates.jpg
-Photo: PENDING. Search: "festive gift wrapped ribbon elegant"
+Photo: Fiona Murray-deGraaff / Unsplash: https://unsplash.com/photos/KrS40Ohe1is
 
 **Short:** Holiday gift certificates for Luxury Beauty by Cleo R, a luxury med spa in Oakville. Any amount, for Botox, filler or electrolysis, always starting with a consult. Sent by email or ready to pick up. Order on Instagram.
 

@@ -44,6 +44,15 @@
     background:linear-gradient(90deg,rgba(31,28,23,.92) 0%,rgba(31,28,23,.34) 16%,
                                      rgba(31,28,23,.06) 42%,rgba(31,28,23,.28) 100%);
   }
+  /* Framed: a photo only held at small size sits in a gold edged arch inside
+     the panel instead of filling it, so it shows near native size and stays
+     sharp. Centred on the part of the panel Maps keeps (x 620 to 1050). */
+  .framed .orb{background:#2A251E;}
+  .framed .orb img{position:absolute;left:45px;top:210px;width:340px;height:480px;
+                   border-radius:170px 170px 0 0;}
+  .framed .orb::after{background:none;inset:auto;left:30px;top:195px;width:370px;height:495px;
+                      border:1.5px solid rgba(201,168,92,.8);border-bottom:none;
+                      border-radius:185px 185px 0 0;}
   /* the spread's gutter */
   .gutter{position:absolute;left:445px;top:96px;bottom:96px;width:1px;
           background:linear-gradient(180deg,rgba(201,168,92,0),rgba(201,168,92,.65) 22%,
@@ -121,7 +130,8 @@ const POSTS = {
     "body": "A private room in Oakville, no waiting area full of strangers, and nobody rushing the person before you.",
     "cta": "See the room",
     "src": "photos/gbp/SlpmIhUd860.jpg",
-    "alt": "woman wrapped in towels in a spa room"
+    "alt": "woman wrapped in towels in a spa room",
+    "frame": false
   },
   "2026-08-20": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -130,7 +140,8 @@ const POSTS = {
     "body": "No consultation, bargain pricing, a provider who never says no. What to walk away from before you book.",
     "cta": "Read the post",
     "src": "photos/gbp/HtXyytr9304.jpg",
-    "alt": "a woman receiving a facial treatment from a practitioner"
+    "alt": "a woman receiving a facial treatment from a practitioner",
+    "frame": false
   },
   "2026-08-21": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -139,7 +150,8 @@ const POSTS = {
     "body": "New tray, sealed product opened in front of you, your face mapped while it moves. Zero shortcuts, every time.",
     "cta": "See the room",
     "src": "photos/gbp/q2csrSPGM_k.jpg",
-    "alt": "a close up of a person during a facial treatment"
+    "alt": "a close up of a person during a facial treatment",
+    "frame": false
   },
   "2026-08-22": {
     "service": "LIP FILLER · OAKVILLE",
@@ -148,7 +160,8 @@ const POSTS = {
     "body": "One syringe of lip filler, with her own lip shape kept exactly where it was.",
     "cta": "See the result",
     "src": "photos/gbp/-FT1IVUnUd8.jpg",
-    "alt": "close up of a young woman's face in warm light"
+    "alt": "close up of a young woman's face in warm light",
+    "frame": false
   },
   "2026-08-23": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -157,7 +170,8 @@ const POSTS = {
     "body": "Forty five minutes for a first visit, most of it talking. The injecting itself is about ten.",
     "cta": "Ask a question",
     "src": "photos/gbp/16mHHrY3PUk.jpg",
-    "alt": "woman enjoying a facial massage with her eyes closed"
+    "alt": "woman enjoying a facial massage with her eyes closed",
+    "frame": false
   },
   "2026-08-24": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -166,7 +180,8 @@ const POSTS = {
     "body": "A real consult, your face mapped in motion, a plan and a price agreed before anything is opened. Then ten minutes.",
     "cta": "Book your first visit",
     "src": "photos/gbp/PqyzuzFiQfY.jpg",
-    "alt": "woman receiving a facial skincare treatment"
+    "alt": "woman receiving a facial skincare treatment",
+    "frame": false
   },
   "2026-08-25": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -175,7 +190,8 @@ const POSTS = {
     "body": "Doses differ from face to face, so one flat price either overcharges you or under treats you. You get a written number at your consult.",
     "cta": "Message to ask",
     "src": "photos/gbp/w6zVwAYoqWM.jpg",
-    "alt": "young woman with reddish brown hair"
+    "alt": "young woman with reddish brown hair",
+    "frame": false
   },
   "2026-08-26": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -184,7 +200,8 @@ const POSTS = {
     "body": "A nurse practitioner, RN(EC), registered with the College of Nurses of Ontario. Never delegated, never rushed.",
     "cta": "Meet Cleo",
     "src": "photos/gbp/6Cz6R3El3p0.jpg",
-    "alt": "close up of hands during a face massage"
+    "alt": "close up of hands during a face massage",
+    "frame": false
   },
   "2026-08-27": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -193,7 +210,8 @@ const POSTS = {
     "body": "Nurse practitioner and injector. Every appointment is injected by Cleo, never delegated, never rushed.",
     "cta": "Book with Cleo",
     "src": "photos/gbp/TQSPgNqeCo8.jpg",
-    "alt": "a woman smiles while she holds her hand to her face"
+    "alt": "a woman smiles while she holds her hand to her face",
+    "frame": false
   },
   "2026-08-28": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -202,7 +220,8 @@ const POSTS = {
     "body": "One client in the room at a time. The door stays shut and the questions stay welcome.",
     "cta": "Book a visit",
     "src": "photos/gbp/MGKzomg0Dts.jpg",
-    "alt": "a woman lying down with her eyes closed"
+    "alt": "a woman lying down with her eyes closed",
+    "frame": false
   },
   "2026-08-29": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -211,7 +230,8 @@ const POSTS = {
     "body": "You should still frown, squint and smile. If people ask what you had done instead of whether you slept, the dose was wrong.",
     "cta": "Book a consult",
     "src": "photos/gbp/n5RNynnttF8.jpg",
-    "alt": "portrait of a woman"
+    "alt": "portrait of a woman",
+    "frame": false
   },
   "2026-08-30": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -220,7 +240,8 @@ const POSTS = {
     "body": "Your goals, your face in motion, what will work, what will not, and a written price. No obligation to book.",
     "cta": "Book a consult",
     "src": "photos/gbp/XGv1wuuNvYU.jpg",
-    "alt": "a young woman with long dark hair sitting outdoors"
+    "alt": "a young woman with long dark hair sitting outdoors",
+    "frame": false
   },
   "2026-08-31": {
     "service": "PREVENTATIVE BOTOX · OAKVILLE",
@@ -229,7 +250,8 @@ const POSTS = {
     "body": "It is not about your age. Make your strongest expression, relax, and see if the line stays. That one is setting in.",
     "cta": "Book a consult",
     "src": "photos/gbp/w4Dj3MshHQ0.jpg",
-    "alt": "woman in a white tank top"
+    "alt": "woman in a white tank top",
+    "frame": false
   },
   "2026-09-01": {
     "service": "PREVENTATIVE BOTOX · OAKVILLE",
@@ -238,7 +260,8 @@ const POSTS = {
     "body": "Small doses, started early, to stop a line becoming permanent. Prevention is easier than erasing.",
     "cta": "Book a consult",
     "src": "photos/gbp/GG8i22DQTHw.jpg",
-    "alt": "woman in a white tank top looking away"
+    "alt": "woman in a white tank top looking away",
+    "frame": false
   },
   "2026-09-02": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -247,7 +270,8 @@ const POSTS = {
     "body": "Health Canada approved product, sealed and opened in front of you, injected by a nurse practitioner.",
     "cta": "Ask a question",
     "src": "photos/gbp/HtXyytr9304.jpg",
-    "alt": "a woman receiving a facial treatment from a practitioner"
+    "alt": "a woman receiving a facial treatment from a practitioner",
+    "frame": false
   },
   "2026-09-03": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -256,7 +280,8 @@ const POSTS = {
     "body": "Units measure dose, not strength. The number you need depends on your muscle, not on a menu.",
     "cta": "Read the post",
     "src": "photos/gbp/qJ1mYraktLg.jpg",
-    "alt": "a woman having a facial mask applied"
+    "alt": "a woman having a facial mask applied",
+    "frame": false
   },
   "2026-09-04": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -265,7 +290,8 @@ const POSTS = {
     "body": "Nurse practitioner, College of Nurses of Ontario. The person who will talk you out of it if it is wrong for you.",
     "cta": "Meet Cleo",
     "src": "photos/gbp/q2csrSPGM_k.jpg",
-    "alt": "a close up of a person during a facial treatment"
+    "alt": "a close up of a person during a facial treatment",
+    "frame": false
   },
   "2026-09-05": {
     "service": "PREVENTATIVE BOTOX · OAKVILLE",
@@ -274,7 +300,8 @@ const POSTS = {
     "body": "Ask your friend who started early. Softening a line before it sets is easier than chasing it later.",
     "cta": "Book a consult",
     "src": "photos/gbp/0YT1p3lEPTg.jpg",
-    "alt": "young woman with long dark hair outdoors"
+    "alt": "young woman with long dark hair outdoors",
+    "frame": false
   },
   "2026-09-06": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -283,7 +310,8 @@ const POSTS = {
     "body": "Most people booking their first appointment have questions they think sound silly. Bring all of them.",
     "cta": "Ask a question",
     "src": "photos/gbp/16mHHrY3PUk.jpg",
-    "alt": "woman enjoying a facial massage with her eyes closed"
+    "alt": "woman enjoying a facial massage with her eyes closed",
+    "frame": false
   },
   "2026-09-07": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -292,7 +320,8 @@ const POSTS = {
     "body": "Same family, different personalities. One spreads a little more, one kicks in a little faster.",
     "cta": "Read the post",
     "src": "photos/gbp/N6N-DcYcDZ8.jpg",
-    "alt": "woman with red hair and natural freckles"
+    "alt": "woman with red hair and natural freckles",
+    "frame": false
   },
   "2026-09-08": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -301,7 +330,8 @@ const POSTS = {
     "body": "Onset, spread and longevity side by side, so you can ask a better question at your consult.",
     "cta": "See the comparison",
     "src": "photos/gbp/w6zVwAYoqWM.jpg",
-    "alt": "young woman with reddish brown hair"
+    "alt": "young woman with reddish brown hair",
+    "frame": false
   },
   "2026-09-09": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -310,7 +340,8 @@ const POSTS = {
     "body": "Stay upright, skip the gym, leave the area alone. Three rules, and they matter more than the rest.",
     "cta": "Read aftercare",
     "src": "photos/gbp/qJ1mYraktLg.jpg",
-    "alt": "a woman having a facial mask applied"
+    "alt": "a woman having a facial mask applied",
+    "frame": false
   },
   "2026-09-10": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -319,7 +350,8 @@ const POSTS = {
     "body": "What to do, what to skip, and what is completely normal. You got treated, now what?",
     "cta": "Read the post",
     "src": "photos/gbp/MGKzomg0Dts.jpg",
-    "alt": "a woman lying down with her eyes closed"
+    "alt": "a woman lying down with her eyes closed",
+    "frame": false
   },
   "2026-09-11": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -328,7 +360,8 @@ const POSTS = {
     "body": "Your face is mapped while it moves, because a muscle at rest tells you almost nothing.",
     "cta": "See the map",
     "src": "photos/gbp/4mCQh80Jzyo.jpg",
-    "alt": "close up of a person's hair and eyes"
+    "alt": "close up of a person's hair and eyes",
+    "frame": false
   },
   "2026-09-12": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -337,7 +370,8 @@ const POSTS = {
     "body": "A quick pinch, a few seconds an area. Most people say it is easier than they had built up.",
     "cta": "Ask a question",
     "src": "photos/gbp/hX9V80PDxrQ.jpg",
-    "alt": "a man having a facial mask applied"
+    "alt": "a man having a facial mask applied",
+    "frame": false
   },
   "2026-09-13": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -346,7 +380,8 @@ const POSTS = {
     "body": "The goal is never a new face. It is the same face, on a better week, and nobody able to say why.",
     "cta": "See the work",
     "src": "photos/gbp/H9YAbOsqDt8.jpg",
-    "alt": "a woman with red hair looking away"
+    "alt": "a woman with red hair looking away",
+    "frame": false
   },
   "2026-09-14": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -355,7 +390,8 @@ const POSTS = {
     "body": "It softens movement lines. It will not lift heavy skin, fill volume, or fix sun damage.",
     "cta": "Read the post",
     "src": "photos/gbp/w4Dj3MshHQ0.jpg",
-    "alt": "woman in a white tank top"
+    "alt": "woman in a white tank top",
+    "frame": false
   },
   "2026-09-15": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -364,7 +400,8 @@ const POSTS = {
     "body": "If the line is there when your face is completely still, it needs something other than a neuromodulator.",
     "cta": "Book a consult",
     "src": "photos/gbp/GG8i22DQTHw.jpg",
-    "alt": "woman in a white tank top looking away"
+    "alt": "woman in a white tank top looking away",
+    "frame": false
   },
   "2026-09-16": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -373,7 +410,8 @@ const POSTS = {
     "body": "Message on Instagram and you get an answer from Cleo, not an auto reply or a call centre.",
     "cta": "Send a message",
     "src": "photos/gbp/SlpmIhUd860.jpg",
-    "alt": "woman wrapped in towels in a spa room"
+    "alt": "woman wrapped in towels in a spa room",
+    "frame": false
   },
   "2026-09-17": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -382,7 +420,8 @@ const POSTS = {
     "body": "You will not look done. You will look like you had a very good week of sleep.",
     "cta": "See the work",
     "src": "photos/gbp/k6vhjQF720E.jpg",
-    "alt": "young woman with flowing hair outdoors"
+    "alt": "young woman with flowing hair outdoors",
+    "frame": false
   },
   "2026-09-18": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -391,7 +430,8 @@ const POSTS = {
     "body": "Frozen is a dosing mistake, not an inevitable result. Movement is meant to stay.",
     "cta": "Read the post",
     "src": "photos/gbp/N6N-DcYcDZ8.jpg",
-    "alt": "woman with red hair and natural freckles"
+    "alt": "woman with red hair and natural freckles",
+    "frame": false
   },
   "2026-09-19": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -400,7 +440,8 @@ const POSTS = {
     "body": "That was the point. The best compliment is being asked whether you changed your skincare.",
     "cta": "See the work",
     "src": "photos/gbp/w6zVwAYoqWM.jpg",
-    "alt": "young woman with reddish brown hair"
+    "alt": "young woman with reddish brown hair",
+    "frame": false
   },
   "2026-09-20": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -409,7 +450,8 @@ const POSTS = {
     "body": "3060 Preserve Dr, with clients travelling in from Burlington, Milton and Mississauga.",
     "cta": "Get directions",
     "src": "photos/gbp/XGv1wuuNvYU.jpg",
-    "alt": "a young woman with long dark hair sitting outdoors"
+    "alt": "a young woman with long dark hair sitting outdoors",
+    "frame": false
   },
   "2026-09-21": {
     "service": "BOTOX & LIP FILLER · OAKVILLE",
@@ -418,7 +460,8 @@ const POSTS = {
     "body": "Lines from movement need one. Lost volume needs the other. Most people ask for the wrong one.",
     "cta": "Read the post",
     "src": "photos/gbp/-FT1IVUnUd8.jpg",
-    "alt": "close up of a young woman's face in warm light"
+    "alt": "close up of a young woman's face in warm light",
+    "frame": false
   },
   "2026-09-22": {
     "service": "BOTOX & LIP FILLER · OAKVILLE",
@@ -427,7 +470,8 @@ const POSTS = {
     "body": "Pull the skin gently taut. If the line disappears it is movement. If it stays it is volume.",
     "cta": "Book a consult",
     "src": "photos/gbp/Pe9IXUuC6QU.jpg",
-    "alt": "woman receiving a facial mask treatment at a spa"
+    "alt": "woman receiving a facial mask treatment at a spa",
+    "frame": false
   },
   "2026-09-23": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -436,7 +480,8 @@ const POSTS = {
     "body": "Who injects me, what are your credentials, what product, what dose, and what happens if I am unhappy.",
     "cta": "Ask a question",
     "src": "photos/gbp/qJ1mYraktLg.jpg",
-    "alt": "a woman having a facial mask applied"
+    "alt": "a woman having a facial mask applied",
+    "frame": false
   },
   "2026-09-24": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -445,7 +490,8 @@ const POSTS = {
     "body": "The questions that come in every week, answered without the marketing gloss.",
     "cta": "Ask a question",
     "src": "photos/gbp/TQSPgNqeCo8.jpg",
-    "alt": "a woman smiles while she holds her hand to her face"
+    "alt": "a woman smiles while she holds her hand to her face",
+    "frame": false
   },
   "2026-09-25": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -454,7 +500,8 @@ const POSTS = {
     "body": "Asked privately every week, so here it is in public with a straight answer.",
     "cta": "Send a message",
     "src": "photos/gbp/MGKzomg0Dts.jpg",
-    "alt": "a woman lying down with her eyes closed"
+    "alt": "a woman lying down with her eyes closed",
+    "frame": false
   },
   "2026-09-26": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -463,7 +510,8 @@ const POSTS = {
     "body": "You pick the next topic. Whatever gets the most votes gets made.",
     "cta": "Cast your vote",
     "src": "photos/gbp/0YT1p3lEPTg.jpg",
-    "alt": "young woman with long dark hair outdoors"
+    "alt": "young woman with long dark hair outdoors",
+    "frame": false
   },
   "2026-09-27": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -472,7 +520,8 @@ const POSTS = {
     "body": "A follow up check at two weeks is part of the treatment, not an upsell. Small adjustments are free.",
     "cta": "Book a consult",
     "src": "photos/gbp/16mHHrY3PUk.jpg",
-    "alt": "woman enjoying a facial massage with her eyes closed"
+    "alt": "woman enjoying a facial massage with her eyes closed",
+    "frame": false
   },
   "2026-09-28": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -481,7 +530,8 @@ const POSTS = {
     "body": "Three to four months for most people. Metabolism, dose and muscle strength all move that number.",
     "cta": "Read the post",
     "src": "photos/gbp/H9YAbOsqDt8.jpg",
-    "alt": "a woman with red hair looking away"
+    "alt": "a woman with red hair looking away",
+    "frame": false
   },
   "2026-09-29": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -490,7 +540,8 @@ const POSTS = {
     "body": "Day three it starts. Two weeks it settles. Month three it softens. Month four you are due.",
     "cta": "See the timeline",
     "src": "photos/gbp/k6vhjQF720E.jpg",
-    "alt": "young woman with flowing hair outdoors"
+    "alt": "young woman with flowing hair outdoors",
+    "frame": false
   },
   "2026-09-30": {
     "service": "LIP FILLER · OAKVILLE",
@@ -499,7 +550,8 @@ const POSTS = {
     "body": "A month on filler: what one syringe really does, natural versus overdone, and real results.",
     "cta": "Follow along",
     "src": "photos/gbp/Bsg_9a2PDX0.jpg",
-    "alt": "soft close up portrait in warm light"
+    "alt": "soft close up portrait in warm light",
+    "frame": false
   },
   "2026-10-01": {
     "service": "BOTOX · OAKVILLE",
@@ -507,8 +559,9 @@ const POSTS = {
     "script": "Botox visit.",
     "body": "Consult, face mapping, ten minutes of treatment, and a check in at two weeks.",
     "cta": "Read the steps",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/YhMFYJZgMA0.jpg",
+    "alt": "a close up of a woman with a ponytail",
+    "frame": true
   },
   "2026-10-05": {
     "service": "DERMAL FILLER · OAKVILLE",
@@ -516,8 +569,9 @@ const POSTS = {
     "script": "just placed well.",
     "body": "Overdone filler comes from technique and amount, not the product itself.",
     "cta": "Read the post",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/2rIs8OH5ng0.jpg",
+    "alt": "woman wearing black shirt",
+    "frame": true
   },
   "2026-10-06": {
     "service": "ELECTROLYSIS · OAKVILLE",
@@ -525,8 +579,9 @@ const POSTS = {
     "script": "explained.",
     "body": "Each follicle treated one at a time, so the hair stops growing back. Any colour, any skin tone.",
     "cta": "Learn how",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/O3D_mUpZzcM.jpg",
+    "alt": "a woman smiling with a face mask treatment",
+    "frame": true
   },
   "2026-10-07": {
     "service": "LUXURY BEAUTY BY CLEO R · OAKVILLE",
@@ -534,8 +589,9 @@ const POSTS = {
     "script": "your injector.",
     "body": "Nurse practitioner, and the only person you will see at the Oakville studio.",
     "cta": "Meet Cleo",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/qcYO-03J69Y.jpg",
+    "alt": "modern vanity area with stool and sofa in warm tones",
+    "frame": true
   },
   "2026-10-08": {
     "service": "LIP FILLER · OAKVILLE",
@@ -543,8 +599,9 @@ const POSTS = {
     "script": "overdone.",
     "body": "The difference is ratio, shape and restraint. Not the product, and not always the amount.",
     "cta": "See the difference",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/mEZ3PoFGs_k.jpg",
+    "alt": "close up of a woman smiling",
+    "frame": true
   },
   "2026-10-12": {
     "service": "BOTOX · OAKVILLE",
@@ -552,8 +609,9 @@ const POSTS = {
     "script": "actually treats.",
     "body": "Frown lines, forehead lines and crow's feet, softened while you keep your expression.",
     "cta": "Read the post",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/MHImssrygog.jpg",
+    "alt": "a close up of a green eye with long lashes in warm light",
+    "frame": true
   },
   "2026-10-13": {
     "service": "FACIAL ELECTROLYSIS · OAKVILLE",
@@ -561,8 +619,9 @@ const POSTS = {
     "script": "tweezing.",
     "body": "Chin and upper lip hairs treated at the follicle, including fine, light and grey hairs.",
     "cta": "Learn more",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/8f7ZpUzSXfg.jpg",
+    "alt": "side profile of a woman in a white shirt",
+    "frame": true
   },
   "2026-10-14": {
     "service": "LIP FILLER · OAKVILLE",
@@ -570,8 +629,9 @@ const POSTS = {
     "script": "the point.",
     "body": "If the first thing people notice is the filler, the plan was wrong. Nobody should notice.",
     "cta": "See the result",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/JRa8lCQQhSs.jpg",
+    "alt": "a woman with a straight face",
+    "frame": true
   },
   "2026-10-15": {
     "service": "LIP FILLER · OAKVILLE",
@@ -579,8 +639,9 @@ const POSTS = {
     "script": "real results.",
     "body": "Not renders, not stock, not filtered. Real clients, shared with written consent.",
     "cta": "See the results",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/Ll9YOG20UFI.jpg",
+    "alt": "a smiling woman with curly hair at a wooden table",
+    "frame": true
   },
   "2026-10-19": {
     "service": "ELECTROLYSIS · OAKVILLE",
@@ -588,8 +649,9 @@ const POSTS = {
     "script": "or laser?",
     "body": "Laser reduces hair and needs dark hair. Electrolysis treats every colour, follicle by follicle.",
     "cta": "Compare them",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/iU04dYsP810.jpg",
+    "alt": "woman in white knit shirt",
+    "frame": true
   },
   "2026-10-20": {
     "service": "DERMAL FILLER · OAKVILLE",
@@ -597,8 +659,9 @@ const POSTS = {
     "script": "does it last?",
     "body": "Lips usually six to twelve months. Cheeks and chin often a year or more.",
     "cta": "Read the post",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/CGKYNN3uuVo.jpg",
+    "alt": "woman in black scoop neck shirt",
+    "frame": true
   },
   "2026-10-21": {
     "service": "LUXURY MED SPA · OAKVILLE",
@@ -606,8 +669,9 @@ const POSTS = {
     "script": "time.",
     "body": "A private studio, one client at a time, and an appointment that is never rushed.",
     "cta": "See the studio",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/CvO17EzwmSE.jpg",
+    "alt": "a vessel sink beside a spa bed with a pillow",
+    "frame": true
   },
   "2026-10-22": {
     "service": "LIP FILLER · OAKVILLE",
@@ -615,8 +679,9 @@ const POSTS = {
     "script": "week.",
     "body": "Ice, water, sleep propped up. No gym, no heat, no pressing at it for 48 hours.",
     "cta": "Save the post",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/cC2s8iQTUKs.jpg",
+    "alt": "woman in a black shirt with red lipstick",
+    "frame": true
   },
   "2026-10-26": {
     "service": "BOTOX FOR MEN · OAKVILLE",
@@ -624,8 +689,9 @@ const POSTS = {
     "script": "for men.",
     "body": "Stronger muscles, different dosing, and brows kept masculine. Less tired, never done.",
     "cta": "Read the post",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/liy0P6AmGPM.jpg",
+    "alt": "man wearing a brown knit sweater",
+    "frame": true
   },
   "2026-10-27": {
     "service": "ELECTROLYSIS · OAKVILLE",
@@ -633,8 +699,9 @@ const POSTS = {
     "script": "sessions?",
     "body": "A course of short sessions over several months, because hair grows in cycles.",
     "cta": "Ask a question",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/f2ar0ltTvaI.jpg",
+    "alt": "woman leaning on a white table",
+    "frame": true
   },
   "2026-10-28": {
     "service": "LIP FILLER · OAKVILLE",
@@ -642,8 +709,9 @@ const POSTS = {
     "script": "on lips.",
     "body": "Her words, not mine. Shared with consent, alongside the result she is describing.",
     "cta": "Read it",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/BrEAp01_m5w.jpg",
+    "alt": "smiling woman sitting on grass",
+    "frame": true
   },
   "2026-10-29": {
     "service": "DERMAL FILLER · OAKVILLE",
@@ -651,8 +719,9 @@ const POSTS = {
     "script": "not lines.",
     "body": "Facial balancing brings chin, cheeks, lips and jaw into proportion with each other.",
     "cta": "Read the post",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/rI66xRC2PSM.jpg",
+    "alt": "a woman with long hair",
+    "frame": true
   },
   "2026-11-02": {
     "service": "BOTOX · OAKVILLE",
@@ -660,8 +729,9 @@ const POSTS = {
     "script": "your party.",
     "body": "Botox settles at two weeks. Book three to four weeks before your event for the review.",
     "cta": "See the dates",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/QSWDCmNHbFI.jpg",
+    "alt": "a woman in a black sequined dress at night with city lights",
+    "frame": true
   },
   "2026-11-03": {
     "service": "ELECTROLYSIS · OAKVILLE",
@@ -669,8 +739,9 @@ const POSTS = {
     "script": "electrolysis.",
     "body": "Redness is normal. No makeup, heat, sun or picking for 48 hours. Trim, never tweeze.",
     "cta": "Save the post",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/2yPYG76oyHQ.jpg",
+    "alt": "woman with eyes closed in a pinstriped shirt",
+    "frame": true
   },
   "2026-11-04": {
     "service": "LIP FILLER · OAKVILLE",
@@ -678,8 +749,9 @@ const POSTS = {
     "script": "balanced lips.",
     "body": "One appointment, one syringe, two weeks apart in the photos. Shared with consent.",
     "cta": "See the result",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/lNNHyRbmm0o.jpg",
+    "alt": "woman in a black shirt smiling",
+    "frame": true
   },
   "2026-11-05": {
     "service": "LUXURY MED SPA · OAKVILLE",
@@ -687,8 +759,9 @@ const POSTS = {
     "script": "season prep.",
     "body": "Electrolysis first, then filler, then Botox, and nothing new in the final week.",
     "cta": "Plan yours",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/8GHneT83bh0.jpg",
+    "alt": "a woman in a black top beside a lit candelabra",
+    "frame": true
   },
   "2026-11-09": {
     "service": "DERMAL FILLER · OAKVILLE",
@@ -696,8 +769,9 @@ const POSTS = {
     "script": "filler.",
     "body": "Good for hollows. Not for puffiness, pigment or loose skin. Here is how to tell.",
     "cta": "Read the post",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/vyfucAJB8K0.jpg",
+    "alt": "a close up of a person with brown eyes",
+    "frame": true
   },
   "2026-11-10": {
     "service": "GIFT CERTIFICATES · OAKVILLE",
@@ -705,8 +779,9 @@ const POSTS = {
     "script": "of glow.",
     "body": "Any amount, any treatment, always starting with a consult. The present nobody returns.",
     "cta": "Order one",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/bz88YOWQepI.jpg",
+    "alt": "gifts wrapped in brown paper with white ribbons",
+    "frame": true
   },
   "2026-11-11": {
     "service": "LUXURY BEAUTY BY CLEO R · OAKVILLE",
@@ -714,8 +789,9 @@ const POSTS = {
     "script": "says no.",
     "body": "Not yet, not this, or not with me. The answer that protects your face the most.",
     "cta": "Read why",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/ECBg5FQkBXI.jpg",
+    "alt": "modern white reception area with curved lines",
+    "frame": true
   },
   "2026-11-12": {
     "service": "LIP FILLER · OAKVILLE",
@@ -723,8 +799,9 @@ const POSTS = {
     "script": "angle.",
     "body": "One healed result from the front, the side and smiling. No flattering angle chosen.",
     "cta": "See every angle",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/mRelDTGo3HY.jpg",
+    "alt": "woman wearing white crew-neck shirt behind trees",
+    "frame": true
   },
   "2026-11-16": {
     "service": "FACIAL ELECTROLYSIS · OAKVILLE",
@@ -732,8 +809,9 @@ const POSTS = {
     "script": "facial hair.",
     "body": "Common with PCOS and hormone changes, and very treatable with facial electrolysis.",
     "cta": "Read the post",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/yIitNO2Bgdo.jpg",
+    "alt": "woman smiling face",
+    "frame": true
   },
   "2026-11-17": {
     "service": "BOTOX · OAKVILLE",
@@ -741,8 +819,9 @@ const POSTS = {
     "script": "classic areas.",
     "body": "Frown lines, forehead lines and crow's feet each need a different plan.",
     "cta": "Read the post",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/Z-5i0RVukdU.jpg",
+    "alt": "close up of blue eyes",
+    "frame": true
   },
   "2026-11-18": {
     "service": "LIP FILLER · OAKVILLE",
@@ -750,8 +829,9 @@ const POSTS = {
     "script": "or flip?",
     "body": "Filler adds volume and shape. A lip flip shows more of your upper lip when you smile.",
     "cta": "Compare them",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/MENPquhtpyk.jpg",
+    "alt": "a woman with red hair and a white shirt",
+    "frame": true
   },
   "2026-11-19": {
     "service": "LUXURY MED SPA · OAKVILLE",
@@ -759,8 +839,9 @@ const POSTS = {
     "script": "really means.",
     "body": "Five questions to ask any Oakville med spa before you book, and why each matters.",
     "cta": "Read the list",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/7mmmEkyk0aQ.jpg",
+    "alt": "a light armchair with a cushion on a wooden floor",
+    "frame": true
   },
   "2026-11-23": {
     "service": "BOTOX & DERMAL FILLER · OAKVILLE",
@@ -768,8 +849,9 @@ const POSTS = {
     "script": "first?",
     "body": "Skin, then movement with Botox, then volume with filler. The order saves money.",
     "cta": "Read the post",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/yrN4AtpCYLw.jpg",
+    "alt": "a woman sitting in front of a window",
+    "frame": true
   },
   "2026-11-24": {
     "service": "GIFT CERTIFICATES · OAKVILLE",
@@ -777,8 +859,9 @@ const POSTS = {
     "script": "on sale.",
     "body": "No discounted injectables, ever. Gift certificates ready in time for the holidays.",
     "cta": "Order a gift",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/e-tX3uIby-g.jpg",
+    "alt": "a hand holding a paper gift bag with a bow",
+    "frame": true
   },
   "2026-11-25": {
     "service": "ELECTROLYSIS · OAKVILLE",
@@ -786,8 +869,9 @@ const POSTS = {
     "script": "hurt?",
     "body": "A quick warm sting per hair. Short, paced to you, and easier as the course goes on.",
     "cta": "Ask a question",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/7aU-_8BW7F0.jpg",
+    "alt": "young woman looking out a window",
+    "frame": true
   },
   "2026-11-26": {
     "service": "GIFT CERTIFICATES · OAKVILLE",
@@ -795,8 +879,9 @@ const POSTS = {
     "script": "the glow.",
     "body": "Any amount, any treatment, starting with a consult. Ready in time for the holidays.",
     "cta": "Order a gift",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/KrS40Ohe1is.jpg",
+    "alt": "two wrapped gifts with a black velvet bow",
+    "frame": true
   },
   "2026-11-30": {
     "service": "BOTOX · OAKVILLE",
@@ -804,15 +889,16 @@ const POSTS = {
     "script": "for December.",
     "body": "Book Botox this week and it settles, with your review, before mid December.",
     "cta": "Book this week",
-    "src": "",
-    "alt": ""
+    "src": "photos/gbp/2XKPdPQlIV8.jpg",
+    "alt": "woman in a black dress with snowflakes",
+    "frame": true
   }
 };
 
 const P = POSTS[new URLSearchParams(location.search).get('date') || '2026-08-17'];
 
 document.getElementById('stage').innerHTML = `
-<div class="slide${P.src ? ' has-photo' : ''}" id="slide">
+<div class="slide${P.src ? ' has-photo' : ''}${P.frame ? ' framed' : ''}" id="slide">
   <div class="safe">
     <div class="orb"><img id="photo" src="${P.src}" alt="${P.alt}"></div>
     <div class="gutter"></div>

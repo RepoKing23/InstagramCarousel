@@ -54,6 +54,23 @@ SET_F = ('#electrolysisoakville #oakvilleelectrolysis #facialelectrolysis '
 
 SEO_COLS = ['SEO Keyword (GSC)', 'Alt Text']
 
+# Search Console, Performance on Search, last 28 days to 2026-09-28, web,
+# luxurybeautyaesthetic.com. Every post from Oct 1 targets one of these.
+GSC = {
+    'botox therapy treatment oakville': (0, 13, 54.85),
+    'cleo oakville': (0, 3, 1.67),
+    'electrolysis oakville': (0, 2, 4.5),
+    'facial electrolysis': (0, 1, 21.0),
+    'luxury spa oakville': (0, 1, 25.0),
+    'dermal fillers': (0, 1, 41.0),
+    'oakville botox': (0, 1, 57.0),
+}
+
+
+def gsc_label(kw):
+    clicks, impr, pos = GSC[kw]
+    return f'{kw} (GSC: {impr} impr, pos {pos:g})'
+
 
 # --- plan -----------------------------------------------------------------
 
@@ -162,6 +179,13 @@ def gbp_image(p):
 
 # --- template data --------------------------------------------------------
 
+def small(rel):
+    """Photos only held at Unsplash small size go in an arch frame, not full bleed."""
+    from PIL import Image
+    with Image.open(os.path.join(DESIGN, rel)) as im:
+        return im.width < 1000
+
+
 def write_data_js(posts, picks):
     carousels, singles = {}, {}
     for p in posts:
@@ -173,13 +197,14 @@ def write_data_js(posts, picks):
             entry = {k: ig[k] for k in ('label', 'coverSerif', 'coverScript', 'coverSub',
                                         'points', 'ctaSerif', 'ctaScript', 'ctaBody', 'button')}
             if photo:
-                entry.update(coverPhoto=photo, coverFocal='center 30%')
+                key = 'coverFrame' if small(photo) else 'coverPhoto'
+                entry.update({key: photo, 'coverFocal': 'center 30%'})
             carousels[p['slug']] = entry
         else:
             entry = {'label': ig['label'], 'serif': ig['serif'], 'script': ig['script'],
                      'body': ig['body'], 'cta': ig['cta'], 'theme': ig.get('theme', 'light')}
             # photo led when there is a photo, the plain statement card until then
-            entry['kind'] = 'photo' if photo else 'statement'
+            entry['kind'] = ('frame' if small(photo) else 'photo') if photo else 'statement'
             if photo:
                 entry.update(photo=photo, focal='center 30%')
             singles[p['slug']] = entry
@@ -258,7 +283,7 @@ def write_brief(p, sets, picks):
 **Platforms:** {PLATFORMS[p['kind']]}
 **Pillar:** {p['pillar']}
 **Theme:** {p['theme']}
-**SEO keyword (Search Console):** {p['keyword']}
+**SEO keyword (Search Console):** {gsc_label(p['keyword'])}
 
 ## Hook
 {p['hook']}
@@ -318,7 +343,8 @@ def update_gbp(posts, picks):
     for p in posts:
         pk = gbp_pick(p, picks)
         if pk and pk['id'] not in known:
-            photos['photos'].append({k: pk[k] for k in ('id', 'by', 'user', 'alt', 'file')})
+            photos['photos'].append({k: pk[k] for k in ('id', 'by', 'user', 'alt', 'file', 'size')
+                                     if k in pk})
             known.add(pk['id'])
     with open(GBP_PHOTOS, 'w', encoding='utf-8') as f:
         json.dump(photos, f, indent=2, ensure_ascii=False)
@@ -424,7 +450,7 @@ def update_workbook(posts, picks):
                 assets = ('Own photo of Cleo' if photo else
                           f"NEEDED: new photo of Cleo, save as design/photos/octnov/{p['date']}-ig.jpg")
             else:
-                assets = (f"Unsplash: {credit(pick)} (unsplash.com/photos/{pick['id']})" if pick else
+                assets = (f"{credit(pick)} (unsplash.com/photos/{pick['id']})" if pick else
                           f"Photo pending. Unsplash search: {p['photo']['ig']}")
             consent = 'Not needed'
         visual = {'carousel': f"{'READY' if done else 'DESIGNED, photo pending'}: "
@@ -450,7 +476,7 @@ def update_workbook(posts, picks):
             'Preview': f'=IMAGE("{RAW}/content/{p["folder"]}/images/{files[0]}")',
             'Status': status, 'GBP Caption': p['gbp']['text'],
             'GBP CTA': 'Learn more > Instagram', 'GBP Image Link': 'View GBP image (jpg)',
-            'SEO Keyword (GSC)': p['keyword'], 'Alt Text': p['alt'],
+            'SEO Keyword (GSC)': gsc_label(p['keyword']), 'Alt Text': p['alt'],
         }
         for n in inputs[1:]:
             values[n] = k.get(n)
@@ -627,7 +653,7 @@ def how_to_use(ws, posts):
         by_kw.setdefault(p['keyword'], []).append(p['_d'].strftime('%b %d'))
     row = r + 2
     for kw, dates in by_kw.items():
-        put(row, kw, f"{len(dates)} posts: {', '.join(dates)}")
+        put(row, gsc_label(kw), f"{len(dates)} posts: {', '.join(dates)}")
         row += 1
     put(row, 'Alt text', 'Paste the Alt Text column into Instagram > Advanced settings > '
                          'Write alt text before posting. Instagram search reads it.')

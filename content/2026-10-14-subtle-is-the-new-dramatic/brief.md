@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + GBP
 **Pillar:** Trust & Proof
 **Theme:** Botox & Filler in Oakville
-**SEO keyword (Search Console):** dermal fillers
+**SEO keyword (Search Console):** dermal fillers (GSC: 1 impr, pos 41)
 
 ## Hook
 The quote, proved.
@@ -34,7 +34,7 @@ Client photos from design/photos/cleo/crops/, shared with written consent.
 
 ## Google Business Profile
 Card: content/gbp/2026-10-14-subtle-is-the-new-dramatic.jpg
-Photo: PENDING. Search: "woman minimal natural makeup portrait"
+Photo: Dmitry Ganin / Unsplash: https://unsplash.com/photos/JRa8lCQQhSs
 
 **Short:** Subtle is not a compromise, it is the goal. If the first thing anyone notices about your face is the filler, something in the plan was wrong. A real dermal filler result, shared with client consent, is on Instagram.
 

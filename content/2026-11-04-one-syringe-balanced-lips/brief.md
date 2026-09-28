@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + GBP
 **Pillar:** Trust & Proof
 **Theme:** Rested by the Holidays
-**SEO keyword (Search Console):** dermal fillers
+**SEO keyword (Search Console):** dermal fillers (GSC: 1 impr, pos 41)
 
 ## Hook
 Faces, not lines.
@@ -34,7 +34,7 @@ Client photos from design/photos/cleo/crops/, shared with written consent.
 
 ## Google Business Profile
 Card: content/gbp/2026-11-04-one-syringe-balanced-lips.jpg
-Photo: PENDING. Search: "woman subtle lipstick portrait soft"
+Photo: Jorik Kleen / Unsplash: https://unsplash.com/photos/lNNHyRbmm0o
 
 **Short:** One syringe, one appointment, photographed two weeks apart in the same light. The upper lip was short against the lower, so the work was ratio rather than volume. Shared with client consent on Instagram.
 

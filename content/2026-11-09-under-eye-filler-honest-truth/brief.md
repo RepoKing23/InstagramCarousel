@@ -5,7 +5,7 @@
 **Platforms:** Instagram feed + GBP
 **Pillar:** Education
 **Theme:** Rested by the Holidays
-**SEO keyword (Search Console):** dermal fillers
+**SEO keyword (Search Console):** dermal fillers (GSC: 1 impr, pos 41)
 
 ## Hook
 The most requested, most misunderstood treatment.
@@ -30,11 +30,11 @@ Under eye filler honest guide: who is a candidate for tear trough dermal filler 
 Files in images/: slide-1.jpg, slide-2.jpg, slide-3.jpg, slide-4.jpg, slide-5.jpg, slide-6.jpg, slide-7.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman eyes closeup natural light soft" and never repeats a photo already used.
+Andrey K / Unsplash: https://unsplash.com/photos/LIj4gf1JS50 (close up of a woman's face with eyes closed)
 
 ## Google Business Profile
 Card: content/gbp/2026-11-09-under-eye-filler-honest-truth.jpg
-Photo: PENDING. Search: "woman rested eyes portrait morning"
+Photo: Wiktoria Skrzekotowska / Unsplash: https://unsplash.com/photos/vyfucAJB8K0
 
 **Short:** Under eye filler, honestly: it softens hollows and shadows well, but it does not fix puffy bags, dark pigment or loose skin, and can make puffiness worse. How to tell which you have before booking dermal fillers. On Instagram.
 

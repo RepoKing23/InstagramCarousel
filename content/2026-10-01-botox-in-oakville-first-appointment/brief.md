@@ -5,7 +5,7 @@
 **Platforms:** Instagram feed + GBP
 **Pillar:** Education
 **Theme:** Botox & Filler in Oakville
-**SEO keyword (Search Console):** botox therapy treatment oakville
+**SEO keyword (Search Console):** botox therapy treatment oakville (GSC: 13 impr, pos 54.85)
 
 ## Hook
 Everything to know before you book.
@@ -30,11 +30,11 @@ Luxury Beauty by Cleo R carousel: Botox in Oakville, what happens at your first 
 Files in images/: slide-1.jpg, slide-2.jpg, slide-3.jpg, slide-4.jpg, slide-5.jpg, slide-6.jpg, slide-7.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman natural skin portrait soft light" and never repeats a photo already used.
+Štefan Štefančík / Unsplash: https://unsplash.com/photos/QXevDflbl8A (smiling woman wearing white and black pinstriped collared top)
 
 ## Google Business Profile
 Card: content/gbp/2026-10-01-botox-in-oakville-first-appointment.jpg
-Photo: PENDING. Search: "calm woman portrait clinic"
+Photo: Yoad Shejtman / Unsplash: https://unsplash.com/photos/YhMFYJZgMA0
 
 **Short:** Your first Botox appointment in Oakville, step by step: a real consult, your face mapped while it moves, about ten minutes of treatment, and a two week check in. Nothing is a surprise. The full walkthrough is on Instagram.
 

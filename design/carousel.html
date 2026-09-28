@@ -79,6 +79,20 @@
     margin-top:60px;border:1px solid var(--ink);padding:26px 54px;
     font-size:24px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;
   }
+
+  /* Framed cover: the photo sits in an arch above the type instead of running
+     full bleed. Used when the only copy of a photo is small (Oct and Nov), so
+     it is shown near its native size and stays sharp. */
+  .framed{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;
+          padding:132px 88px 0;text-align:center;}
+  .arch{position:relative;width:392px;height:540px;flex:none;}
+  .arch img{width:100%;height:100%;object-fit:cover;border-radius:196px 196px 0 0;display:block;}
+  .arch::after{content:'';position:absolute;inset:-16px;border:1.5px solid var(--gold);
+               border-bottom:none;border-radius:212px 212px 0 0;opacity:.85;}
+  .framed .label{margin-top:52px;}
+  .framed .serif{font-size:92px;white-space:nowrap;}
+  .framed .script{font-size:84px;margin-top:4px;}
+  .framed .sub{margin-top:26px;font-size:28px;line-height:1.5;letter-spacing:.05em;color:var(--ink-soft);}
 </style>
 </head>
 <body>
@@ -180,7 +194,18 @@ if (n === 1) {
         <div class="script">${P.coverScript}</div>
       </div>
       <div class="sub">${P.coverSub}</div>`;
-  html = P.coverPhoto
+  html = P.coverFrame
+    ? `<div class="slide">${mono}
+         <div class="framed">
+           <div class="arch"><img src="${P.coverFrame}" style="object-position:${P.coverFocal || 'center 30%'}" alt=""></div>
+           <div class="label">${P.label}</div>
+           <div class="serif" style="margin-top:22px">${P.coverSerif}</div>
+           <div class="script">${P.coverScript}</div>
+           <div class="sub">${P.coverSub}</div>
+         </div>
+         <div class="swipe">Swipe &#8594;</div>
+       </div>`
+    : P.coverPhoto
     ? `<div class="slide">
          <div class="cover has-photo">
            <div class="photo"><img src="${P.coverPhoto}" style="object-position:${P.coverFocal}" alt=""></div>
@@ -219,6 +244,11 @@ if (n === 1) {
   </div>`;
 }
 document.getElementById('stage').innerHTML = html;
+// a framed cover keeps its headline on one line, stepping down until it fits
+document.querySelectorAll('.framed .serif').forEach(el => {
+  for (let size = 92; size > 56 && el.scrollWidth > el.parentElement.clientWidth - 176; size -= 2)
+    el.style.fontSize = size + 'px';
+});
 </script>
 </body>
 </html>

@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + TikTok photo + GBP
 **Pillar:** Education
 **Theme:** Gift Season
-**SEO keyword (Search Console):** electrolysis oakville
+**SEO keyword (Search Console):** electrolysis oakville (GSC: 2 impr, pos 4.5)
 
 ## Hook
 The honest answer.
@@ -30,11 +30,11 @@ Single image, photo led
 Files in images/: post.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman relaxed calm eyes closed portrait" and never repeats a photo already used.
+Pedro Miguel Aires / Unsplash: https://unsplash.com/photos/VVlQer2k1LU (black and white portrait of an older woman)
 
 ## Google Business Profile
 Card: content/gbp/2026-11-25-does-electrolysis-hurt.jpg
-Photo: PENDING. Search: "woman serene portrait soft light"
+Photo: Inna Yashna / Unsplash: https://unsplash.com/photos/7aU-_8BW7F0
 
 **Short:** Does electrolysis hurt? Most people feel a quick warm sting or pinch per hair, most noticeable on the upper lip. Sessions are short, paced to you, and usually get easier as the course goes on. Questions answered on Instagram.
 

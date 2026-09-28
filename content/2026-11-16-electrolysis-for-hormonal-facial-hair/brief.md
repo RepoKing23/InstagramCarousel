@@ -5,7 +5,7 @@
 **Platforms:** Instagram feed + GBP
 **Pillar:** Education
 **Theme:** Gift Season
-**SEO keyword (Search Console):** facial electrolysis
+**SEO keyword (Search Console):** facial electrolysis (GSC: 1 impr, pos 21)
 
 ## Hook
 You are not alone, and it is treatable.
@@ -30,11 +30,11 @@ Facial electrolysis for PCOS and hormonal facial hair in Oakville: how it helps 
 Files in images/: slide-1.jpg, slide-2.jpg, slide-3.jpg, slide-4.jpg, slide-5.jpg, slide-6.jpg, slide-7.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman gentle portrait looking away soft" and never repeats a photo already used.
+amin naderloei / Unsplash: https://unsplash.com/photos/wLNigYhCZi0 (a young woman with eyes closed among tall reeds)
 
 ## Google Business Profile
 Card: content/gbp/2026-11-16-electrolysis-for-hormonal-facial-hair.jpg
-Photo: PENDING. Search: "woman confident natural portrait neutral"
+Photo: Alexander Krivitskiy / Unsplash: https://unsplash.com/photos/yIitNO2Bgdo
 
 **Short:** Hormonal facial hair, including with PCOS, is common and treatable. Facial electrolysis treats coarse chin and jaw hairs and the fine light ones laser misses, best alongside your doctor's care. Private appointments in Oakville.
 

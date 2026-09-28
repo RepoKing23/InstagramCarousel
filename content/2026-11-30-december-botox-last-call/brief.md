@@ -5,7 +5,7 @@
 **Platforms:** Instagram feed + GBP
 **Pillar:** Promo & CTA
 **Theme:** Gift Season
-**SEO keyword (Search Console):** oakville botox
+**SEO keyword (Search Console):** oakville botox (GSC: 1 impr, pos 57)
 
 ## Hook
 Book this week, settle by the parties.
@@ -30,11 +30,11 @@ December Botox plan for Oakville: last call to book for holiday parties, week by
 Files in images/: slide-1.jpg, slide-2.jpg, slide-3.jpg, slide-4.jpg, slide-5.jpg, slide-6.jpg, slide-7.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman winter evening elegant portrait" and never repeats a photo already used.
+Zaven Baghdasaryan / Unsplash: https://unsplash.com/photos/HiKiSBSKx54 (woman in a black dress catching snowflakes near a christmas tree)
 
 ## Google Business Profile
 Card: content/gbp/2026-11-30-december-botox-last-call.jpg
-Photo: PENDING. Search: "woman festive night portrait bokeh"
+Photo: Zaven Baghdasaryan / Unsplash: https://unsplash.com/photos/2XKPdPQlIV8
 
 **Short:** Last call for party season Botox in Oakville. Book this week and it settles, with your two week review, before mid December. After that, the plan shifts to New Year's Eve. The week by week plan is on Instagram.
 

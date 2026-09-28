@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + TikTok photo + GBP
 **Pillar:** Promo & CTA
 **Theme:** Rested by the Holidays
-**SEO keyword (Search Console):** luxury spa oakville
+**SEO keyword (Search Console):** luxury spa oakville (GSC: 1 impr, pos 25)
 
 ## Hook
 The present nobody returns.
@@ -30,11 +30,11 @@ Single image, photo led
 Files in images/: post.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "gift box ribbon neutral tones minimal" and never repeats a photo already used.
+Patrick Perkins / Unsplash: https://unsplash.com/photos/1_uZC1xLJww (a brown gift box)
 
 ## Google Business Profile
 Card: content/gbp/2026-11-10-gift-certificates-oakville-med-spa.jpg
-Photo: PENDING. Search: "wrapped gift neutral minimal flatlay"
+Photo: Elshad Alizade / Unsplash: https://unsplash.com/photos/bz88YOWQepI
 
 **Short:** Gift certificates are now available at Luxury Beauty by Cleo R, a luxury med spa in Oakville. Any amount, for Botox, dermal filler or electrolysis, always starting with a consult. The present nobody returns. Order on Instagram.
 

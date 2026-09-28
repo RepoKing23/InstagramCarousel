@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + GBP
 **Pillar:** Trust & Proof
 **Theme:** Botox & Filler in Oakville
-**SEO keyword (Search Console):** dermal fillers
+**SEO keyword (Search Console):** dermal fillers (GSC: 1 impr, pos 41)
 
 ## Hook
 The difference is the injector.
@@ -34,7 +34,7 @@ Client photos from design/photos/cleo/crops/, shared with written consent.
 
 ## Google Business Profile
 Card: content/gbp/2026-10-08-lip-filler-natural-vs-overdone.jpg
-Photo: PENDING. Search: "woman soft smile portrait natural lips"
+Photo: Michael Dam / Unsplash: https://unsplash.com/photos/mEZ3PoFGs_k
 
 **Short:** Natural versus overdone lips, side by side. The difference is ratio and shape, not the brand of filler. Respect the border, keep the lower fuller than the upper, and stop before it is obvious. Shared with client consent on Instagram.
 

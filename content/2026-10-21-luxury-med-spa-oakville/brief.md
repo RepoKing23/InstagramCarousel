@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + TikTok photo + GBP
 **Pillar:** Trust & Proof
 **Theme:** Botox & Filler in Oakville
-**SEO keyword (Search Console):** luxury spa oakville
+**SEO keyword (Search Console):** luxury spa oakville (GSC: 1 impr, pos 25)
 
 ## Hook
 Luxury is time, not marble.
@@ -30,11 +30,11 @@ Single image, photo led
 Files in images/: post.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "calm spa room neutral interior" and never repeats a photo already used.
+Mayur Roxan / Unsplash: https://unsplash.com/photos/JnsuyfJrxQw (a treatment table beside a sink in a calm spa room)
 
 ## Google Business Profile
 Card: content/gbp/2026-10-21-luxury-med-spa-oakville.jpg
-Photo: PENDING. Search: "minimal spa interior calm"
+Photo: Mayur Roxan / Unsplash: https://unsplash.com/photos/CvO17EzwmSE
 
 **Short:** Luxury at an Oakville med spa is not marble or a chandelier. It is time: a private studio, one client at a time, a nurse practitioner who is never double booked, and nobody rushing you out. See the studio on Instagram.
 

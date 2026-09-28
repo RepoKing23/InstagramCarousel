@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + GBP
 **Pillar:** Trust & Proof
 **Theme:** Rested by the Holidays
-**SEO keyword (Search Console):** dermal fillers
+**SEO keyword (Search Console):** dermal fillers (GSC: 1 impr, pos 41)
 
 ## Hook
 No flattering angle. Every angle.
@@ -34,7 +34,7 @@ Client photos from design/photos/cleo/crops/, shared with written consent.
 
 ## Google Business Profile
 Card: content/gbp/2026-11-12-one-result-every-angle.jpg
-Photo: PENDING. Search: "woman three quarter portrait natural light"
+Photo: Vladislav Nikonov / Unsplash: https://unsplash.com/photos/mRelDTGo3HY
 
 **Short:** One healed lip filler result, shown from every angle: front, three quarter, profile, smiling and at rest. If filler only looks good from one side, it is not a good result. Shared with client consent on Instagram.
 

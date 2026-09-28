@@ -5,7 +5,7 @@
 **Platforms:** Instagram feed + GBP
 **Pillar:** Promo & CTA
 **Theme:** Rested by the Holidays
-**SEO keyword (Search Console):** luxury spa oakville
+**SEO keyword (Search Console):** luxury spa oakville (GSC: 1 impr, pos 25)
 
 ## Hook
 Your holiday glow, planned backwards.
@@ -30,11 +30,11 @@ Holiday party prep plan at an Oakville med spa: electrolysis, dermal filler and 
 Files in images/: slide-1.jpg, slide-2.jpg, slide-3.jpg, slide-4.jpg, slide-5.jpg, slide-6.jpg, slide-7.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "elegant woman evening dress portrait" and never repeats a photo already used.
+lhon karwan / Unsplash: https://unsplash.com/photos/V5Ho2dCoq8w (a woman in a black blouse by candlelight)
 
 ## Google Business Profile
 Card: content/gbp/2026-11-05-party-season-prep-plan.jpg
-Photo: PENDING. Search: "woman getting ready mirror elegant"
+Photo: lhon karwan / Unsplash: https://unsplash.com/photos/8GHneT83bh0
 
 **Short:** Party season prep at an Oakville med spa, planned backwards: electrolysis eight weeks out, dermal filler four to six weeks, Botox three to four weeks, and nothing new in the final week. The full plan is on Instagram.
 

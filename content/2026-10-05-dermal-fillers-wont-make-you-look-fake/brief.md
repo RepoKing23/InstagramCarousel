@@ -5,7 +5,7 @@
 **Platforms:** Instagram feed + GBP
 **Pillar:** Education
 **Theme:** Botox & Filler in Oakville
-**SEO keyword (Search Console):** dermal fillers
+**SEO keyword (Search Console):** dermal fillers (GSC: 1 impr, pos 41)
 
 ## Hook
 The fear is real. The cause is not what you think.
@@ -30,11 +30,11 @@ Carousel about dermal fillers in Oakville: five reasons filler looks fake and ho
 Files in images/: slide-1.jpg, slide-2.jpg, slide-3.jpg, slide-4.jpg, slide-5.jpg, slide-6.jpg, slide-7.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman smiling natural beauty close up" and never repeats a photo already used.
+Jake Nackos / Unsplash: https://unsplash.com/photos/IF9TK5Uy-KI (woman in a white crew neck shirt smiling)
 
 ## Google Business Profile
 Card: content/gbp/2026-10-05-dermal-fillers-wont-make-you-look-fake.jpg
-Photo: PENDING. Search: "woman profile natural beauty"
+Photo: Kirill Balobanov / Unsplash: https://unsplash.com/photos/2rIs8OH5ng0
 
 **Short:** Dermal fillers do not make you look fake. Too much in one sitting, chasing lines instead of shape, and ignoring proportion do. Here is how natural filler is planned at the Oakville studio. Full post on Instagram.
 

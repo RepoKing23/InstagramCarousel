@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + TikTok photo + GBP
 **Pillar:** Education
 **Theme:** Botox & Filler in Oakville
-**SEO keyword (Search Console):** facial electrolysis
+**SEO keyword (Search Console):** facial electrolysis (GSC: 1 impr, pos 21)
 
 ## Hook
 Tired of tweezing the same hairs every week?
@@ -30,11 +30,11 @@ Single image, photo led
 Files in images/: post.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman chin jawline profile portrait" and never repeats a photo already used.
+Alexander Krivitskiy / Unsplash: https://unsplash.com/photos/o7wiNx9x9OQ (grayscale photo of a woman's face)
 
 ## Google Business Profile
 Card: content/gbp/2026-10-13-facial-electrolysis-chin-upper-lip.jpg
-Photo: PENDING. Search: "woman jawline profile soft light"
+Photo: Tyler Clemmensen / Unsplash: https://unsplash.com/photos/8f7ZpUzSXfg
 
 **Short:** Facial electrolysis in Oakville for chin and upper lip hair. Each hair is treated at the follicle so it stops growing back, and it works on fine, light and grey hairs that laser misses. Stop tweezing before your first visit. More on Instagram.
 

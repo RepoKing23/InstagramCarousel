@@ -5,7 +5,7 @@
 **Platforms:** Instagram feed + GBP
 **Pillar:** Education
 **Theme:** Botox & Filler in Oakville
-**SEO keyword (Search Console):** botox therapy treatment oakville
+**SEO keyword (Search Console):** botox therapy treatment oakville (GSC: 13 impr, pos 54.85)
 
 ## Hook
 Five areas, one honest explainer.
@@ -30,11 +30,11 @@ Botox treatment in Oakville explained: frown lines, forehead lines, crow's feet 
 Files in images/: slide-1.jpg, slide-2.jpg, slide-3.jpg, slide-4.jpg, slide-5.jpg, slide-6.jpg, slide-7.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman forehead eyes close up natural skin" and never repeats a photo already used.
+Kamila Maciejewska / Unsplash: https://unsplash.com/photos/b2bXKspL5MY (portrait of woman face)
 
 ## Google Business Profile
 Card: content/gbp/2026-10-12-botox-treatment-step-by-step.jpg
-Photo: PENDING. Search: "woman eyes closeup soft light"
+Photo: Venti Views / Unsplash: https://unsplash.com/photos/MHImssrygog
 
 **Short:** Botox treatment in Oakville, explained: it relaxes the muscle that folds the skin, so frown lines, forehead lines and crow's feet soften while your face still moves. What it treats well and what it cannot fix, on Instagram.
 

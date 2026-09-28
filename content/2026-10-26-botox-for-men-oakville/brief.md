@@ -5,7 +5,7 @@
 **Platforms:** Instagram feed + GBP
 **Pillar:** Education
 **Theme:** Botox & Filler in Oakville
-**SEO keyword (Search Console):** oakville botox
+**SEO keyword (Search Console):** oakville botox (GSC: 1 impr, pos 57)
 
 ## Hook
 Not a trend. A Tuesday.
@@ -30,11 +30,11 @@ Botox for men in Oakville: dosing, natural results and the questions men ask mos
 Files in images/: slide-1.jpg, slide-2.jpg, slide-3.jpg, slide-4.jpg, slide-5.jpg, slide-6.jpg, slide-7.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "man portrait natural light grooming" and never repeats a photo already used.
+Vicky Hladynets / Unsplash: https://unsplash.com/photos/_gDoyVv5F4c (man in a white crew neck shirt)
 
 ## Google Business Profile
 Card: content/gbp/2026-10-26-botox-for-men-oakville.jpg
-Photo: PENDING. Search: "man portrait confident natural"
+Photo: Ben Tofan / Unsplash: https://unsplash.com/photos/liy0P6AmGPM
 
 **Short:** Botox for men in Oakville. Men usually need a different dose, the brows are kept low and masculine, and the goal is looking less tired, not treated. Ten minutes, no downtime, private studio. More on Instagram.
 

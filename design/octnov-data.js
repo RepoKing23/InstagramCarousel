@@ -32,7 +32,9 @@ window.OCTNOV = {
    "ctaSerif": "READY FOR",
    "ctaScript": "your first?",
    "ctaBody": "Book a consult at the Oakville studio. Bring every question, even the one you think is silly.",
-   "button": "DM the word FIRST"
+   "button": "DM the word FIRST",
+   "coverFrame": "photos/octnov/2026-10-01-ig.jpg",
+   "coverFocal": "center 30%"
   },
   "dermal-fillers-wont-make-you-look-fake": {
    "label": "Dermal Fillers &#183; The Honest Version",
@@ -64,7 +66,9 @@ window.OCTNOV = {
    "ctaSerif": "NATURAL IS",
    "ctaScript": "a decision.",
    "ctaBody": "Book a dermal filler consult in Oakville and we will plan the version nobody can spot.",
-   "button": "DM the word FILLER"
+   "button": "DM the word FILLER",
+   "coverFrame": "photos/octnov/2026-10-05-ig.jpg",
+   "coverFocal": "center 30%"
   },
   "botox-treatment-step-by-step": {
    "label": "Botox Treatment &#183; How It Works",
@@ -96,7 +100,9 @@ window.OCTNOV = {
    "ctaSerif": "NOT SURE",
    "ctaScript": "which you need?",
    "ctaBody": "Book a Botox consult in Oakville. We will look at your face together and plan only what it needs.",
-   "button": "DM the word BOTOX"
+   "button": "DM the word BOTOX",
+   "coverFrame": "photos/octnov/2026-10-12-ig.jpg",
+   "coverFocal": "center 30%"
   },
   "electrolysis-vs-laser-hair-removal": {
    "label": "Electrolysis vs Laser &#183; Honestly",
@@ -128,7 +134,9 @@ window.OCTNOV = {
    "ctaSerif": "STILL",
    "ctaScript": "deciding?",
    "ctaBody": "Book an electrolysis consult in Oakville. We will look at your hair and skin and tell you honestly which suits you.",
-   "button": "DM the word HAIR"
+   "button": "DM the word HAIR",
+   "coverFrame": "photos/octnov/2026-10-19-ig.jpg",
+   "coverFocal": "center 30%"
   },
   "lip-filler-aftercare-your-first-week": {
    "label": "Lip Filler Aftercare &#183; Week One",
@@ -192,7 +200,9 @@ window.OCTNOV = {
    "ctaSerif": "BOOK",
    "ctaScript": "the ten minutes.",
    "ctaBody": "Botox for men at the Oakville studio. Private, one client at a time, nurse practitioner led.",
-   "button": "DM the word BOTOX"
+   "button": "DM the word BOTOX",
+   "coverFrame": "photos/octnov/2026-10-26-ig.jpg",
+   "coverFocal": "center 30%"
   },
   "facial-balancing-dermal-fillers": {
    "label": "Facial Balancing &#183; Faces, Not Lines",
@@ -224,7 +234,9 @@ window.OCTNOV = {
    "ctaSerif": "LET'S LOOK",
    "ctaScript": "at the whole face.",
    "ctaBody": "Book a facial balancing consult in Oakville. You leave with a plan, whether or not we treat that day.",
-   "button": "DM the word BALANCE"
+   "button": "DM the word BALANCE",
+   "coverFrame": "photos/octnov/2026-10-29-ig.jpg",
+   "coverFocal": "center 30%"
   },
   "botox-before-the-holidays-timeline": {
    "label": "Rested By The Holidays &#183; Timeline",
@@ -256,7 +268,9 @@ window.OCTNOV = {
    "ctaSerif": "PICK",
    "ctaScript": "your date.",
    "ctaBody": "Tell me your event date and I will tell you the latest day to book at the Oakville studio.",
-   "button": "DM your event date"
+   "button": "DM your event date",
+   "coverFrame": "photos/octnov/2026-11-02-ig.jpg",
+   "coverFocal": "center 30%"
   },
   "party-season-prep-plan": {
    "label": "Party Season Prep &#183; The Order",
@@ -288,7 +302,9 @@ window.OCTNOV = {
    "ctaSerif": "YOUR",
    "ctaScript": "holiday plan.",
    "ctaBody": "Send your event date and I will map out your plan at the Oakville studio.",
-   "button": "DM the word PARTY"
+   "button": "DM the word PARTY",
+   "coverFrame": "photos/octnov/2026-11-05-ig.jpg",
+   "coverFocal": "center 30%"
   },
   "under-eye-filler-honest-truth": {
    "label": "Under Eye Filler &#183; Honestly",
@@ -320,7 +336,9 @@ window.OCTNOV = {
    "ctaSerif": "NOT SURE",
    "ctaScript": "which is you?",
    "ctaBody": "Book an under eye assessment in Oakville. If filler is not right for you, I will say so.",
-   "button": "DM the word EYES"
+   "button": "DM the word EYES",
+   "coverFrame": "photos/octnov/2026-11-09-ig.jpg",
+   "coverFocal": "center 30%"
   },
   "electrolysis-for-hormonal-facial-hair": {
    "label": "Facial Electrolysis &#183; Hormonal Hair",
@@ -352,7 +370,9 @@ window.OCTNOV = {
    "ctaSerif": "YOU ARE",
    "ctaScript": "not alone.",
    "ctaBody": "Book a private facial electrolysis consult in Oakville. Ask anything. Nothing is awkward here.",
-   "button": "DM the word HAIR"
+   "button": "DM the word HAIR",
+   "coverFrame": "photos/octnov/2026-11-16-ig.jpg",
+   "coverFocal": "center 30%"
   },
   "choosing-a-luxury-med-spa-oakville": {
    "label": "Choosing A Med Spa &#183; Oakville",
@@ -384,7 +404,9 @@ window.OCTNOV = {
    "ctaSerif": "ASK US",
    "ctaScript": "all five.",
    "ctaBody": "Book a consult at the Oakville studio and ask every one. We will be glad you did.",
-   "button": "DM to book"
+   "button": "DM to book",
+   "coverFrame": "photos/octnov/2026-11-19-ig.jpg",
+   "coverFocal": "center 30%"
   },
   "skincare-botox-filler-right-order": {
    "label": "The Right Order &#183; Skin, Botox, Filler",
@@ -416,7 +438,9 @@ window.OCTNOV = {
    "ctaSerif": "BUILD",
    "ctaScript": "your order.",
    "ctaBody": "Book a consult in Oakville and leave with a plan in the right order for your face.",
-   "button": "DM the word PLAN"
+   "button": "DM the word PLAN",
+   "coverFrame": "photos/octnov/2026-11-23-ig.jpg",
+   "coverFocal": "center 30%"
   },
   "gift-of-glow-holiday-gift-certificates": {
    "label": "The Gift Of Glow &#183; Holiday",
@@ -448,7 +472,9 @@ window.OCTNOV = {
    "ctaSerif": "GIVE",
    "ctaScript": "the glow.",
    "ctaBody": "Order a gift certificate for the Oakville studio. DM the word GIFT and it is done.",
-   "button": "DM the word GIFT"
+   "button": "DM the word GIFT",
+   "coverFrame": "photos/octnov/2026-11-26-ig.jpg",
+   "coverFocal": "center 30%"
   },
   "december-botox-last-call": {
    "label": "Last Call &#183; December Plan",
@@ -480,7 +506,9 @@ window.OCTNOV = {
    "ctaSerif": "BOOK",
    "ctaScript": "this week.",
    "ctaBody": "Botox at the Oakville studio, one client at a time. The calm December slots go first.",
-   "button": "DM the word DECEMBER"
+   "button": "DM the word DECEMBER",
+   "coverFrame": "photos/octnov/2026-11-30-ig.jpg",
+   "coverFocal": "center 30%"
   }
  },
  "singles": {
@@ -491,7 +519,9 @@ window.OCTNOV = {
    "body": "A fine probe and a tiny current treat each follicle so the hair stops growing back. Every hair colour, every skin tone, including grey and blonde.",
    "cta": "DM the word HAIR",
    "theme": "dark",
-   "kind": "statement"
+   "kind": "frame",
+   "photo": "photos/octnov/2026-10-06-ig.jpg",
+   "focal": "center 30%"
   },
   "meet-cleo-oakville": {
    "label": "Meet Cleo &#183; Oakville",
@@ -509,7 +539,9 @@ window.OCTNOV = {
    "body": "Facial electrolysis treats each chin and upper lip hair at the follicle, so it stops coming back. Fine, light and grey hairs included.",
    "cta": "DM the word HAIR",
    "theme": "dark",
-   "kind": "statement"
+   "kind": "frame",
+   "photo": "photos/octnov/2026-10-13-ig.jpg",
+   "focal": "center 30%"
   },
   "how-long-does-dermal-filler-last": {
    "label": "Dermal Fillers &#183; How Long They Last",
@@ -518,7 +550,9 @@ window.OCTNOV = {
    "body": "Lips, which move all day, usually six to twelve months. Cheeks and chin often a year or more. Your body, the product and the area decide.",
    "cta": "Save this",
    "theme": "light",
-   "kind": "statement"
+   "kind": "frame",
+   "photo": "photos/octnov/2026-10-20-ig.jpg",
+   "focal": "center 30%"
   },
   "luxury-med-spa-oakville": {
    "label": "Luxury Med Spa &#183; Oakville",
@@ -527,7 +561,9 @@ window.OCTNOV = {
    "body": "One client at a time, a private room, and a nurse practitioner who is never double booked. Nobody rushing you out the door.",
    "cta": "Come see the studio",
    "theme": "light",
-   "kind": "statement"
+   "kind": "frame",
+   "photo": "photos/octnov/2026-10-21-ig.jpg",
+   "focal": "center 30%"
   },
   "how-many-electrolysis-sessions": {
    "label": "Electrolysis &#183; Your Questions",
@@ -536,7 +572,9 @@ window.OCTNOV = {
    "body": "A course, not a single visit. Hair grows in cycles, so we treat follicles as they appear. Area, density and hormones decide how long.",
    "cta": "Ask me your area",
    "theme": "dark",
-   "kind": "statement"
+   "kind": "frame",
+   "photo": "photos/octnov/2026-10-27-ig.jpg",
+   "focal": "center 30%"
   },
   "electrolysis-aftercare": {
    "label": "Electrolysis &#183; Aftercare",
@@ -545,7 +583,9 @@ window.OCTNOV = {
    "body": "Pink is normal. Clean hands, no makeup on the area, no heat or sun, no picking. Between sessions, trim, never tweeze.",
    "cta": "Save this",
    "theme": "dark",
-   "kind": "statement"
+   "kind": "frame",
+   "photo": "photos/octnov/2026-11-03-ig.jpg",
+   "focal": "center 30%"
   },
   "gift-certificates-oakville-med-spa": {
    "label": "Gift Certificates &#183; Now Available",
@@ -554,7 +594,9 @@ window.OCTNOV = {
    "body": "Any amount, for any treatment at the Oakville studio. Every one starts with a consult, so they get exactly what suits them.",
    "cta": "DM the word GIFT",
    "theme": "dark",
-   "kind": "statement"
+   "kind": "frame",
+   "photo": "photos/octnov/2026-11-10-ig.jpg",
+   "focal": "center 30%"
   },
   "why-cleo-says-no": {
    "label": "Honest Injecting &#183; Cleo",
@@ -572,7 +614,9 @@ window.OCTNOV = {
    "body": "Frown lines first for most. Forehead lines lightly, so brows still lift. Crow's feet softened, so your smile reaches your eyes.",
    "cta": "Which one is yours?",
    "theme": "dark",
-   "kind": "statement"
+   "kind": "frame",
+   "photo": "photos/octnov/2026-11-17-ig.jpg",
+   "focal": "center 30%"
   },
   "lip-filler-vs-lip-flip": {
    "label": "Lip Filler Or Lip Flip",
@@ -581,7 +625,9 @@ window.OCTNOV = {
    "body": "Filler adds volume and shape. A lip flip relaxes the muscle so a little more upper lip shows when you smile. Different problems, different tools.",
    "cta": "Tell me which",
    "theme": "light",
-   "kind": "statement"
+   "kind": "frame",
+   "photo": "photos/octnov/2026-11-18-ig.jpg",
+   "focal": "center 30%"
   },
   "black-friday-done-honestly": {
    "label": "Black Friday &#183; Done Honestly",
@@ -590,7 +636,9 @@ window.OCTNOV = {
    "body": "I do not discount injectables. Cheap units are how corners get cut. Gift certificates, though, are ready this week.",
    "cta": "DM the word GIFT",
    "theme": "dark",
-   "kind": "statement"
+   "kind": "frame",
+   "photo": "photos/octnov/2026-11-24-ig.jpg",
+   "focal": "center 30%"
   },
   "does-electrolysis-hurt": {
    "label": "Electrolysis FAQ",
@@ -599,7 +647,9 @@ window.OCTNOV = {
    "body": "A quick warm sting per hair, most noticeable on the upper lip. Short, paced to you, and easier as the course goes on.",
    "cta": "Ask your question",
    "theme": "light",
-   "kind": "statement"
+   "kind": "frame",
+   "photo": "photos/octnov/2026-11-25-ig.jpg",
+   "focal": "center 30%"
   }
  }
 };

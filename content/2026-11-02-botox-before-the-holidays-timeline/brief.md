@@ -5,7 +5,7 @@
 **Platforms:** Instagram feed + GBP
 **Pillar:** Promo & CTA
 **Theme:** Rested by the Holidays
-**SEO keyword (Search Console):** oakville botox
+**SEO keyword (Search Console):** oakville botox (GSC: 1 impr, pos 57)
 
 ## Hook
 Party season is closer than you think.
@@ -30,11 +30,11 @@ Botox holiday booking timeline for Oakville: book at least three to four weeks b
 Files in images/: slide-1.jpg, slide-2.jpg, slide-3.jpg, slide-4.jpg, slide-5.jpg, slide-6.jpg, slide-7.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman holiday lights portrait elegant" and never repeats a photo already used.
+Galina Bogdanova / Unsplash: https://unsplash.com/photos/VSmL5HTcWJg (smiling woman in a black top with glowing lights behind)
 
 ## Google Business Profile
 Card: content/gbp/2026-11-02-botox-before-the-holidays-timeline.jpg
-Photo: PENDING. Search: "festive evening woman portrait warm"
+Photo: Enes Dogan / Unsplash: https://unsplash.com/photos/QSWDCmNHbFI
 
 **Short:** Planning Botox before a holiday event in Oakville? Results settle at two weeks, and you want your review done before the party. Book three to four weeks ahead, and four to six if it is your first time. Dates on Instagram.
 

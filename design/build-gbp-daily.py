@@ -114,6 +114,15 @@ CSS = """
     background:linear-gradient(90deg,rgba(31,28,23,.92) 0%,rgba(31,28,23,.34) 16%,
                                      rgba(31,28,23,.06) 42%,rgba(31,28,23,.28) 100%);
   }
+  /* Framed: a photo only held at small size sits in a gold edged arch inside
+     the panel instead of filling it, so it shows near native size and stays
+     sharp. Centred on the part of the panel Maps keeps (x 620 to 1050). */
+  .framed .orb{background:#2A251E;}
+  .framed .orb img{position:absolute;left:45px;top:210px;width:340px;height:480px;
+                   border-radius:170px 170px 0 0;}
+  .framed .orb::after{background:none;inset:auto;left:30px;top:195px;width:370px;height:495px;
+                      border:1.5px solid rgba(201,168,92,.8);border-bottom:none;
+                      border-radius:185px 185px 0 0;}
   /* the spread's gutter */
   .gutter{position:absolute;left:445px;top:96px;bottom:96px;width:1px;
           background:linear-gradient(180deg,rgba(201,168,92,0),rgba(201,168,92,.65) 22%,
@@ -198,6 +207,7 @@ def build_html(data):
             'cta': p['button'],
             'src': photo_src(photo) if photo else '',
             'alt': photo['alt'] if photo else '',
+            'frame': bool(photo and photo.get('size') == 'small'),
         }
     first = data['posts'][0]['date']
     handle = data['_meta']['instagram']
@@ -220,7 +230,7 @@ const POSTS = {json.dumps(posts, indent=2, ensure_ascii=False)};
 const P = POSTS[new URLSearchParams(location.search).get('date') || '{first}'];
 
 document.getElementById('stage').innerHTML = `
-<div class="slide${{P.src ? ' has-photo' : ''}}" id="slide">
+<div class="slide${{P.src ? ' has-photo' : ''}}${{P.frame ? ' framed' : ''}}" id="slide">
   <div class="safe">
     <div class="orb"><img id="photo" src="${{P.src}}" alt="${{P.alt}}"></div>
     <div class="gutter"></div>

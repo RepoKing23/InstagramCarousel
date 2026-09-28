@@ -5,7 +5,7 @@
 **Platforms:** Instagram feed + GBP
 **Pillar:** Education
 **Theme:** Botox & Filler in Oakville
-**SEO keyword (Search Console):** dermal fillers
+**SEO keyword (Search Console):** dermal fillers (GSC: 1 impr, pos 41)
 
 ## Hook
 Swelling is normal. Panic is optional.
@@ -34,7 +34,7 @@ Slide 1 is the client day zero card (consent on file). No stock photo.
 
 ## Google Business Profile
 Card: content/gbp/2026-10-22-lip-filler-aftercare-your-first-week.jpg
-Photo: PENDING. Search: "woman drinking water calm portrait"
+Photo: Marcia Mota / Unsplash: https://unsplash.com/photos/cC2s8iQTUKs
 
 **Short:** Lip filler aftercare for the first week. Ice on and off for the first day, sleep propped up, no gym, sauna or hot yoga for 48 hours, no pressing or massaging unless asked, and keep the water up. Save the post on Instagram.
 

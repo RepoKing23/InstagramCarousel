@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + TikTok photo + GBP
 **Pillar:** Personality & BTS
 **Theme:** Botox & Filler in Oakville
-**SEO keyword (Search Console):** cleo oakville
+**SEO keyword (Search Console):** cleo oakville (GSC: 3 impr, pos 1.67)
 
 ## Hook
 The face behind every appointment.
@@ -34,7 +34,7 @@ NEEDED: A new photo of Cleo, not a stock model: this post speaks as Cleo. The on
 
 ## Google Business Profile
 Card: content/gbp/2026-10-07-meet-cleo-oakville.jpg
-Photo: PENDING. Search: "calm spa studio interior neutral"
+Photo: Ela De Pure / Unsplash: https://unsplash.com/photos/qcYO-03J69Y
 
 **Short:** Meet Cleo, the nurse practitioner behind Luxury Beauty by Cleo R in Oakville. Every appointment is with Cleo herself, one client at a time, in a private studio on Preserve Dr. Say hello on Instagram.
 

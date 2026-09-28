@@ -1,0 +1,540 @@
+{
+  "_meta": {
+    "license": "Unsplash License. Free for commercial use. Stock models, never presented as clients.",
+    "source": "Picked by hand from Unsplash search, one photo per slot, none repeated and none used Aug to Sep. Downloaded at Unsplash small size (400px wide) because this environment cannot reach full size images, so the templates show them in an arch frame rather than full bleed.",
+    "rejected": []
+  },
+  "picks": {
+    "2026-10-01-ig": {
+      "id": "QXevDflbl8A",
+      "by": "Štefan Štefančík",
+      "user": "cikstefan",
+      "alt": "smiling woman wearing white and black pinstriped collared top",
+      "file": "photo-1544005313-94ddf0286df2",
+      "query": "woman natural skin portrait soft light",
+      "size": "small"
+    },
+    "2026-10-01-gbp": {
+      "id": "YhMFYJZgMA0",
+      "by": "Yoad Shejtman",
+      "user": "yoadsh",
+      "alt": "a close up of a woman with a ponytail",
+      "file": "photo-1674932668403-33398b81c92f",
+      "query": "calm woman portrait clinic",
+      "size": "small"
+    },
+    "2026-10-05-ig": {
+      "id": "IF9TK5Uy-KI",
+      "by": "Jake Nackos",
+      "user": "jakenackos",
+      "alt": "woman in a white crew neck shirt smiling",
+      "file": "photo-1580489944761-15a19d654956",
+      "query": "woman smiling natural beauty close up",
+      "size": "small"
+    },
+    "2026-10-05-gbp": {
+      "id": "2rIs8OH5ng0",
+      "by": "Kirill Balobanov",
+      "user": "kbalobanov",
+      "alt": "woman wearing black shirt",
+      "file": "photo-1532074205216-d0e1f4b87368",
+      "query": "woman profile natural beauty",
+      "size": "small"
+    },
+    "2026-10-06-ig": {
+      "id": "zoYLGk2oULA",
+      "by": "Leighann Blackwood",
+      "user": "ohleighann",
+      "alt": "a woman is putting a lotion on her face",
+      "file": "photo-1693004927824-f2623bbedc8b",
+      "query": "woman touching face skincare portrait",
+      "size": "small"
+    },
+    "2026-10-06-gbp": {
+      "id": "O3D_mUpZzcM",
+      "by": "Ben Masora",
+      "user": "benmasora",
+      "alt": "a woman smiling with a face mask treatment",
+      "file": "photo-1646457417455-77a66a9fcf34",
+      "query": "woman skincare calm portrait",
+      "size": "small"
+    },
+    "2026-10-07-gbp": {
+      "id": "qcYO-03J69Y",
+      "by": "Ela De Pure",
+      "user": "eladepure",
+      "alt": "modern vanity area with stool and sofa in warm tones",
+      "file": "photo-1767288533191-cc2c72bad9c9",
+      "query": "calm spa studio interior neutral",
+      "size": "small"
+    },
+    "2026-10-08-gbp": {
+      "id": "mEZ3PoFGs_k",
+      "by": "Michael Dam",
+      "user": "michaeldam",
+      "alt": "close up of a woman smiling",
+      "file": "photo-1494790108377-be9c29b29330",
+      "query": "woman soft smile portrait natural lips",
+      "size": "small"
+    },
+    "2026-10-12-ig": {
+      "id": "b2bXKspL5MY",
+      "by": "Kamila Maciejewska",
+      "user": "the_change_designer",
+      "alt": "portrait of woman face",
+      "file": "photo-1551184451-76b762941ad6",
+      "query": "woman forehead eyes close up natural skin",
+      "size": "small"
+    },
+    "2026-10-12-gbp": {
+      "id": "MHImssrygog",
+      "by": "Venti Views",
+      "user": "ventiviews",
+      "alt": "a close up of a green eye with long lashes in warm light",
+      "file": "photo-1627687579653-1a7eacb78c82",
+      "query": "woman eyes closeup soft light",
+      "size": "small"
+    },
+    "2026-10-13-ig": {
+      "id": "o7wiNx9x9OQ",
+      "by": "Alexander Krivitskiy",
+      "user": "krivitskiy",
+      "alt": "grayscale photo of a woman's face",
+      "file": "photo-1602033350291-a9ab8d800269",
+      "query": "woman chin jawline profile portrait",
+      "size": "small"
+    },
+    "2026-10-13-gbp": {
+      "id": "8f7ZpUzSXfg",
+      "by": "Tyler Clemmensen",
+      "user": "tyler_clemmensen",
+      "alt": "side profile of a woman in a white shirt",
+      "file": "photo-1606247193592-53da505571f8",
+      "query": "woman jawline profile soft light",
+      "size": "small"
+    },
+    "2026-10-14-gbp": {
+      "id": "JRa8lCQQhSs",
+      "by": "Dmitry Ganin",
+      "user": "ganinph",
+      "alt": "a woman with a straight face",
+      "file": "photo-1667053508464-eb11b394df83",
+      "query": "woman minimal natural makeup portrait",
+      "size": "small"
+    },
+    "2026-10-15-gbp": {
+      "id": "Ll9YOG20UFI",
+      "by": "Nolan Manning",
+      "user": "nolanrmanning",
+      "alt": "a smiling woman with curly hair at a wooden table",
+      "file": "photo-1662850886700-4ec19bd30d11",
+      "query": "woman laughing natural portrait outdoors",
+      "size": "small"
+    },
+    "2026-10-19-ig": {
+      "id": "0b_7r_dNjFs",
+      "by": "Valeria Lendel",
+      "user": "lendel",
+      "alt": "a woman with long black hair standing in front of a wall",
+      "file": "photo-1636153279424-cb5d1e00f5a2",
+      "query": "woman smooth skin portrait neutral background",
+      "size": "small"
+    },
+    "2026-10-19-gbp": {
+      "id": "iU04dYsP810",
+      "by": "Noah Blaine Clark",
+      "user": "noahblaineclark",
+      "alt": "woman in white knit shirt",
+      "file": "photo-1611178206064-2ae27f72b9ca",
+      "query": "woman neck shoulder skin portrait",
+      "size": "small"
+    },
+    "2026-10-20-ig": {
+      "id": "e7jpGYe7OtU",
+      "by": "Fleur Kaan",
+      "user": "fleuraimeekaan",
+      "alt": "close portrait of woman with bokeh",
+      "file": "photo-1581182815808-b6eb627a8798",
+      "query": "woman cheekbones portrait natural light",
+      "size": "small"
+    },
+    "2026-10-20-gbp": {
+      "id": "CGKYNN3uuVo",
+      "by": "Filipp Romanovski",
+      "user": "filipp_roman_photography",
+      "alt": "woman in black scoop neck shirt",
+      "file": "photo-1614204424926-196a80bf0be8",
+      "query": "woman cheek portrait window light",
+      "size": "small"
+    },
+    "2026-10-21-ig": {
+      "id": "JnsuyfJrxQw",
+      "by": "Mayur Roxan",
+      "user": "mayurroxanphotography",
+      "alt": "a treatment table beside a sink in a calm spa room",
+      "file": "photo-1787651343620-8d5303006ecb",
+      "query": "calm spa room neutral interior",
+      "size": "small"
+    },
+    "2026-10-21-gbp": {
+      "id": "CvO17EzwmSE",
+      "by": "Mayur Roxan",
+      "user": "mayurroxanphotography",
+      "alt": "a vessel sink beside a spa bed with a pillow",
+      "file": "photo-1787651343496-35b3666dd7d2",
+      "query": "minimal spa interior calm",
+      "size": "small"
+    },
+    "2026-10-22-gbp": {
+      "id": "cC2s8iQTUKs",
+      "by": "Marcia Mota",
+      "user": "marciamota",
+      "alt": "woman in a black shirt with red lipstick",
+      "file": "photo-1600285279128-aba26bccdd00",
+      "query": "woman drinking water calm portrait",
+      "size": "small"
+    },
+    "2026-10-26-ig": {
+      "id": "_gDoyVv5F4c",
+      "by": "Vicky Hladynets",
+      "user": "vhladynets",
+      "alt": "man in a white crew neck shirt",
+      "file": "photo-1600603406200-5b2a104684ac",
+      "query": "man portrait natural light grooming",
+      "size": "small"
+    },
+    "2026-10-26-gbp": {
+      "id": "liy0P6AmGPM",
+      "by": "Ben Tofan",
+      "user": "bentofan",
+      "alt": "man wearing a brown knit sweater",
+      "file": "photo-1576110598658-096ae24cdb97",
+      "query": "man portrait confident natural",
+      "size": "small"
+    },
+    "2026-10-27-ig": {
+      "id": "vwF2QtVK8po",
+      "by": "Apostolos Vamvouras",
+      "user": "apostolosv",
+      "alt": "woman looking down",
+      "file": "photo-1554062428-772409bd871c",
+      "query": "woman calendar planning calm",
+      "size": "small"
+    },
+    "2026-10-27-gbp": {
+      "id": "f2ar0ltTvaI",
+      "by": "Aiony Haust",
+      "user": "aiony",
+      "alt": "woman leaning on a white table",
+      "file": "photo-1526413232644-8a40f03cc03b",
+      "query": "woman relaxed portrait morning light",
+      "size": "small"
+    },
+    "2026-10-28-gbp": {
+      "id": "BrEAp01_m5w",
+      "by": "Slav Romanov",
+      "user": "slavromanov",
+      "alt": "smiling woman sitting on grass",
+      "file": "photo-1525134479668-1bee5c7c6845",
+      "query": "woman smiling candid portrait natural",
+      "size": "small"
+    },
+    "2026-10-29-ig": {
+      "id": "LOBVOQtto3Y",
+      "by": "Dev Asangbam",
+      "user": "devasangbam",
+      "alt": "close up of a woman's face",
+      "file": "photo-1562692834-4974c1f3f627",
+      "query": "woman side profile portrait neutral",
+      "size": "small"
+    },
+    "2026-10-29-gbp": {
+      "id": "rI66xRC2PSM",
+      "by": "Christopher John",
+      "user": "obichris",
+      "alt": "a woman with long hair",
+      "file": "photo-1669844444850-5acd7e8c71c5",
+      "query": "woman face profile jawline elegant",
+      "size": "small"
+    },
+    "2026-11-02-ig": {
+      "id": "VSmL5HTcWJg",
+      "by": "Galina Bogdanova",
+      "user": "galibagi",
+      "alt": "smiling woman in a black top with glowing lights behind",
+      "file": "photo-1780587481323-9e827fcbfc4f",
+      "query": "woman holiday lights portrait elegant",
+      "size": "small"
+    },
+    "2026-11-02-gbp": {
+      "id": "QSWDCmNHbFI",
+      "by": "Enes Dogan",
+      "user": "enesdoganphotography",
+      "alt": "a woman in a black sequined dress at night with city lights",
+      "file": "photo-1788641818712-04b465860ef7",
+      "query": "festive evening woman portrait warm",
+      "size": "small"
+    },
+    "2026-11-03-ig": {
+      "id": "G0oxf0bjrB8",
+      "by": "Fanny Gustafsson",
+      "user": "fannygustafsson",
+      "alt": "woman in a white scoop neck shirt, high key portrait",
+      "file": "photo-1582557492456-c53214c03e18",
+      "query": "woman gentle skincare routine portrait",
+      "size": "small"
+    },
+    "2026-11-03-gbp": {
+      "id": "2yPYG76oyHQ",
+      "by": "Thien Dang",
+      "user": "th_dangvu",
+      "alt": "woman with eyes closed in a pinstriped shirt",
+      "file": "photo-1499743538388-7ccc7bf72492",
+      "query": "woman clean skin calm portrait",
+      "size": "small"
+    },
+    "2026-11-04-gbp": {
+      "id": "lNNHyRbmm0o",
+      "by": "Jorik Kleen",
+      "user": "jorikkleen",
+      "alt": "woman in a black shirt smiling",
+      "file": "photo-1604072366595-e75dc92d6bdc",
+      "query": "woman subtle lipstick portrait soft",
+      "size": "small"
+    },
+    "2026-11-05-ig": {
+      "id": "V5Ho2dCoq8w",
+      "by": "lhon karwan",
+      "user": "lhonkarwanhamasalih",
+      "alt": "a woman in a black blouse by candlelight",
+      "file": "photo-1790167860426-306f985065d6",
+      "query": "elegant woman evening dress portrait",
+      "size": "small"
+    },
+    "2026-11-05-gbp": {
+      "id": "8GHneT83bh0",
+      "by": "lhon karwan",
+      "user": "lhonkarwanhamasalih",
+      "alt": "a woman in a black top beside a lit candelabra",
+      "file": "photo-1790167860486-47eb3a16c2c5",
+      "query": "woman getting ready mirror elegant",
+      "size": "small"
+    },
+    "2026-11-09-ig": {
+      "id": "LIj4gf1JS50",
+      "by": "Andrey K",
+      "user": "anamnesis33",
+      "alt": "close up of a woman's face with eyes closed",
+      "file": "photo-1605777085122-94f4938cbfb0",
+      "query": "woman eyes closeup natural light soft",
+      "size": "small"
+    },
+    "2026-11-09-gbp": {
+      "id": "vyfucAJB8K0",
+      "by": "Wiktoria Skrzekotowska",
+      "user": "wswierzgon",
+      "alt": "a close up of a person with brown eyes",
+      "file": "photo-1696236537686-214907dfcd9a",
+      "query": "woman rested eyes portrait morning",
+      "size": "small"
+    },
+    "2026-11-10-ig": {
+      "id": "1_uZC1xLJww",
+      "by": "Patrick Perkins",
+      "user": "patrickperkins",
+      "alt": "a brown gift box",
+      "file": "photo-1668463876833-339717e58c4c",
+      "query": "gift box ribbon neutral tones minimal",
+      "size": "small"
+    },
+    "2026-11-10-gbp": {
+      "id": "bz88YOWQepI",
+      "by": "Elshad Alizade",
+      "user": "elshadalyv",
+      "alt": "gifts wrapped in brown paper with white ribbons",
+      "file": "photo-1751450236048-aa1981f7bc2d",
+      "query": "wrapped gift neutral minimal flatlay",
+      "size": "small"
+    },
+    "2026-11-11-gbp": {
+      "id": "ECBg5FQkBXI",
+      "by": "何青蓝",
+      "user": "heqinglan0602_tianya",
+      "alt": "modern white reception area with curved lines",
+      "file": "photo-1781513144825-aa1e284c5950",
+      "query": "minimal treatment room interior soft light",
+      "size": "small"
+    },
+    "2026-11-12-gbp": {
+      "id": "mRelDTGo3HY",
+      "by": "Vladislav Nikonov",
+      "user": "memtor",
+      "alt": "woman wearing white crew-neck shirt behind trees",
+      "file": "photo-1524550158212-33f2ff985344",
+      "query": "woman three quarter portrait natural light",
+      "size": "small"
+    },
+    "2026-11-16-ig": {
+      "id": "wLNigYhCZi0",
+      "by": "amin naderloei",
+      "user": "aminnaderloei",
+      "alt": "a young woman with eyes closed among tall reeds",
+      "file": "photo-1759873911661-d4cba84d2eff",
+      "query": "woman gentle portrait looking away soft",
+      "size": "small"
+    },
+    "2026-11-16-gbp": {
+      "id": "yIitNO2Bgdo",
+      "by": "Alexander Krivitskiy",
+      "user": "krivitskiy",
+      "alt": "woman smiling face",
+      "file": "photo-1567516364473-233c4b6fcfbe",
+      "query": "woman confident natural portrait neutral",
+      "size": "small"
+    },
+    "2026-11-17-ig": {
+      "id": "B41fY4dhX18",
+      "by": "Kate Kozyrka",
+      "user": "kozyrka_kate",
+      "alt": "smiling woman",
+      "file": "photo-1562337404-3044c84ac061",
+      "query": "woman laughing eyes crinkle portrait",
+      "size": "small"
+    },
+    "2026-11-17-gbp": {
+      "id": "Z-5i0RVukdU",
+      "by": "Egor Vikhrev",
+      "user": "egor_vikhrev",
+      "alt": "close up of blue eyes",
+      "file": "photo-1587910234573-d6fc84743bc8",
+      "query": "smiling woman closeup warm light",
+      "size": "small"
+    },
+    "2026-11-18-ig": {
+      "id": "nNj_e121IbI",
+      "by": "Brooke Cagle",
+      "user": "brookecagle",
+      "alt": "woman sitting on a wooden stair smiling",
+      "file": "photo-1525186402429-b4ff38bedec6",
+      "query": "woman lips smile closeup natural",
+      "size": "small"
+    },
+    "2026-11-18-gbp": {
+      "id": "MENPquhtpyk",
+      "by": "Dmitrii Shirnin",
+      "user": "shirnind",
+      "alt": "a woman with red hair and a white shirt",
+      "file": "photo-1709108615029-4055f1f7bd80",
+      "query": "woman soft smile portrait neutral",
+      "size": "small"
+    },
+    "2026-11-19-ig": {
+      "id": "G-AC9y-FsBc",
+      "by": "Caroline Badran",
+      "user": "___atmos",
+      "alt": "modern armchair and side table in a bright room",
+      "file": "photo-1761330439771-c6a291fad061",
+      "query": "luxury minimal interior soft light",
+      "size": "small"
+    },
+    "2026-11-19-gbp": {
+      "id": "7mmmEkyk0aQ",
+      "by": "Alina Bondar",
+      "user": "alinabondar_ph",
+      "alt": "a light armchair with a cushion on a wooden floor",
+      "file": "photo-1763279934323-edb3735f6a6e",
+      "query": "elegant clinic interior neutral",
+      "size": "small"
+    },
+    "2026-11-23-ig": {
+      "id": "ZKG9KqDQ1cw",
+      "by": "Nick Kimel",
+      "user": "nickkimel",
+      "alt": "a woman looking out of a window",
+      "file": "photo-1634113481678-a1294d911e86",
+      "query": "woman applying sunscreen skincare morning",
+      "size": "small"
+    },
+    "2026-11-23-gbp": {
+      "id": "yrN4AtpCYLw",
+      "by": "Dynamic Wang",
+      "user": "dynamicwang",
+      "alt": "a woman sitting in front of a window",
+      "file": "photo-1673647826872-52fc7f76daaa",
+      "query": "woman skincare bathroom natural light",
+      "size": "small"
+    },
+    "2026-11-24-ig": {
+      "id": "beJTnEGzbAM",
+      "by": "Fiona Murray-deGraaff",
+      "user": "fionamurrayphoto",
+      "alt": "a wrapped gift box with a black ribbon",
+      "file": "photo-1702066054534-c1e7ceef9b2e",
+      "query": "elegant gift wrapping neutral ribbon",
+      "size": "small"
+    },
+    "2026-11-24-gbp": {
+      "id": "e-tX3uIby-g",
+      "by": "Daihana Monares",
+      "user": "daihana",
+      "alt": "a hand holding a paper gift bag with a bow",
+      "file": "photo-1664826078798-92049ba4c6fb",
+      "query": "gift card envelope minimal neutral",
+      "size": "small"
+    },
+    "2026-11-25-ig": {
+      "id": "VVlQer2k1LU",
+      "by": "Pedro Miguel Aires",
+      "user": "pp_79",
+      "alt": "black and white portrait of an older woman",
+      "file": "photo-1644551012568-4f23d8725090",
+      "query": "woman relaxed calm eyes closed portrait",
+      "size": "small"
+    },
+    "2026-11-25-gbp": {
+      "id": "7aU-_8BW7F0",
+      "by": "Inna Yashna",
+      "user": "inna_yashna",
+      "alt": "young woman looking out a window",
+      "file": "photo-1763154303994-863cec2b896b",
+      "query": "woman serene portrait soft light",
+      "size": "small"
+    },
+    "2026-11-26-ig": {
+      "id": "6JtuGvLzh20",
+      "by": "Mia Golic",
+      "user": "miagolic",
+      "alt": "a gift wrapped in white and brown floral paper",
+      "file": "photo-1592903297149-37fb25202dfa",
+      "query": "holiday gift neutral tones elegant",
+      "size": "small"
+    },
+    "2026-11-26-gbp": {
+      "id": "KrS40Ohe1is",
+      "by": "Fiona Murray-deGraaff",
+      "user": "fionamurrayphoto",
+      "alt": "two wrapped gifts with a black velvet bow",
+      "file": "photo-1702066054585-94f770dfd698",
+      "query": "festive gift wrapped ribbon elegant",
+      "size": "small"
+    },
+    "2026-11-30-ig": {
+      "id": "HiKiSBSKx54",
+      "by": "Zaven Baghdasaryan",
+      "user": "zmicaphoto",
+      "alt": "woman in a black dress catching snowflakes near a christmas tree",
+      "file": "photo-1770460620459-05b392d00b38",
+      "query": "woman winter evening elegant portrait",
+      "size": "small"
+    },
+    "2026-11-30-gbp": {
+      "id": "2XKPdPQlIV8",
+      "by": "Zaven Baghdasaryan",
+      "user": "zmicaphoto",
+      "alt": "woman in a black dress with snowflakes",
+      "file": "photo-1770460620182-51b9df6e667a",
+      "query": "woman festive night portrait bokeh",
+      "size": "small"
+    }
+  }
+}

@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + TikTok photo + GBP
 **Pillar:** Trust & Proof
 **Theme:** Rested by the Holidays
-**SEO keyword (Search Console):** cleo oakville
+**SEO keyword (Search Console):** cleo oakville (GSC: 3 impr, pos 1.67)
 
 ## Hook
 No is sometimes the treatment plan.
@@ -34,7 +34,7 @@ NEEDED: A new photo of Cleo, not a stock model: this post speaks as Cleo. Save i
 
 ## Google Business Profile
 Card: content/gbp/2026-11-11-why-cleo-says-no.jpg
-Photo: PENDING. Search: "minimal treatment room interior soft light"
+Photo: 何青蓝 / Unsplash: https://unsplash.com/photos/ECBg5FQkBXI
 
 **Short:** Cleo, the nurse practitioner at Luxury Beauty by Cleo R in Oakville, says no more often than people expect: not yet, not this, or not with me. It is the part of the job that protects your face most. More on Instagram.
 

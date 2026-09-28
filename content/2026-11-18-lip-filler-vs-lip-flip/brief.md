@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + TikTok photo + GBP
 **Pillar:** Education
 **Theme:** Gift Season
-**SEO keyword (Search Console):** dermal fillers
+**SEO keyword (Search Console):** dermal fillers (GSC: 1 impr, pos 41)
 
 ## Hook
 Volume or show?
@@ -30,11 +30,11 @@ Single image, photo led
 Files in images/: post.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman lips smile closeup natural" and never repeats a photo already used.
+Brooke Cagle / Unsplash: https://unsplash.com/photos/nNj_e121IbI (woman sitting on a wooden stair smiling)
 
 ## Google Business Profile
 Card: content/gbp/2026-11-18-lip-filler-vs-lip-flip.jpg
-Photo: PENDING. Search: "woman soft smile portrait neutral"
+Photo: Dmitrii Shirnin / Unsplash: https://unsplash.com/photos/MENPquhtpyk
 
 **Short:** Lip filler or lip flip? Dermal filler adds volume and shape. A lip flip uses a few units of Botox to relax the muscle so more upper lip shows when you smile. Different problems, different tools. On Instagram.
 

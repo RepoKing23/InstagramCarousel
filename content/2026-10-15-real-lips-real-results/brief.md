@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + GBP
 **Pillar:** Trust & Proof
 **Theme:** Botox & Filler in Oakville
-**SEO keyword (Search Console):** dermal fillers
+**SEO keyword (Search Console):** dermal fillers (GSC: 1 impr, pos 41)
 
 ## Hook
 Four clients. One syringe each.
@@ -34,7 +34,7 @@ Client photos from design/photos/cleo/crops/, shared with written consent.
 
 ## Google Business Profile
 Card: content/gbp/2026-10-15-real-lips-real-results.jpg
-Photo: PENDING. Search: "woman laughing natural portrait outdoors"
+Photo: Nolan Manning / Unsplash: https://unsplash.com/photos/Ll9YOG20UFI
 
 **Short:** Real lip filler results from the Oakville studio, shared with written client consent. Same lighting, same angle, no filter, no smoothing. Some are half a syringe. This is what the work actually looks like. On Instagram.
 

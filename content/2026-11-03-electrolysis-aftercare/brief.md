@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + TikTok photo + GBP
 **Pillar:** Education
 **Theme:** Rested by the Holidays
-**SEO keyword (Search Console):** facial electrolysis
+**SEO keyword (Search Console):** facial electrolysis (GSC: 1 impr, pos 21)
 
 ## Hook
 A little pink is normal.
@@ -30,11 +30,11 @@ Single image, photo led
 Files in images/: post.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman gentle skincare routine portrait" and never repeats a photo already used.
+Fanny Gustafsson / Unsplash: https://unsplash.com/photos/G0oxf0bjrB8 (woman in a white scoop neck shirt, high key portrait)
 
 ## Google Business Profile
 Card: content/gbp/2026-11-03-electrolysis-aftercare.jpg
-Photo: PENDING. Search: "woman clean skin calm portrait"
+Photo: Thien Dang / Unsplash: https://unsplash.com/photos/2yPYG76oyHQ
 
 **Short:** Electrolysis aftercare for the first 48 hours: redness or small bumps are normal, keep hands off, skip makeup on the area if you can, and avoid heat, sun and exfoliating. Between sessions, trim or shave, never tweeze. On Instagram.
 

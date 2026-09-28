@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + TikTok photo + GBP
 **Pillar:** Education
 **Theme:** Botox & Filler in Oakville
-**SEO keyword (Search Console):** electrolysis oakville
+**SEO keyword (Search Console):** electrolysis oakville (GSC: 2 impr, pos 4.5)
 
 ## Hook
 One follicle at a time. Gone for good.
@@ -30,11 +30,11 @@ Single image, photo led
 Files in images/: post.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman touching face skincare portrait" and never repeats a photo already used.
+Leighann Blackwood / Unsplash: https://unsplash.com/photos/zoYLGk2oULA (a woman is putting a lotion on her face)
 
 ## Google Business Profile
 Card: content/gbp/2026-10-06-what-is-electrolysis.jpg
-Photo: PENDING. Search: "woman skincare calm portrait"
+Photo: Ben Masora / Unsplash: https://unsplash.com/photos/O3D_mUpZzcM
 
 **Short:** Electrolysis in Oakville, explained. A fine probe and a small current treat each hair follicle so it stops growing back. It works on every hair colour and skin tone, including grey and blonde hair that laser misses. More on Instagram.
 

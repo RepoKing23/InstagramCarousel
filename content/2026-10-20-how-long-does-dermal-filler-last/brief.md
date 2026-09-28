@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + TikTok photo + GBP
 **Pillar:** Education
 **Theme:** Botox & Filler in Oakville
-**SEO keyword (Search Console):** dermal fillers
+**SEO keyword (Search Console):** dermal fillers (GSC: 1 impr, pos 41)
 
 ## Hook
 Longer than you think, and it depends where.
@@ -30,11 +30,11 @@ Single image, photo led
 Files in images/: post.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman cheekbones portrait natural light" and never repeats a photo already used.
+Fleur Kaan / Unsplash: https://unsplash.com/photos/e7jpGYe7OtU (close portrait of woman with bokeh)
 
 ## Google Business Profile
 Card: content/gbp/2026-10-20-how-long-does-dermal-filler-last.jpg
-Photo: PENDING. Search: "woman cheek portrait window light"
+Photo: Filipp Romanovski / Unsplash: https://unsplash.com/photos/CGKYNN3uuVo
 
 **Short:** How long do dermal fillers last? Lips move all day and usually hold six to twelve months. Cheeks and chin often last a year or more. Your metabolism and the product matter too, so top ups should be planned, not automatic.
 

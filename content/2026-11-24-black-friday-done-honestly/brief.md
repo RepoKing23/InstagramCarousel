@@ -5,7 +5,7 @@
 **Platforms:** IG + FB + TikTok photo + GBP
 **Pillar:** Promo & CTA
 **Theme:** Gift Season
-**SEO keyword (Search Console):** luxury spa oakville
+**SEO keyword (Search Console):** luxury spa oakville (GSC: 1 impr, pos 25)
 
 ## Hook
 The needle is never on sale. The gift can be.
@@ -30,11 +30,11 @@ Single image, photo led
 Files in images/: post.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "elegant gift wrapping neutral ribbon" and never repeats a photo already used.
+Fiona Murray-deGraaff / Unsplash: https://unsplash.com/photos/beJTnEGzbAM (a wrapped gift box with a black ribbon)
 
 ## Google Business Profile
 Card: content/gbp/2026-11-24-black-friday-done-honestly.jpg
-Photo: PENDING. Search: "gift card envelope minimal neutral"
+Photo: Daihana Monares / Unsplash: https://unsplash.com/photos/e-tX3uIby-g
 
 **Short:** Black Friday, done honestly at an Oakville med spa: injectables are never discounted, because cheap units are how corners get cut. Gift certificates, in any amount, are ready this week for the holidays. Order on Instagram.
 

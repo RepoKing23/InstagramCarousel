@@ -5,7 +5,7 @@
 **Platforms:** Instagram feed + GBP
 **Pillar:** Education
 **Theme:** Gift Season
-**SEO keyword (Search Console):** botox therapy treatment oakville
+**SEO keyword (Search Console):** botox therapy treatment oakville (GSC: 13 impr, pos 54.85)
 
 ## Hook
 Do this before you spend a dollar on filler.
@@ -30,11 +30,11 @@ The right order for skincare, Botox and dermal filler, explained by an Oakville 
 Files in images/: slide-1.jpg, slide-2.jpg, slide-3.jpg, slide-4.jpg, slide-5.jpg, slide-6.jpg, slide-7.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman applying sunscreen skincare morning" and never repeats a photo already used.
+Nick Kimel / Unsplash: https://unsplash.com/photos/ZKG9KqDQ1cw (a woman looking out of a window)
 
 ## Google Business Profile
 Card: content/gbp/2026-11-23-skincare-botox-filler-right-order.jpg
-Photo: PENDING. Search: "woman skincare bathroom natural light"
+Photo: Dynamic Wang / Unsplash: https://unsplash.com/photos/yrN4AtpCYLw
 
 **Short:** Skincare, Botox or filler first? For most faces: skin first, then Botox for movement, then dermal filler for volume. Getting the order right often means you need less of everything. The full plan is on Instagram.
 

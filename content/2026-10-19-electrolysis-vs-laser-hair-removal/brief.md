@@ -5,7 +5,7 @@
 **Platforms:** Instagram feed + GBP
 **Pillar:** Education
 **Theme:** Botox & Filler in Oakville
-**SEO keyword (Search Console):** electrolysis oakville
+**SEO keyword (Search Console):** electrolysis oakville (GSC: 2 impr, pos 4.5)
 
 ## Hook
 They are not the same treatment.
@@ -30,11 +30,11 @@ Electrolysis versus laser hair removal comparison for Oakville clients: permanen
 Files in images/: slide-1.jpg, slide-2.jpg, slide-3.jpg, slide-4.jpg, slide-5.jpg, slide-6.jpg, slide-7.jpg
 
 ## Photo
-PENDING. Run design/fetch-octnov-photos.py. It searches Unsplash for "woman smooth skin portrait neutral background" and never repeats a photo already used.
+Valeria Lendel / Unsplash: https://unsplash.com/photos/0b_7r_dNjFs (a woman with long black hair standing in front of a wall)
 
 ## Google Business Profile
 Card: content/gbp/2026-10-19-electrolysis-vs-laser-hair-removal.jpg
-Photo: PENDING. Search: "woman neck shoulder skin portrait"
+Photo: Noah Blaine Clark / Unsplash: https://unsplash.com/photos/iU04dYsP810
 
 **Short:** Electrolysis or laser hair removal? Laser reduces hair and needs dark hair against lighter skin. Electrolysis treats each follicle, works on every hair colour and skin tone, and is recognised for permanent removal. On Instagram.
 

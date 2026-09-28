@@ -64,6 +64,12 @@ Unsplash search phrases for its photos.
   already in `strategy/gbp-photos.json` or picked for another day. Picks and
   credits land in `strategy/octnov-photos.json`, with a contact sheet at
   `photos/octnov/contact-sheet.html`. `--redo <slot>` swaps one.
+- The photos in place now were picked by hand through the Unsplash connector
+  and saved at Unsplash's small size (400px wide), the only size this
+  environment could reach. Small photos render in a gold edged arch above the
+  type (`coverFrame` in carousel.html, kind `frame` in single.html, `framed`
+  on the GBP card) so they stay sharp. A full size file dropped at the same
+  path switches the post back to full bleed automatically.
 - Until a photo is on disk, a post renders as the type-only version of the
   same layout and its planner row reads Design. Nothing else changes when the
   photo arrives: re-run build and render.
