@@ -7,16 +7,25 @@ Playfair Display serif + Pinyon Script accents + Jost letterspaced labels.
 - `botox-myths.html` — "5 Botox Lies You Still Believe" carousel (8 slides)
 - `slides.html` — "Still You, Just Refreshed" carousel (6 slides)
 - `before-after.html` — before/after result cards, one per client pair (4 slides)
-- `before-after-stack.html` — black and gold before/after: before on top,
-  after below, gold script labels on the left, white LB monogram top left.
-  One entry per pair; each photo has `width`, `pos` and `zoom` knobs to line
-  the two faces up. Render with `python3 design/render.py stack`
+- `before-after-stack.html` — black and gold before/after, matched to the
+  reference the client sent: before on top, after below, 10px black seam, gold
+  script "Before"/"After" on the left, white LB monogram top left. One entry
+  per pair; each photo is placed with `x`, `y`, `w`. Keep both photos of a pair
+  at the same scale. Render with `python3 design/render.py stack`
+- `brand/script-before.png`, `brand/script-after.png` — the gold script
+  lettering, lifted from that reference on transparent, so the style and size
+  match it exactly rather than approximating it with a font
 - `enhance-photo.py` — prepares a pair for that card: EXIF rotation, light
   colour-noise cleanup, gentle local contrast, fine sharpening, and a
   Lanczos upscale if the photo is too small. Same settings on both frames and
-  no retouching, so the result is still the real result. `--match` evens out
-  white balance when the two were shot under different light. Writes to
-  `photos/before-after/`
+  no retouching, so the result is still the real result. `--trim` removes
+  black bars, `--black-bg` puts a profile shot on pure black, `--match`
+  evens out white balance. Reads uploads from `photos/before-after/src/`,
+  writes to `photos/before-after/`. `--black-bg` needs `npm install` in
+  `design/` once (the background model ships in the package):
+
+      python3 design/enhance-photo.py design/photos/before-after/src/X-before.jpg \
+          design/photos/before-after/src/X-after.jpg --name X --trim --black-bg
 - `real-results.html` — "Real Lips. Real Results." carousel (6 slides)
 - `every-angle.html` — "One Result, Every Angle" carousel (7 slides)
 - `gbp.html` — Google Business Profile card, one entry per Instagram post

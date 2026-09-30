@@ -116,7 +116,7 @@ GBP_DAILY = gbp_daily()
 # Black and gold before/after, one card per entry in before-after-stack.html.
 # Grows by one line each time a pair is added there.
 STACK = [ig('before-after-stack.html?slide=1',
-            'content/before-after-stack/sample.jpg')]
+            'content/before-after-stack/lips-profile.jpg')]
 
 JOBS = {'august': AUGUST, 'later': LATER, 'gbp-daily': GBP_DAILY,
         'stack': STACK, 'all': AUGUST + LATER + GBP_DAILY + STACK}

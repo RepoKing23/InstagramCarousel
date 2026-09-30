@@ -1,0 +1,9 @@
+{
+  "name": "carousel-design-tools",
+  "private": true,
+  "description": "Background mask for enhance-photo.py --black-bg. The model ships inside the package, nothing is downloaded at run time.",
+  "type": "module",
+  "dependencies": {
+    "@imgly/background-removal-node": "^1.4.5"
+  }
+}
