@@ -11,6 +11,7 @@ frame as JPEG, which is what actually gets posted.
     python3 design/render.py             # everything
     python3 design/render.py august      # August only
     python3 design/render.py gbp-daily   # the daily Google Business cards
+    python3 design/render.py stack       # black and gold before/after cards
 """
 import json
 import os
@@ -112,8 +113,13 @@ def gbp_daily():
 
 GBP_DAILY = gbp_daily()
 
+# Black and gold before/after, one card per entry in before-after-stack.html.
+# Grows by one line each time a pair is added there.
+STACK = [ig('before-after-stack.html?slide=1',
+            'content/before-after-stack/sample.jpg')]
+
 JOBS = {'august': AUGUST, 'later': LATER, 'gbp-daily': GBP_DAILY,
-        'all': AUGUST + LATER + GBP_DAILY}
+        'stack': STACK, 'all': AUGUST + LATER + GBP_DAILY + STACK}
 
 
 def main(which='all'):

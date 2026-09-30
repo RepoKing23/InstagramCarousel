@@ -7,6 +7,16 @@ Playfair Display serif + Pinyon Script accents + Jost letterspaced labels.
 - `botox-myths.html` — "5 Botox Lies You Still Believe" carousel (8 slides)
 - `slides.html` — "Still You, Just Refreshed" carousel (6 slides)
 - `before-after.html` — before/after result cards, one per client pair (4 slides)
+- `before-after-stack.html` — black and gold before/after: before on top,
+  after below, gold script labels on the left, white LB monogram top left.
+  One entry per pair; each photo has `width`, `pos` and `zoom` knobs to line
+  the two faces up. Render with `python3 design/render.py stack`
+- `enhance-photo.py` — prepares a pair for that card: EXIF rotation, light
+  colour-noise cleanup, gentle local contrast, fine sharpening, and a
+  Lanczos upscale if the photo is too small. Same settings on both frames and
+  no retouching, so the result is still the real result. `--match` evens out
+  white balance when the two were shot under different light. Writes to
+  `photos/before-after/`
 - `real-results.html` — "Real Lips. Real Results." carousel (6 slides)
 - `every-angle.html` — "One Result, Every Angle" carousel (7 slides)
 - `gbp.html` — Google Business Profile card, one entry per Instagram post
@@ -83,5 +93,6 @@ beige block.
   together.
 - August is balanced (dark tiles: Aug 21, 25, 28). September onward is all
   Light until designed — assign roughly one Dark per week.
+- `before-after-stack.html` cards count as Dark tiles.
 - If the black and gold before/after style is used for Aug 22, flip Aug 21 back
   to light or the row becomes dark-dark-cream.
