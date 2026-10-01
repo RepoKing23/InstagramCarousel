@@ -4,22 +4,18 @@ Image: `lips-profile.jpg`
 
 ## Caption
 
-Same lips. Just more of them. 💋
+ok I'm a little obsessed with this one 🥹
 
-Look at the profile. Her upper lip now has a border, the lower lip has shape, and the two finally sit in balance. From the side is where lip filler gets honest: you can't hide a shelf, a duck curve or a lip that sticks out past the nose. This one sits exactly where her face says it should.
+She came in wanting her lips to look fuller but still like HER lips. No duck, nothing crazy. Just some shape back on top and a softer, juicier bottom lip.
 
-What we were going for:
-✨ A defined upper lip border
-✨ Volume that follows her natural shape
-✨ A soft, hydrated finish
-✨ Still unmistakably her
+Swipe back and forth between the two and look at the side profile. That's where you can always tell if filler was done well or not.
 
-Every lip I treat starts with a consult. We look at your profile, your proportions and what you actually want, and then I decide where the product goes. Not before.
+Thank you for trusting me babe 🤍
 
-DM "LIPS" to book your consult ✨
+If you've been on the fence about lips, DM me "LIPS" and let's talk about what you want.
 
-Shared with client consent. Individual results vary.
+Shared with her permission. Results vary person to person.
 
 ## Hashtags
 
-#lipfiller #lipfillerbeforeandafter #lipfillernatural #naturallips #beforeandafter #dermalfiller #lipinjections #aestheticnurse #medspa #luxurybeauty #fillerjourney #lipgoals
+#lipfiller #lipfillerbeforeandafter #naturallips #lipfillernatural #beforeandafter #lipinjections #medspa #aestheticnurse #fillerjourney #lipgoals
