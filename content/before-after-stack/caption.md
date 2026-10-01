@@ -8,7 +8,7 @@ ok I'm a little obsessed with this one 🥹
 
 She came in wanting her lips to look fuller but still like HER lips. No duck, nothing crazy. Just some shape back on top and a softer, juicier bottom lip.
 
-Swipe back and forth between the two and look at the side profile. That's where you can always tell if filler was done well or not.
+Look at that side profile though. That's where you can always tell if filler was done well or not.
 
 Thank you for trusting me babe 🤍
 
