@@ -22,4 +22,4 @@ Shared with client consent. Individual results vary.
 
 ## Hashtags
 
-#lipfiller #lipfillerbeforeandafter #lipfillernatural #naturallips #lipflip #beforeandafter #dermalfiller #lipinjections #russianlips #aestheticnurse #medspa #luxurybeauty #fillerjourney #lipgoals
+#lipfiller #lipfillerbeforeandafter #lipfillernatural #naturallips #beforeandafter #dermalfiller #lipinjections #aestheticnurse #medspa #luxurybeauty #fillerjourney #lipgoals
